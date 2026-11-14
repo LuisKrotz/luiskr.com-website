@@ -343,12 +343,20 @@ describe('deck tails', () => {
       el._observeDeck(el._deckEl)
       expect(observe).toHaveBeenCalledWith(el._deckEl)
 
-      // The callback re-measures + re-poses; an empty deck early-returns.
+      // The callback re-measures + re-poses; an empty deck re-measures
+      // the skeleton fan and repaints only when the signature changed.
       rocb()
       expect(el._cardW).toBeGreaterThan(0)
       const saved = el._processedItems
       el._processedItems = []
+      const updateSpy = jest.spyOn(el, '_updateDom').mockImplementation(() => {})
+      el._cardW = -1
       expect(() => rocb()).not.toThrow()
+      expect(updateSpy).toHaveBeenCalled()
+      updateSpy.mockClear()
+      expect(() => rocb()).not.toThrow()
+      expect(updateSpy).not.toHaveBeenCalled()
+      updateSpy.mockRestore()
       el._processedItems = saved
 
       // A null deck just disconnects the observer.

@@ -28,7 +28,6 @@ jest.unstable_mockModule('@core/utils/gpu/webgpu-widget.js', () => ({
 
     return mountResult
   },
-  warmWidgetArtifacts: () => undefined,
 }))
 
 jest.unstable_mockModule('@core/utils/wasm/wasm-image-decoder.js', () => ({

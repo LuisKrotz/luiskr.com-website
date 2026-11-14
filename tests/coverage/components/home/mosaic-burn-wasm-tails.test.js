@@ -38,7 +38,6 @@ jest.unstable_mockModule('@core/utils/gpu/webgpu-widget.js', () => ({
   // Kind-aware: the mosaic also mounts the ring-sheen + corner-bracket
   // widgets — those resolve null so only the burn arm goes live.
   mountWebGpuWidget: async (kind) => (kind === GPU_WIDGET_KINDS.BURN ? mountResult : null),
-  warmWidgetArtifacts: () => undefined,
 }))
 
 /** Selector for the burn-overlay element the assertions query. */

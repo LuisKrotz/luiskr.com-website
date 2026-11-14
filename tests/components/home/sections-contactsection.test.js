@@ -40,10 +40,14 @@ describe('ContactSection', () => {
     contactEl._updateDom()
     const skelTitle = contactEl.shadowRoot.querySelector(`.${SKELETON_CLASSES.SKELETON_TITLE_SM}`)
     expect(skelTitle).not.toBeNull()
-    const skelLinks = contactEl.shadowRoot.querySelectorAll(
-      `.${SKELETON_CLASSES.SKELETON_FOOTER_LINK}`
+    const skelMail = contactEl.shadowRoot.querySelector(
+      `.${CONTACT_CLASSES.CONTACT_MAIL}.${SKELETON_CLASSES.SKELETON_FOOTER_NOTE_1}`
     )
-    expect(skelLinks.length).toBe(4)
+    expect(skelMail).not.toBeNull()
+    const skelLinks = contactEl.shadowRoot.querySelectorAll(
+      `.${CONTACT_CLASSES.CONTACT_LINKS_LINK}.${SKELETON_CLASSES.SKELETON_FOOTER_LINK}`
+    )
+    expect(skelLinks.length).toBe(3)
     expect(contactEl.shadowRoot.querySelector(COMPONENT_TAGS.MENTIONS_DECK)).toBeNull()
   })
 

@@ -56,7 +56,7 @@ let decodeRejects = false
 jest.unstable_mockModule('@core/utils/gpu/webgpu-widget.js', () => ({
   hasWebGpu: () => true,
   webgpuWidgetsEnabled: () => gpuEnabled,
-  warmWidgetArtifacts: () => undefined,
+
   getSharedGpuDevice: async () => null,
   mountWebGpuWidget: async () => {
     if (bridgeHold) await bridgeHold

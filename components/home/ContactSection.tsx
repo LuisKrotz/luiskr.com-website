@@ -153,13 +153,24 @@ export class ContactSection extends BaseComponent {
             />
             <span className={A11Y_CLASSES.SR_ONLY}>{appText(CMS_KEYS.CONTACT)}</span>
           </h3>
-          <div className={CONTACT_CLASSES.CONTACT_SOCIAL}>
-            {Array.from({ length: 4 }, (_, i) => (
-              <span
-                key={i}
-                className={`${CONTACT_CLASSES.CONTACT_SOCIAL_LINK} ${SKELETON_CLASSES.SKELETON_FOOTER_LINK}`}
-              />
-            ))}
+          {/* Skeleton mirrors the loaded row's structure — the mail
+              channel block plus a wrapped channel-links list — so the
+              band keeps the real flex geometry at every breakpoint. */}
+          <div className={CONTACT_CLASSES.CONTACT_ROW}>
+            <span
+              aria-hidden={ATTR_VALUES.TRUE}
+              className={`${CONTACT_CLASSES.CONTACT_MAIL} ${SKELETON_CLASSES.SKELETON_SHIMMER} ${SKELETON_CLASSES.SKELETON_FOOTER_NOTE_1}`}
+            />
+            <ul className={CONTACT_CLASSES.CONTACT_LINKS}>
+              {Array.from({ length: 3 }, (_, i) => (
+                <li key={i} className={CONTACT_CLASSES.CONTACT_LINKS_ITEM}>
+                  <span
+                    aria-hidden={ATTR_VALUES.TRUE}
+                    className={`${CONTACT_CLASSES.CONTACT_LINKS_LINK} ${SKELETON_CLASSES.SKELETON_SHIMMER} ${SKELETON_CLASSES.SKELETON_FOOTER_LINK}`}
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
         </footer>
       )

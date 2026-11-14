@@ -13,6 +13,7 @@ import { LOCALES } from '@core/tokens/locales.js'
 import { DB_PATHS } from '@core/tokens/routes/paths.js'
 import { ROUTE_NAMES } from '@core/tokens/routes/names.js'
 import { TRANSLATION_KEYS } from '@core/tokens/routes/translation-keys.js'
+import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
 import store from '@core/store.js'
 import router from '@core/router/router.js'
 import { buildRouteJsonLd, setMetaDescription } from '@core/router/navigate.js'
@@ -150,7 +151,8 @@ export function loadHomeData(view: ViewHome): void {
 
   const aboutPath = basePath + lang.pagesPath + CMS_KEYS.ABOUT
 
-  const picPath = basePath + lang.pagesPath + CMS_KEYS.ABOUT + '/profilePicture'
+  const picPath =
+    basePath + lang.pagesPath + CMS_KEYS.ABOUT + CHAR_STRINGS.SLASH + CMS_KEYS.PROFILE_PICTURE
 
   fetchFirebaseDb(homePath, (snap) => applyHomeSnapshot(view, snap))
     .then((snap) => applyHomeSnapshot(view, snap))

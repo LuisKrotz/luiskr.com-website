@@ -370,7 +370,29 @@ export class CardStack extends BaseComponent {
     }
 
     this._deckRO ??= new ResizeObserver(() => {
-      if (!deckItems(this).length) return
+      if (!deckItems(this).length) {
+        // Skeleton deck: onInit's measure ran before the deck had a
+        // measurable rect (viewport fallback), so the placeholder fan
+        // still holds that guess. Re-measure and repaint the shims at
+        // the true card box or the data-landed swap visibly reflows.
+        // The re-render is gated on a changed signature — the fresh
+        // deck node re-fires this observer once, and an unchanged
+        // measurement breaks the loop before it can oscillate.
+        const prev = { w: this._cardW, h: this._cardH, peek: this._peek, tier: this._tier }
+
+        measure(this)
+
+        if (
+          this._cardW !== prev.w ||
+          this._cardH !== prev.h ||
+          this._peek !== prev.peek ||
+          this._tier !== prev.tier
+        ) {
+          this._updateDom()
+        }
+
+        return
+      }
 
       measure(this)
 

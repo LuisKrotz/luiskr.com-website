@@ -61,7 +61,6 @@ jest.unstable_mockModule('@core/utils/gpu/webgpu-widget.js', () => ({
     return mountResult
   },
   getSharedGpuDevice: async () => (deviceFails ? null : makeDevice()),
-  warmWidgetArtifacts: () => undefined,
 }))
 
 /** Timer flush — mounted render queues need real timers past microtasks. */

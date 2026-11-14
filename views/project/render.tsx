@@ -111,7 +111,12 @@ export function renderProject(c: ViewProject) {
               label={t.cover.label || ATTR_VALUES.EMPTY}
             />
           ) : (
-            <figure className={INTERNAL_CLASSES.INTERNAL_MAIN_ITEM}>
+            // Slot mirror of the loaded <media-figure.internal-main-item>:
+            // the figure carries the same layout class so the shimmer box
+            // occupies exactly the hero slot the media component takes.
+            <figure
+              className={`${INTERNAL_CLASSES.INTERNAL_MAIN_ITEM} ${SKELETON_CLASSES.SKELETON_MEDIA}`}
+            >
               <img
                 decoding={MEDIA_ATTRS.DECODING_ASYNC}
                 className={MEDIA_CLASSES.RENDER_PLACEHOLDER}
@@ -124,9 +129,7 @@ export function renderProject(c: ViewProject) {
                 alt={c.projectSlug}
                 aria-hidden={ATTR_VALUES.TRUE}
               />
-              <div
-                className={`${SKELETON_CLASSES.SKELETON_SHIMMER} ${INTERNAL_CLASSES.INTERNAL_MAIN_ITEM} ${MEDIA_CLASSES.RENDER_MEDIA}`}
-              />
+              <div className={SKELETON_CLASSES.SKELETON_SHIMMER} />
             </figure>
           )}
         </div>
@@ -265,9 +268,7 @@ export function renderProject(c: ViewProject) {
                           alt={c.projectSlug}
                           aria-hidden={ATTR_VALUES.TRUE}
                         />
-                        <div
-                          className={`${MEDIA_CLASSES.RENDER_MEDIA} ${SKELETON_CLASSES.SKELETON_MEDIA}`}
-                        />
+                        <div className={SKELETON_CLASSES.SKELETON_MEDIA} />
                       </figure>
                     </div>
                     <div className={INTERNAL_CLASSES.INTERNAL_EXTRA_ITEM}>
@@ -284,9 +285,7 @@ export function renderProject(c: ViewProject) {
                           alt={c.projectSlug}
                           aria-hidden={ATTR_VALUES.TRUE}
                         />
-                        <div
-                          className={`${MEDIA_CLASSES.RENDER_MEDIA} ${SKELETON_CLASSES.SKELETON_MEDIA}`}
-                        />
+                        <div className={SKELETON_CLASSES.SKELETON_MEDIA} />
                       </figure>
                     </div>
                   </div>
