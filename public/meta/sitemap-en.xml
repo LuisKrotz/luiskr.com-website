@@ -5675,6 +5675,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/utils/media/idle-prefetch.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/coverage-core/core/utils/media/index.html</loc>
     <priority>0.7</priority>
   </url>
@@ -5748,6 +5752,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-core/core/utils/motion/scroll-state.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/utils/motion/skeleton-shimmer.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -9363,38 +9371,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton-webgl.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/init.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/loop.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/measure.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/renderer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/shaders.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/loaders/skeleton/theme.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/core/utils/canvas/webgl-mode.md</loc>
     <priority>0.7</priority>
   </url>
@@ -9651,6 +9627,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/core/utils/media/idle-prefetch.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/core/utils/media/local-media-cache.md</loc>
     <priority>0.7</priority>
   </url>
@@ -9715,6 +9695,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/core/utils/motion/skeleton-shimmer.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/core/utils/motion/spring.md</loc>
     <priority>0.7</priority>
   </url>
@@ -9756,10 +9740,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/core/utils/print/qr.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/utils/print/warm-bridge.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -10815,6 +10795,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/skeleton-geometry.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/test-lighthouse.md</loc>
     <priority>0.7</priority>
   </url>
@@ -11668,14 +11652,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/website/public/wasm/scene3d/luiskr_scene3d.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/website/public/wasm/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/website/public/wasm/skeleton/luiskr_skeleton.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -13535,38 +13511,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton-webgl.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/init.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/loop.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/measure.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/renderer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/shaders.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/theme.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/canvas/webgl-mode.md</loc>
     <priority>0.7</priority>
   </url>
@@ -13823,6 +13767,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/media/idle-prefetch.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/media/local-media-cache.md</loc>
     <priority>0.7</priority>
   </url>
@@ -13887,6 +13835,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/motion/skeleton-shimmer.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/motion/spring.md</loc>
     <priority>0.7</priority>
   </url>
@@ -13928,10 +13880,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/print/qr.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/utils/print/warm-bridge.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -14987,6 +14935,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/skeleton-geometry.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/test-lighthouse.md</loc>
     <priority>0.7</priority>
   </url>
@@ -15840,14 +15792,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/public/wasm/scene3d/luiskr_scene3d.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/public/wasm/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/public/wasm/skeleton/luiskr_skeleton.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -21363,6 +21307,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/media/cache/variables/IDLE_PREFETCH.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/media/credits</loc>
     <priority>0.7</priority>
   </url>
@@ -21903,23 +21851,11 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_GLYPH.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_MOSAIC.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RENDER.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RESOLVE.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_WARN.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -24263,170 +24199,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes/SkeletonWebGL.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/destroySkeletonLayer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/syncSkeletonLayer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelRect.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelStyle.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions/init.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/loop.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/render.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/resolve.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/upload.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions/measureSkeleton.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes/SkeletonRenderer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables/skeletonRenderer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_FS.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_VS.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions/sampleTheme.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/canvas/webgl-mode</loc>
     <priority>0.7</priority>
   </url>
@@ -25719,10 +25491,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/warmWidgetArtifacts.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/webgpuWidgetsEnabled.md</loc>
     <priority>0.7</priority>
   </url>
@@ -25852,6 +25620,30 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/group/functions/stripHeroSlotClasses.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch/README.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch/functions</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/destroyIdlePrefetch.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/initIdlePrefetch.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/resetIdlePrefetch.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -26239,6 +26031,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/README.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/destroySkeletonShimmer.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/syncSkeletonShimmer.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/spring</loc>
     <priority>0.7</priority>
   </url>
@@ -26448,26 +26260,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/qr/functions/qrSvg.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/warm-bridge</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/warm-bridge/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/warm-bridge/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/warm-bridge/functions/bindPrintWarm.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/print/warm-bridge/functions/installPrintWarm.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -35583,122 +35375,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes/Skeleton.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/default.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/initSync.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces/InitOutput.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/InitInput.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/SyncInitInput.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/memory.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_frame.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_init.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_new.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_resize.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_size.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_state.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_write_sheet.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbg_skeleton_free.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_add_to_stack_pointer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export2.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export3.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/website/public/wasm/switch-slider</loc>
     <priority>0.7</priority>
   </url>
@@ -42477,7 +42153,6 @@
       <video:tag>dell design system: design tokens architecture</video:tag>
       <video:tag>dell design system v2: progress bar component</video:tag>
       <video:tag>dell design system v2: horizontal progress tracker component</video:tag>
-      <video:tag>dell design system v2: vertical progress tracker component</video:tag>
       <video:tag>joining dell on june 6th, 2022, shortly after transainc closed its doors, marked</video:tag>
       <video:tag>dell</video:tag>
       <video:tag>dell technologies</video:tag>
@@ -42494,6 +42169,7 @@
       <video:tag>luis krötz</video:tag>
       <video:tag>luis krotz</video:tag>
       <video:tag>luiskr.com</video:tag>
+      <video:tag>portfolio</video:tag>
     </video:video>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-foundations-mozjpg-uncompressed.jpg</image:loc>

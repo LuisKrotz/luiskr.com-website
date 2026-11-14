@@ -8,7 +8,7 @@
   <description>Mba'éichapa, che ha'e Luis. peteĩ Ingeniero de Software oñeñamindu'úva UX-pe. Kóva aha'ỹ Dell-pe Dell Design System -pe.</description>
   <language>gn</language>
   <copyright>© 2026 Luis Krötz</copyright>
-  <lastBuildDate>Sat, 14 Nov 2026 19:15:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 20:46:09 GMT</lastBuildDate>
   <image><url>https://luiskr.com/assets/icons/share.png</url><title>Luis Krötz</title><link>https://luiskr.com/gn/</link></image>
   <item>
     <title>Luis Krötz — Portfolio</title>
@@ -220,28 +220,6 @@
     <category>tape ojokupytýva</category>
   </item>
   <item>
-    <title>Dell Design System</title>
-    <link>https://luiskr.com/gn/portfolio/dell-design-system</link>
-    <guid isPermaLink="true">https://luiskr.com/gn/portfolio/dell-design-system</guid>
-    <dc:creator>Luis Krötz</dc:creator>
-    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
-    <description>Che jeike Dell-pe 6 jasypoteĩ 2022-pe, Transainc omboty riremi hokẽ, ha'e akue peteĩ tenda tuicháva che rembiapo profesional-pe.</description>
-    <category>dell design system</category>
-    <category>dell design system, ñanduti renda jehechapa</category>
-    <category>dell design system: pyendakuéra techakuaa</category>
-    <category>dell design system: código arquitectura ha tekome'ẽ</category>
-    <category>dell design system: ñepyrũmby pyendakuéra</category>
-    <category>dell design system: componentes biblioteca techakuaa</category>
-    <category>dell design system: patrones techakuaa</category>
-    <category>dell design system: storybook joaju ha componentes tekome'ẽ</category>
-    <category>dell design system: pyendakuéra kuatiahaipyre techakuaa</category>
-    <category>dell design system: design tokens pyenda v1</category>
-    <category>dell design system: design tokens pyenda v2</category>
-    <category>dell design system: design token tipos techakuaaha</category>
-    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
-    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
-  </item>
-  <item>
     <title>Marco Almeida</title>
     <link>https://luiskr.com/gn/portfolio/aboutmarco</link>
     <guid isPermaLink="true">https://luiskr.com/gn/portfolio/aboutmarco</guid>
@@ -327,6 +305,28 @@
     <category>brinox</category>
     <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4.jpg-thumb.jpg"/>
     <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4" medium="video"/>
+  </item>
+  <item>
+    <title>Dell Design System</title>
+    <link>https://luiskr.com/gn/portfolio/dell-design-system</link>
+    <guid isPermaLink="true">https://luiskr.com/gn/portfolio/dell-design-system</guid>
+    <dc:creator>Luis Krötz</dc:creator>
+    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
+    <description>Che jeike Dell-pe 6 jasypoteĩ 2022-pe, Transainc omboty riremi hokẽ, ha'e akue peteĩ tenda tuicháva che rembiapo profesional-pe.</description>
+    <category>dell design system</category>
+    <category>dell design system, ñanduti renda jehechapa</category>
+    <category>dell design system: pyendakuéra techakuaa</category>
+    <category>dell design system: código arquitectura ha tekome'ẽ</category>
+    <category>dell design system: ñepyrũmby pyendakuéra</category>
+    <category>dell design system: componentes biblioteca techakuaa</category>
+    <category>dell design system: patrones techakuaa</category>
+    <category>dell design system: storybook joaju ha componentes tekome'ẽ</category>
+    <category>dell design system: pyendakuéra kuatiahaipyre techakuaa</category>
+    <category>dell design system: design tokens pyenda v1</category>
+    <category>dell design system: design tokens pyenda v2</category>
+    <category>dell design system: design token tipos techakuaaha</category>
+    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
+    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
   </item>
   <item>
     <title>Melissa</title>

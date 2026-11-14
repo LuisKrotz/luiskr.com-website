@@ -8,7 +8,7 @@
   <description>Hola, soy Luis. ingeniero de software enfocado en UX. Actualmente trabajo en Dell en el Dell Design System .</description>
   <language>es-AR</language>
   <copyright>© 2026 Luis Krötz</copyright>
-  <lastBuildDate>Sat, 14 Nov 2026 19:15:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 20:46:09 GMT</lastBuildDate>
   <image><url>https://luiskr.com/assets/icons/share.png</url><title>Luis Krötz</title><link>https://luiskr.com/cas/</link></image>
   <item>
     <title>Luis Krötz — Portfolio</title>
@@ -220,28 +220,6 @@
     <category>rutas coincidents</category>
   </item>
   <item>
-    <title>Dell Design System</title>
-    <link>https://luiskr.com/cas/portfolio/dell-design-system</link>
-    <guid isPermaLink="true">https://luiskr.com/cas/portfolio/dell-design-system</guid>
-    <dc:creator>Luis Krötz</dc:creator>
-    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
-    <description>Unirme a Dell el 6 de junio de 2022, poco después del cierre de Transainc, marcó un punto de inflexión decisivo en mi carrera profesional.</description>
-    <category>dell design system</category>
-    <category>dell design system, descripción general del sitio web</category>
-    <category>dell design system: descripción general de fundamentos</category>
-    <category>dell design system: arquitectura de código y directrices</category>
-    <category>dell design system: principios para empezar</category>
-    <category>dell design system: descripción general de la biblioteca de componentes</category>
-    <category>dell design system: descripción general de patrones</category>
-    <category>dell design system: integración con storybook y directrices de componentes</category>
-    <category>dell design system: descripción general de la documentación de fundamentos</category>
-    <category>dell design system: base de design tokens v1</category>
-    <category>dell design system: base de design tokens v2</category>
-    <category>dell design system: referencia de tipos de design tokens</category>
-    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
-    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
-  </item>
-  <item>
     <title>Marco Almeida</title>
     <link>https://luiskr.com/cas/portfolio/aboutmarco</link>
     <guid isPermaLink="true">https://luiskr.com/cas/portfolio/aboutmarco</guid>
@@ -327,6 +305,28 @@
     <category>brinox</category>
     <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4.jpg-thumb.jpg"/>
     <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4" medium="video"/>
+  </item>
+  <item>
+    <title>Dell Design System</title>
+    <link>https://luiskr.com/cas/portfolio/dell-design-system</link>
+    <guid isPermaLink="true">https://luiskr.com/cas/portfolio/dell-design-system</guid>
+    <dc:creator>Luis Krötz</dc:creator>
+    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
+    <description>Unirme a Dell el 6 de junio de 2022, poco después del cierre de Transainc, marcó un punto de inflexión decisivo en mi carrera profesional.</description>
+    <category>dell design system</category>
+    <category>dell design system, descripción general del sitio web</category>
+    <category>dell design system: descripción general de fundamentos</category>
+    <category>dell design system: arquitectura de código y directrices</category>
+    <category>dell design system: principios para empezar</category>
+    <category>dell design system: descripción general de la biblioteca de componentes</category>
+    <category>dell design system: descripción general de patrones</category>
+    <category>dell design system: integración con storybook y directrices de componentes</category>
+    <category>dell design system: descripción general de la documentación de fundamentos</category>
+    <category>dell design system: base de design tokens v1</category>
+    <category>dell design system: base de design tokens v2</category>
+    <category>dell design system: referencia de tipos de design tokens</category>
+    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
+    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
   </item>
   <item>
     <title>Melissa</title>
