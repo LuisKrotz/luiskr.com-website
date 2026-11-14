@@ -8,7 +8,7 @@
   <description>Hola, sóc en Luis. un enginyer de programari centrat en UX. Actualment treballo a Dell en el Dell Design System .</description>
   <language>ca</language>
   <copyright>© 2026 Luis Krötz</copyright>
-  <lastBuildDate>Sat, 14 Nov 2026 03:53:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 19:15:12 GMT</lastBuildDate>
   <image><url>https://luiskr.com/assets/icons/share.png</url><title>Luis Krötz</title><link>https://luiskr.com/ca/</link></image>
   <item>
     <title>Luis Krötz — Portfolio</title>
@@ -220,6 +220,28 @@
     <category>quant a mi</category>
   </item>
   <item>
+    <title>Dell Design System</title>
+    <link>https://luiskr.com/ca/portfolio/dell-design-system</link>
+    <guid isPermaLink="true">https://luiskr.com/ca/portfolio/dell-design-system</guid>
+    <dc:creator>Luis Krötz</dc:creator>
+    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
+    <description>Incorporar-me a Dell el 6 de juny de 2022, poc després del tancament de Transainc, va marcar un punt d'inflexió decisiu en la meva carrera professional.</description>
+    <category>dell design system</category>
+    <category>dell design system, visió general del lloc web</category>
+    <category>dell design system: visió general de fonaments</category>
+    <category>dell design system: arquitectura de codi i directrius</category>
+    <category>dell design system: principis per començar</category>
+    <category>dell design system: visió general de la biblioteca de components</category>
+    <category>dell design system: visió general de patrons</category>
+    <category>dell design system: integració amb storybook i directrius de components</category>
+    <category>dell design system: visió general de la documentació de fonaments</category>
+    <category>dell design system: base de design tokens v1</category>
+    <category>dell design system: base de design tokens v2</category>
+    <category>dell design system: referència de tipus de design tokens</category>
+    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
+    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
+  </item>
+  <item>
     <title>Marco Almeida</title>
     <link>https://luiskr.com/ca/portfolio/aboutmarco</link>
     <guid isPermaLink="true">https://luiskr.com/ca/portfolio/aboutmarco</guid>
@@ -305,28 +327,6 @@
     <category>brinox</category>
     <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4.jpg-thumb.jpg"/>
     <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4" medium="video"/>
-  </item>
-  <item>
-    <title>Dell Design System</title>
-    <link>https://luiskr.com/ca/portfolio/dell-design-system</link>
-    <guid isPermaLink="true">https://luiskr.com/ca/portfolio/dell-design-system</guid>
-    <dc:creator>Luis Krötz</dc:creator>
-    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
-    <description>Incorporar-me a Dell el 6 de juny de 2022, poc després del tancament de Transainc, va marcar un punt d'inflexió decisiu en la meva carrera professional.</description>
-    <category>dell design system</category>
-    <category>dell design system, visió general del lloc web</category>
-    <category>dell design system: visió general de fonaments</category>
-    <category>dell design system: arquitectura de codi i directrius</category>
-    <category>dell design system: principis per començar</category>
-    <category>dell design system: visió general de la biblioteca de components</category>
-    <category>dell design system: visió general de patrons</category>
-    <category>dell design system: integració amb storybook i directrius de components</category>
-    <category>dell design system: visió general de la documentació de fonaments</category>
-    <category>dell design system: base de design tokens v1</category>
-    <category>dell design system: base de design tokens v2</category>
-    <category>dell design system: referència de tipus de design tokens</category>
-    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
-    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
   </item>
   <item>
     <title>Melissa</title>

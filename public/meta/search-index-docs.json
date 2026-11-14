@@ -3394,7 +3394,7 @@
       "components",
       "shell",
       "app",
-      "app _flag scss the nav language flag lang open button wrapper webgl canvas svg img fallback swap and side split variant two country codes edge radii imported manifest uses _b_nav defined there images show when has"
+      "app _flag scss the nav language flag lang open button wrapper webgl canvas svg img fallback swap and side split variant two country codes edge radii imported manifest uses _b_nav defined there images born mount entry stamps sheds class"
     ],
     "c": "docs"
   },
@@ -5368,7 +5368,7 @@
       "cache",
       "tokens",
       "media",
-      "file tokens media cache description indexeddb disk network mode sole declaration site consumers import members from this frozen map rather than declaring the literals zero hardcoding rule caches config"
+      "file tokens media cache description indexeddb disk network mode sole declaration site consumers import members from this frozen map rather than declaring the literals zero hardcoding rule caches config idle prefetch tuning background asset"
     ],
     "c": "docs"
   },
@@ -5710,7 +5710,7 @@
       "skeleton",
       "tokens",
       "motion",
-      "file tokens motion skeleton description webgl field configuration grouped subsets sole declaration site consumers import members from this frozen map rather than declaring the literals zero hardcoding rule max placeholder rects per layer"
+      "file tokens motion skeleton description shimmer configuration grouped subsets for the css only placeholder system frozen map sole declaration site these consumers read members and never declare strings zero hardcoding rules object freeze"
     ],
     "c": "docs"
   },
@@ -7240,124 +7240,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/core/utils/canvas/loaders/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/core/utils/canvas/loaders/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton-webgl.ts",
-    "t": "Skeleton Webgl",
-    "d": "Core Module — Skeleton Webgl",
-    "k": [
-      "core",
-      "source",
-      "skeleton-webgl",
-      "utils",
-      "canvas",
-      "loaders",
-      "file skeleton webgl description shimmer layer for loading states shared pooled renderer draws organic morphing over placeholder geometry sampled from the component own dom elements report their rects frees its context once content resolves"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/init.ts",
-    "t": "Init",
-    "d": "Core Module — Init",
-    "k": [
-      "core",
-      "source",
-      "init",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton init bootstrap for the layer canvas creation inside component shadow root webgpu wasm mount first loading artifact shared renderer fallback acquire failure pure css shimmer resize observation pool registration and idle"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/loop.ts",
-    "t": "Loop",
-    "d": "Core Module — Loop",
-    "k": [
-      "core",
-      "source",
-      "loop",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton loop the layer render and resolve sequence frame skipped raf drift slow design reduced motion static frames out that tears down once content has arrived uploads latest geometry theme shader uniforms callback animates shimmer"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/measure.ts",
-    "t": "Measure",
-    "d": "Core Module — Measure",
-    "k": [
-      "core",
-      "source",
-      "measure",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton measure description dom measurement for skeletonwebgl extracted from webgl queries the content wrapper placeholders converts their client rects into layer relative boxes samples per rect palette tokens and resizes repositions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/renderer.ts",
-    "t": "Renderer",
-    "d": "Core Module — Renderer",
-    "k": [
-      "core",
-      "source",
-      "renderer",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton renderer description shared webgl shimmer for layers extracted from one context serves every layer frames are drawn canvas grown the largest live and blitted into each released when last destroyed recreated demand single page"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/shaders.ts",
-    "t": "Shaders",
-    "d": "Core Module — Shaders",
-    "k": [
-      "core",
-      "source",
-      "shaders",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton shaders description glsl sources for the shimmer layer extracted from renderer vertex stage precision preamble and rounded box sdf come shared canvas library fragment shader draws data decoding cells whose glyphs morph"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/canvas/loaders/skeleton/theme.ts",
-    "t": "Theme",
-    "d": "Core Module — Theme",
-    "k": [
-      "core",
-      "source",
-      "theme",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "file skeleton theme palette sampling for the layer reads skel tokens off host falling back root into normalized shader colors samples fallbacks rects whose own cannot parsed every candidate css custom property literal colours live this"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/core/utils/canvas/webgl-mode.ts",
     "t": "Webgl Mode",
     "d": "Core Module — Webgl Mode",
@@ -8224,6 +8106,20 @@
     "c": "docs"
   },
   {
+    "p": "/docs/core/utils/media/idle-prefetch.ts",
+    "t": "Idle Prefetch",
+    "d": "Core Module — Idle Prefetch",
+    "k": [
+      "core",
+      "source",
+      "idle-prefetch",
+      "utils",
+      "media",
+      "file utils media idle prefetch description background asset warming while the tab hidden when user backgrounds visibilitychange module walks composed dom shadow roots included and collects every cdn url current route already references"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/core/utils/media/local-media-cache.ts",
     "t": "Local Media Cache",
     "d": "Core Module — Local Media Cache",
@@ -8434,6 +8330,20 @@
     "c": "docs"
   },
   {
+    "p": "/docs/core/utils/motion/skeleton-shimmer.ts",
+    "t": "Skeleton Shimmer",
+    "d": "Core Module — Skeleton Shimmer",
+    "k": [
+      "core",
+      "source",
+      "skeleton-shimmer",
+      "utils",
+      "motion",
+      "file skeleton shimmer description component level sync the css only loading placeholder contract after webgl glyph layer was removed dom placeholders paint themselves keyframes live adopted sheets this module watches renders arrival real"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/core/utils/motion/spring.ts",
     "t": "Spring",
     "d": "Core Module — Spring",
@@ -8565,20 +8475,6 @@
       "utils",
       "print",
       "file utils print description dependency free encoder for the surfaces byte mode segments error correction level damage tolerance auto sized across versions rendered single path inline svg paper output stays vector crisp any dpi matrix"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/core/utils/print/warm-bridge.ts",
-    "t": "Warm Bridge",
-    "d": "Core Module — Warm Bridge",
-    "k": [
-      "core",
-      "source",
-      "warm-bridge",
-      "utils",
-      "print",
-      "eager seam between the component layer shadow roots and lazily loaded print module warm fetches each printed image top quality url ahead beforeprint src swap cache hot snapshot time but load non composed event document level listener never"
     ],
     "c": "docs"
   },
@@ -9364,7 +9260,7 @@
       "coverage",
       "index",
       "cms",
-      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 13t23 428z"
+      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 14t09 036z"
     ],
     "c": "docs"
   },
@@ -10079,7 +9975,7 @@
       "index",
       "cms",
       "tokens",
-      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 13t23 428z"
+      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 14t09 036z"
     ],
     "c": "docs"
   },
@@ -10343,7 +10239,7 @@
       "index",
       "core",
       "debug",
-      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 13t23 776z"
+      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 14t09 277z"
     ],
     "c": "docs"
   },
@@ -10715,7 +10611,7 @@
       "index",
       "core",
       "safari",
-      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 13t23 776z"
+      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 14t09 277z"
     ],
     "c": "docs"
   },
@@ -10931,7 +10827,7 @@
       "getters.ts",
       "core",
       "store",
-      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 494x 1153x 2348x 1732x 2312x"
+      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 494x 1153x 2348x 1732x 2309x"
     ],
     "c": "docs"
   },
@@ -11011,7 +10907,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 66x 1131x 55x 18x 41x"
+      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 66x 1132x 55x 18x 41x"
     ],
     "c": "docs"
   },
@@ -11284,7 +11180,7 @@
       "core",
       "tokens",
       "canvas",
-      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 13t23"
+      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 14t09"
     ],
     "c": "docs"
   },
@@ -14590,7 +14486,7 @@
       "core",
       "utils",
       "burn",
-      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 84320x 70947x 70512x 70460x file"
+      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 81530x 68617x 68175x 68125x file"
     ],
     "c": "docs"
   },
@@ -14747,7 +14643,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 446x 3378x 3371x 18x 3353x"
+      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 446x 3404x 3397x 18x 3379x"
     ],
     "c": "docs"
   },
@@ -14777,7 +14673,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 158x 1035x 21x 2057x 216x"
+      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 158x 1033x 21x 2055x 216x"
     ],
     "c": "docs"
   },
@@ -15931,7 +15827,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 132x 2556x 2559x 2551x"
+      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 132x 2558x 2561x 2553x"
     ],
     "c": "docs"
   },
@@ -15961,7 +15857,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 129x 13577x 2726x 2343x"
+      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 129x 13587x 2728x 2342x"
     ],
     "c": "docs"
   },
@@ -16042,7 +15938,7 @@
       "core",
       "utils",
       "dom",
-      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 21x 118x 2542x 12x file"
+      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 21x 118x 2544x 12x file"
     ],
     "c": "docs"
   },
@@ -16608,7 +16504,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2386x 1046x file"
+      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2504x 1169x file"
     ],
     "c": "docs"
   },
@@ -16698,7 +16594,7 @@
       "utils",
       "perf",
       "stats",
-      "code coverage report for core utils perf stats fps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 20x 122x 121x file"
+      "code coverage report for core utils perf stats fps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 20x 125x 124x file"
     ],
     "c": "docs"
   },
@@ -16797,7 +16693,7 @@
       "core",
       "utils",
       "print",
-      "code coverage report for core utils print warm bridge summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 441x 24x 23x 11061x"
+      "code coverage report for core utils print warm bridge summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 441x 24x 23x 11058x"
     ],
     "c": "docs"
   },
@@ -17062,7 +16958,7 @@
       "coverage-core",
       "coverage",
       "index",
-      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 10858 branches 5931 functions 1492 lines 9738 press the next uncovered block previous filter file core 482 309 438 browser debug"
+      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 10859 branches 5931 functions 1492 lines 9739 press the next uncovered block previous filter file core 482 309 438 browser debug"
     ],
     "c": "docs"
   },
@@ -19257,7 +19153,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 27x 23x 121x 137x"
+      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 26x 22x 121x 148x"
     ],
     "c": "docs"
   },
@@ -19317,7 +19213,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 15x 14x 10x 12x"
+      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 15x 14x 10x 11x"
     ],
     "c": "docs"
   },
@@ -19555,7 +19451,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 944x"
+      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x"
     ],
     "c": "docs"
   },
@@ -21406,7 +21302,7 @@
       "modal-trigger.ts",
       "components",
       "media",
-      "code coverage report for components media modal trigger summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 77x 23x 22x 21x 10x"
+      "code coverage report for components media modal trigger summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 77x 23x 21x 20x 10x"
     ],
     "c": "docs"
   },
@@ -21999,7 +21895,7 @@
       "index",
       "views",
       "animations",
-      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 13t23"
+      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09"
     ],
     "c": "docs"
   },
@@ -22139,7 +22035,7 @@
       "index",
       "views",
       "legal",
-      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 13t23 228z"
+      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09 803z"
     ],
     "c": "docs"
   },
@@ -22265,7 +22161,7 @@
       "modal-dom.tsx",
       "views",
       "project",
-      "code coverage report for views project modal dom tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 163x 49x 47x 27x 30x 114x"
+      "code coverage report for views project modal dom tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 163x 43x 41x 23x 26x 120x"
     ],
     "c": "docs"
   },
@@ -22328,7 +22224,7 @@
       "index",
       "views",
       "search",
-      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 13t23 228z"
+      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09 803z"
     ],
     "c": "docs"
   },
@@ -24014,7 +23910,7 @@
       "component",
       "api",
       "core",
-      "core component members _sharedsheets _scheduleidle module scope basecomponent _ismounted _contentnode _skeletonlayer ondestroy constructor setstate connectedcallback disconnectedcallback addscopedlistener subscribe _updatedom render custom"
+      "core component members _sharedsheets _scheduleidle module scope basecomponent _ismounted _contentnode ondestroy constructor setstate connectedcallback disconnectedcallback addscopedlistener subscribe _updatedom render custom element base"
     ],
     "c": "docs"
   },
@@ -24447,7 +24343,7 @@
       "public",
       "scripts",
       "workers",
-      "core public scripts workers gpu render worker members copy_pitch widgets devicepromise moduleinit initmodule getdevice stop pump probeframe mount source src surface shared primitives every builds direct bytesperrow alignment required"
+      "core public scripts workers gpu render worker members copy_pitch widgets devicepromise moduleinit initmodule getdevice stop module scope pump probeframe mount source src surface shared primitives every builds direct bytesperrow alignment"
     ],
     "c": "docs"
   },
@@ -25785,7 +25681,7 @@
       "core",
       "tokens",
       "classes",
-      "core tokens classes state members state_classes is_scrolling has_gl_backdrop no_js intro_skip global modifier class grouped subset source src surface shared primitives every builds direct frozen name map sole declaration site for these"
+      "core tokens classes state members state_classes is_painted is_scrolling has_gl_backdrop no_js intro_skip global modifier class grouped subset source src surface shared primitives every builds direct frozen name map sole declaration site"
     ],
     "c": "docs"
   },
@@ -26775,7 +26671,7 @@
       "core",
       "tokens",
       "media",
-      "core tokens media cache members cache_config indexeddb disk network mode source src surface shared primitives every builds direct caches config"
+      "core tokens media cache members cache_config idle_prefetch concurrency arm_delay_ms mode_no_cors credentials_omit connection_save_data slow_effective_types indexeddb disk network mode source src surface shared primitives every builds"
     ],
     "c": "docs"
   },
@@ -27005,7 +26901,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion gpu widgets members gpu_widget_kinds burger flag switch_slider theme_slider close_button menu_background skeleton burn media glitch divider_sheen text_draw ring_sheen corner_brackets scene3d genie ring_fill"
+      "core tokens motion gpu widgets members gpu_widget_kinds burger flag switch_slider theme_slider close_button menu_background burn media glitch divider_sheen text_draw ring_sheen corner_brackets scene3d genie ring_fill gpu_widget_artifacts"
     ],
     "c": "docs"
   },
@@ -27165,7 +27061,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion skeleton members max_rects max_dpr render_scale frame_skip start_delay skeleton_glyph cell_min cell_media text_max_height edge_softness text_density_base ink_surface_mix_near skeleton_resolve resolve_duration"
+      "core tokens motion skeleton members resolve_duration skeleton_mosaic mosaic_tiles mosaic_featured mosaic_lcp_tiles shimmer configuration grouped subsets source src surface shared primitives every builds direct resolve out length once"
     ],
     "c": "docs"
   },
@@ -28896,127 +28792,55 @@
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton-webgl.md",
-    "t": "Skeleton Webgl",
-    "d": "Documentation — Skeleton Webgl",
+    "t": "Skeleton Webgl.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton-webgl",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "core utils canvas loaders skeleton webgl members module scope lineheight radius textlike basestr inkstr cell row base ink skeletonwebgl root content ctx renderer _wasm _abandoned _wasmt animid _frametick rects rectdata metadata"
+      "skeleton-webgl.md",
+      "/docs/docs/api/core/utils/canvas/loaders/skeleton-webgl.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/init.md",
-    "t": "Init",
-    "d": "Documentation — Init",
-    "k": [
-      "docs",
-      "docs",
-      "init",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton init members activate init2d source src surface shared primitives every builds direct attaches the lifecycle accelerated path uses once its renderer live resize listener host resizeobserver layer class"
-    ],
+    "t": "Init.md",
+    "d": "",
+    "k": ["docs", "init.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/init.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/loop.md",
-    "t": "Loop",
-    "d": "Documentation — Loop",
-    "k": [
-      "docs",
-      "docs",
-      "loop",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton loop members upload render resolve source src surface shared primitives every builds direct uploads the latest geometry theme shader uniforms raf callback animates shimmer until resolved renders frame via"
-    ],
+    "t": "Loop.md",
+    "d": "",
+    "k": ["docs", "loop.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/loop.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/measure.md",
-    "t": "Measure",
-    "d": "Documentation — Measure",
-    "k": [
-      "docs",
-      "docs",
-      "measure",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton measure members measureskeleton dom measurement for skeletonwebgl extracted from source src surface shared primitives every builds direct measures the rects into layer draw list"
-    ],
+    "t": "Measure.md",
+    "d": "",
+    "k": ["docs", "measure.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/measure.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/renderer.md",
-    "t": "Renderer",
-    "d": "Documentation — Renderer",
-    "k": [
-      "docs",
-      "docs",
-      "renderer",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton renderer members skeletonrenderer program quadbuffer refs lost acquire release _init _issoftwarerenderer _dispose draw _initprogram shared webgl shimmer for layers source src surface primitives every"
-    ],
+    "t": "Renderer.md",
+    "d": "",
+    "k": ["docs", "renderer.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/renderer.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/shaders.md",
-    "t": "Shaders",
-    "d": "Documentation — Shaders",
-    "k": [
-      "docs",
-      "docs",
-      "shaders",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton shaders members skeleton_fs glsl sources for the shimmer layer extracted source src surface shared primitives every builds direct fragment shader u_rects u_meta u_sbase u_sink are per rect arrays"
-    ],
+    "t": "Shaders.md",
+    "d": "",
+    "k": ["docs", "shaders.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/shaders.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/theme.md",
-    "t": "Theme",
-    "d": "Documentation — Theme",
-    "k": [
-      "docs",
-      "docs",
-      "theme",
-      "api",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton theme members sampletheme source src surface shared primitives every builds direct samples the palette tokens host fallbacks for rects whose own cannot parsed candidate css custom property literal colours"
-    ],
+    "t": "Theme.md",
+    "d": "",
+    "k": ["docs", "theme.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/theme.md"],
     "c": "docs"
   },
   {
@@ -29922,7 +29746,7 @@
       "core",
       "utils",
       "gpu",
-      "core utils gpu webgpu widget members module scope default init resize set_size frame canvas destroy haswebgpu webgpuwidgetsenabled shareddevice sharedfor getsharedgpudevice moduleinitonce initmodule warmwidgetartifacts initqueue taskyield"
+      "core utils gpu webgpu widget members module scope default init resize set_size frame canvas destroy haswebgpu webgpuwidgetsenabled shareddevice sharedfor getsharedgpudevice moduleinitonce initmodule initqueue taskyield withtimeout"
     ],
     "c": "docs"
   },
@@ -30386,18 +30210,9 @@
   },
   {
     "p": "/docs/docs/api/core/utils/print/warm-bridge.md",
-    "t": "Warm Bridge",
-    "d": "Documentation — Warm Bridge",
-    "k": [
-      "docs",
-      "docs",
-      "warm-bridge",
-      "api",
-      "core",
-      "utils",
-      "print",
-      "core utils print warm bridge members module scope warmimg queuedroots onscopedload bindprintwarm installprintwarm source src surface shared primitives every builds direct eager seam between the component layer shadow roots and lazily"
-    ],
+    "t": "Warm Bridge.md",
+    "d": "",
+    "k": ["docs", "warm-bridge.md", "/docs/docs/api/core/utils/print/warm-bridge.md"],
     "c": "docs"
   },
   {
@@ -33256,7 +33071,7 @@
       "shared",
       "scripts",
       "build",
-      "shared scripts build media manifest mjs members media_prefix media_bucket list_endpoint image_variants video_content_variants video_thumb_variants image_thumb_variants pickvariant module scope persistmediamanifest loadmediamanifest"
+      "shared scripts build media manifest mjs members media_prefix media_bucket list_endpoint image_variants video_content_variants video_thumb_variants image_thumb_variants pickvariant stale_media_keys dropstalemediakeys module scope"
     ],
     "c": "docs"
   },
@@ -37398,18 +37213,12 @@
   },
   {
     "p": "/docs/docs/api/website/public/wasm/skeleton/luiskr_skeleton.md",
-    "t": "Luiskr_skeleton",
-    "d": "Documentation — Luiskr_skeleton",
+    "t": "Luiskr_skeleton.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "luiskr_skeleton",
-      "api",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "website public wasm skeleton luiskr_skeleton source src surface boot surfaces what the user sees first each bundle"
+      "luiskr_skeleton.md",
+      "/docs/docs/api/website/public/wasm/skeleton/luiskr_skeleton.md"
     ],
     "c": "docs"
   },
@@ -39189,7 +38998,7 @@
       "component",
       "jsdocs",
       "core",
-      "core component members _sharedsheets _scheduleidle module scope basecomponent _ismounted _contentnode _skeletonlayer ondestroy constructor setstate connectedcallback disconnectedcallback addscopedlistener subscribe _updatedom render custom"
+      "core component members _sharedsheets _scheduleidle module scope basecomponent _ismounted _contentnode ondestroy constructor setstate connectedcallback disconnectedcallback addscopedlistener subscribe _updatedom render custom element base"
     ],
     "c": "docs"
   },
@@ -39622,7 +39431,7 @@
       "public",
       "scripts",
       "workers",
-      "core public scripts workers gpu render worker members copy_pitch widgets devicepromise moduleinit initmodule getdevice stop pump probeframe mount source src surface shared primitives every builds direct bytesperrow alignment required"
+      "core public scripts workers gpu render worker members copy_pitch widgets devicepromise moduleinit initmodule getdevice stop module scope pump probeframe mount source src surface shared primitives every builds direct bytesperrow alignment"
     ],
     "c": "docs"
   },
@@ -40960,7 +40769,7 @@
       "core",
       "tokens",
       "classes",
-      "core tokens classes state members state_classes is_scrolling has_gl_backdrop no_js intro_skip global modifier class grouped subset source src surface shared primitives every builds direct frozen name map sole declaration site for these"
+      "core tokens classes state members state_classes is_painted is_scrolling has_gl_backdrop no_js intro_skip global modifier class grouped subset source src surface shared primitives every builds direct frozen name map sole declaration site"
     ],
     "c": "docs"
   },
@@ -41950,7 +41759,7 @@
       "core",
       "tokens",
       "media",
-      "core tokens media cache members cache_config indexeddb disk network mode source src surface shared primitives every builds direct caches config"
+      "core tokens media cache members cache_config idle_prefetch concurrency arm_delay_ms mode_no_cors credentials_omit connection_save_data slow_effective_types indexeddb disk network mode source src surface shared primitives every builds"
     ],
     "c": "docs"
   },
@@ -42180,7 +41989,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion gpu widgets members gpu_widget_kinds burger flag switch_slider theme_slider close_button menu_background skeleton burn media glitch divider_sheen text_draw ring_sheen corner_brackets scene3d genie ring_fill"
+      "core tokens motion gpu widgets members gpu_widget_kinds burger flag switch_slider theme_slider close_button menu_background burn media glitch divider_sheen text_draw ring_sheen corner_brackets scene3d genie ring_fill gpu_widget_artifacts"
     ],
     "c": "docs"
   },
@@ -42340,7 +42149,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion skeleton members max_rects max_dpr render_scale frame_skip start_delay skeleton_glyph cell_min cell_media text_max_height edge_softness text_density_base ink_surface_mix_near skeleton_resolve resolve_duration"
+      "core tokens motion skeleton members resolve_duration skeleton_mosaic mosaic_tiles mosaic_featured mosaic_lcp_tiles shimmer configuration grouped subsets source src surface shared primitives every builds direct resolve out length once"
     ],
     "c": "docs"
   },
@@ -44071,127 +43880,59 @@
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton-webgl.md",
-    "t": "Skeleton Webgl",
-    "d": "Documentation — Skeleton Webgl",
+    "t": "Skeleton Webgl.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton-webgl",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "core utils canvas loaders skeleton webgl members module scope lineheight radius textlike basestr inkstr cell row base ink skeletonwebgl root content ctx renderer _wasm _abandoned _wasmt animid _frametick rects rectdata metadata"
+      "skeleton-webgl.md",
+      "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton-webgl.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/init.md",
-    "t": "Init",
-    "d": "Documentation — Init",
-    "k": [
-      "docs",
-      "docs",
-      "init",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton init members activate init2d source src surface shared primitives every builds direct attaches the lifecycle accelerated path uses once its renderer live resize listener host resizeobserver layer class"
-    ],
+    "t": "Init.md",
+    "d": "",
+    "k": ["docs", "init.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/init.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/loop.md",
-    "t": "Loop",
-    "d": "Documentation — Loop",
-    "k": [
-      "docs",
-      "docs",
-      "loop",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton loop members upload render resolve source src surface shared primitives every builds direct uploads the latest geometry theme shader uniforms raf callback animates shimmer until resolved renders frame via"
-    ],
+    "t": "Loop.md",
+    "d": "",
+    "k": ["docs", "loop.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/loop.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/measure.md",
-    "t": "Measure",
-    "d": "Documentation — Measure",
-    "k": [
-      "docs",
-      "docs",
-      "measure",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton measure members measureskeleton dom measurement for skeletonwebgl extracted from source src surface shared primitives every builds direct measures the rects into layer draw list"
-    ],
+    "t": "Measure.md",
+    "d": "",
+    "k": ["docs", "measure.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/measure.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/renderer.md",
-    "t": "Renderer",
-    "d": "Documentation — Renderer",
+    "t": "Renderer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "renderer",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton renderer members skeletonrenderer program quadbuffer refs lost acquire release _init _issoftwarerenderer _dispose draw _initprogram shared webgl shimmer for layers source src surface primitives every"
+      "renderer.md",
+      "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/renderer.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/shaders.md",
-    "t": "Shaders",
-    "d": "Documentation — Shaders",
-    "k": [
-      "docs",
-      "docs",
-      "shaders",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton shaders members skeleton_fs glsl sources for the shimmer layer extracted source src surface shared primitives every builds direct fragment shader u_rects u_meta u_sbase u_sink are per rect arrays"
-    ],
+    "t": "Shaders.md",
+    "d": "",
+    "k": ["docs", "shaders.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/shaders.md"],
     "c": "docs"
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/theme.md",
-    "t": "Theme",
-    "d": "Documentation — Theme",
-    "k": [
-      "docs",
-      "docs",
-      "theme",
-      "jsdocs",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "core utils canvas loaders skeleton theme members sampletheme source src surface shared primitives every builds direct samples the palette tokens host fallbacks for rects whose own cannot parsed candidate css custom property literal colours"
-    ],
+    "t": "Theme.md",
+    "d": "",
+    "k": ["docs", "theme.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/theme.md"],
     "c": "docs"
   },
   {
@@ -45097,7 +44838,7 @@
       "core",
       "utils",
       "gpu",
-      "core utils gpu webgpu widget members module scope default init resize set_size frame canvas destroy haswebgpu webgpuwidgetsenabled shareddevice sharedfor getsharedgpudevice moduleinitonce initmodule warmwidgetartifacts initqueue taskyield"
+      "core utils gpu webgpu widget members module scope default init resize set_size frame canvas destroy haswebgpu webgpuwidgetsenabled shareddevice sharedfor getsharedgpudevice moduleinitonce initmodule initqueue taskyield withtimeout"
     ],
     "c": "docs"
   },
@@ -45561,18 +45302,9 @@
   },
   {
     "p": "/docs/docs/jsdocs/core/utils/print/warm-bridge.md",
-    "t": "Warm Bridge",
-    "d": "Documentation — Warm Bridge",
-    "k": [
-      "docs",
-      "docs",
-      "warm-bridge",
-      "jsdocs",
-      "core",
-      "utils",
-      "print",
-      "core utils print warm bridge members module scope warmimg queuedroots onscopedload bindprintwarm installprintwarm source src surface shared primitives every builds direct eager seam between the component layer shadow roots and lazily"
-    ],
+    "t": "Warm Bridge.md",
+    "d": "",
+    "k": ["docs", "warm-bridge.md", "/docs/docs/jsdocs/core/utils/print/warm-bridge.md"],
     "c": "docs"
   },
   {
@@ -48435,7 +48167,7 @@
       "shared",
       "scripts",
       "build",
-      "shared scripts build media manifest mjs members media_prefix media_bucket list_endpoint image_variants video_content_variants video_thumb_variants image_thumb_variants pickvariant module scope persistmediamanifest loadmediamanifest"
+      "shared scripts build media manifest mjs members media_prefix media_bucket list_endpoint image_variants video_content_variants video_thumb_variants image_thumb_variants pickvariant stale_media_keys dropstalemediakeys module scope"
     ],
     "c": "docs"
   },
@@ -52585,18 +52317,12 @@
   },
   {
     "p": "/docs/docs/jsdocs/website/public/wasm/skeleton/luiskr_skeleton.md",
-    "t": "Luiskr_skeleton",
-    "d": "Documentation — Luiskr_skeleton",
+    "t": "Luiskr_skeleton.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "luiskr_skeleton",
-      "jsdocs",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "website public wasm skeleton luiskr_skeleton source src surface boot surfaces what the user sees first each bundle"
+      "luiskr_skeleton.md",
+      "/docs/docs/jsdocs/website/public/wasm/skeleton/luiskr_skeleton.md"
     ],
     "c": "docs"
   },
@@ -55100,7 +54826,7 @@
       "lang",
       "CmsLangEditor",
       "classes",
-      "extends constructors constructor returns overrides properties languages selectedlang selectednode jsoncontent saving _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer"
+      "extends constructors constructor returns overrides properties languages selectedlang selectednode jsoncontent saving _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state"
     ],
     "c": "docs"
   },
@@ -56128,7 +55854,7 @@
       "playground-editor",
       "CmsPlaygroundEditor",
       "classes",
-      "extends constructors constructor returns overrides properties languages selectedlang saving epkeys epdata epdefaults slugs _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode"
+      "extends constructors constructor returns overrides properties languages selectedlang saving epkeys epdata epdefaults slugs _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state"
     ],
     "c": "docs"
   },
@@ -56466,7 +56192,7 @@
       "portfolio",
       "CmsPortfolioList",
       "classes",
-      "extends constructors constructor returns overrides properties languages selectedlang items saving _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect"
+      "extends constructors constructor returns overrides properties languages selectedlang items saving _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -57530,7 +57256,7 @@
       "routes",
       "AdminLogin",
       "classes",
-      "extends constructors constructor returns overrides properties loading errormsg _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect"
+      "extends constructors constructor returns overrides properties loading errormsg _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -57577,7 +57303,7 @@
       "routes",
       "CmsDashboard",
       "classes",
-      "extends constructors constructor returns overrides properties activetab user toastmessage toasttimer unsubscribe _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state"
+      "extends constructors constructor returns overrides properties activetab user toastmessage toasttimer unsubscribe _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -58670,7 +58396,7 @@
       "core",
       "Component",
       "classes",
-      "extends extended constructors constructor parameters styles returns overrides properties _componentstyles _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect inherited from"
+      "extends extended constructors constructor parameters styles returns overrides properties _componentstyles _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect inherited from"
     ],
     "c": "docs"
   },
@@ -67229,7 +66955,7 @@
       "classes",
       "skeleton",
       "variables",
-      "luiskr com readme core tokens classes skeleton _classes const skeleton_classes readonly skeleton_host host skeleton_overlay overlay skeleton_shimmer shimmer skeleton_layer layer skeleton_layer_resolving resolving skeleton_content_in"
+      "luiskr com readme core tokens classes skeleton _classes const skeleton_classes readonly skeleton_host host skeleton_overlay overlay skeleton_shimmer shimmer skeleton_content_in content skeleton_media media skeleton_round round"
     ],
     "c": "docs"
   },
@@ -67327,7 +67053,7 @@
       "classes",
       "state",
       "variables",
-      "luiskr com readme core tokens classes state _classes const state_classes readonly active is_open open is_fallback fallback has_fallback has is_safari safari is_scrolling scrolling reduced_motion reduced motion high_contrast high contrast"
+      "luiskr com readme core tokens classes state _classes const state_classes readonly active is_open open is_fallback fallback is_painted painted has_fallback has is_safari safari is_scrolling scrolling reduced_motion reduced motion"
     ],
     "c": "docs"
   },
@@ -68242,7 +67968,7 @@
       "data",
       "animation-ids",
       "variables",
-      "luiskr com readme core tokens data animation ids _docs const animation_docs readonly record string defined 146 frozen docs manifest node path map one depth page per the animations listing deep links into portal api reference with"
+      "luiskr com readme core tokens data animation ids _docs const animation_docs readonly record string defined 149 frozen docs manifest node path map one depth page per the animations listing deep links into portal api reference with"
     ],
     "c": "docs"
   },
@@ -68260,7 +67986,7 @@
       "data",
       "animation-ids",
       "variables",
-      "luiskr com readme core tokens data animation ids _docs _fallback const animation_docs_fallback docs animations defined 187 path for records missing from animation_docs the deep dive dir which portal auto opens into its index page"
+      "luiskr com readme core tokens data animation ids _docs _fallback const animation_docs_fallback docs animations defined 190 path for records missing from animation_docs the deep dive dir which portal auto opens into its index page"
     ],
     "c": "docs"
   },
@@ -68327,7 +68053,7 @@
       "data",
       "cms-keys",
       "variables",
-      "luiskr com readme core tokens data cms keys _keys const cms_keys readonly about_section about section legal_footer legal footer related_footer related autoplay contact lang_dialog lang dialog app home portfoliolist media earth_playground"
+      "luiskr com readme core tokens data cms keys _keys const cms_keys readonly about_section about section legal_footer legal footer related_footer related autoplay contact lang_dialog lang dialog app home profile_picture profilepicture"
     ],
     "c": "docs"
   },
@@ -71083,7 +70809,7 @@
       "core",
       "tokens",
       "media",
-      "references idb _config cache cover _dimensions generic image video media _observer _thresholds flag nav mosaic gravatar _sizes scroll _timings draw _texture cdn _urls social url _markers luiskr com readme core tokens exports idb_config"
+      "references idb _config cache idle _prefetch cover _dimensions generic image video media _observer _thresholds flag nav mosaic gravatar _sizes scroll _timings draw _texture cdn _urls social url _markers luiskr com readme core tokens exports"
     ],
     "c": "docs"
   },
@@ -71156,7 +70882,7 @@
       "tokens",
       "media",
       "cache",
-      "variables luiskr com readme core tokens media cache idb _config idb_config cache_config"
+      "variables luiskr com readme core tokens media cache idb _config idb_config cache_config idle _prefetch idle_prefetch"
     ],
     "c": "docs"
   },
@@ -72416,7 +72142,7 @@
       "motion",
       "gpu-widgets",
       "variables",
-      "luiskr com readme core tokens motion gpu widgets _flag _anims const gpu_flag_anims readonly hrk cas riv tln defined 241 flag animation personalities mirrors u_anim_type the shader and rust anim doc"
+      "luiskr com readme core tokens motion gpu widgets _flag _anims const gpu_flag_anims readonly hrk cas riv tln defined 214 flag animation personalities mirrors u_anim_type the shader and rust anim doc"
     ],
     "c": "docs"
   },
@@ -72434,7 +72160,7 @@
       "motion",
       "gpu-widgets",
       "variables",
-      "luiskr com readme core tokens motion gpu widgets _widget _artifacts const gpu_widget_artifacts readonly record number url string cls eager boolean defined artifact registry kind wasm pack glue exported class name slug pkg under public the"
+      "luiskr com readme core tokens motion gpu widgets _widget _artifacts const gpu_widget_artifacts readonly record number url string cls defined artifact registry kind wasm pack glue exported class name slug pkg under public the crate"
     ],
     "c": "docs"
   },
@@ -72452,7 +72178,7 @@
       "motion",
       "gpu-widgets",
       "variables",
-      "luiskr com readme core tokens motion gpu widgets _widget _drive const gpu_widget_drive readonly raf manual defined 219 drive modes for mountwebgpuwidget who owns the clock frozen consumers import members never redeclare literals"
+      "luiskr com readme core tokens motion gpu widgets _widget _drive const gpu_widget_drive readonly raf manual defined 192 drive modes for mountwebgpuwidget who owns the clock frozen consumers import members never redeclare literals"
     ],
     "c": "docs"
   },
@@ -72470,7 +72196,7 @@
       "motion",
       "gpu-widgets",
       "variables",
-      "luiskr com readme core tokens motion gpu widgets _widget _kinds const gpu_widget_kinds readonly burger flag switch_slider theme_slider close_button menu_background skeleton burn media glitch divider_sheen text_draw ring_sheen"
+      "luiskr com readme core tokens motion gpu widgets _widget _kinds const gpu_widget_kinds readonly burger flag switch_slider theme_slider close_button menu_background burn media glitch divider_sheen text_draw ring_sheen corner_brackets"
     ],
     "c": "docs"
   },
@@ -72488,7 +72214,7 @@
       "motion",
       "gpu-widgets",
       "variables",
-      "luiskr com readme core tokens motion gpu widgets _widget _uniform _f32s const gpu_widget_uniform_f32s readonly defined 184 uniform f32 counts per kind matches uniform_f32s each rust slug src lib block layout doc used the bridge size settle"
+      "luiskr com readme core tokens motion gpu widgets _widget _uniform _f32s const gpu_widget_uniform_f32s readonly defined 159 uniform f32 counts per kind matches uniform_f32s each rust slug src lib block layout doc used the bridge size settle"
     ],
     "c": "docs"
   },
@@ -73036,7 +72762,7 @@
       "tokens",
       "motion",
       "skeleton",
-      "variables luiskr com readme core tokens motion skeleton _render skeleton_render _glyph skeleton_glyph _resolve skeleton_resolve _mosaic skeleton_mosaic _warn skeleton_warn"
+      "variables luiskr com readme core tokens motion skeleton _resolve skeleton_resolve _mosaic skeleton_mosaic"
     ],
     "c": "docs"
   },
@@ -73049,19 +72775,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_GLYPH.md",
-    "t": "SKELETON_GLYPH",
-    "d": "Documentation — SKELETON_GLYPH",
+    "t": "SKELETON_GLYPH.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_glyph",
-      "typedoc",
-      "core",
-      "tokens",
-      "motion",
-      "skeleton",
-      "variables",
-      "luiskr com readme core tokens motion skeleton _glyph const skeleton_glyph readonly cell_min cell_max cell_media text_max_height edge_softness text_density_base text_density_drift text_alpha ink_surface_mix_near ink_surface_mix_far defined"
+      "SKELETON_GLYPH.md",
+      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_GLYPH.md"
     ],
     "c": "docs"
   },
@@ -73085,19 +72804,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RENDER.md",
-    "t": "SKELETON_RENDER",
-    "d": "Documentation — SKELETON_RENDER",
+    "t": "SKELETON_RENDER.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_render",
-      "typedoc",
-      "core",
-      "tokens",
-      "motion",
-      "skeleton",
-      "variables",
-      "luiskr com readme core tokens motion skeleton _render const skeleton_render readonly max_rects max_dpr render_scale frame_skip start_delay 600 ink_alpha_light ink_alpha_dark defined webgl field configuration sole declaration site consumers"
+      "SKELETON_RENDER.md",
+      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RENDER.md"
     ],
     "c": "docs"
   },
@@ -73121,19 +72833,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_WARN.md",
-    "t": "SKELETON_WARN",
-    "d": "Documentation — SKELETON_WARN",
+    "t": "SKELETON_WARN.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_warn",
-      "typedoc",
-      "core",
-      "tokens",
-      "motion",
-      "skeleton",
-      "variables",
-      "luiskr com readme core tokens motion skeleton _warn const skeleton_warn readonly aria_hidden aria hidden shader_warn skeletonwebgl shader error software_renderers regexp defined frozen map sole declaration site for these consumers read"
+      "SKELETON_WARN.md",
+      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_WARN.md"
     ],
     "c": "docs"
   },
@@ -75154,7 +74859,7 @@
       "selectors",
       "skeleton",
       "variables",
-      "luiskr com readme core tokens selectors skeleton _selectors const skeleton_selectors readonly skeleton_any class not layer has skeleton_text_like para title about footer section defined frozen selector map sole declaration site for these"
+      "luiskr com readme core tokens selectors skeleton _selectors const skeleton_selectors readonly skeleton_any class defined frozen selector map sole declaration site for these consumers read members and never declare the strings zero"
     ],
     "c": "docs"
   },
@@ -77797,7 +77502,7 @@
       "tokens",
       "styles",
       "variables",
-      "luiskr com readme core tokens styles base _host _styles const base_host_styles string defined 101 the stylesheet injected into every component shadow root notes per rule group host display block font family color level correctly typeset"
+      "luiskr com readme core tokens styles base _host _styles const base_host_styles string defined the stylesheet injected into every component shadow root notes per rule group host display block font family color level correctly typeset box"
     ],
     "c": "docs"
   },
@@ -81419,19 +81124,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/README.md",
-    "t": "Skeleton Webgl",
-    "d": "Documentation — Skeleton Webgl",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "classes interfaces functions luiskr com readme core utils canvas loaders skeleton webgl skeletonwebgl skelstyle skelrect syncskeletonlayer destroyskeletonlayer"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/README.md"
     ],
     "c": "docs"
   },
@@ -81444,20 +81142,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes/SkeletonWebGL.md",
-    "t": "SkeletonWebGL",
-    "d": "Documentation — SkeletonWebGL",
+    "t": "SkeletonWebGL.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeletonwebgl",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "classes",
-      "constructors constructor parameters host root content returns properties canvas ctx renderer _wasm _abandoned _wasmt animid rects rectdata metadata skelbasedata skelinkdata sheetdata base ink inkalpha origin dpr _frame usewebgl"
+      "SkeletonWebGL.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes/SkeletonWebGL.md"
     ],
     "c": "docs"
   },
@@ -81474,39 +81164,23 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/destroySkeletonLayer.md",
-    "t": "DestroySkeletonLayer",
-    "d": "Documentation — DestroySkeletonLayer",
+    "t": "DestroySkeletonLayer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "destroyskeletonlayer",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "functions",
-      "parameters component returns luiskr com readme core utils canvas loaders skeleton webgl destroyskeletonlayer function void defined 405 unmount teardown destroys the layer immediately resolve out host going away fade would never seen and"
+      "destroySkeletonLayer.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/destroySkeletonLayer.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/syncSkeletonLayer.md",
-    "t": "SyncSkeletonLayer",
-    "d": "Documentation — SyncSkeletonLayer",
+    "t": "SyncSkeletonLayer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "syncskeletonlayer",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "functions",
-      "parameters component returns luiskr com readme core utils canvas loaders skeleton webgl syncskeletonlayer function void defined 369 keeps layer sync with its rendered content call from onupdated onmounted creates the while nodes exist"
+      "syncSkeletonLayer.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/syncSkeletonLayer.md"
     ],
     "c": "docs"
   },
@@ -81523,39 +81197,23 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelRect.md",
-    "t": "SkelRect",
-    "d": "Documentation — SkelRect",
+    "t": "SkelRect.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skelrect",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "interfaces",
-      "properties radius cell row base ink luiskr com readme core utils canvas loaders skeleton webgl skelrect defined one measured placeholder geometry css sampled palette for the shader number left edge relative layer origin top box width"
+      "SkelRect.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelRect.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelStyle.md",
-    "t": "SkelStyle",
-    "d": "Documentation — SkelStyle",
+    "t": "SkelStyle.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skelstyle",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton-webgl",
-      "interfaces",
-      "properties lineheight radius textlike basestr inkstr luiskr com readme core utils canvas loaders skeleton webgl skelstyle defined per placeholder computed style cached between measures cleared theme flip number line height text"
+      "SkelStyle.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelStyle.md"
     ],
     "c": "docs"
   },
@@ -81568,20 +81226,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/README.md",
-    "t": "Init",
-    "d": "Documentation — Init",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "init",
-      "functions luiskr com readme core utils canvas loaders skeleton init"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/README.md"
     ],
     "c": "docs"
   },
@@ -81598,21 +81248,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions/init.md",
-    "t": "Init",
-    "d": "Documentation — Init",
+    "t": "Init.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "init",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "init",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders skeleton init function void defined boot builds the overlay prefers wasm artifact first loading crate this placeholder itself falls back shared renderer then css shimmer"
+      "init.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions/init.md"
     ],
     "c": "docs"
   },
@@ -81625,20 +81266,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/README.md",
-    "t": "Loop",
-    "d": "Documentation — Loop",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "loop",
-      "functions luiskr com readme core utils canvas loaders skeleton loop upload render resolve"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/README.md"
     ],
     "c": "docs"
   },
@@ -81655,81 +81288,45 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/loop.md",
-    "t": "Loop",
-    "d": "Documentation — Loop",
+    "t": "Loop.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "loop",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "loop",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders skeleton loop function void defined raf callback animates the shimmer until resolved skeletonwebgl webgl classes"
+      "loop.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/loop.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/render.md",
-    "t": "Render",
-    "d": "Documentation — Render",
+    "t": "Render.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "render",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "loop",
-      "functions",
-      "parameters host resolve returns luiskr com readme core utils canvas loaders skeleton loop render function void defined renders frame via the live backend wasm widget shared renderer skeletonwebgl webgl classes number"
+      "render.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/render.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/resolve.md",
-    "t": "Resolve",
-    "d": "Documentation — Resolve",
+    "t": "Resolve.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "resolve",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "loop",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders skeleton loop resolve function void defined 130 content has arrived fades the real plays shimmer out animation then tears down and releases shared context back pool"
+      "resolve.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/resolve.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/upload.md",
-    "t": "Upload",
-    "d": "Documentation — Upload",
+    "t": "Upload.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "upload",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "loop",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders skeleton loop upload function void defined uploads the latest geometry theme shader uniforms skeletonwebgl webgl classes"
+      "upload.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/upload.md"
     ],
     "c": "docs"
   },
@@ -81742,20 +81339,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/README.md",
-    "t": "Measure",
-    "d": "Documentation — Measure",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "measure",
-      "functions luiskr com readme core utils canvas loaders skeleton measure measureskeleton"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/README.md"
     ],
     "c": "docs"
   },
@@ -81772,21 +81361,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions/measureSkeleton.md",
-    "t": "MeasureSkeleton",
-    "d": "Documentation — MeasureSkeleton",
+    "t": "MeasureSkeleton.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "measureskeleton",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "measure",
-      "functions",
-      "parameters layer returns luiskr com readme core utils canvas loaders skeleton measure measureskeleton function void defined measures the dom rects into draw list skeletonwebgl webgl classes"
+      "measureSkeleton.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions/measureSkeleton.md"
     ],
     "c": "docs"
   },
@@ -81799,20 +81379,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/README.md",
-    "t": "Renderer",
-    "d": "Documentation — Renderer",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "renderer",
-      "classes variables luiskr com readme core utils canvas loaders skeleton renderer skeletonrenderer"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/README.md"
     ],
     "c": "docs"
   },
@@ -81829,21 +81401,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes/SkeletonRenderer.md",
-    "t": "SkeletonRenderer",
-    "d": "Documentation — SkeletonRenderer",
+    "t": "SkeletonRenderer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeletonrenderer",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "renderer",
-      "classes",
-      "constructors constructor returns properties canvas program quadbuffer refs lost methods acquire release _init _issoftwarerenderer parameters _dispose draw layer resolve _initprogram luiskr com readme core utils loaders skeleton renderer"
+      "SkeletonRenderer.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes/SkeletonRenderer.md"
     ],
     "c": "docs"
   },
@@ -81860,21 +81423,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables/skeletonRenderer.md",
-    "t": "SkeletonRenderer",
-    "d": "Documentation — SkeletonRenderer",
+    "t": "SkeletonRenderer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeletonrenderer",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "renderer",
-      "variables",
-      "luiskr com readme core utils canvas loaders skeleton renderer skeletonrenderer const defined 302 shared singleton every layer borrows this one context via acquire release the page never holds more than shimmer pipeline regardless how many"
+      "skeletonRenderer.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables/skeletonRenderer.md"
     ],
     "c": "docs"
   },
@@ -81887,20 +81441,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/README.md",
-    "t": "Shaders",
-    "d": "Documentation — Shaders",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "shaders",
-      "variables luiskr com readme core utils canvas loaders skeleton shaders _vs skeleton_vs _fs skeleton_fs"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/README.md"
     ],
     "c": "docs"
   },
@@ -81917,41 +81463,23 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_FS.md",
-    "t": "SKELETON_FS",
-    "d": "Documentation — SKELETON_FS",
+    "t": "SKELETON_FS.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_fs",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "shaders",
-      "variables",
-      "luiskr com readme core utils canvas loaders skeleton shaders _fs const skeleton_fs string defined shimmer fragment shader u_rects u_meta u_sbase u_sink are per rect arrays"
+      "SKELETON_FS.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_FS.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_VS.md",
-    "t": "SKELETON_VS",
-    "d": "Documentation — SKELETON_VS",
+    "t": "SKELETON_VS.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_vs",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "shaders",
-      "variables",
-      "luiskr com readme core utils canvas loaders skeleton shaders _vs const skeleton_vs attribute vec2 a_pos void main gl_position vec4 glsl_vs_fullscreen defined shared fullscreen quad vertex shader"
+      "SKELETON_VS.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_VS.md"
     ],
     "c": "docs"
   },
@@ -81964,20 +81492,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/README.md",
-    "t": "Theme",
-    "d": "Documentation — Theme",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "theme",
-      "functions luiskr com readme core utils canvas loaders skeleton theme sampletheme"
+      "README.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/README.md"
     ],
     "c": "docs"
   },
@@ -81994,21 +81514,12 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions/sampleTheme.md",
-    "t": "SampleTheme",
-    "d": "Documentation — SampleTheme",
+    "t": "SampleTheme.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "sampletheme",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "skeleton",
-      "theme",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders skeleton theme sampletheme function void defined samples the palette tokens fallbacks for rects whose own cannot parsed every candidate css custom property literal colours"
+      "sampleTheme.md",
+      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions/sampleTheme.md"
     ],
     "c": "docs"
   },
@@ -86655,7 +86166,7 @@
       "utils",
       "gpu",
       "webgpu-widget",
-      "interfaces functions luiskr com readme core utils gpu webgpu widget widgetmodule wasmwidget widgethandle mountoptions haswebgpu webgpuwidgetsenabled getsharedgpudevice warmwidgetartifacts mountwebgpuwidget"
+      "interfaces functions luiskr com readme core utils gpu webgpu widget widgetmodule wasmwidget widgethandle mountoptions haswebgpu webgpuwidgetsenabled getsharedgpudevice mountwebgpuwidget"
     ],
     "c": "docs"
   },
@@ -86716,25 +86227,18 @@
       "gpu",
       "webgpu-widget",
       "functions",
-      "parameters kind canvas loadmodule options returns luiskr com readme core utils gpu webgpu widget mountwebgpuwidget function promise widgethandle null defined 270 mounts artifact loads its wasm module calls init wires resize visibility"
+      "parameters kind canvas loadmodule options returns luiskr com readme core utils gpu webgpu widget mountwebgpuwidget function promise widgethandle null defined 249 mounts artifact loads its wasm module calls init wires resize visibility"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/warmWidgetArtifacts.md",
-    "t": "WarmWidgetArtifacts",
-    "d": "Documentation — WarmWidgetArtifacts",
+    "t": "WarmWidgetArtifacts.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "warmwidgetartifacts",
-      "typedoc",
-      "core",
-      "utils",
-      "gpu",
-      "webgpu-widget",
-      "functions",
-      "parameters loadmodule returns luiskr com readme core utils gpu webgpu widget warmwidgetartifacts function void defined 247 fire and forget fetch compile for every eager artifact the registry currently just skeleton loading placeholder"
+      "warmWidgetArtifacts.md",
+      "/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/warmWidgetArtifacts.md"
     ],
     "c": "docs"
   },
@@ -89096,7 +88600,7 @@
       "print",
       "print",
       "functions",
-      "returns luiskr com readme core utils print initprintsupport function void defined 3224 installs the hooks once native before afterprint pair plus matchmedia change channel some engines skip events but always flip media query both paths"
+      "returns luiskr com readme core utils print initprintsupport function void defined 3187 installs the hooks once native before afterprint pair plus matchmedia change channel some engines skip events but always flip media query both paths"
     ],
     "c": "docs"
   },
@@ -89114,7 +88618,7 @@
       "print",
       "print",
       "functions",
-      "returns luiskr com readme core utils print printjobactive function boolean defined 3210 true while job owns the document set prepprint stamp and held through exit restore screen time dom publishers figure ladder publishes deferred layer"
+      "returns luiskr com readme core utils print printjobactive function boolean defined 3178 true while job owns the document set prepprint stamp and held through exit restore screen time dom publishers figure ladder publishes deferred layer"
     ],
     "c": "docs"
   },
@@ -89132,7 +88636,7 @@
       "print",
       "print",
       "functions",
-      "parameters job returns luiskr com readme core utils print trackprintjob function void defined 3187 registers async composition work fired printprepare listener dossier fetches generated mirror syncs injected dom builds whose nodes the walk"
+      "parameters job returns luiskr com readme core utils print trackprintjob function void defined 3155 registers async composition work fired printprepare listener dossier fetches generated mirror syncs injected dom builds whose nodes the walk"
     ],
     "c": "docs"
   },
@@ -89150,7 +88654,7 @@
       "print",
       "print",
       "functions",
-      "parameters returns luiskr com readme core utils print trackprintnode function void defined 3197 registers listener injected node for the exit teardown same fate adapter own copies and covers removed when job ends screen state restores"
+      "parameters returns luiskr com readme core utils print trackprintnode function void defined 3165 registers listener injected node for the exit teardown same fate adapter own copies and covers removed when job ends screen state restores"
     ],
     "c": "docs"
   },
@@ -89230,19 +88734,9 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/README.md",
-    "t": "Warm Bridge",
-    "d": "Documentation — Warm Bridge",
-    "k": [
-      "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "print",
-      "warm-bridge",
-      "functions luiskr com readme core utils print warm bridge bindprintwarm installprintwarm"
-    ],
+    "t": "README.md",
+    "d": "",
+    "k": ["docs", "README.md", "/docs/docs/typedoc/core/utils/print/warm-bridge/README.md"],
     "c": "docs"
   },
   {
@@ -89254,37 +88748,23 @@
   },
   {
     "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/bindPrintWarm.md",
-    "t": "BindPrintWarm",
-    "d": "Documentation — BindPrintWarm",
+    "t": "BindPrintWarm.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "bindprintwarm",
-      "typedoc",
-      "core",
-      "utils",
-      "print",
-      "warm-bridge",
-      "functions",
-      "parameters root returns luiskr com readme core utils print warm bridge bindprintwarm function void defined registers component shadow for source warming called from the constructor capture listener attaches immediately post registration"
+      "bindPrintWarm.md",
+      "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/bindPrintWarm.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/installPrintWarm.md",
-    "t": "InstallPrintWarm",
-    "d": "Documentation — InstallPrintWarm",
+    "t": "InstallPrintWarm.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "installprintwarm",
-      "typedoc",
-      "core",
-      "utils",
-      "print",
-      "warm-bridge",
-      "functions",
-      "parameters warm returns luiskr com readme core utils print bridge installprintwarm function shadowroot defined installs the real hook called once initprintsupport hands back every root queued before installation caller can sweep their"
+      "installPrintWarm.md",
+      "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/installPrintWarm.md"
     ],
     "c": "docs"
   },
@@ -91197,7 +90677,7 @@
       "docs",
       "Docs",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state docspath node filepayload fileloading navopen"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state docspath node filepayload fileloading navopen _mapzoomed _docsready"
     ],
     "c": "docs"
   },
@@ -92629,7 +92109,7 @@
       "earth-playground",
       "SpacePlayground",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _earthbg _panelopen _isdark _lastlocale translations"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _earthbg _panelopen _isdark _lastlocale translations _collapsedmap"
     ],
     "c": "docs"
   },
@@ -95498,7 +94978,7 @@
       "star-field",
       "StarField",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _engine _canvasel _isinitializing _sfready _sffailed"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _engine _canvasel _isinitializing _sfready _sffailed"
     ],
     "c": "docs"
   },
@@ -101373,7 +100853,7 @@
       "src",
       "App",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations routeloading activesection onbottom"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations routeloading activesection onbottom currentviewtag"
     ],
     "c": "docs"
   },
@@ -102098,7 +101578,7 @@
       "src",
       "main",
       "variables",
-      "luiskr com readme shared src main bootpromise const promise void defined 296 boot resolves once the full start sequence safari lazy chunk router init mount retry arming has run tests await this async work never continues past test boundary"
+      "luiskr com readme shared src main bootpromise const promise void defined 301 boot resolves once the full start sequence safari lazy chunk router init mount retry arming has run tests await this async work never continues past test boundary"
     ],
     "c": "docs"
   },
@@ -102237,7 +101717,7 @@
       "carousel",
       "AwardsCarousel",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _items variant duration showdots currentindex"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _items variant duration showdots currentindex autoplayrunning"
     ],
     "c": "docs"
   },
@@ -102294,7 +101774,7 @@
       "carousel",
       "CustomCarousel",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _items _folder _forceactive _prevarrow _nextarrow"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _items _folder _forceactive _prevarrow _nextarrow _ringfills"
     ],
     "c": "docs"
   },
@@ -102343,7 +101823,7 @@
       "carousel",
       "MentionsDeck",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _items _translations _title activeidx duration _cardw"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _items _translations _title activeidx duration _cardw _cardh _step"
     ],
     "c": "docs"
   },
@@ -104930,7 +104410,7 @@
       "dialogs",
       "LangDialog",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _isopen _closebtn _flags _closing _wasopen"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _isopen _closebtn _flags _closing _wasopen _subscribedtostore"
     ],
     "c": "docs"
   },
@@ -104987,7 +104467,7 @@
       "dialogs",
       "PreferencesModal",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _pref _themeslider _switches _closebtn _donebrackets"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _pref _themeslider _switches _closebtn _donebrackets"
     ],
     "c": "docs"
   },
@@ -105036,7 +104516,7 @@
       "dialogs",
       "SearchModal",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _isopen _closing _closebtn onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _isopen _closing _closebtn onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -105775,7 +105255,7 @@
       "feedback",
       "CookieBanner",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect ariaactivedescendantelement"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -105824,7 +105304,7 @@
       "feedback",
       "SiteToast",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect ariaactivedescendantelement"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -105904,7 +105384,7 @@
       "home",
       "AboutSection",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _glitch _hud _mesh _titlefit onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _glitch _hud _mesh _titlefit onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -105953,7 +105433,7 @@
       "home",
       "AwardsMentions",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _lastlocale _dividerteardowns _sepsteardown"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _lastlocale _dividerteardowns _sepsteardown onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -106152,7 +105632,7 @@
       "home",
       "CardStack",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _processeditems _translations _printcopy activeidx"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _processeditems _translations _printcopy activeidx indexopen ext"
     ],
     "c": "docs"
   },
@@ -107365,7 +106845,7 @@
       "home",
       "ContactSection",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _mentionstranslations onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _mentionstranslations onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -107414,7 +106894,7 @@
       "home",
       "HomeMosaic",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _processeditems _translations hoveredidx touchidx"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _processeditems _translations hoveredidx touchidx cards containerh"
     ],
     "c": "docs"
   },
@@ -110136,7 +109616,7 @@
       "legal",
       "Footer",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect ariaactivedescendantelement"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -110192,7 +109672,7 @@
       "media",
       "AnimDemo",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _teardown _mounted _io _printmounted onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _teardown _mounted _io _printmounted onbeforexrselect"
     ],
     "c": "docs"
   },
@@ -110290,7 +109770,7 @@
       "media",
       "MediaExpanded",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state isclosing currentsrc _closebtn _brackets _genie"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state isclosing currentsrc _closebtn _brackets _genie _closetimer"
     ],
     "c": "docs"
   },
@@ -110339,7 +109819,7 @@
       "media",
       "MediaFigure",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state thumbsrc highressrc isloaded poster video videowebm"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state thumbsrc highressrc isloaded poster video videowebm"
     ],
     "c": "docs"
   },
@@ -110388,7 +109868,7 @@
       "media",
       "MediaMosaic",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _items _folder _forceactive _iscompact _packedw"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _items _folder _forceactive _iscompact _packedw _lastobservedw _mq"
     ],
     "c": "docs"
   },
@@ -114223,7 +113703,7 @@
       "nav",
       "AppNav",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _translations _translationslocale activesection"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _translations _translationslocale activesection onbottom"
     ],
     "c": "docs"
   },
@@ -114272,7 +113752,7 @@
       "nav",
       "brush",
       "classes",
-      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _componentstyles overrides onbeforexrselect"
+      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _componentstyles overrides onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -114321,7 +113801,7 @@
       "nav",
       "globe",
       "classes",
-      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _componentstyles overrides onbeforexrselect"
+      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _componentstyles overrides onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -114370,7 +113850,7 @@
       "nav",
       "grid",
       "classes",
-      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _componentstyles overrides onbeforexrselect"
+      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _componentstyles overrides onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -115020,7 +114500,7 @@
       "nav",
       "search",
       "classes",
-      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _componentstyles overrides onbeforexrselect"
+      "extends constructors constructor parameters styles returns inherited from properties _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _componentstyles overrides onbeforexrselect ariaactivedescendantelement"
     ],
     "c": "docs"
   },
@@ -115076,7 +114556,7 @@
       "portfolio",
       "Related",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations homeportfolio _unsubrouter"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations homeportfolio _unsubrouter _unsubmanifest _ringsession"
     ],
     "c": "docs"
   },
@@ -115447,7 +114927,7 @@
       "search",
       "RouteSearch",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _catalog _hits _active _strings _debounce _ring _seq"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _catalog _hits _active _strings _debounce _ring _seq"
     ],
     "c": "docs"
   },
@@ -124138,19 +123618,12 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/README.md",
-    "t": "Luiskr_skeleton",
-    "d": "Documentation — Luiskr_skeleton",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "classes interfaces type aliases functions luiskr com readme website public wasm skeleton _skeleton initoutput initinput syncinitinput initsync default"
+      "README.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/README.md"
     ],
     "c": "docs"
   },
@@ -124167,20 +123640,12 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes/Skeleton.md",
-    "t": "Skeleton",
-    "d": "Documentation — Skeleton",
+    "t": "Skeleton.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "classes",
-      "constructors constructor returns methods free dispose frame parameters init canvas device resize set _size _state resolve ink _alpha count write _sheet values luiskr com readme website public wasm skeleton _skeleton defined surface one per"
+      "Skeleton.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes/Skeleton.md"
     ],
     "c": "docs"
   },
@@ -124197,39 +123662,23 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/default.md",
-    "t": "Default",
-    "d": "Documentation — Default",
+    "t": "Default.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "default",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "functions",
-      "parameters module _or _path returns luiskr com readme website public wasm skeleton _skeleton default function module_or_path promise initoutput defined 110 requestinfo url makes request and for everything else calls webassembly instantiate"
+      "default.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/default.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/initSync.md",
-    "t": "InitSync",
-    "d": "Documentation — InitSync",
+    "t": "InitSync.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "initsync",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "functions",
-      "parameters module returns luiskr com readme website public wasm skeleton _skeleton initsync function initoutput defined 100 instantiates the given which can either bytes precompiled webassembly syncinitinput type aliases passing directly"
+      "initSync.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/initSync.md"
     ],
     "c": "docs"
   },
@@ -124246,20 +123695,12 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces/InitOutput.md",
-    "t": "InitOutput",
-    "d": "Documentation — InitOutput",
+    "t": "InitOutput.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "initoutput",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "interfaces",
-      "properties memory _wbg _skeleton _free parameters returns skeleton _frame _init _new _resize _set _size _state _write _sheet _wbindgen _export _export2 _export3 _add _to _stack _pointer luiskr com readme website public wasm initoutput"
+      "InitOutput.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces/InitOutput.md"
     ],
     "c": "docs"
   },
@@ -124276,39 +123717,23 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/InitInput.md",
-    "t": "InitInput",
-    "d": "Documentation — InitInput",
+    "t": "InitInput.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "initinput",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "type-aliases",
-      "luiskr com readme website public wasm skeleton _skeleton initinput type requestinfo url response buffersource webassembly module defined"
+      "InitInput.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/InitInput.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/SyncInitInput.md",
-    "t": "SyncInitInput",
-    "d": "Documentation — SyncInitInput",
+    "t": "SyncInitInput.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "syncinitinput",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton",
-      "type-aliases",
-      "luiskr com readme website public wasm skeleton _skeleton syncinitinput type buffersource webassembly module defined"
+      "SyncInitInput.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/SyncInitInput.md"
     ],
     "c": "docs"
   },
@@ -124325,19 +123750,12 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/README.md",
-    "t": "Luiskr_skeleton_bg.wasm",
-    "d": "Documentation — Luiskr_skeleton_bg.wasm",
+    "t": "README.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables luiskr com readme website public wasm skeleton _skeleton _bg memory _wbg _free wbg_skeleton_free _frame skeleton_frame _init skeleton_init _new skeleton_new _resize skeleton_resize _set _size skeleton_set_size _state"
+      "README.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/README.md"
     ],
     "c": "docs"
   },
@@ -124354,248 +123772,144 @@
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/memory.md",
-    "t": "Memory",
-    "d": "Documentation — Memory",
+    "t": "Memory.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "memory",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "luiskr com readme website public wasm skeleton _skeleton _bg memory const webassembly defined"
+      "memory.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/memory.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_frame.md",
-    "t": "Skeleton_frame",
-    "d": "Documentation — Skeleton_frame",
+    "t": "Skeleton_frame.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_frame",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _frame const skeleton_frame void defined number"
+      "skeleton_frame.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_frame.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_init.md",
-    "t": "Skeleton_init",
-    "d": "Documentation — Skeleton_init",
+    "t": "Skeleton_init.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_init",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _init const skeleton_init void defined number"
+      "skeleton_init.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_init.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_new.md",
-    "t": "Skeleton_new",
-    "d": "Documentation — Skeleton_new",
+    "t": "Skeleton_new.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_new",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "returns luiskr com readme website public wasm skeleton _skeleton _bg _new const skeleton_new number defined"
+      "skeleton_new.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_new.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_resize.md",
-    "t": "Skeleton_resize",
-    "d": "Documentation — Skeleton_resize",
+    "t": "Skeleton_resize.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_resize",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _resize const skeleton_resize void defined number"
+      "skeleton_resize.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_resize.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_size.md",
-    "t": "Skeleton_set_size",
-    "d": "Documentation — Skeleton_set_size",
+    "t": "Skeleton_set_size.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_set_size",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _set _size const skeleton_set_size void defined number"
+      "skeleton_set_size.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_size.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_state.md",
-    "t": "Skeleton_set_state",
-    "d": "Documentation — Skeleton_set_state",
+    "t": "Skeleton_set_state.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_set_state",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _set _state const skeleton_set_state void defined number"
+      "skeleton_set_state.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_state.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_write_sheet.md",
-    "t": "Skeleton_write_sheet",
-    "d": "Documentation — Skeleton_write_sheet",
+    "t": "Skeleton_write_sheet.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "skeleton_write_sheet",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _write _sheet const skeleton_write_sheet void defined number"
+      "skeleton_write_sheet.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_write_sheet.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbg_skeleton_free.md",
-    "t": "Wbg_skeleton_free",
-    "d": "Documentation — Wbg_skeleton_free",
+    "t": "Wbg_skeleton_free.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "wbg_skeleton_free",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _wbg _free const __wbg_skeleton_free void defined number"
+      "wbg_skeleton_free.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbg_skeleton_free.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_add_to_stack_pointer.md",
-    "t": "Wbindgen_add_to_stack_pointer",
-    "d": "Documentation — Wbindgen_add_to_stack_pointer",
+    "t": "Wbindgen_add_to_stack_pointer.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "wbindgen_add_to_stack_pointer",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _wbindgen _add _to _stack _pointer const __wbindgen_add_to_stack_pointer number defined"
+      "wbindgen_add_to_stack_pointer.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_add_to_stack_pointer.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export.md",
-    "t": "Wbindgen_export",
-    "d": "Documentation — Wbindgen_export",
+    "t": "Wbindgen_export.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "wbindgen_export",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _wbindgen _export const __wbindgen_export number defined"
+      "wbindgen_export.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export2.md",
-    "t": "Wbindgen_export2",
-    "d": "Documentation — Wbindgen_export2",
+    "t": "Wbindgen_export2.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "wbindgen_export2",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _wbindgen _export2 const __wbindgen_export2 number defined"
+      "wbindgen_export2.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export2.md"
     ],
     "c": "docs"
   },
   {
     "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export3.md",
-    "t": "Wbindgen_export3",
-    "d": "Documentation — Wbindgen_export3",
+    "t": "Wbindgen_export3.md",
+    "d": "",
     "k": [
       "docs",
-      "docs",
-      "wbindgen_export3",
-      "typedoc",
-      "website",
-      "public",
-      "wasm",
-      "skeleton",
-      "luiskr_skeleton_bg.wasm",
-      "variables",
-      "parameters returns luiskr com readme website public wasm skeleton _skeleton _bg _wbindgen _export3 const __wbindgen_export3 void defined number"
+      "wbindgen_export3.md",
+      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export3.md"
     ],
     "c": "docs"
   },
@@ -126120,7 +125434,7 @@
       "animations",
       "Animations",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -126176,7 +125490,7 @@
       "home",
       "Home",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations abouttranslations profilepicture"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations abouttranslations profilepicture featuredlinks"
     ],
     "c": "docs"
   },
@@ -126292,7 +125606,7 @@
       "home",
       "data",
       "functions",
-      "parameters view returns luiskr com readme website views home data loadhomedata function void defined 138 loads the three sources parallel via swr viewhome classes"
+      "parameters view returns luiskr com readme website views home data loadhomedata function void defined 139 loads the three sources parallel via swr viewhome classes"
     ],
     "c": "docs"
   },
@@ -126310,7 +125624,7 @@
       "home",
       "data",
       "functions",
-      "parameters view returns luiskr com readme website views home data onhomestoreupdate function void defined 217 store change reload all locale switch viewhome classes"
+      "parameters view returns luiskr com readme website views home data onhomestoreupdate function void defined 223 store change reload all locale switch viewhome classes"
     ],
     "c": "docs"
   },
@@ -126749,7 +126063,7 @@
       "legal",
       "Legal",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -126805,7 +126119,7 @@
       "not-found",
       "NotFound",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations onbeforexrselect"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -126861,7 +126175,7 @@
       "project",
       "Project",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state translations projectslug _lastlocale _bindidle"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state translations projectslug _lastlocale _bindidle _titlerepeat"
     ],
     "c": "docs"
   },
@@ -127573,7 +126887,7 @@
       "search",
       "Search",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state onbeforexrselect ariaactivedescendantelement"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state onbeforexrselect ariaactivedescendantelement ariaatomic"
     ],
     "c": "docs"
   },
@@ -127629,7 +126943,7 @@
       "sitemap",
       "Sitemap",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode _skeletonlayer state _page _projects _projectsloaded _sharemanifests earth"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state _page _projects _projectsloaded _sharemanifests earth star"
     ],
     "c": "docs"
   },
@@ -130184,6 +129498,20 @@
       "scripts",
       "verify",
       "file security scan mjs description dependency vulnerability primary engine snyk test json requires snyk_token auth fallback yarn audit same github advisory data lock the project authoritative lockfile gate still runs and cms report"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/shared/scripts/verify/skeleton-geometry.mjs",
+    "t": "Skeleton Geometry",
+    "d": "Shared Module — Skeleton Geometry",
+    "k": [
+      "shared",
+      "source",
+      "skeleton-geometry",
+      "scripts",
+      "verify",
+      "file scripts verify skeleton geometry mjs description gate validates that the css only placeholders mirror real layout they stand for every validation breakpoint per route viewport harness holds data layer open firebase rest i18n boot"
     ],
     "c": "docs"
   },
@@ -137473,73 +136801,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/website/public/wasm/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/website/public/wasm/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/website/public/wasm/skeleton/luiskr_skeleton.d.ts",
-    "t": "Luiskr_skeleton.d",
-    "d": "Website Module — Luiskr_skeleton.d",
-    "k": [
-      "website",
-      "source",
-      "luiskr_skeleton.d",
-      "public",
-      "wasm",
-      "skeleton",
-      "tslint disable eslint public wasm surface one skeleton canvas per instance page may mount several hero content areas shimmer independently frame animation tick cost uniform write pass vertex draw the fragment loop early outs rect bounded"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/website/public/wasm/skeleton/luiskr_skeleton.js",
-    "t": "Luiskr_skeleton",
-    "d": "Website Module — Luiskr_skeleton",
-    "k": [
-      "website",
-      "source",
-      "luiskr_skeleton",
-      "public",
-      "wasm",
-      "skeleton",
-      "self types luiskr_skeleton"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm",
-    "t": "Luiskr_skeleton_bg",
-    "d": "Website Module — Luiskr_skeleton_bg",
-    "k": [
-      "website",
-      "source",
-      "luiskr_skeleton_bg",
-      "public",
-      "wasm",
-      "skeleton",
-      "asm luiskr_skeleton_bg __wbindgen_object_drop_ref __wbindgen_object_clone_ref __wbg_set_a_d2dae9a62946ba86 __wbg_set_b_670dfc0631dcb9c1 __wbg_set_g_ac69babc4a0b2338 __wbg_set_r_ccf9fe3e4d993555 __wbg_set_alpha_b14827cf8b4ac26a"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm.d.ts",
-    "t": "Luiskr_skeleton_bg.wasm.d",
-    "d": "Website Module — Luiskr_skeleton_bg.wasm.d",
-    "k": [
-      "website",
-      "source",
-      "luiskr_skeleton_bg.wasm.d",
-      "public",
-      "wasm",
-      "skeleton",
-      "tslint disable eslint"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/website/public/wasm/switch-slider",
     "t": "Switch Slider",
     "d": "",
@@ -138240,6 +137501,244 @@
       "source",
       "vite.config",
       "istanbul ignore file build time vite config only consumed the bundler never exercised tests website description library for module public site views home legal not found project and every component they mount emits dist core sibling"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/api/core/utils/media/idle-prefetch.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "idle-prefetch",
+      "api",
+      "core",
+      "utils",
+      "media",
+      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/api/core/utils/motion/skeleton-shimmer.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-shimmer",
+      "api",
+      "core",
+      "utils",
+      "motion",
+      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/api/shared/scripts/verify/skeleton-geometry.md",
+    "t": "Skeleton Geometry",
+    "d": "Documentation — Skeleton Geometry",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-geometry",
+      "api",
+      "shared",
+      "scripts",
+      "verify",
+      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/jsdocs/core/utils/media/idle-prefetch.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "idle-prefetch",
+      "jsdocs",
+      "core",
+      "utils",
+      "media",
+      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/jsdocs/core/utils/motion/skeleton-shimmer.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-shimmer",
+      "jsdocs",
+      "core",
+      "utils",
+      "motion",
+      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/jsdocs/shared/scripts/verify/skeleton-geometry.md",
+    "t": "Skeleton Geometry",
+    "d": "Documentation — Skeleton Geometry",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-geometry",
+      "jsdocs",
+      "shared",
+      "scripts",
+      "verify",
+      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/tokens/media/cache/variables/IDLE_PREFETCH.md",
+    "t": "IDLE_PREFETCH",
+    "d": "Documentation — IDLE_PREFETCH",
+    "k": [
+      "docs",
+      "docs",
+      "idle_prefetch",
+      "typedoc",
+      "core",
+      "tokens",
+      "media",
+      "cache",
+      "variables",
+      "luiskr com readme core tokens media cache idle _prefetch const idle_prefetch readonly concurrency arm_delay_ms 1200 mode_no_cors cors credentials_omit omit connection_save_data savedata connection_effective_type effectivetype"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/destroyIdlePrefetch.md",
+    "t": "DestroyIdlePrefetch",
+    "d": "Documentation — DestroyIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "destroyidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch destroyidleprefetch function void defined 261 detaches the listener and aborts any flight cycle exported for test teardown warm can outlive its suite"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/initIdlePrefetch.md",
+    "t": "InitIdlePrefetch",
+    "d": "Documentation — InitIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "initidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch initidleprefetch function void defined 250 arms the background listener call once boot deferred off critical path idempotent repeated calls are"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/resetIdlePrefetch.md",
+    "t": "ResetIdlePrefetch",
+    "d": "Documentation — ResetIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "resetidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch _resetidleprefetch function void defined 277 test seam clears the warm queue bookkeeping suite can drive multiple hide show cycles without cross bleed"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/README.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "readme",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions luiskr com readme core utils media idle prefetch initidleprefetch destroyidleprefetch _resetidleprefetch resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/destroySkeletonShimmer.md",
+    "t": "DestroySkeletonShimmer",
+    "d": "Documentation — DestroySkeletonShimmer",
+    "k": [
+      "docs",
+      "docs",
+      "destroyskeletonshimmer",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions",
+      "parameters component returns luiskr com readme core utils motion skeleton shimmer destroyskeletonshimmer function void defined unmount teardown cancels pending content cleanup and drops the record resolve out host going away fade would"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/syncSkeletonShimmer.md",
+    "t": "SyncSkeletonShimmer",
+    "d": "Documentation — SyncSkeletonShimmer",
+    "k": [
+      "docs",
+      "docs",
+      "syncskeletonshimmer",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions",
+      "parameters component returns luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer function void defined keeps sync with its rendered content call from connectedcallback after the render lands while placeholders exist"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/README.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "readme",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer destroyskeletonshimmer"
     ],
     "c": "docs"
   }

@@ -1251,14 +1251,6 @@ https://luiskr.com/docs/core/utils/canvas/loaders/page-backdrop/init.ts
 https://luiskr.com/docs/core/utils/canvas/loaders/page-backdrop/loop.ts
 https://luiskr.com/docs/core/utils/canvas/loaders/page-backdrop/shaders.ts
 https://luiskr.com/docs/core/utils/canvas/loaders/page-backdrop/theme.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton-webgl.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/init.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/loop.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/measure.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/renderer.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/shaders.ts
-https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/theme.ts
 https://luiskr.com/docs/core/utils/canvas/webgl-mode.ts
 https://luiskr.com/docs/core/utils/canvas/webgl-pool.ts
 https://luiskr.com/docs/core/utils/canvas/widgets
@@ -1323,6 +1315,7 @@ https://luiskr.com/docs/core/utils/media
 https://luiskr.com/docs/core/utils/media.ts
 https://luiskr.com/docs/core/utils/media/accessibility.ts
 https://luiskr.com/docs/core/utils/media/group.ts
+https://luiskr.com/docs/core/utils/media/idle-prefetch.ts
 https://luiskr.com/docs/core/utils/media/local-media-cache.ts
 https://luiskr.com/docs/core/utils/media/manifest.ts
 https://luiskr.com/docs/core/utils/media/policy.ts
@@ -1339,6 +1332,7 @@ https://luiskr.com/docs/core/utils/motion/intent.ts
 https://luiskr.com/docs/core/utils/motion/route-warmer.ts
 https://luiskr.com/docs/core/utils/motion/scroll-spring.ts
 https://luiskr.com/docs/core/utils/motion/scroll-state.ts
+https://luiskr.com/docs/core/utils/motion/skeleton-shimmer.ts
 https://luiskr.com/docs/core/utils/motion/spring.ts
 https://luiskr.com/docs/core/utils/notify.ts
 https://luiskr.com/docs/core/utils/perf
@@ -1350,7 +1344,6 @@ https://luiskr.com/docs/core/utils/perf/stats/network.ts
 https://luiskr.com/docs/core/utils/print
 https://luiskr.com/docs/core/utils/print/print.ts
 https://luiskr.com/docs/core/utils/print/qr.ts
-https://luiskr.com/docs/core/utils/print/warm-bridge.ts
 https://luiskr.com/docs/core/utils/responsive-css.ts
 https://luiskr.com/docs/core/utils/schema.ts
 https://luiskr.com/docs/core/utils/service-worker.ts
@@ -9831,6 +9824,7 @@ https://luiskr.com/docs/shared/scripts/verify/print-check.mjs
 https://luiskr.com/docs/shared/scripts/verify/scope-gates.mjs
 https://luiskr.com/docs/shared/scripts/verify/scroll-fps.mjs
 https://luiskr.com/docs/shared/scripts/verify/security-scan.mjs
+https://luiskr.com/docs/shared/scripts/verify/skeleton-geometry.mjs
 https://luiskr.com/docs/shared/scripts/verify/test-lighthouse.js
 https://luiskr.com/docs/shared/scripts/verify/uncov.mjs
 https://luiskr.com/docs/shared/scripts/verify/verify.mjs
@@ -10426,11 +10420,6 @@ https://luiskr.com/docs/website/public/wasm/scene3d/luiskr_scene3d.d.ts
 https://luiskr.com/docs/website/public/wasm/scene3d/luiskr_scene3d.js
 https://luiskr.com/docs/website/public/wasm/scene3d/luiskr_scene3d_bg.wasm
 https://luiskr.com/docs/website/public/wasm/scene3d/luiskr_scene3d_bg.wasm.d.ts
-https://luiskr.com/docs/website/public/wasm/skeleton
-https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton.d.ts
-https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton.js
-https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm
-https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm.d.ts
 https://luiskr.com/docs/website/public/wasm/switch-slider
 https://luiskr.com/docs/website/public/wasm/switch-slider/README.md
 https://luiskr.com/docs/website/public/wasm/switch-slider/luiskr_switch_slider.d.ts

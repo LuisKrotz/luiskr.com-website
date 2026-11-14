@@ -8,7 +8,7 @@
   <description>Hoi, ik ben Luis. een software engineer met focus op UX. Momenteel werk ik bij Dell aan het Dell Design System .</description>
   <language>nl</language>
   <copyright>© 2026 Luis Krötz</copyright>
-  <lastBuildDate>Sat, 14 Nov 2026 03:53:12 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 19:15:12 GMT</lastBuildDate>
   <image><url>https://luiskr.com/assets/icons/share.png</url><title>Luis Krötz</title><link>https://luiskr.com/nl/</link></image>
   <item>
     <title>Luis Krötz — Portfolio</title>
@@ -220,6 +220,28 @@
     <category>over mij</category>
   </item>
   <item>
+    <title>Dell Design System</title>
+    <link>https://luiskr.com/nl/portfolio/dell-design-system</link>
+    <guid isPermaLink="true">https://luiskr.com/nl/portfolio/dell-design-system</guid>
+    <dc:creator>Luis Krötz</dc:creator>
+    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
+    <description>Mijn start bij Dell op 6 juni 2022, kort nadat Transainc zijn deuren sloot, markeerde een beslissend keerpunt in mijn professionele carrière.</description>
+    <category>dell design system</category>
+    <category>dell design system, website-overzicht</category>
+    <category>dell design system: overzicht van fundamenten</category>
+    <category>dell design system: codearchitectuur en richtlijnen</category>
+    <category>dell design system: aan de slag-principes</category>
+    <category>dell design system: overzicht van componentenbibliotheek</category>
+    <category>dell design system: overzicht van patronen</category>
+    <category>dell design system: storybook-integratie en componentrichtlijnen</category>
+    <category>dell design system: overzicht van fundamentendocumentatie</category>
+    <category>dell design system: design tokens fundament v1</category>
+    <category>dell design system: design tokens fundament v2</category>
+    <category>dell design system: referentie van design token-typen</category>
+    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
+    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
+  </item>
+  <item>
     <title>Marco Almeida</title>
     <link>https://luiskr.com/nl/portfolio/aboutmarco</link>
     <guid isPermaLink="true">https://luiskr.com/nl/portfolio/aboutmarco</guid>
@@ -305,28 +327,6 @@
     <category>brinox</category>
     <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4.jpg-thumb.jpg"/>
     <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/coza/feed+shop/coza.com.br-feed-2019-tour.mp4" medium="video"/>
-  </item>
-  <item>
-    <title>Dell Design System</title>
-    <link>https://luiskr.com/nl/portfolio/dell-design-system</link>
-    <guid isPermaLink="true">https://luiskr.com/nl/portfolio/dell-design-system</guid>
-    <dc:creator>Luis Krötz</dc:creator>
-    <pubDate>Mon, 12 Oct 2026 02:18:16 GMT</pubDate>
-    <description>Mijn start bij Dell op 6 juni 2022, kort nadat Transainc zijn deuren sloot, markeerde een beslissend keerpunt in mijn professionele carrière.</description>
-    <category>dell design system</category>
-    <category>dell design system, website-overzicht</category>
-    <category>dell design system: overzicht van fundamenten</category>
-    <category>dell design system: codearchitectuur en richtlijnen</category>
-    <category>dell design system: aan de slag-principes</category>
-    <category>dell design system: overzicht van componentenbibliotheek</category>
-    <category>dell design system: overzicht van patronen</category>
-    <category>dell design system: storybook-integratie en componentrichtlijnen</category>
-    <category>dell design system: overzicht van fundamentendocumentatie</category>
-    <category>dell design system: design tokens fundament v1</category>
-    <category>dell design system: design tokens fundament v2</category>
-    <category>dell design system: referentie van design token-typen</category>
-    <media:thumbnail url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg"/>
-    <media:content url="https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4" medium="video"/>
   </item>
   <item>
     <title>Melissa</title>

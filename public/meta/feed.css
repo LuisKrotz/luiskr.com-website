@@ -1571,30 +1571,8 @@ html.js .reader-content--painted:not(.reader-content--offscreen) {
   height: 0.813rem;
   border-radius: 0.125rem;
 }
-.skeleton-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 2;
-}
-.skeleton-layer--resolving {
-  z-index: -1;
-}
 .skeleton-content-in > * {
   animation: skeleton-content-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-}
-:host(.has-skeleton-layer) {
-  position: relative;
-  isolation: isolate;
-}
-:host(.has-skeleton-layer) [data-content] [class*='skeleton'] {
-  opacity: 0;
-}
-@media print {
-  .skeleton-layer {
-    display: none;
-  }
 }
 @keyframes skeleton-content-in {
   from {
@@ -1719,6 +1697,8 @@ html.high-contrast [tabindex]:not([tabindex='-1']):focus-visible,
   body::after,
   #app::before,
   #app::after,
+  html.show-grid::before,
+  html.show-grid::after,
   body > header:has(> .skip-link),
   .skip-link {
     display: none;

@@ -3051,38 +3051,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton-webgl.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/init.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/loop.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/measure.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/renderer.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/shaders.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/canvas/loaders/skeleton/theme.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/core/utils/canvas/webgl-mode.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -3339,6 +3307,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/core/utils/media/idle-prefetch.ts</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/core/utils/media/local-media-cache.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -3403,6 +3375,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/core/utils/motion/skeleton-shimmer.ts</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/core/utils/motion/spring.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -3444,10 +3420,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/core/utils/print/qr.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/utils/print/warm-bridge.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37371,6 +37343,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/shared/scripts/verify/skeleton-geometry.mjs</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/shared/scripts/verify/test-lighthouse.js</loc>
     <priority>0.7</priority>
   </url>
@@ -39748,26 +39724,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/website/public/wasm/scene3d/luiskr_scene3d_bg.wasm.d.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/public/wasm/skeleton</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton.d.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton.js</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm.d.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -67270,6 +67226,7 @@
       <video:tag>dell design system: design tokens architecture</video:tag>
       <video:tag>dell design system v2: progress bar component</video:tag>
       <video:tag>dell design system v2: horizontal progress tracker component</video:tag>
+      <video:tag>dell design system v2: vertical progress tracker component</video:tag>
       <video:tag>joining dell on june 6th, 2022, shortly after transainc closed its doors, marked</video:tag>
       <video:tag>dell</video:tag>
       <video:tag>dell technologies</video:tag>
@@ -67286,7 +67243,6 @@
       <video:tag>luis krötz</video:tag>
       <video:tag>luis krotz</video:tag>
       <video:tag>luiskr.com</video:tag>
-      <video:tag>portfolio</video:tag>
     </video:video>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-foundations-mozjpg-uncompressed.jpg</image:loc>
