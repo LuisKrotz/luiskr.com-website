@@ -47,8 +47,6 @@ function renderCard(
 ) {
   const storage = store.getters.getStorage()
 
-  const desc = item.description || item.label || ATTR_VALUES.EMPTY
-
   // Per-card heading — the AT jump target that names this mention;
   // emitted only when the item has real copy so cards never produce an
   // empty heading (the article aria-label already names bare items).
@@ -101,7 +99,7 @@ function renderCard(
             decoding={MEDIA_ATTRS.DECODING_ASYNC}
             className={C.MENTIONS_DECK_CARD_IMG}
             src={encodeMediaUrl(storage + item.media.path)}
-            alt={toMetaDescription(desc)}
+            alt={ATTR_VALUES.EMPTY}
             width={item.media.width || GENERIC_DIMENSIONS.AWARD_ICON_SIZE}
             height={item.media.height || GENERIC_DIMENSIONS.AWARD_ICON_SIZE}
           />
