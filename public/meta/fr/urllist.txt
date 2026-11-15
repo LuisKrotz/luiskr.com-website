@@ -1,6 +1,7 @@
 https://luiskr.com/
 https://luiskr.com/about
 https://luiskr.com/animations
+https://luiskr.com/axioms-end
 https://luiskr.com/contact
 https://luiskr.com/docs
 https://luiskr.com/docs/cms
@@ -307,6 +308,8 @@ https://luiskr.com/docs/core/tokens/attrs/media.ts
 https://luiskr.com/docs/core/tokens/attrs/microdata.ts
 https://luiskr.com/docs/core/tokens/attrs/svg.ts
 https://luiskr.com/docs/core/tokens/attrs/values.ts
+https://luiskr.com/docs/core/tokens/axioms
+https://luiskr.com/docs/core/tokens/axioms/params.ts
 https://luiskr.com/docs/core/tokens/base.js
 https://luiskr.com/docs/core/tokens/base.ts
 https://luiskr.com/docs/core/tokens/canvas
@@ -321,6 +324,7 @@ https://luiskr.com/docs/core/tokens/classes/animations.ts
 https://luiskr.com/docs/core/tokens/classes/app.ts
 https://luiskr.com/docs/core/tokens/classes/awards-carousel.ts
 https://luiskr.com/docs/core/tokens/classes/awards.ts
+https://luiskr.com/docs/core/tokens/classes/axioms.ts
 https://luiskr.com/docs/core/tokens/classes/card-stack.ts
 https://luiskr.com/docs/core/tokens/classes/carousel.ts
 https://luiskr.com/docs/core/tokens/classes/cms.ts
@@ -359,6 +363,7 @@ https://luiskr.com/docs/core/tokens/classes/toast.ts
 https://luiskr.com/docs/core/tokens/css
 https://luiskr.com/docs/core/tokens/css.ts
 https://luiskr.com/docs/core/tokens/css/about.ts
+https://luiskr.com/docs/core/tokens/css/axioms.ts
 https://luiskr.com/docs/core/tokens/css/card-stack.ts
 https://luiskr.com/docs/core/tokens/css/carousel.ts
 https://luiskr.com/docs/core/tokens/css/cookies.ts
@@ -9822,6 +9827,7 @@ https://luiskr.com/fr/experience-champ-etoile/venus
 https://luiskr.com/fr/experience-champ-etoile/vesta
 https://luiskr.com/fr/experience-champ-etoile/virgo-supercluster
 https://luiskr.com/fr/experience-champ-etoile/wlm
+https://luiskr.com/fr/fin-de-l-axiome
 https://luiskr.com/fr/licence
 https://luiskr.com/fr/plan-du-site
 https://luiskr.com/fr/playground-de-la-terre

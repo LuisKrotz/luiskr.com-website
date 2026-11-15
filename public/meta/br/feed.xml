@@ -8,7 +8,7 @@
   <description>Oi, eu sou o Luis. engenheiro de software focado em UX. Atualmente trabalho na Dell no Dell Design System .</description>
   <language>pt-BR</language>
   <copyright>© 2026 Luis Krötz</copyright>
-  <lastBuildDate>Sun, 15 Nov 2026 15:12:44 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 16:16:14 GMT</lastBuildDate>
   <image><url>https://luiskr.com/assets/icons/share.png</url><title>Luis Krötz</title><link>https://luiskr.com/br/</link></image>
   <item>
     <title>Luis Krötz — Portfolio</title>
@@ -199,6 +199,13 @@
     <category>luis krotz</category>
     <category>luiskr.com</category>
     <category>portfólio</category>
+  </item>
+  <item>
+    <title>fim-do-axioma</title>
+    <link>https://luiskr.com/br/fim-do-axioma</link>
+    <guid isPermaLink="true">https://luiskr.com/br/fim-do-axioma</guid>
+    <dc:creator>Luis Krötz</dc:creator>
+    <description>Oi, eu sou o Luis. engenheiro de software focado em UX. Atualmente trabalho na Dell no Dell Design System .</description>
   </item>
   <item>
     <title>Busca</title>
