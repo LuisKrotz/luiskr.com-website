@@ -215,6 +215,7 @@ export function staticEntries(lang: string): RouteEntry[] {
   const about = page(CMS_KEYS.ABOUT)
   const earth = page(TRANSLATION_KEYS.EARTH_PLAYGROUND)
   const star = page(TRANSLATION_KEYS.STAR_FIELD)
+  const axioms = page(TRANSLATION_KEYS.AXIOMS_END)
   const anim = page(TRANSLATION_KEYS.ANIMATIONS)
 
   const homeTitle = String(appText(SECTION_UI_KEYS.TITLE) || CHAR_STRINGS.EMPTY)
@@ -268,6 +269,14 @@ export function staticEntries(lang: string): RouteEntry[] {
       title: String(appText(CMS_KEYS.STAR_FIELD) || slugs.starField),
       preview: star?.description || CHAR_STRINGS.EMPTY,
       keywords: [...themes(star), slugs.starField],
+      kind: ROUTE_SEARCH_KINDS.EXPERIMENT,
+      thumb: CHAR_STRINGS.EMPTY,
+    },
+    {
+      path: seg(slugs.axiomsEnd),
+      title: String(appText(CMS_KEYS.AXIOMS_END) || slugs.axiomsEnd),
+      preview: axioms?.description || CHAR_STRINGS.EMPTY,
+      keywords: [...themes(axioms), slugs.axiomsEnd],
       kind: ROUTE_SEARCH_KINDS.EXPERIMENT,
       thumb: CHAR_STRINGS.EMPTY,
     },

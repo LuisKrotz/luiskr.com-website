@@ -20,7 +20,11 @@ import { armResidualInputGuard } from '@core/utils/dom.js'
 import { joustCollapseAll } from '@core/utils/dom/joust.js'
 import store from '@core/store.js'
 import router from '@core/router/router.js'
-import { isEarthPlaygroundRoute, isStarFieldRoute } from '@core/router/playground.js'
+import {
+  isAxiomsEndRoute,
+  isEarthPlaygroundRoute,
+  isStarFieldRoute,
+} from '@core/router/playground.js'
 import { predictiveLoader } from '@core/predictive-loader.js'
 import type { MenuBackgroundWebGL } from '@core/utils/canvas/loaders/menu-background-webgl.js'
 import type { BurgerButtonWebGL } from '@core/utils/canvas/widgets/burger-button-webgl.js'
@@ -64,6 +68,7 @@ interface AppNavTranslations {
   close?: string
   earthPlayground?: string
   starField?: string
+  axiomsEnd?: string
   preferences?: string
   experiments?: string
   scrollUp?: string
@@ -182,7 +187,7 @@ export class AppNav extends BaseComponent {
    * localized slugs.
    */
   get isPlaygroundPage() {
-    return this.isEarthPlaygroundPage || this.isStarFieldPage
+    return this.isEarthPlaygroundPage || this.isStarFieldPage || this.isAxiomsEndPage
   }
 
   /** True on the earth-playground route (or its space-playground alias). */
@@ -193,6 +198,11 @@ export class AppNav extends BaseComponent {
   /** True on the star-field experiment route — same resolution order. */
   get isStarFieldPage() {
     return isStarFieldRoute(this.currentRoute?.name)
+  }
+
+  /** True on the Axiom's End experiment route — same resolution order. */
+  get isAxiomsEndPage() {
+    return isAxiomsEndRoute(this.currentRoute?.name)
   }
 
   /** Active locale code. */
