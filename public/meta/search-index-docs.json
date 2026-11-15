@@ -9260,7 +9260,7 @@
       "coverage",
       "index",
       "cms",
-      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 14t09 036z"
+      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 14t19 239z"
     ],
     "c": "docs"
   },
@@ -9975,7 +9975,7 @@
       "index",
       "cms",
       "tokens",
-      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 14t09 036z"
+      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 14t19 239z"
     ],
     "c": "docs"
   },
@@ -10169,7 +10169,7 @@
       "coverage",
       "component.ts",
       "core",
-      "code coverage report for core component summary sorter background image url sort arrow sprite png all files 100 statements 175 branches 102 functions lines 156 press the next uncovered block previous filter 101 103 104 105 106 107 108 109"
+      "code coverage report for core component summary sorter background image url sort arrow sprite png all files 100 statements 173 branches 102 functions lines 154 press the next uncovered block previous filter 101 103 104 105 106 107 108 109"
     ],
     "c": "docs"
   },
@@ -10239,7 +10239,7 @@
       "index",
       "core",
       "debug",
-      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 14t09 277z"
+      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 14t19 756z"
     ],
     "c": "docs"
   },
@@ -10266,7 +10266,7 @@
       "coverage",
       "devlog.ts",
       "core",
-      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 644x 1512x 944x 91x file description zero"
+      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 642x 1514x 946x 91x file description zero"
     ],
     "c": "docs"
   },
@@ -10305,7 +10305,7 @@
       "coverage",
       "index",
       "core",
-      "code coverage report for core summary sorter background image url sort arrow sprite png all files 100 statements 482 branches 309 functions lines 438 press the next uncovered block previous filter file component 175 102 156 devlog firebase"
+      "code coverage report for core summary sorter background image url sort arrow sprite png all files 100 statements 480 branches 309 functions lines 436 press the next uncovered block previous filter file component 173 102 154 devlog firebase"
     ],
     "c": "docs"
   },
@@ -10430,7 +10430,7 @@
       "fallback.ts",
       "core",
       "locale",
-      "code coverage report for core locale fallback summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 559x file description build time"
+      "code coverage report for core locale fallback summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 555x file description build time"
     ],
     "c": "docs"
   },
@@ -10611,7 +10611,7 @@
       "index",
       "core",
       "safari",
-      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 14t09 277z"
+      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 14t19 756z"
     ],
     "c": "docs"
   },
@@ -10813,7 +10813,7 @@
       "coverage",
       "store.ts",
       "core",
-      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 560x 4462x"
+      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 554x 4464x"
     ],
     "c": "docs"
   },
@@ -10827,7 +10827,7 @@
       "getters.ts",
       "core",
       "store",
-      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 494x 1153x 2348x 1732x 2309x"
+      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 494x 1153x 2348x 1732x 2309x"
     ],
     "c": "docs"
   },
@@ -10862,7 +10862,7 @@
       "mutations.ts",
       "core",
       "store",
-      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x file description mutation"
+      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x file description mutation"
     ],
     "c": "docs"
   },
@@ -10892,7 +10892,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 144x 40x 57x 45x file"
+      "code coverage report for core store mutations input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 144x 40x 57x 45x file"
     ],
     "c": "docs"
   },
@@ -10907,7 +10907,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 66x 1132x 55x 18x 41x"
+      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 66x 1132x 55x 18x 41x"
     ],
     "c": "docs"
   },
@@ -10922,7 +10922,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 560x 14x 11x 40x 38x 15x"
+      "code coverage report for core store mutations media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 14x 11x 40x 38x 15x"
     ],
     "c": "docs"
   },
@@ -10952,7 +10952,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 560x 182x 176x 230x 85x 73x"
+      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 554x 182x 176x 230x 85x 73x"
     ],
     "c": "docs"
   },
@@ -10995,7 +10995,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs aria summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 517x file description attribute"
+      "code coverage report for core tokens attrs aria summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 512x file description attribute"
     ],
     "c": "docs"
   },
@@ -11010,7 +11010,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 579x file description generic"
+      "code coverage report for core tokens attrs common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 576x file description generic"
     ],
     "c": "docs"
   },
@@ -11130,7 +11130,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs values summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 644x file description generic"
+      "code coverage report for core tokens attrs values summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 641x file description generic"
     ],
     "c": "docs"
   },
@@ -11180,7 +11180,7 @@
       "core",
       "tokens",
       "canvas",
-      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 14t09"
+      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 14t19"
     ],
     "c": "docs"
   },
@@ -11217,7 +11217,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes a11y summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 501x file description"
+      "code coverage report for core tokens classes a11y summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 495x file description"
     ],
     "c": "docs"
   },
@@ -11532,7 +11532,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description pages"
+      "code coverage report for core tokens classes legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 565x file description pages"
     ],
     "c": "docs"
   },
@@ -11607,7 +11607,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 571x file description"
+      "code coverage report for core tokens classes modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 567x file description"
     ],
     "c": "docs"
   },
@@ -11802,7 +11802,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 437x file description"
+      "code coverage report for core tokens classes skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
     ],
     "c": "docs"
   },
@@ -11832,7 +11832,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 652x file description global"
+      "code coverage report for core tokens classes state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 225x file description global"
     ],
     "c": "docs"
   },
@@ -12094,7 +12094,7 @@
       "core",
       "tokens",
       "css",
-      "code coverage report for core tokens css skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description field"
+      "code coverage report for core tokens css skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 365x file description field"
     ],
     "c": "docs"
   },
@@ -12124,7 +12124,7 @@
       "core",
       "tokens",
       "css",
-      "code coverage report for core tokens css theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 467x file description ink custom"
+      "code coverage report for core tokens css theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 451x file description ink custom"
     ],
     "c": "docs"
   },
@@ -12161,7 +12161,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data cms keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 494x file description"
+      "code coverage report for core tokens data cms keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 118x file description"
     ],
     "c": "docs"
   },
@@ -12176,7 +12176,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data component keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 520x file description"
+      "code coverage report for core tokens data component keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 515x file description"
     ],
     "c": "docs"
   },
@@ -12206,7 +12206,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data log summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 644x file description dev"
+      "code coverage report for core tokens data log summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 642x file description dev"
     ],
     "c": "docs"
   },
@@ -12266,7 +12266,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data search themes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 505x file description"
+      "code coverage report for core tokens data search themes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 499x file description"
     ],
     "c": "docs"
   },
@@ -12281,7 +12281,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data storage summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 592x file description"
+      "code coverage report for core tokens data storage summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 588x file description"
     ],
     "c": "docs"
   },
@@ -12311,7 +12311,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 nbsp 528x"
+      "code coverage report for core tokens data wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 nbsp 523x"
     ],
     "c": "docs"
   },
@@ -12348,7 +12348,7 @@
       "core",
       "tokens",
       "elements",
-      "code coverage report for core tokens elements components summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 573x file description"
+      "code coverage report for core tokens elements components summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description"
     ],
     "c": "docs"
   },
@@ -12363,7 +12363,7 @@
       "core",
       "tokens",
       "elements",
-      "code coverage report for core tokens elements html summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 nbsp 645x file"
+      "code coverage report for core tokens elements html summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 nbsp 644x file"
     ],
     "c": "docs"
   },
@@ -12415,7 +12415,7 @@
       "core",
       "tokens",
       "events",
-      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 464x file description custom"
+      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 446x file description custom"
     ],
     "c": "docs"
   },
@@ -12763,7 +12763,7 @@
       "locales.ts",
       "core",
       "tokens",
-      "code coverage report for core tokens locales summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description supported"
+      "code coverage report for core tokens locales summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 578x file description supported"
     ],
     "c": "docs"
   },
@@ -12785,7 +12785,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media budget summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 444x file description spend"
+      "code coverage report for core tokens media budget summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 445x file description spend"
     ],
     "c": "docs"
   },
@@ -12800,7 +12800,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media cache summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 271x file description"
+      "code coverage report for core tokens media cache summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 91x file description indexeddb"
     ],
     "c": "docs"
   },
@@ -12890,7 +12890,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media suffixes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 482x file description asset"
+      "code coverage report for core tokens media suffixes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 483x file description asset"
     ],
     "c": "docs"
   },
@@ -12905,7 +12905,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media urls summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 623x file description external"
+      "code coverage report for core tokens media urls summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 620x file description external"
     ],
     "c": "docs"
   },
@@ -13032,7 +13032,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion gpu summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 519x file description detection"
+      "code coverage report for core tokens motion gpu summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 509x file description detection"
     ],
     "c": "docs"
   },
@@ -13137,7 +13137,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion prefetch summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 496x file description"
+      "code coverage report for core tokens motion prefetch summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 488x file description"
     ],
     "c": "docs"
   },
@@ -13182,7 +13182,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description"
+      "code coverage report for core tokens motion skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
     ],
     "c": "docs"
   },
@@ -13382,7 +13382,7 @@
       "primitives.ts",
       "core",
       "tokens",
-      "code coverage report for core tokens primitives summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description primitive"
+      "code coverage report for core tokens primitives summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description primitive"
     ],
     "c": "docs"
   },
@@ -13448,7 +13448,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes names summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 577x file description route"
+      "code coverage report for core tokens routes names summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 573x file description route"
     ],
     "c": "docs"
   },
@@ -13463,7 +13463,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes paths summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 635x file description path"
+      "code coverage report for core tokens routes paths summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 631x file description path"
     ],
     "c": "docs"
   },
@@ -13493,7 +13493,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes translation keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 577x file"
+      "code coverage report for core tokens routes translation keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 573x file"
     ],
     "c": "docs"
   },
@@ -13680,7 +13680,7 @@
       "core",
       "tokens",
       "selectors",
-      "code coverage report for core tokens selectors skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description"
+      "code coverage report for core tokens selectors skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
     ],
     "c": "docs"
   },
@@ -14025,7 +14025,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings chars summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 661x file description"
+      "code coverage report for core tokens strings chars summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 659x file description"
     ],
     "c": "docs"
   },
@@ -14040,7 +14040,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings css summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 593x file description token"
+      "code coverage report for core tokens strings css summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 591x file description token"
     ],
     "c": "docs"
   },
@@ -14055,7 +14055,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 533x file description"
+      "code coverage report for core tokens strings debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 524x file description"
     ],
     "c": "docs"
   },
@@ -14085,7 +14085,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings dom summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 596x file description property"
+      "code coverage report for core tokens strings dom summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 594x file description property"
     ],
     "c": "docs"
   },
@@ -14115,7 +14115,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 585x file description"
+      "code coverage report for core tokens strings input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 583x file description"
     ],
     "c": "docs"
   },
@@ -14130,7 +14130,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings langs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description locale"
+      "code coverage report for core tokens strings langs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description locale"
     ],
     "c": "docs"
   },
@@ -14145,7 +14145,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings net summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 633x file description network"
+      "code coverage report for core tokens strings net summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 632x file description network"
     ],
     "c": "docs"
   },
@@ -14160,7 +14160,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings queries summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 604x file description"
+      "code coverage report for core tokens strings queries summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 602x file description"
     ],
     "c": "docs"
   },
@@ -14190,7 +14190,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 583x file description route"
+      "code coverage report for core tokens strings routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 581x file description route"
     ],
     "c": "docs"
   },
@@ -14205,7 +14205,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 591x file description org"
+      "code coverage report for core tokens strings schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 589x file description org"
     ],
     "c": "docs"
   },
@@ -14220,7 +14220,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 615x file description"
+      "code coverage report for core tokens strings state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 613x file description"
     ],
     "c": "docs"
   },
@@ -14235,7 +14235,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 589x file description"
+      "code coverage report for core tokens strings svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 587x file description"
     ],
     "c": "docs"
   },
@@ -14250,7 +14250,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings text summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description non"
+      "code coverage report for core tokens strings text summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description non"
     ],
     "c": "docs"
   },
@@ -14265,7 +14265,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings types summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 857x file description typeof"
+      "code coverage report for core tokens strings types summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 856x file description typeof"
     ],
     "c": "docs"
   },
@@ -14280,7 +14280,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings vendor summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 596x file description"
+      "code coverage report for core tokens strings vendor summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 594x file description"
     ],
     "c": "docs"
   },
@@ -14295,7 +14295,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 584x file description worker"
+      "code coverage report for core tokens strings wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description worker"
     ],
     "c": "docs"
   },
@@ -14310,7 +14310,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings webgl summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 632x file description"
+      "code coverage report for core tokens strings webgl summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 630x file description"
     ],
     "c": "docs"
   },
@@ -14391,7 +14391,7 @@
       "core",
       "tokens",
       "theme",
-      "code coverage report for core tokens theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description value dark"
+      "code coverage report for core tokens theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 565x file description value dark"
     ],
     "c": "docs"
   },
@@ -14643,7 +14643,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 446x 3404x 3397x 18x 3379x"
+      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 430x 3215x 3208x 18x 3190x"
     ],
     "c": "docs"
   },
@@ -14741,7 +14741,7 @@
       "utils",
       "canvas",
       "loaders",
-      "code coverage report for core utils canvas loaders summary sorter background image url sort arrow sprite png all files 100 statements 421 branches 138 functions lines 394 press the next uncovered block previous filter file intro loader 114"
+      "code coverage report for core utils canvas loaders summary sorter background image url sort arrow sprite png all files 100 statements 305 branches functions lines 286 press the next uncovered block previous filter file intro loader 114 111"
     ],
     "c": "docs"
   },
@@ -15388,7 +15388,7 @@
       "utils",
       "canvas",
       "widgets",
-      "code coverage report for core utils canvas widgets flag webgl summary sorter background image url sort arrow sprite png all files 100 statements 188 branches 106 functions lines 163 press the next uncovered block previous filter 101 102"
+      "code coverage report for core utils canvas widgets flag webgl summary sorter background image url sort arrow sprite png all files 100 statements 189 branches 106 functions lines 164 press the next uncovered block previous filter 101 102"
     ],
     "c": "docs"
   },
@@ -15456,7 +15456,7 @@
       "canvas",
       "widgets",
       "flag",
-      "code coverage report for core utils canvas widgets flag summary sorter background image url sort arrow sprite png all files 100 statements 277 branches 147 functions lines 251 press the next uncovered block previous filter file anim draw"
+      "code coverage report for core utils canvas widgets flag summary sorter background image url sort arrow sprite png all files 100 statements 279 branches 149 functions lines 253 press the next uncovered block previous filter file anim draw"
     ],
     "c": "docs"
   },
@@ -15540,7 +15540,7 @@
       "utils",
       "canvas",
       "widgets",
-      "code coverage report for core utils canvas widgets summary sorter background image url sort arrow sprite png all files 100 statements 884 branches 437 functions 136 lines 796 press the next uncovered block previous filter file burger"
+      "code coverage report for core utils canvas widgets summary sorter background image url sort arrow sprite png all files 100 statements 885 branches 437 functions 136 lines 797 press the next uncovered block previous filter file burger"
     ],
     "c": "docs"
   },
@@ -16065,7 +16065,7 @@
       "core",
       "utils",
       "gpu",
-      "code coverage report for core utils gpu summary sorter background image url sort arrow sprite png all files 100 statements 1226 branches 649 functions 177 lines 1121 press the next uncovered block previous filter file corner brackets 140"
+      "code coverage report for core utils gpu summary sorter background image url sort arrow sprite png all files 100 statements 1241 branches 652 functions 177 lines 1136 press the next uncovered block previous filter file corner brackets 140"
     ],
     "c": "docs"
   },
@@ -16155,7 +16155,7 @@
       "core",
       "utils",
       "gpu",
-      "code coverage report for core utils gpu webgpu widget summary sorter background image url sort arrow sprite png all files 100 statements 349 branches 144 functions lines 317 press the next uncovered block previous filter 101 102 103 104"
+      "code coverage report for core utils gpu webgpu widget summary sorter background image url sort arrow sprite png all files 100 statements 364 branches 147 functions lines 332 press the next uncovered block previous filter 101 102 103 104"
     ],
     "c": "docs"
   },
@@ -16225,6 +16225,21 @@
     "c": "docs"
   },
   {
+    "p": "/docs/coverage-core/core/utils/media/idle-prefetch.ts.html",
+    "t": "Idle Prefetch.ts",
+    "d": "Coverage — Core — Idle Prefetch.ts",
+    "k": [
+      "coverage-core",
+      "coverage",
+      "idle-prefetch.ts",
+      "core",
+      "utils",
+      "media",
+      "code coverage report for core utils media idle prefetch summary sorter background image url sort arrow sprite png all files 100 statements 115 branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/coverage-core/core/utils/media/index.html",
     "t": "Media",
     "d": "Coverage — Core — Media",
@@ -16235,7 +16250,7 @@
       "core",
       "utils",
       "media",
-      "code coverage report for core utils media summary sorter background image url sort arrow sprite png all files 100 statements 233 branches 185 functions lines 191 press the next uncovered block previous filter file accessibility group local"
+      "code coverage report for core utils media summary sorter background image url sort arrow sprite png all files 100 statements 348 branches 242 functions lines 288 press the next uncovered block previous filter file accessibility group idle"
     ],
     "c": "docs"
   },
@@ -16429,7 +16444,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion summary sorter background image url sort arrow sprite png all files 100 statements 308 branches 141 functions lines 267 press the next uncovered block previous filter file bezier expand spring"
+      "code coverage report for core utils motion summary sorter background image url sort arrow sprite png all files 100 statements 332 branches 155 functions lines 288 press the next uncovered block previous filter file bezier expand spring"
     ],
     "c": "docs"
   },
@@ -16494,6 +16509,21 @@
     "c": "docs"
   },
   {
+    "p": "/docs/coverage-core/core/utils/motion/skeleton-shimmer.ts.html",
+    "t": "Skeleton Shimmer.ts",
+    "d": "Coverage — Core — Skeleton Shimmer.ts",
+    "k": [
+      "coverage-core",
+      "coverage",
+      "skeleton-shimmer.ts",
+      "core",
+      "utils",
+      "motion",
+      "code coverage report for core utils motion skeleton shimmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 85x 323x 322x 230x"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/coverage-core/core/utils/motion/spring.ts.html",
     "t": "Spring.ts",
     "d": "Coverage — Core — Spring.ts",
@@ -16504,7 +16534,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2504x 1169x file"
+      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2499x 1166x file"
     ],
     "c": "docs"
   },
@@ -16594,7 +16624,7 @@
       "utils",
       "perf",
       "stats",
-      "code coverage report for core utils perf stats fps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 20x 125x 124x file"
+      "code coverage report for core utils perf stats fps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 20x 122x 121x file"
     ],
     "c": "docs"
   },
@@ -16648,7 +16678,7 @@
       "core",
       "utils",
       "print",
-      "code coverage report for core utils print summary sorter background image url sort arrow sprite png all files 100 statements 1409 branches 735 functions 141 lines 1210 press the next uncovered block previous filter file 1043 614 104 926"
+      "code coverage report for core utils print summary sorter background image url sort arrow sprite png all files 100 statements 1356 branches 702 functions 135 lines 1165 press the next uncovered block previous filter file 1005 587 101 894"
     ],
     "c": "docs"
   },
@@ -16663,7 +16693,7 @@
       "core",
       "utils",
       "print",
-      "code coverage report for core utils print summary sorter background image url sort arrow sprite png all files 100 statements 1043 branches 614 functions 104 lines 926 press the next uncovered block previous filter 101 102 103 105 106 107"
+      "code coverage report for core utils print summary sorter background image url sort arrow sprite png all files 100 statements 1005 branches 587 functions 101 lines 894 press the next uncovered block previous filter 102 103 104 105 106 107"
     ],
     "c": "docs"
   },
@@ -16958,7 +16988,7 @@
       "coverage-core",
       "coverage",
       "index",
-      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 10859 branches 5931 functions 1492 lines 9739 press the next uncovered block previous filter file core 482 309 438 browser debug"
+      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 10563 branches 5746 functions 1455 lines 9468 press the next uncovered block previous filter file core 480 309 436 browser debug"
     ],
     "c": "docs"
   },
@@ -21895,7 +21925,7 @@
       "index",
       "views",
       "animations",
-      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09"
+      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19"
     ],
     "c": "docs"
   },
@@ -22035,7 +22065,7 @@
       "index",
       "views",
       "legal",
-      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09 803z"
+      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19 083z"
     ],
     "c": "docs"
   },
@@ -22224,7 +22254,7 @@
       "index",
       "views",
       "search",
-      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t09 803z"
+      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19 083z"
     ],
     "c": "docs"
   },
@@ -28784,66 +28814,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/api/core/utils/canvas/loaders/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton-webgl.md",
-    "t": "Skeleton Webgl.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton-webgl.md",
-      "/docs/docs/api/core/utils/canvas/loaders/skeleton-webgl.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/init.md",
-    "t": "Init.md",
-    "d": "",
-    "k": ["docs", "init.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/init.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/loop.md",
-    "t": "Loop.md",
-    "d": "",
-    "k": ["docs", "loop.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/loop.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/measure.md",
-    "t": "Measure.md",
-    "d": "",
-    "k": ["docs", "measure.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/measure.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/renderer.md",
-    "t": "Renderer.md",
-    "d": "",
-    "k": ["docs", "renderer.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/renderer.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/shaders.md",
-    "t": "Shaders.md",
-    "d": "",
-    "k": ["docs", "shaders.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/shaders.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/canvas/loaders/skeleton/theme.md",
-    "t": "Theme.md",
-    "d": "",
-    "k": ["docs", "theme.md", "/docs/docs/api/core/utils/canvas/loaders/skeleton/theme.md"],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/api/core/utils/canvas/webgl-mode.md",
     "t": "Webgl Mode",
     "d": "Documentation — Webgl Mode",
@@ -29820,6 +29790,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/api/core/utils/media/idle-prefetch.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "idle-prefetch",
+      "api",
+      "core",
+      "utils",
+      "media",
+      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/api/core/utils/media/local-media-cache.md",
     "t": "Local Media Cache",
     "d": "Documentation — Local Media Cache",
@@ -30058,6 +30044,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/api/core/utils/motion/skeleton-shimmer.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-shimmer",
+      "api",
+      "core",
+      "utils",
+      "motion",
+      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/api/core/utils/motion/spring.md",
     "t": "Spring",
     "d": "Documentation — Spring",
@@ -30206,13 +30208,6 @@
       "print",
       "core utils print members max_version byte_mode count_bits_short pad_a gf_poly format_poly version_poly mask_count quiet penalty_n1_run penalty_n3_pat ecc_per_block_m blocks_m align_positions rawmodules datacodewords pickversion pushbits"
     ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/print/warm-bridge.md",
-    "t": "Warm Bridge.md",
-    "d": "",
-    "k": ["docs", "warm-bridge.md", "/docs/docs/api/core/utils/print/warm-bridge.md"],
     "c": "docs"
   },
   {
@@ -34114,6 +34109,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/api/shared/scripts/verify/skeleton-geometry.md",
+    "t": "Skeleton Geometry",
+    "d": "Documentation — Skeleton Geometry",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-geometry",
+      "api",
+      "shared",
+      "scripts",
+      "verify",
+      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/api/shared/scripts/verify/test-lighthouse.md",
     "t": "Test Lighthouse",
     "d": "Documentation — Test Lighthouse",
@@ -37201,24 +37212,6 @@
       "wasm",
       "scene3d",
       "website public wasm scene3d luiskr_scene3d source src surface boot surfaces what the user sees first each bundle"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/website/public/wasm/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/api/website/public/wasm/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/website/public/wasm/skeleton/luiskr_skeleton.md",
-    "t": "Luiskr_skeleton.md",
-    "d": "",
-    "k": [
-      "docs",
-      "luiskr_skeleton.md",
-      "/docs/docs/api/website/public/wasm/skeleton/luiskr_skeleton.md"
     ],
     "c": "docs"
   },
@@ -43872,70 +43865,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton-webgl.md",
-    "t": "Skeleton Webgl.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton-webgl.md",
-      "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton-webgl.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/init.md",
-    "t": "Init.md",
-    "d": "",
-    "k": ["docs", "init.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/init.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/loop.md",
-    "t": "Loop.md",
-    "d": "",
-    "k": ["docs", "loop.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/loop.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/measure.md",
-    "t": "Measure.md",
-    "d": "",
-    "k": ["docs", "measure.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/measure.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/renderer.md",
-    "t": "Renderer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "renderer.md",
-      "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/renderer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/shaders.md",
-    "t": "Shaders.md",
-    "d": "",
-    "k": ["docs", "shaders.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/shaders.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/theme.md",
-    "t": "Theme.md",
-    "d": "",
-    "k": ["docs", "theme.md", "/docs/docs/jsdocs/core/utils/canvas/loaders/skeleton/theme.md"],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/jsdocs/core/utils/canvas/webgl-mode.md",
     "t": "Webgl Mode",
     "d": "Documentation — Webgl Mode",
@@ -44912,6 +44841,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/jsdocs/core/utils/media/idle-prefetch.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "idle-prefetch",
+      "jsdocs",
+      "core",
+      "utils",
+      "media",
+      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/jsdocs/core/utils/media/local-media-cache.md",
     "t": "Local Media Cache",
     "d": "Documentation — Local Media Cache",
@@ -45150,6 +45095,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/jsdocs/core/utils/motion/skeleton-shimmer.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-shimmer",
+      "jsdocs",
+      "core",
+      "utils",
+      "motion",
+      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/jsdocs/core/utils/motion/spring.md",
     "t": "Spring",
     "d": "Documentation — Spring",
@@ -45298,13 +45259,6 @@
       "print",
       "core utils print members max_version byte_mode count_bits_short pad_a gf_poly format_poly version_poly mask_count quiet penalty_n1_run penalty_n3_pat ecc_per_block_m blocks_m align_positions rawmodules datacodewords pickversion pushbits"
     ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/print/warm-bridge.md",
-    "t": "Warm Bridge.md",
-    "d": "",
-    "k": ["docs", "warm-bridge.md", "/docs/docs/jsdocs/core/utils/print/warm-bridge.md"],
     "c": "docs"
   },
   {
@@ -49210,6 +49164,22 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/jsdocs/shared/scripts/verify/skeleton-geometry.md",
+    "t": "Skeleton Geometry",
+    "d": "Documentation — Skeleton Geometry",
+    "k": [
+      "docs",
+      "docs",
+      "skeleton-geometry",
+      "jsdocs",
+      "shared",
+      "scripts",
+      "verify",
+      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/jsdocs/shared/scripts/verify/test-lighthouse.md",
     "t": "Test Lighthouse",
     "d": "Documentation — Test Lighthouse",
@@ -52305,24 +52275,6 @@
       "wasm",
       "scene3d",
       "website public wasm scene3d luiskr_scene3d source src surface boot surfaces what the user sees first each bundle"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/website/public/wasm/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/jsdocs/website/public/wasm/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/website/public/wasm/skeleton/luiskr_skeleton.md",
-    "t": "Luiskr_skeleton.md",
-    "d": "",
-    "k": [
-      "docs",
-      "luiskr_skeleton.md",
-      "/docs/docs/jsdocs/website/public/wasm/skeleton/luiskr_skeleton.md"
     ],
     "c": "docs"
   },
@@ -60685,7 +60637,7 @@
       "patches",
       "carousel-media",
       "functions",
-      "parameters returns luiskr com readme core safari patches carousel media iscarouselhosted function boolean defined whether figure hosted inside the shadow root owned slide element node own tree and host safaripatchableel types interfaces"
+      "parameters returns luiskr com readme core safari patches carousel media iscarouselhosted function boolean defined whether figure hosted inside the shadow root owned slide _element node own tree and host element safaripatchableel types"
     ],
     "c": "docs"
   },
@@ -70930,6 +70882,24 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/typedoc/core/tokens/media/cache/variables/IDLE_PREFETCH.md",
+    "t": "IDLE_PREFETCH",
+    "d": "Documentation — IDLE_PREFETCH",
+    "k": [
+      "docs",
+      "docs",
+      "idle_prefetch",
+      "typedoc",
+      "core",
+      "tokens",
+      "media",
+      "cache",
+      "variables",
+      "luiskr com readme core tokens media cache idle _prefetch const idle_prefetch readonly concurrency arm_delay_ms 1200 mode_no_cors cors credentials_omit omit connection_save_data savedata connection_effective_type effectivetype"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/typedoc/core/tokens/media/credits",
     "t": "Credits",
     "d": "",
@@ -72774,17 +72744,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_GLYPH.md",
-    "t": "SKELETON_GLYPH.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SKELETON_GLYPH.md",
-      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_GLYPH.md"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_MOSAIC.md",
     "t": "SKELETON_MOSAIC",
     "d": "Documentation — SKELETON_MOSAIC",
@@ -72803,17 +72762,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RENDER.md",
-    "t": "SKELETON_RENDER.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SKELETON_RENDER.md",
-      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RENDER.md"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_RESOLVE.md",
     "t": "SKELETON_RESOLVE",
     "d": "Documentation — SKELETON_RESOLVE",
@@ -72828,17 +72776,6 @@
       "skeleton",
       "variables",
       "luiskr com readme core tokens motion skeleton _resolve const skeleton_resolve readonly resolve_duration 480 defined frozen map sole declaration site for these consumers read members and never declare the strings zero hardcoding rules"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_WARN.md",
-    "t": "SKELETON_WARN.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SKELETON_WARN.md",
-      "/docs/docs/typedoc/core/tokens/motion/skeleton/variables/SKELETON_WARN.md"
     ],
     "c": "docs"
   },
@@ -79181,7 +79118,7 @@
       "burn",
       "types",
       "interfaces",
-      "methods type parameters sel returns luiskr com readme core utils burn types burnhost defined minimal host contract the shadow root selector query method null queries for first match extends element string"
+      "methods type parameters sel returns luiskr com readme core utils burn types burnhost defined minimal host contract the shadow root selector query method null queries for first match _extends_ element string"
     ],
     "c": "docs"
   },
@@ -81105,421 +81042,6 @@
       "theme",
       "functions",
       "parameters host returns luiskr com readme core utils canvas loaders page backdrop theme sampletheme function boolean defined samples the palette into uniform buffers _base receives primary _colors seven field hues field_css_prop_list order"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl",
-    "t": "Skeleton Webgl",
-    "d": "",
-    "k": ["docs", "skeleton-webgl", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes",
-    "t": "Classes",
-    "d": "",
-    "k": ["docs", "classes", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes/SkeletonWebGL.md",
-    "t": "SkeletonWebGL.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SkeletonWebGL.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/classes/SkeletonWebGL.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/destroySkeletonLayer.md",
-    "t": "DestroySkeletonLayer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "destroySkeletonLayer.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/destroySkeletonLayer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/syncSkeletonLayer.md",
-    "t": "SyncSkeletonLayer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "syncSkeletonLayer.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/functions/syncSkeletonLayer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces",
-    "t": "Interfaces",
-    "d": "",
-    "k": [
-      "docs",
-      "interfaces",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelRect.md",
-    "t": "SkelRect.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SkelRect.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelRect.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelStyle.md",
-    "t": "SkelStyle.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SkelStyle.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton-webgl/interfaces/SkelStyle.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init",
-    "t": "Init",
-    "d": "",
-    "k": ["docs", "init", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions/init.md",
-    "t": "Init.md",
-    "d": "",
-    "k": [
-      "docs",
-      "init.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/init/functions/init.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop",
-    "t": "Loop",
-    "d": "",
-    "k": ["docs", "loop", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/loop.md",
-    "t": "Loop.md",
-    "d": "",
-    "k": [
-      "docs",
-      "loop.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/loop.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/render.md",
-    "t": "Render.md",
-    "d": "",
-    "k": [
-      "docs",
-      "render.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/render.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/resolve.md",
-    "t": "Resolve.md",
-    "d": "",
-    "k": [
-      "docs",
-      "resolve.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/resolve.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/upload.md",
-    "t": "Upload.md",
-    "d": "",
-    "k": [
-      "docs",
-      "upload.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/loop/functions/upload.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure",
-    "t": "Measure",
-    "d": "",
-    "k": ["docs", "measure", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions/measureSkeleton.md",
-    "t": "MeasureSkeleton.md",
-    "d": "",
-    "k": [
-      "docs",
-      "measureSkeleton.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/measure/functions/measureSkeleton.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer",
-    "t": "Renderer",
-    "d": "",
-    "k": ["docs", "renderer", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes",
-    "t": "Classes",
-    "d": "",
-    "k": [
-      "docs",
-      "classes",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes/SkeletonRenderer.md",
-    "t": "SkeletonRenderer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SkeletonRenderer.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/classes/SkeletonRenderer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables",
-    "t": "Variables",
-    "d": "",
-    "k": [
-      "docs",
-      "variables",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables/skeletonRenderer.md",
-    "t": "SkeletonRenderer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeletonRenderer.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/renderer/variables/skeletonRenderer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders",
-    "t": "Shaders",
-    "d": "",
-    "k": ["docs", "shaders", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables",
-    "t": "Variables",
-    "d": "",
-    "k": [
-      "docs",
-      "variables",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_FS.md",
-    "t": "SKELETON_FS.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SKELETON_FS.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_FS.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_VS.md",
-    "t": "SKELETON_VS.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SKELETON_VS.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/shaders/variables/SKELETON_VS.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme",
-    "t": "Theme",
-    "d": "",
-    "k": ["docs", "theme", "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions/sampleTheme.md",
-    "t": "SampleTheme.md",
-    "d": "",
-    "k": [
-      "docs",
-      "sampleTheme.md",
-      "/docs/docs/typedoc/core/utils/canvas/loaders/skeleton/theme/functions/sampleTheme.md"
     ],
     "c": "docs"
   },
@@ -86232,17 +85754,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/warmWidgetArtifacts.md",
-    "t": "WarmWidgetArtifacts.md",
-    "d": "",
-    "k": [
-      "docs",
-      "warmWidgetArtifacts.md",
-      "/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/warmWidgetArtifacts.md"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/typedoc/core/utils/gpu/webgpu-widget/functions/webgpuWidgetsEnabled.md",
     "t": "WebgpuWidgetsEnabled",
     "d": "Documentation — WebgpuWidgetsEnabled",
@@ -86733,6 +86244,91 @@
       "group",
       "functions",
       "parameters itemclass returns luiskr com readme core utils media group stripheroslotclasses function string defined the cms class list minus hero slot tokens slide mosaic tile built from cover inherits item raw unchanged forwarded onto its"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch",
+    "t": "Idle Prefetch",
+    "d": "",
+    "k": ["docs", "idle-prefetch", "/docs/docs/typedoc/core/utils/media/idle-prefetch"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/README.md",
+    "t": "Idle Prefetch",
+    "d": "Documentation — Idle Prefetch",
+    "k": [
+      "docs",
+      "docs",
+      "readme",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions luiskr com readme core utils media idle prefetch initidleprefetch destroyidleprefetch _resetidleprefetch resetidleprefetch"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions",
+    "t": "Functions",
+    "d": "",
+    "k": ["docs", "functions", "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/destroyIdlePrefetch.md",
+    "t": "DestroyIdlePrefetch",
+    "d": "Documentation — DestroyIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "destroyidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch destroyidleprefetch function void defined 261 detaches the listener and aborts any flight cycle exported for test teardown warm can outlive its suite"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/initIdlePrefetch.md",
+    "t": "InitIdlePrefetch",
+    "d": "Documentation — InitIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "initidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch initidleprefetch function void defined 250 arms the background listener call once boot deferred off critical path idempotent repeated calls are"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/resetIdlePrefetch.md",
+    "t": "ResetIdlePrefetch",
+    "d": "Documentation — ResetIdlePrefetch",
+    "k": [
+      "docs",
+      "docs",
+      "resetidleprefetch",
+      "typedoc",
+      "core",
+      "utils",
+      "media",
+      "idle-prefetch",
+      "functions",
+      "returns luiskr com readme core utils media idle prefetch _resetidleprefetch function void defined 277 test seam clears the warm queue bookkeeping suite can drive multiple hide show cycles without cross bleed"
     ],
     "c": "docs"
   },
@@ -88042,6 +87638,73 @@
     "c": "docs"
   },
   {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer",
+    "t": "Skeleton Shimmer",
+    "d": "",
+    "k": ["docs", "skeleton-shimmer", "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/README.md",
+    "t": "Skeleton Shimmer",
+    "d": "Documentation — Skeleton Shimmer",
+    "k": [
+      "docs",
+      "docs",
+      "readme",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer destroyskeletonshimmer"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions",
+    "t": "Functions",
+    "d": "",
+    "k": ["docs", "functions", "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/destroySkeletonShimmer.md",
+    "t": "DestroySkeletonShimmer",
+    "d": "Documentation — DestroySkeletonShimmer",
+    "k": [
+      "docs",
+      "docs",
+      "destroyskeletonshimmer",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions",
+      "parameters component returns luiskr com readme core utils motion skeleton shimmer destroyskeletonshimmer function void defined unmount teardown cancels pending content cleanup and drops the record resolve out host going away fade would"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/syncSkeletonShimmer.md",
+    "t": "SyncSkeletonShimmer",
+    "d": "Documentation — SyncSkeletonShimmer",
+    "k": [
+      "docs",
+      "docs",
+      "syncskeletonshimmer",
+      "typedoc",
+      "core",
+      "utils",
+      "motion",
+      "skeleton-shimmer",
+      "functions",
+      "parameters component returns luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer function void defined keeps sync with its rendered content call from connectedcallback after the render lands while placeholders exist"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/docs/typedoc/core/utils/motion/spring",
     "t": "Spring",
     "d": "",
@@ -88600,7 +88263,7 @@
       "print",
       "print",
       "functions",
-      "returns luiskr com readme core utils print initprintsupport function void defined 3187 installs the hooks once native before afterprint pair plus matchmedia change channel some engines skip events but always flip media query both paths"
+      "returns luiskr com readme core utils print initprintsupport function void defined 3153 installs the hooks once native before afterprint pair plus matchmedia change channel some engines skip events but always flip media query both paths"
     ],
     "c": "docs"
   },
@@ -88618,7 +88281,7 @@
       "print",
       "print",
       "functions",
-      "returns luiskr com readme core utils print printjobactive function boolean defined 3178 true while job owns the document set prepprint stamp and held through exit restore screen time dom publishers figure ladder publishes deferred layer"
+      "returns luiskr com readme core utils print printjobactive function boolean defined 3144 true while job owns the document set prepprint stamp and held through exit restore screen time dom publishers figure ladder publishes deferred layer"
     ],
     "c": "docs"
   },
@@ -88636,7 +88299,7 @@
       "print",
       "print",
       "functions",
-      "parameters job returns luiskr com readme core utils print trackprintjob function void defined 3155 registers async composition work fired printprepare listener dossier fetches generated mirror syncs injected dom builds whose nodes the walk"
+      "parameters job returns luiskr com readme core utils print trackprintjob function void defined 3121 registers async composition work fired printprepare listener dossier fetches generated mirror syncs injected dom builds whose nodes the walk"
     ],
     "c": "docs"
   },
@@ -88654,7 +88317,7 @@
       "print",
       "print",
       "functions",
-      "parameters returns luiskr com readme core utils print trackprintnode function void defined 3165 registers listener injected node for the exit teardown same fate adapter own copies and covers removed when job ends screen state restores"
+      "parameters returns luiskr com readme core utils print trackprintnode function void defined 3131 registers listener injected node for the exit teardown same fate adapter own copies and covers removed when job ends screen state restores"
     ],
     "c": "docs"
   },
@@ -88722,49 +88385,6 @@
       "qr",
       "functions",
       "parameters text returns luiskr com readme core utils print qrsvg function svgsvgelement null defined 681 time element svg path pair drawn currentcolor the code inherits document ink paper adjacent dark modules row merge into single runs"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/print/warm-bridge",
-    "t": "Warm Bridge",
-    "d": "",
-    "k": ["docs", "warm-bridge", "/docs/docs/typedoc/core/utils/print/warm-bridge"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": ["docs", "README.md", "/docs/docs/typedoc/core/utils/print/warm-bridge/README.md"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/functions",
-    "t": "Functions",
-    "d": "",
-    "k": ["docs", "functions", "/docs/docs/typedoc/core/utils/print/warm-bridge/functions"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/bindPrintWarm.md",
-    "t": "BindPrintWarm.md",
-    "d": "",
-    "k": [
-      "docs",
-      "bindPrintWarm.md",
-      "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/bindPrintWarm.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/installPrintWarm.md",
-    "t": "InstallPrintWarm.md",
-    "d": "",
-    "k": [
-      "docs",
-      "installPrintWarm.md",
-      "/docs/docs/typedoc/core/utils/print/warm-bridge/functions/installPrintWarm.md"
     ],
     "c": "docs"
   },
@@ -101578,7 +101198,7 @@
       "src",
       "main",
       "variables",
-      "luiskr com readme shared src main bootpromise const promise void defined 301 boot resolves once the full start sequence safari lazy chunk router init mount retry arming has run tests await this async work never continues past test boundary"
+      "luiskr com readme shared src main bootpromise const promise void defined 302 boot resolves once the full start sequence safari lazy chunk router init mount retry arming has run tests await this async work never continues past test boundary"
     ],
     "c": "docs"
   },
@@ -123599,321 +123219,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton",
-    "t": "Skeleton",
-    "d": "",
-    "k": ["docs", "skeleton", "/docs/docs/typedoc/website/public/wasm/skeleton"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton",
-    "t": "Luiskr_skeleton",
-    "d": "",
-    "k": [
-      "docs",
-      "luiskr_skeleton",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes",
-    "t": "Classes",
-    "d": "",
-    "k": [
-      "docs",
-      "classes",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes/Skeleton.md",
-    "t": "Skeleton.md",
-    "d": "",
-    "k": [
-      "docs",
-      "Skeleton.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/classes/Skeleton.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions",
-    "t": "Functions",
-    "d": "",
-    "k": [
-      "docs",
-      "functions",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/default.md",
-    "t": "Default.md",
-    "d": "",
-    "k": [
-      "docs",
-      "default.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/default.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/initSync.md",
-    "t": "InitSync.md",
-    "d": "",
-    "k": [
-      "docs",
-      "initSync.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/functions/initSync.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces",
-    "t": "Interfaces",
-    "d": "",
-    "k": [
-      "docs",
-      "interfaces",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces/InitOutput.md",
-    "t": "InitOutput.md",
-    "d": "",
-    "k": [
-      "docs",
-      "InitOutput.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/interfaces/InitOutput.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases",
-    "t": "Type Aliases",
-    "d": "",
-    "k": [
-      "docs",
-      "type-aliases",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/InitInput.md",
-    "t": "InitInput.md",
-    "d": "",
-    "k": [
-      "docs",
-      "InitInput.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/InitInput.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/SyncInitInput.md",
-    "t": "SyncInitInput.md",
-    "d": "",
-    "k": [
-      "docs",
-      "SyncInitInput.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton/type-aliases/SyncInitInput.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm",
-    "t": "Luiskr_skeleton_bg.wasm",
-    "d": "",
-    "k": [
-      "docs",
-      "luiskr_skeleton_bg.wasm",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/README.md",
-    "t": "README.md",
-    "d": "",
-    "k": [
-      "docs",
-      "README.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/README.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables",
-    "t": "Variables",
-    "d": "",
-    "k": [
-      "docs",
-      "variables",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/memory.md",
-    "t": "Memory.md",
-    "d": "",
-    "k": [
-      "docs",
-      "memory.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/memory.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_frame.md",
-    "t": "Skeleton_frame.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_frame.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_frame.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_init.md",
-    "t": "Skeleton_init.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_init.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_init.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_new.md",
-    "t": "Skeleton_new.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_new.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_new.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_resize.md",
-    "t": "Skeleton_resize.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_resize.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_resize.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_size.md",
-    "t": "Skeleton_set_size.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_set_size.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_size.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_state.md",
-    "t": "Skeleton_set_state.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_set_state.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_set_state.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_write_sheet.md",
-    "t": "Skeleton_write_sheet.md",
-    "d": "",
-    "k": [
-      "docs",
-      "skeleton_write_sheet.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/skeleton_write_sheet.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbg_skeleton_free.md",
-    "t": "Wbg_skeleton_free.md",
-    "d": "",
-    "k": [
-      "docs",
-      "wbg_skeleton_free.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbg_skeleton_free.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_add_to_stack_pointer.md",
-    "t": "Wbindgen_add_to_stack_pointer.md",
-    "d": "",
-    "k": [
-      "docs",
-      "wbindgen_add_to_stack_pointer.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_add_to_stack_pointer.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export.md",
-    "t": "Wbindgen_export.md",
-    "d": "",
-    "k": [
-      "docs",
-      "wbindgen_export.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export2.md",
-    "t": "Wbindgen_export2.md",
-    "d": "",
-    "k": [
-      "docs",
-      "wbindgen_export2.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export2.md"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export3.md",
-    "t": "Wbindgen_export3.md",
-    "d": "",
-    "k": [
-      "docs",
-      "wbindgen_export3.md",
-      "/docs/docs/typedoc/website/public/wasm/skeleton/luiskr_skeleton_bg.wasm/variables/wbindgen_export3.md"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs/typedoc/website/public/wasm/switch-slider",
     "t": "Switch Slider",
     "d": "",
@@ -125624,7 +124929,7 @@
       "home",
       "data",
       "functions",
-      "parameters view returns luiskr com readme website views home data onhomestoreupdate function void defined 223 store change reload all locale switch viewhome classes"
+      "parameters view returns luiskr com readme website views home data onhomestoreupdate function void defined 219 store change reload all locale switch viewhome classes"
     ],
     "c": "docs"
   },
@@ -128077,6 +127382,18 @@
       "source",
       "readme",
       "shared what inside src the application shell source map build vite plugin machinery docs portal pipeline scripts workspace toolchain verification verify tests test generation i18n media convert orchestration local modules security hardened"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/shared/SECURITY.md",
+    "t": "SECURITY",
+    "d": "Shared Module — SECURITY",
+    "k": [
+      "shared",
+      "source",
+      "security",
+      "security policy supported versions reporting vulnerability use this section tell people about which your project are currently being with updates version white_check_mark how report them where often they can expect get update reported what"
     ],
     "c": "docs"
   },
@@ -131230,6 +130547,18 @@
       "source",
       "readme",
       "luiskr com website how page made views the routed surface home landing project portfolio detail legal not found components presentational layer nav top bar dialogs two modals sections media pipeline carousel carousels feedback root files"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/website/SECURITY.md",
+    "t": "SECURITY",
+    "d": "Website Module — SECURITY",
+    "k": [
+      "website",
+      "source",
+      "security",
+      "security policy supported versions reporting vulnerability use this section tell people about which your project are currently being with updates version white_check_mark how report them where often they can expect get update reported what"
     ],
     "c": "docs"
   },
@@ -137501,244 +136830,6 @@
       "source",
       "vite.config",
       "istanbul ignore file build time vite config only consumed the bundler never exercised tests website description library for module public site views home legal not found project and every component they mount emits dist core sibling"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/media/idle-prefetch.md",
-    "t": "Idle Prefetch",
-    "d": "Documentation — Idle Prefetch",
-    "k": [
-      "docs",
-      "docs",
-      "idle-prefetch",
-      "api",
-      "core",
-      "utils",
-      "media",
-      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/core/utils/motion/skeleton-shimmer.md",
-    "t": "Skeleton Shimmer",
-    "d": "Documentation — Skeleton Shimmer",
-    "k": [
-      "docs",
-      "docs",
-      "skeleton-shimmer",
-      "api",
-      "core",
-      "utils",
-      "motion",
-      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/shared/scripts/verify/skeleton-geometry.md",
-    "t": "Skeleton Geometry",
-    "d": "Documentation — Skeleton Geometry",
-    "k": [
-      "docs",
-      "docs",
-      "skeleton-geometry",
-      "api",
-      "shared",
-      "scripts",
-      "verify",
-      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/media/idle-prefetch.md",
-    "t": "Idle Prefetch",
-    "d": "Documentation — Idle Prefetch",
-    "k": [
-      "docs",
-      "docs",
-      "idle-prefetch",
-      "jsdocs",
-      "core",
-      "utils",
-      "media",
-      "core utils media idle prefetch members armed running cycle armtimer done queue queued onvisibility arm abortcycle networktooexpensive collectcdnurls expandvariants enqueue startcycle initidleprefetch destroyidleprefetch _resetidleprefetch"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/core/utils/motion/skeleton-shimmer.md",
-    "t": "Skeleton Shimmer",
-    "d": "Documentation — Skeleton Shimmer",
-    "k": [
-      "docs",
-      "docs",
-      "skeleton-shimmer",
-      "jsdocs",
-      "core",
-      "utils",
-      "motion",
-      "core utils motion skeleton shimmer members module scope had timer _shimmerstate syncskeletonshimmer destroyskeletonshimmer component level sync the css only source src surface shared primitives every builds direct per bookkeeping whether"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/shared/scripts/verify/skeleton-geometry.md",
-    "t": "Skeleton Geometry",
-    "d": "Documentation — Skeleton Geometry",
-    "k": [
-      "docs",
-      "docs",
-      "skeleton-geometry",
-      "jsdocs",
-      "shared",
-      "scripts",
-      "verify",
-      "shared scripts verify skeleton geometry mjs members structural_skeleton_classes variable_height_layout_classes resolvechrome portfolio default_routes default_viewports all_viewports customviewports tol skeleton_wait data_re routeslug"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/tokens/media/cache/variables/IDLE_PREFETCH.md",
-    "t": "IDLE_PREFETCH",
-    "d": "Documentation — IDLE_PREFETCH",
-    "k": [
-      "docs",
-      "docs",
-      "idle_prefetch",
-      "typedoc",
-      "core",
-      "tokens",
-      "media",
-      "cache",
-      "variables",
-      "luiskr com readme core tokens media cache idle _prefetch const idle_prefetch readonly concurrency arm_delay_ms 1200 mode_no_cors cors credentials_omit omit connection_save_data savedata connection_effective_type effectivetype"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/destroyIdlePrefetch.md",
-    "t": "DestroyIdlePrefetch",
-    "d": "Documentation — DestroyIdlePrefetch",
-    "k": [
-      "docs",
-      "docs",
-      "destroyidleprefetch",
-      "typedoc",
-      "core",
-      "utils",
-      "media",
-      "idle-prefetch",
-      "functions",
-      "returns luiskr com readme core utils media idle prefetch destroyidleprefetch function void defined 261 detaches the listener and aborts any flight cycle exported for test teardown warm can outlive its suite"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/initIdlePrefetch.md",
-    "t": "InitIdlePrefetch",
-    "d": "Documentation — InitIdlePrefetch",
-    "k": [
-      "docs",
-      "docs",
-      "initidleprefetch",
-      "typedoc",
-      "core",
-      "utils",
-      "media",
-      "idle-prefetch",
-      "functions",
-      "returns luiskr com readme core utils media idle prefetch initidleprefetch function void defined 250 arms the background listener call once boot deferred off critical path idempotent repeated calls are"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/functions/resetIdlePrefetch.md",
-    "t": "ResetIdlePrefetch",
-    "d": "Documentation — ResetIdlePrefetch",
-    "k": [
-      "docs",
-      "docs",
-      "resetidleprefetch",
-      "typedoc",
-      "core",
-      "utils",
-      "media",
-      "idle-prefetch",
-      "functions",
-      "returns luiskr com readme core utils media idle prefetch _resetidleprefetch function void defined 277 test seam clears the warm queue bookkeeping suite can drive multiple hide show cycles without cross bleed"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/media/idle-prefetch/README.md",
-    "t": "Idle Prefetch",
-    "d": "Documentation — Idle Prefetch",
-    "k": [
-      "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "media",
-      "idle-prefetch",
-      "functions luiskr com readme core utils media idle prefetch initidleprefetch destroyidleprefetch _resetidleprefetch resetidleprefetch"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/destroySkeletonShimmer.md",
-    "t": "DestroySkeletonShimmer",
-    "d": "Documentation — DestroySkeletonShimmer",
-    "k": [
-      "docs",
-      "docs",
-      "destroyskeletonshimmer",
-      "typedoc",
-      "core",
-      "utils",
-      "motion",
-      "skeleton-shimmer",
-      "functions",
-      "parameters component returns luiskr com readme core utils motion skeleton shimmer destroyskeletonshimmer function void defined unmount teardown cancels pending content cleanup and drops the record resolve out host going away fade would"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/functions/syncSkeletonShimmer.md",
-    "t": "SyncSkeletonShimmer",
-    "d": "Documentation — SyncSkeletonShimmer",
-    "k": [
-      "docs",
-      "docs",
-      "syncskeletonshimmer",
-      "typedoc",
-      "core",
-      "utils",
-      "motion",
-      "skeleton-shimmer",
-      "functions",
-      "parameters component returns luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer function void defined keeps sync with its rendered content call from connectedcallback after the render lands while placeholders exist"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/README.md",
-    "t": "Skeleton Shimmer",
-    "d": "Documentation — Skeleton Shimmer",
-    "k": [
-      "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "core",
-      "utils",
-      "motion",
-      "skeleton-shimmer",
-      "functions luiskr com readme core utils motion skeleton shimmer syncskeletonshimmer destroyskeletonshimmer"
     ],
     "c": "docs"
   }

@@ -61332,6 +61332,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/shared/SECURITY.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/shared/build</loc>
     <priority>0.7</priority>
   </url>
@@ -62349,6 +62353,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/website/README.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/website/SECURITY.md</loc>
     <priority>0.7</priority>
   </url>
   <url>

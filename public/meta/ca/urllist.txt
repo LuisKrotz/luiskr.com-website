@@ -9634,6 +9634,7 @@ https://luiskr.com/docs/reports/gate-result.json
 https://luiskr.com/docs/reports/snyk-report.json
 https://luiskr.com/docs/shared
 https://luiskr.com/docs/shared/README.md
+https://luiskr.com/docs/shared/SECURITY.md
 https://luiskr.com/docs/shared/build
 https://luiskr.com/docs/shared/build/css-classes.mjs
 https://luiskr.com/docs/shared/build/css-split.mjs
@@ -9889,6 +9890,7 @@ https://luiskr.com/docs/starfield/tsconfig.json
 https://luiskr.com/docs/starfield/vite.config.js
 https://luiskr.com/docs/website
 https://luiskr.com/docs/website/README.md
+https://luiskr.com/docs/website/SECURITY.md
 https://luiskr.com/docs/website/components
 https://luiskr.com/docs/website/components/carousel
 https://luiskr.com/docs/website/components/carousel/AwardsCarousel.tsx
