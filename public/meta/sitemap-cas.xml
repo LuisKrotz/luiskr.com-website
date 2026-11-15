@@ -26208,6 +26208,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/core/sass/base/_membrane.scss</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/core/sass/base/_mixins.scss</loc>
     <priority>0.7</priority>
   </url>
@@ -30672,14 +30676,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/coverage-docs/arch-scene-3d.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-docs/arch-scene.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/coverage-docs/base.css</loc>
     <priority>0.7</priority>
   </url>
@@ -32336,14 +32332,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs-exp/arch-scene-3d.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs-exp/arch-scene.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs-exp/copy-guard.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -32381,10 +32369,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs-exp/docs/_loader.scss</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs-exp/docs/_map.scss</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -34581,14 +34565,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/experiments/docs/Docs.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/experiments/docs/arch-scene-3d.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/experiments/docs/arch-scene.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -38721,14 +38697,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/experiments/docs/Docs.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/experiments/docs/arch-scene-3d.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/experiments/docs/arch-scene.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -51148,6 +51116,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/service-worker/functions/isLocalhost.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/service-worker/functions/registerSiteServiceWorker.md</loc>
     <priority>0.7</priority>
   </url>
@@ -51557,142 +51529,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/buildEdges.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/mountArchScene3d.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/parseInk.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/poseFromPos.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/segmentsToRibbons.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/trisToGeometry.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/clipEdge.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/computePositions.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/dirFillVerts.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/dirSeamVerts.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/fileFillVerts.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/fileSeamVerts.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/glyphBound.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/graphFit.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/layoutNodes.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/makeLabelCanvas.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/mountArchScene.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/mountArchSceneThree.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/placeRoots.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/probeFolderInk.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/probeIconInks.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/readCamState.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/functions/resolveScenePath.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/interfaces</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/ArchSceneHandle.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/GraphFit.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/PlacedNode.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/SceneCamState.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -61317,6 +61153,26 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/reports/gate-result.json</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/reports/probe-grid.txt</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/reports/probe2.txt</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/reports/probe3.txt</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/reports/probe4.txt</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/reports/probe5.txt</loc>
     <priority>0.7</priority>
   </url>
   <url>

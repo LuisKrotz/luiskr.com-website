@@ -1889,6 +1889,20 @@
     "c": "docs"
   },
   {
+    "p": "/docs/core/sass/base/_membrane.scss",
+    "t": "_membrane",
+    "d": "Core Module — _membrane",
+    "k": [
+      "core",
+      "source",
+      "_membrane",
+      "sass",
+      "base",
+      "base _membrane scss the shared turbulence membrane backdrop two ink layers clipped svg feturbulence sparse fefunca table narrow alpha spikes few noise thresholds read organic isolines not bands mask position drifts clock rates field"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/core/sass/base/_mixins.scss",
     "t": "_mixins",
     "d": "Core Module — _mixins",
@@ -17045,31 +17059,7 @@
       "coverage-docs",
       "coverage",
       "docs.tsx",
-      "code coverage report for docs tsx summary sorter background image url sort arrow sprite png all files 100 statements 385 branches 210 functions lines 343 press the next uncovered block previous filter 101 102 103 104 105 106 107 108 109"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/coverage-docs/arch-scene-3d.ts.html",
-    "t": "Arch Scene 3d.ts",
-    "d": "Coverage — Docs — Arch Scene 3d.ts",
-    "k": [
-      "coverage-docs",
-      "coverage",
-      "arch-scene-3d.ts",
-      "code coverage report for arch scene summary sorter background image url sort arrow sprite png all files 100 statements 327 branches 145 functions lines 301 press the next uncovered block previous filter 101 102 103 104 105 106 107 108 109"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/coverage-docs/arch-scene.ts.html",
-    "t": "Arch Scene.ts",
-    "d": "Coverage — Docs — Arch Scene.ts",
-    "k": [
-      "coverage-docs",
-      "coverage",
-      "arch-scene.ts",
-      "code coverage report for arch scene summary sorter background image url sort arrow sprite png all files 100 statements 764 branches 243 functions 103 lines 689 press the next uncovered block previous filter 101 102 104 105 106 107 108 109"
+      "code coverage report for docs tsx summary sorter background image url sort arrow sprite png all files 100 statements 270 branches 151 functions lines 245 press the next uncovered block previous filter 101 102 103 104 105 106 107 108 109"
     ],
     "c": "docs"
   },
@@ -17179,7 +17169,7 @@
       "coverage-docs",
       "coverage",
       "index",
-      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 2110 branches 923 functions 388 lines 1871 press the next uncovered block previous filter file docs tsx 385 210 343 arch scene 327"
+      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 898 branches 466 functions 231 lines 778 press the next uncovered block previous filter file docs tsx 270 151 245 copy guard nav"
     ],
     "c": "docs"
   },
@@ -17191,7 +17181,7 @@
       "coverage-docs",
       "coverage",
       "loader.ts",
-      "code coverage report for loader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 394x 126x 125x file docs description boot"
+      "code coverage report for loader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 205x 93x 92x file docs description boot"
     ],
     "c": "docs"
   },
@@ -17246,7 +17236,7 @@
       "coverage-docs",
       "coverage",
       "render.tsx",
-      "code coverage report for render tsx summary sorter background image url sort arrow sprite png all files 100 statements 111 branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 109 110 112"
+      "code coverage report for render tsx summary sorter background image url sort arrow sprite png all files 100 statements 105 branches functions lines press the next uncovered block previous filter 101 102 103 104 106 107 108 109 110 111 112"
     ],
     "c": "docs"
   },
@@ -17277,7 +17267,7 @@
       "coverage-docs",
       "coverage",
       "telemetry.ts",
-      "code coverage report for telemetry summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 21x 18x 15x 14x file docs description copy"
+      "code coverage report for telemetry summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 18x 13x 15x 14x file docs description copy"
     ],
     "c": "docs"
   },
@@ -22445,30 +22435,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs-exp/arch-scene-3d.ts",
-    "t": "Arch Scene 3d",
-    "d": "Docs Module — Arch Scene 3d",
-    "k": [
-      "docs-exp",
-      "source",
-      "arch-scene-3d",
-      "file docs arch scene the rust scene3d arm architecture mounts surface3d engine same canvas three path renders rebuilds radial tree through flat u32 api and drives frame loop bindorbit rig contract saved camera pose facing billboard glyphs"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs-exp/arch-scene.ts",
-    "t": "Arch Scene",
-    "d": "Docs Module — Arch Scene",
-    "k": [
-      "docs-exp",
-      "source",
-      "arch-scene",
-      "file docs arch scene description interactive three visualization the manifest architecture org structure rendered radial tree each directory node its depth ring edges draw parent child glyph cards billboard face camera autorotate per spin"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs-exp/copy-guard.ts",
     "t": "Copy Guard",
     "d": "Docs Module — Copy Guard",
@@ -22519,7 +22485,7 @@
       "docs-exp",
       "source",
       "docs",
-      "docs scss manifest for view scoped styles adopted into the shadow root split surface partials imported below _chrome container thread backdrop scene _loader boot loader rings counter stage message _content content column maxarea gutter"
+      "docs scss manifest for view scoped styles adopted into the shadow root split surface partials imported below _chrome container thread backdrop _loader boot loader rings counter stage message _content content column maxarea gutter contract"
     ],
     "c": "docs"
   },
@@ -22532,7 +22498,7 @@
       "source",
       "_chrome",
       "docs",
-      "docs _chrome scss the portal chrome container flex column thread backdrop and persistent architecture scene layers imported manifest not compiled standalone jost everywhere readable poiret one single hairline weight made crumbs tables"
+      "docs _chrome scss the portal chrome container flex column thread backdrop layer imported manifest not compiled standalone jost everywhere readable poiret one single hairline weight made crumbs tables hints mermaid illegible any declared"
     ],
     "c": "docs"
   },
@@ -22545,7 +22511,7 @@
       "source",
       "_content",
       "docs",
-      "docs _content scss the content column maxarea gutter contract containers stay pointer transparent fixed scene stays draggable imported manifest not compiled standalone project max area themselves are behind wherever interactive surface"
+      "docs _content scss the content column maxarea gutter contract containers stay pointer transparent fixed backdrop stays visible imported manifest not compiled standalone project max area themselves are shows through wherever interactive"
     ],
     "c": "docs"
   },
@@ -22589,19 +22555,6 @@
     "c": "docs"
   },
   {
-    "p": "/docs/docs-exp/docs/_map.scss",
-    "t": "_map",
-    "d": "Docs Module — _map",
-    "k": [
-      "docs-exp",
-      "source",
-      "_map",
-      "docs",
-      "docs _map scss the architecture map column interactive alternative nav surface orbit pinch tap pick persistent scene canvas its zoom trigger and centered glass dialog seats into while zoomed hidden 1024px tree combobox carries navigation"
-    ],
-    "c": "docs"
-  },
-  {
     "p": "/docs/docs-exp/docs/_media.scss",
     "t": "_media",
     "d": "Docs Module — _media",
@@ -22623,7 +22576,7 @@
       "source",
       "_protected",
       "docs",
-      "docs _protected scss the copy protection surface architecture scene hidden state imported manifest not compiled standalone caption chip and zoom trigger are meaningless without live canvas carries off inside stage has reaches back column"
+      "docs _protected scss the copy protection surface imported manifest not compiled standalone"
     ],
     "c": "docs"
   },
@@ -22662,7 +22615,7 @@
       "source",
       "_viewer",
       "docs",
-      "docs _viewer scss the file viewer translucent reading surface over scene imported manifest not compiled standalone back trigger project hairline corner square glyph button same shape map zoom control"
+      "docs _viewer scss the file viewer translucent reading surface over backdrop imported manifest not compiled standalone back trigger project hairline corner square glyph button"
     ],
     "c": "docs"
   },
@@ -22717,7 +22670,7 @@
       "docs-exp",
       "source",
       "loader",
-      "file docs loader description boot lifecycle for view mirrors the space playground updatespaceloader dismissspaceloader pair with context stage copy overlay stays until portal reaches its first usable state manifest resolved scene mount"
+      "file docs loader description boot lifecycle for view mirrors the space playground updatespaceloader dismissspaceloader pair with context stage copy overlay stays until portal reaches its first usable state manifest resolved and any flight"
     ],
     "c": "docs"
   },
@@ -24390,7 +24343,7 @@
       "public",
       "scripts",
       "workers",
-      "core public scripts workers wasm worker members engine_url lifecycle comp_mults featured_mult dense_cols dense_candidates_featured draw_delay_min_ms aspect_fallback_w spring_stiffness djb2_seed prefetch_range_bytes docs_scene"
+      "core public scripts workers wasm worker members engine_url lifecycle comp_mults featured_mult dense_cols dense_candidates_featured draw_delay_min_ms aspect_fallback_w spring_stiffness djb2_seed prefetch_range_bytes bubble_retries lcg_mult"
     ],
     "c": "docs"
   },
@@ -25279,7 +25232,7 @@
       "core",
       "tokens",
       "classes",
-      "core tokens classes docs members docs_classes docs_tree_group docs_grid_group docs_map docs_map_stage docs_map_head docs_map_zoom docs_map_zoom_icon docs_map_modal docs_map_close_area docs_map_dialog docs_map_close_bottom docs_map_loading"
+      "core tokens classes docs members docs_classes docs_tree_group docs_grid_group docs_nav_panel docs_nav_crumbs docs_tree_icon docs_tree_chevron docs_tree_paper docs_tree_paper_tones docs_icon_line docs_icon_fill docs_icon_tile docs_icon_page"
     ],
     "c": "docs"
   },
@@ -26155,7 +26108,7 @@
       "core",
       "tokens",
       "data",
-      "core tokens data storage members cache_storage_keys docs_scene_state intro_shown intro_t0 cms_auth_redirect cms_auth_error cms_auth_popup_error cms_auth_popup_detail localstorage sessionstorage key split scope source src surface shared"
+      "core tokens data storage members cache_storage_keys intro_shown intro_t0 cms_auth_redirect cms_auth_error cms_auth_popup_error cms_auth_popup_detail localstorage sessionstorage key split scope source src surface shared primitives every"
     ],
     "c": "docs"
   },
@@ -26445,7 +26398,7 @@
       "core",
       "tokens",
       "ids",
-      "core tokens ids docs members docs_ids nav_panel map_modal map_label portal element grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never declare the"
+      "core tokens ids docs members docs_ids nav_panel portal element grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never declare the strings zero hardcoding"
     ],
     "c": "docs"
   },
@@ -27492,7 +27445,7 @@
       "core",
       "tokens",
       "selectors",
-      "core tokens selectors docs members docs_selectors scene_stage map_loading uncovered cov_table cov_template cov_search cov_sorter cov_highlight cov_sorted cov_data_col content_link portal query selector grouped subset source src surface"
+      "core tokens selectors docs members docs_selectors uncovered cov_table cov_template cov_search cov_sorter cov_highlight cov_sorted cov_data_col content_link portal query selector grouped subset source src surface shared primitives every"
     ],
     "c": "docs"
   },
@@ -30524,37 +30477,7 @@
       "api",
       "experiments",
       "docs",
-      "experiments docs tsx members viewdocs docspath node filepayload fileloading module scope navopen _mapzoomed _docsready _loadermsg _sceneloading rootsasnodes generatedat isdiropen treetabindex treefocusitem isprotectedview navigatedocs"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/experiments/docs/arch-scene-3d.md",
-    "t": "Arch Scene 3d",
-    "d": "Documentation — Arch Scene 3d",
-    "k": [
-      "docs",
-      "docs",
-      "arch-scene-3d",
-      "api",
-      "experiments",
-      "docs",
-      "experiments docs arch scene members module scope node mat seammat radius depth path baseopacity activescale rgb phase parseink posefrompos segmentstoribbons tristogeometry buildedges mountarchscene3d savecamstate graphroot activepath focus"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/api/experiments/docs/arch-scene.md",
-    "t": "Arch Scene",
-    "d": "Documentation — Arch Scene",
-    "k": [
-      "docs",
-      "docs",
-      "arch-scene",
-      "api",
-      "experiments",
-      "docs",
-      "experiments docs arch scene members module scope setactive resize setpaused sib sibcount glsl_begin_vertex glyphvertexpreamble glyphvertextransform glyphfragmentpreamble glyphfragmentink edgevertexpreamble edgevertexbob patchglyphmaterial"
+      "experiments docs tsx members viewdocs docspath node filepayload fileloading module scope navopen _docsready _loadermsg rootsasnodes generatedat isdiropen treetabindex treefocusitem isprotectedview navigatedocs picknode picktreenode"
     ],
     "c": "docs"
   },
@@ -30704,7 +30627,7 @@
       "api",
       "experiments",
       "docs",
-      "experiments docs render tsx members docshref maploadingveil treehref treenodes gridcards _indexview _indexel indexlink module scope scheduleindexslice pumpindex docsindex crumbbar renderdocs jsx template for view extracted from source src"
+      "experiments docs render tsx members docshref treehref treenodes gridcards _indexview _indexel indexlink module scope scheduleindexslice pumpindex docsindex crumbbar renderdocs jsx template for view extracted from source src surface boot"
     ],
     "c": "docs"
   },
@@ -39441,7 +39364,7 @@
       "public",
       "scripts",
       "workers",
-      "core public scripts workers wasm worker members engine_url lifecycle comp_mults featured_mult dense_cols dense_candidates_featured draw_delay_min_ms aspect_fallback_w spring_stiffness djb2_seed prefetch_range_bytes docs_scene"
+      "core public scripts workers wasm worker members engine_url lifecycle comp_mults featured_mult dense_cols dense_candidates_featured draw_delay_min_ms aspect_fallback_w spring_stiffness djb2_seed prefetch_range_bytes bubble_retries lcg_mult"
     ],
     "c": "docs"
   },
@@ -40330,7 +40253,7 @@
       "core",
       "tokens",
       "classes",
-      "core tokens classes docs members docs_classes docs_tree_group docs_grid_group docs_map docs_map_stage docs_map_head docs_map_zoom docs_map_zoom_icon docs_map_modal docs_map_close_area docs_map_dialog docs_map_close_bottom docs_map_loading"
+      "core tokens classes docs members docs_classes docs_tree_group docs_grid_group docs_nav_panel docs_nav_crumbs docs_tree_icon docs_tree_chevron docs_tree_paper docs_tree_paper_tones docs_icon_line docs_icon_fill docs_icon_tile docs_icon_page"
     ],
     "c": "docs"
   },
@@ -41206,7 +41129,7 @@
       "core",
       "tokens",
       "data",
-      "core tokens data storage members cache_storage_keys docs_scene_state intro_shown intro_t0 cms_auth_redirect cms_auth_error cms_auth_popup_error cms_auth_popup_detail localstorage sessionstorage key split scope source src surface shared"
+      "core tokens data storage members cache_storage_keys intro_shown intro_t0 cms_auth_redirect cms_auth_error cms_auth_popup_error cms_auth_popup_detail localstorage sessionstorage key split scope source src surface shared primitives every"
     ],
     "c": "docs"
   },
@@ -41496,7 +41419,7 @@
       "core",
       "tokens",
       "ids",
-      "core tokens ids docs members docs_ids nav_panel map_modal map_label portal element grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never declare the"
+      "core tokens ids docs members docs_ids nav_panel portal element grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never declare the strings zero hardcoding"
     ],
     "c": "docs"
   },
@@ -42543,7 +42466,7 @@
       "core",
       "tokens",
       "selectors",
-      "core tokens selectors docs members docs_selectors scene_stage map_loading uncovered cov_table cov_template cov_search cov_sorter cov_highlight cov_sorted cov_data_col content_link portal query selector grouped subset source src surface"
+      "core tokens selectors docs members docs_selectors uncovered cov_table cov_template cov_search cov_sorter cov_highlight cov_sorted cov_data_col content_link portal query selector grouped subset source src surface shared primitives every"
     ],
     "c": "docs"
   },
@@ -45575,37 +45498,7 @@
       "jsdocs",
       "experiments",
       "docs",
-      "experiments docs tsx members viewdocs docspath node filepayload fileloading module scope navopen _mapzoomed _docsready _loadermsg _sceneloading rootsasnodes generatedat isdiropen treetabindex treefocusitem isprotectedview navigatedocs"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/experiments/docs/arch-scene-3d.md",
-    "t": "Arch Scene 3d",
-    "d": "Documentation — Arch Scene 3d",
-    "k": [
-      "docs",
-      "docs",
-      "arch-scene-3d",
-      "jsdocs",
-      "experiments",
-      "docs",
-      "experiments docs arch scene members module scope node mat seammat radius depth path baseopacity activescale rgb phase parseink posefrompos segmentstoribbons tristogeometry buildedges mountarchscene3d savecamstate graphroot activepath focus"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/jsdocs/experiments/docs/arch-scene.md",
-    "t": "Arch Scene",
-    "d": "Documentation — Arch Scene",
-    "k": [
-      "docs",
-      "docs",
-      "arch-scene",
-      "jsdocs",
-      "experiments",
-      "docs",
-      "experiments docs arch scene members module scope setactive resize setpaused sib sibcount glsl_begin_vertex glyphvertexpreamble glyphvertextransform glyphfragmentpreamble glyphfragmentink edgevertexpreamble edgevertexbob patchglyphmaterial"
+      "experiments docs tsx members viewdocs docspath node filepayload fileloading module scope navopen _docsready _loadermsg rootsasnodes generatedat isdiropen treetabindex treefocusitem isprotectedview navigatedocs picknode picktreenode"
     ],
     "c": "docs"
   },
@@ -45755,7 +45648,7 @@
       "jsdocs",
       "experiments",
       "docs",
-      "experiments docs render tsx members docshref maploadingveil treehref treenodes gridcards _indexview _indexel indexlink module scope scheduleindexslice pumpindex docsindex crumbbar renderdocs jsx template for view extracted from source src"
+      "experiments docs render tsx members docshref treehref treenodes gridcards _indexview _indexel indexlink module scope scheduleindexslice pumpindex docsindex crumbbar renderdocs jsx template for view extracted from source src surface boot"
     ],
     "c": "docs"
   },
@@ -68528,7 +68421,7 @@
       "data",
       "storage",
       "variables",
-      "luiskr com readme core tokens data storage cache _storage _keys const cache_storage_keys readonly fb_cache_prefix fb_ session_fb_cache_prefix fb_cache_ docs_scene_state intro_shown lk_intro_shown intro_t0 lk_intro_t0 cms_auth_redirect"
+      "luiskr com readme core tokens data storage cache _storage _keys const cache_storage_keys readonly fb_cache_prefix fb_ session_fb_cache_prefix fb_cache_ intro_shown lk_intro_shown intro_t0 lk_intro_t0 cms_auth_redirect cms_auth_error"
     ],
     "c": "docs"
   },
@@ -69913,7 +69806,7 @@
       "ids",
       "docs",
       "variables",
-      "luiskr com readme core tokens ids docs _ids const docs_ids readonly tree nav_panel nav panel crumbs grid viewer scene map_modal map modal map_label label defined frozen element sole declaration site for these consumers read members and"
+      "luiskr com readme core tokens ids docs _ids const docs_ids readonly tree nav_panel nav panel crumbs grid viewer defined frozen element map sole declaration site for these consumers read members and never declare the strings zero hardcoding"
     ],
     "c": "docs"
   },
@@ -74502,7 +74395,7 @@
       "selectors",
       "docs",
       "variables",
-      "luiskr com readme core tokens selectors docs _selectors const docs_selectors readonly crumbs crumb tree_item tree item card viewer content scene_stage map stage map_loading loading protected mermaid uncovered pct low not cbranch cstat"
+      "luiskr com readme core tokens selectors docs _selectors const docs_selectors readonly crumbs crumb tree_item tree item card viewer content protected mermaid uncovered pct low not cbranch cstat fstat cline missing branch cov_table table"
     ],
     "c": "docs"
   },
@@ -76585,7 +76478,7 @@
       "strings",
       "docs",
       "variables",
-      "luiskr com readme core tokens strings docs _loader _pct const docs_loader_pct readonly manifest scene file ready 100 defined 130 staged boot loader progress marks the inlined build time real fetch percentages don exist discrete stage"
+      "luiskr com readme core tokens strings docs _loader _pct const docs_loader_pct readonly manifest file ready 100 defined staged boot loader progress marks the inlined build time real fetch percentages don exist discrete stage numbers keep"
     ],
     "c": "docs"
   },
@@ -76621,7 +76514,7 @@
       "strings",
       "docs",
       "variables",
-      "luiskr com readme core tokens strings docs _units const docs_units readonly gl_strip_time_scale 0625 folder_hash_mod 9973 tap_slop_px label_w 384 label_h label_font_px label_scale_x label_scale_y label_lift_y label_reveal_base"
+      "luiskr com readme core tokens strings docs _units const docs_units readonly gl_strip_time_scale 0625 folder_hash_mod 9973 index_chunk 400 index_idle_timeout 250 index_fallback_delay tree_sheet_cap_closed tree_sheet_cap_open defined 104"
     ],
     "c": "docs"
   },
@@ -88855,7 +88748,7 @@
       "core",
       "utils",
       "service-worker",
-      "interfaces functions luiskr com readme core utils service worker serviceworkerhooks registersiteserviceworker dropstaleserviceworkers"
+      "interfaces functions luiskr com readme core utils service worker serviceworkerhooks islocalhost registersiteserviceworker dropstaleserviceworkers"
     ],
     "c": "docs"
   },
@@ -88879,7 +88772,24 @@
       "utils",
       "service-worker",
       "functions",
-      "returns luiskr com readme core utils service worker dropstaleserviceworkers function void defined 166 unregisters every bound the current origin outside browsers and where getregistrations unavailable failures are swallowed this best"
+      "returns luiskr com readme core utils service worker dropstaleserviceworkers function void defined 169 unregisters every bound the current origin outside browsers and where getregistrations unavailable failures are swallowed this best"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/docs/typedoc/core/utils/service-worker/functions/isLocalhost.md",
+    "t": "IsLocalhost",
+    "d": "Documentation — IsLocalhost",
+    "k": [
+      "docs",
+      "docs",
+      "islocalhost",
+      "typedoc",
+      "core",
+      "utils",
+      "service-worker",
+      "functions",
+      "returns luiskr com readme core utils service worker islocalhost function boolean defined 110 true local origins localhost names loopback ips and the original package treated these probably dev probed before registering preserved"
     ],
     "c": "docs"
   },
@@ -88896,7 +88806,7 @@
       "utils",
       "service-worker",
       "functions",
-      "parameters swurl hooks returns luiskr com readme core utils service worker registersiteserviceworker function promise void defined 123 registers and reports lifecycle through ops when navigator serviceworker unavailable local hosts get the"
+      "parameters swurl hooks returns luiskr com readme core utils service worker registersiteserviceworker function promise void defined 126 registers and reports lifecycle through ops when navigator serviceworker unavailable local hosts get the"
     ],
     "c": "docs"
   },
@@ -90297,7 +90207,7 @@
       "docs",
       "Docs",
       "classes",
-      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state docspath node filepayload fileloading navopen _mapzoomed _docsready"
+      "extends constructors constructor returns overrides properties _componentstyles inherited from _eventdisposers _storeunsubscribers _ismounted _stylenode _contentnode state docspath node filepayload fileloading navopen _docsready _loadermsg"
     ],
     "c": "docs"
   },
@@ -90313,532 +90223,6 @@
       "experiments",
       "docs",
       "references viewdocs docsnode docsroot docsmanifest docsfilepayload getdocsmanifest docsgeneratedat resolvedocspath crumbsforpath fetchdocsfile luiskr com readme experiments docs exports classes manifest interfaces functions"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene",
-    "t": "Arch Scene",
-    "d": "",
-    "k": ["docs", "arch-scene", "/docs/docs/typedoc/experiments/docs/arch-scene"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d",
-    "t": "Arch Scene 3d",
-    "d": "",
-    "k": ["docs", "arch-scene-3d", "/docs/docs/typedoc/experiments/docs/arch-scene-3d"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/README.md",
-    "t": "Arch Scene 3d",
-    "d": "Documentation — Arch Scene 3d",
-    "k": [
-      "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions luiskr com readme experiments docs arch scene parseink posefrompos segmentstoribbons tristogeometry buildedges mountarchscene3d"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions",
-    "t": "Functions",
-    "d": "",
-    "k": ["docs", "functions", "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/buildEdges.md",
-    "t": "BuildEdges",
-    "d": "Documentation — BuildEdges",
-    "k": [
-      "docs",
-      "docs",
-      "buildedges",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters placed positions scale returns dir pos nrm idx leaf luiskr com readme experiments docs arch scene buildedges function object defined 296 expands the parent child edge list into cross quad ribbon geometry via segmentstoribbons"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/mountArchScene3d.md",
-    "t": "MountArchScene3d",
-    "d": "Documentation — MountArchScene3d",
-    "k": [
-      "docs",
-      "docs",
-      "mountarchscene3d",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters canvas roots onpick onready returns luiskr com readme experiments docs arch scene mountarchscene3d function promise archscenehandle null defined 352 mounts the scene3d arm engine orbit rig async graph build raf loop any artifact"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/parseInk.md",
-    "t": "ParseInk",
-    "d": "Documentation — ParseInk",
-    "k": [
-      "docs",
-      "docs",
-      "parseink",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters css returns luiskr com readme experiments docs arch scene parseink function number defined 106 parses color string into rgb channels the engine takes raw f32 triplets where three path passed handles rgba and rrggbb what"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/poseFromPos.md",
-    "t": "PoseFromPos",
-    "d": "Documentation — PoseFromPos",
-    "k": [
-      "docs",
-      "docs",
-      "posefrompos",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters returns luiskr com readme experiments docs arch scene posefrompos function number defined 142 converts saved world space camera position into the orbit rig spherical pose inverse rust target cos sin readonly eye distance yaw"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/segmentsToRibbons.md",
-    "t": "SegmentsToRibbons",
-    "d": "Documentation — SegmentsToRibbons",
-    "k": [
-      "docs",
-      "docs",
-      "segmentstoribbons",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters segs half returns pos nrm idx luiskr com readme experiments docs arch scene segmentstoribbons function object defined 165 expands raw segment list into cross quad ribbon geometry two perpendicular quads per the engine draws"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene-3d/functions/trisToGeometry.md",
-    "t": "TrisToGeometry",
-    "d": "Documentation — TrisToGeometry",
-    "k": [
-      "docs",
-      "docs",
-      "tristogeometry",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene-3d",
-      "functions",
-      "parameters tris returns pos nrm idx luiskr com readme experiments docs arch scene tristogeometry function object defined 273 packages glyph triangle soup into the engine soa geometry payload sequential indices over unindexed zero normals"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/README.md",
-    "t": "Arch Scene",
-    "d": "Documentation — Arch Scene",
-    "k": [
-      "docs",
-      "docs",
-      "readme",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "interfaces functions luiskr com readme experiments docs arch scene archscenehandle placednode scenecamstate graphfit layoutnodes computepositions dirfillverts filefillverts dirseamverts fileseamverts glyphbound clipedge probeiconinks"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions",
-    "t": "Functions",
-    "d": "",
-    "k": ["docs", "functions", "/docs/docs/typedoc/experiments/docs/arch-scene/functions"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/clipEdge.md",
-    "t": "ClipEdge",
-    "d": "Documentation — ClipEdge",
-    "k": [
-      "docs",
-      "docs",
-      "clipedge",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters returns luiskr com readme experiments docs arch scene clipedge function float32array arraybufferlike null defined 813 trims edge stops clear both glyph faces connects the reference links aim node surfaces not centers each end"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/computePositions.md",
-    "t": "ComputePositions",
-    "d": "Documentation — ComputePositions",
-    "k": [
-      "docs",
-      "docs",
-      "computepositions",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters placed returns luiskr com readme experiments docs arch scene computepositions function promise xyz float32array scale defined 489 batch position compute wasm worker first local math failure the replies with transferable"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/dirFillVerts.md",
-    "t": "DirFillVerts",
-    "d": "Documentation — DirFillVerts",
-    "k": [
-      "docs",
-      "docs",
-      "dirfillverts",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "returns luiskr com readme experiments docs arch scene dirfillverts function float32array defined 630 filled folder glyph the classic icon silhouette rect body tab bump thin extruded card reads outline from front back and glancing angles"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/dirSeamVerts.md",
-    "t": "DirSeamVerts",
-    "d": "Documentation — DirSeamVerts",
-    "k": [
-      "docs",
-      "docs",
-      "dirseamverts",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "returns luiskr com readme experiments docs arch scene dirseamverts function float32array defined 723 folder seam segments the detail strokes filled icon pack prints card silhouette outline both faces rim struts and shelf line that splits"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/fileFillVerts.md",
-    "t": "FileFillVerts",
-    "d": "Documentation — FileFillVerts",
-    "k": [
-      "docs",
-      "docs",
-      "filefillverts",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "returns luiskr com readme experiments docs arch scene filefillverts function float32array defined 666 filled document glyph the folded corner page thin extruded pentagon prism cut reads fold card thickness keeps solid visible through edge"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/fileSeamVerts.md",
-    "t": "FileSeamVerts",
-    "d": "Documentation — FileSeamVerts",
-    "k": [
-      "docs",
-      "docs",
-      "fileseamverts",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "returns luiskr com readme experiments docs arch scene fileseamverts function float32array defined 751 file seam segments the silhouette outline both faces rim struts dog ear crease and two text rules detail filled icon carries once fill"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/glyphBound.md",
-    "t": "GlyphBound",
-    "d": "Documentation — GlyphBound",
-    "k": [
-      "docs",
-      "docs",
-      "glyphbound",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters verts returns luiskr com readme experiments docs arch scene glyphbound function number defined 787 bounding radius glyph vert list the invisible pick sphere instanced buffergeometry isn three raycast path picking runs against"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/graphFit.md",
-    "t": "GraphFit",
-    "d": "Documentation — GraphFit",
-    "k": [
-      "docs",
-      "docs",
-      "graphfit",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters placed returns luiskr com readme experiments docs arch scene graphfit function defined 1179 fit the camera real graph radius sphere layout spreads clusters along parent orbits bound longest orbit chain distance node accumulated"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/layoutNodes.md",
-    "t": "LayoutNodes",
-    "d": "Documentation — LayoutNodes",
-    "k": [
-      "docs",
-      "docs",
-      "layoutnodes",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters nodes depth from parent acc returns luiskr com readme experiments docs arch scene layoutnodes function placednode defined 249 flattens the manifest tree into positioned node descriptors sets ring radius sibling order spreads"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/makeLabelCanvas.md",
-    "t": "MakeLabelCanvas",
-    "d": "Documentation — MakeLabelCanvas",
-    "k": [
-      "docs",
-      "docs",
-      "makelabelcanvas",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters name ink returns luiskr com readme experiments docs arch scene makelabelcanvas function htmlcanvaselement null defined 925 draws dir label onto fresh canvas shared the three sprite arm canvastexture and scene3d createimagebitmap"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/mountArchScene.md",
-    "t": "MountArchScene",
-    "d": "Documentation — MountArchScene",
-    "k": [
-      "docs",
-      "docs",
-      "mountarchscene",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters canvas roots onpick onlost onready returns luiskr com readme experiments docs arch scene mountarchscene function archscenehandle null defined 2181 dual path mount the scene3d rust webgpu engine takes capable hardware and three"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/mountArchSceneThree.md",
-    "t": "MountArchSceneThree",
-    "d": "Documentation — MountArchSceneThree",
-    "k": [
-      "docs",
-      "docs",
-      "mountarchscenethree",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters canvas roots onpick onlost onready returns luiskr com readme experiments docs arch scene mountarchscenethree function archscenehandle null defined 1221 the three webgl arm architecture original renderer kept synchronous fallback"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/placeRoots.md",
-    "t": "PlaceRoots",
-    "d": "Documentation — PlaceRoots",
-    "k": [
-      "docs",
-      "docs",
-      "placeroots",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters roots returns luiskr com readme experiments docs arch scene placeroots function placednode defined 1106 the manifest buckets hang off synthetic center node portal root level tree reads one rooted graph depth project ring four"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/probeFolderInk.md",
-    "t": "ProbeFolderInk",
-    "d": "Documentation — ProbeFolderInk",
-    "k": [
-      "docs",
-      "docs",
-      "probefolderink",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters host returns luiskr com readme experiments docs arch scene probefolderink function number null defined 894 folder ink probe directory glyphs wear the treeview own color reference pack gold sampled off span parked inside portal"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/probeIconInks.md",
-    "t": "ProbeIconInks",
-    "d": "Documentation — ProbeIconInks",
-    "k": [
-      "docs",
-      "docs",
-      "probeiconinks",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters host kinds returns luiskr com readme experiments docs arch scene probeiconinks function map string number null defined 856 per kind ink probe the colors file nodes with exact treeview icon pack paints that extension glyph"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/readCamState.md",
-    "t": "ReadCamState",
-    "d": "Documentation — ReadCamState",
-    "k": [
-      "docs",
-      "docs",
-      "readcamstate",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "returns luiskr com readme experiments docs arch scene readcamstate function scenecamstate null defined 988 reads the session persisted camera pose when storage unavailable tests privacy mode payload malformed interfaces"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/functions/resolveScenePath.md",
-    "t": "ResolveScenePath",
-    "d": "Documentation — ResolveScenePath",
-    "k": [
-      "docs",
-      "docs",
-      "resolvescenepath",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "functions",
-      "parameters placed path returns luiskr com readme experiments docs arch scene resolvescenepath function number defined 1135 resolves active docspath node the exact match when caps aggregates depth budget folded away nearest visible ancestor"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces",
-    "t": "Interfaces",
-    "d": "",
-    "k": ["docs", "interfaces", "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces"],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/ArchSceneHandle.md",
-    "t": "ArchSceneHandle",
-    "d": "Documentation — ArchSceneHandle",
-    "k": [
-      "docs",
-      "docs",
-      "archscenehandle",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "interfaces",
-      "methods destroy returns setactive parameters _path resize setpaused _paused luiskr com readme experiments docs arch scene archscenehandle defined live resources frees renderer listeners void highlights the node matching path current"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/GraphFit.md",
-    "t": "GraphFit",
-    "d": "Documentation — GraphFit",
-    "k": [
-      "docs",
-      "docs",
-      "graphfit",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "interfaces",
-      "properties graphr camdist far luiskr com readme experiments docs arch scene graphfit defined 1162 camera fit numbers for placed tree shared both arms number 1164 outer ring radius the deepest node 1166 eye distance that frames whole graph"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/PlacedNode.md",
-    "t": "PlacedNode",
-    "d": "Documentation — PlacedNode",
-    "k": [
-      "docs",
-      "docs",
-      "placednode",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "interfaces",
-      "properties node depth angle parent sib sibcount luiskr com readme experiments docs arch scene placednode defined flattened manifest with its sibling slot and docsnode number index among this siblings based the fibonacci count sharing same"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/experiments/docs/arch-scene/interfaces/SceneCamState.md",
-    "t": "SceneCamState",
-    "d": "Documentation — SceneCamState",
-    "k": [
-      "docs",
-      "docs",
-      "scenecamstate",
-      "typedoc",
-      "experiments",
-      "docs",
-      "arch-scene",
-      "interfaces",
-      "properties luiskr com readme experiments docs arch scene scenecamstate defined 977 persisted camera pose across remounts number 979 position xyz 981 controls target"
     ],
     "c": "docs"
   },
@@ -91161,7 +90545,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters docspath returns luiskr com readme experiments docs manifest crumbsforpath function object defined 319 breadcrumb segments for resolved path label from the portal root down node string route param ordered crumb trail"
+      "parameters docspath returns luiskr com readme experiments docs manifest crumbsforpath function object defined 316 breadcrumb segments for resolved path label from the portal root down node string route param ordered crumb trail"
     ],
     "c": "docs"
   },
@@ -91178,7 +90562,7 @@
       "docs",
       "manifest",
       "functions",
-      "returns luiskr com readme experiments docs manifest docsgeneratedat function string defined 247 iso timestamp the newest doc file shown last update"
+      "returns luiskr com readme experiments docs manifest docsgeneratedat function string defined 244 iso timestamp the newest doc file shown last update"
     ],
     "c": "docs"
   },
@@ -91195,7 +90579,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters path returns luiskr com readme experiments docs manifest docsgroupparent function string undefined defined 230 the section group containing walks ancestors deep paths sassdoc index html resolve through their member owning used"
+      "parameters path returns luiskr com readme experiments docs manifest docsgroupparent function string undefined defined 227 the section group containing walks ancestors deep paths sassdoc index html resolve through their member owning used"
     ],
     "c": "docs"
   },
@@ -91212,7 +90596,7 @@
       "docs",
       "manifest",
       "functions",
-      "returns luiskr com readme experiments docs manifest docsgroups function docsgroup defined 215 the four section nodes that parent flat roots treeview and portal root grid built once never changes after hydration interfaces ordered dir"
+      "returns luiskr com readme experiments docs manifest docsgroups function docsgroup defined 212 the four section nodes that parent flat roots treeview and portal root grid built once never changes after hydration interfaces ordered dir"
     ],
     "c": "docs"
   },
@@ -91229,7 +90613,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters returns luiskr com readme experiments docs manifest fetchdocsfile function promise docsfilepayload null defined 337 lazily fetches one rendered file payload ids come straight from the url encoded segment wise never user derived"
+      "parameters returns luiskr com readme experiments docs manifest fetchdocsfile function promise docsfilepayload null defined 334 lazily fetches one rendered file payload ids come straight from the url encoded segment wise never user derived"
     ],
     "c": "docs"
   },
@@ -91246,7 +90630,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters returns luiskr com readme experiments docs manifest fileidroot function string defined 263 extracts the root namespace from file rel name when has"
+      "parameters returns luiskr com readme experiments docs manifest fileidroot function string defined 260 extracts the root namespace from file rel name when has"
     ],
     "c": "docs"
   },
@@ -91263,7 +90647,7 @@
       "docs",
       "manifest",
       "functions",
-      "returns luiskr com readme experiments docs manifest getdocsmanifest function docsmanifest defined 142 the scanned vite plugin jest stub always emit one interfaces"
+      "returns luiskr com readme experiments docs manifest getdocsmanifest function docsmanifest defined 139 the scanned vite plugin jest stub always emit one interfaces"
     ],
     "c": "docs"
   },
@@ -91280,7 +90664,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters rootname returns luiskr com readme experiments docs manifest issourceroot function boolean defined 255 whether root name src core protected source bucket roots get the copy guard and never auto open index html string first"
+      "parameters rootname returns luiskr com readme experiments docs manifest issourceroot function boolean defined 252 whether root name src core protected source bucket roots get the copy guard and never auto open index html string first"
     ],
     "c": "docs"
   },
@@ -91297,7 +90681,7 @@
       "docs",
       "manifest",
       "functions",
-      "parameters docspath returns luiskr com readme experiments docs manifest resolvedocspath function docsnode null defined 272 resolves sub path bare against roots the node case sensitive tree mirrors real layout string route param from"
+      "parameters docspath returns luiskr com readme experiments docs manifest resolvedocspath function docsnode null defined 269 resolves sub path bare against roots the node case sensitive tree mirrors real layout string route param from"
     ],
     "c": "docs"
   },
@@ -91338,7 +90722,7 @@
       "docs",
       "manifest",
       "interfaces",
-      "extends properties type inherited from name path mtime aggregate children overrides group luiskr com readme experiments docs manifest docsgroup defined view synthesized section node buildgroups always supplies the array and flags true"
+      "extends properties type inherited from name path mtime children overrides group luiskr com readme experiments docs manifest docsgroup defined view synthesized section node buildgroups always supplies the array and flags true narrows both"
     ],
     "c": "docs"
   },
@@ -91372,7 +90756,7 @@
       "docs",
       "manifest",
       "interfaces",
-      "extended properties type name path children mtime aggregate group luiskr com readme experiments docs manifest docsnode defined one node dir carries file docsgroup string optional boolean scene only flag leaves the leaf cap synthesizes for"
+      "extended properties type name path children mtime group luiskr com readme experiments docs manifest docsnode defined one node dir carries file docsgroup string optional boolean view synthesized section disclosure wrapper the portal tree"
     ],
     "c": "docs"
   },
@@ -91500,7 +90884,7 @@
       "docs",
       "render",
       "functions",
-      "parameters view returns luiskr com readme experiments docs render renderdocs function htmlelement defined tsx 454 the template assembled for viewdocs classes"
+      "parameters view returns luiskr com readme experiments docs render renderdocs function htmlelement defined tsx 436 the template assembled for viewdocs classes"
     ],
     "c": "docs"
   },
@@ -103881,7 +103265,7 @@
       "mentions-deck",
       "render",
       "functions",
-      "parameters host returns luiskr com readme website components carousel mentions deck render rendermentionsdeck function element defined tsx 145 jsx template for the component shadow dom section title absolutely positioned strip cards then"
+      "parameters host returns luiskr com readme website components carousel mentions deck render rendermentionsdeck function element defined tsx 143 jsx template for the component shadow dom section title absolutely positioned strip cards then"
     ],
     "c": "docs"
   },
@@ -127355,6 +126739,56 @@
     "c": "docs"
   },
   {
+    "p": "/docs/reports/probe-grid.txt",
+    "t": "Probe Grid",
+    "d": "Quality Reports — Probe Grid",
+    "k": [
+      "reports",
+      "reports",
+      "probe-grid",
+      "grids nodetype dir onkeydowntypes function fired viewpath docs sassdoc"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/reports/probe2.txt",
+    "t": "Probe2",
+    "d": "Quality Reports — Probe2",
+    "k": ["reports", "reports", "probe2", "key undefined before cov after spy grid true"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/reports/probe3.txt",
+    "t": "Probe3",
+    "d": "Quality Reports — Probe3",
+    "k": [
+      "reports",
+      "reports",
+      "probe3",
+      "users luisk projects luiskr com core tokens strings types base attrs aria values classes reader data docs elements html views ids chars state webgl vendor langs routes input dom queries svg net schema wasm css text primitives paths"
+    ],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/reports/probe4.txt",
+    "t": "Probe4",
+    "d": "Quality Reports — Probe4",
+    "k": ["reports", "reports", "probe4", "cov false before after grid true ids onkd object"],
+    "c": "docs"
+  },
+  {
+    "p": "/docs/reports/probe5.txt",
+    "t": "Probe5",
+    "d": "Quality Reports — Probe5",
+    "k": [
+      "reports",
+      "reports",
+      "probe5",
+      "key users luisk projects luiskr com experiments docs render tsx before f35 s104 after"
+    ],
+    "c": "docs"
+  },
+  {
     "p": "/docs/reports/snyk-report.json",
     "t": "Snyk Report",
     "d": "Quality Reports — Snyk Report",
@@ -127362,7 +126796,7 @@
       "reports",
       "reports",
       "snyk-report",
-      "generatedat scanner totals critical high moderate low info total failseverities exceptions package advisory severity justification review vulnerabilities"
+      "generatedat scanner totals critical high moderate low info total failseverities exceptions package advisory severity justification review vulnerabilities packagename advisoryid title from range fixedin isupgradable ispatchable exploit url"
     ],
     "c": "docs"
   },
