@@ -8767,7 +8767,7 @@
       "coverage-app",
       "coverage",
       "index",
-      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 428 branches 232 functions lines 392 press the next uncovered block previous filter file src 173 155 app 255 156 237 generated"
+      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 430 branches 234 functions lines 393 press the next uncovered block previous filter file src 175 156 app 255 237 generated istanbul"
     ],
     "c": "docs"
   },
@@ -8943,7 +8943,7 @@
       "coverage",
       "index",
       "src",
-      "code coverage report for src summary sorter background image url sort arrow sprite png all files 100 statements 173 branches functions lines 155 press the next uncovered block previous filter file app tsx main registerserviceworker"
+      "code coverage report for src summary sorter background image url sort arrow sprite png all files 100 statements 175 branches functions lines 156 press the next uncovered block previous filter file app tsx main registerserviceworker"
     ],
     "c": "docs"
   },
@@ -8969,7 +8969,7 @@
       "coverage",
       "registerserviceworker.ts",
       "src",
-      "code coverage report for src registerserviceworker summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 36x 46x 43x file description"
+      "code coverage report for src registerserviceworker summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 36x 46x 44x file description"
     ],
     "c": "docs"
   },
@@ -9274,7 +9274,7 @@
       "coverage",
       "index",
       "cms",
-      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 14t19 239z"
+      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 15t18 802z"
     ],
     "c": "docs"
   },
@@ -9989,7 +9989,7 @@
       "index",
       "cms",
       "tokens",
-      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 14t19 239z"
+      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 15t18 802z"
     ],
     "c": "docs"
   },
@@ -10253,7 +10253,7 @@
       "index",
       "core",
       "debug",
-      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 14t19 756z"
+      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 15t18 168z"
     ],
     "c": "docs"
   },
@@ -10280,7 +10280,7 @@
       "coverage",
       "devlog.ts",
       "core",
-      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 642x 1514x 946x 91x file description zero"
+      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 628x 1505x 939x 91x file description zero"
     ],
     "c": "docs"
   },
@@ -10444,7 +10444,7 @@
       "fallback.ts",
       "core",
       "locale",
-      "code coverage report for core locale fallback summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 555x file description build time"
+      "code coverage report for core locale fallback summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 530x file description build time"
     ],
     "c": "docs"
   },
@@ -10486,7 +10486,7 @@
       "portfolio-word.ts",
       "core",
       "locale",
-      "code coverage report for core locale portfolio word summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 279x file description print"
+      "code coverage report for core locale portfolio word summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 270x file description print"
     ],
     "c": "docs"
   },
@@ -10625,7 +10625,7 @@
       "index",
       "core",
       "safari",
-      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 14t19 756z"
+      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 15t18 168z"
     ],
     "c": "docs"
   },
@@ -10827,7 +10827,7 @@
       "coverage",
       "store.ts",
       "core",
-      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 554x 4464x"
+      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 485x 4335x"
     ],
     "c": "docs"
   },
@@ -10841,7 +10841,7 @@
       "getters.ts",
       "core",
       "store",
-      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 494x 1153x 2348x 1732x 2309x"
+      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 485x 494x 1153x 2348x 1732x 2311x"
     ],
     "c": "docs"
   },
@@ -10876,7 +10876,7 @@
       "mutations.ts",
       "core",
       "store",
-      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x file description mutation"
+      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 485x file description mutation"
     ],
     "c": "docs"
   },
@@ -10906,7 +10906,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 144x 40x 57x 45x file"
+      "code coverage report for core store mutations input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 485x 144x 40x 57x 45x file"
     ],
     "c": "docs"
   },
@@ -10921,7 +10921,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 66x 1132x 55x 18x 41x"
+      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 485x 66x 1037x 55x 18x 41x"
     ],
     "c": "docs"
   },
@@ -10936,7 +10936,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 554x 14x 11x 40x 38x 15x"
+      "code coverage report for core store mutations media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 485x 14x 11x 40x 38x 15x"
     ],
     "c": "docs"
   },
@@ -10966,7 +10966,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 554x 182x 176x 230x 85x 73x"
+      "code coverage report for core store mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 485x 182x 176x 230x 85x 73x"
     ],
     "c": "docs"
   },
@@ -11009,7 +11009,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs aria summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 512x file description attribute"
+      "code coverage report for core tokens attrs aria summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 492x file description attribute"
     ],
     "c": "docs"
   },
@@ -11024,7 +11024,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 576x file description generic"
+      "code coverage report for core tokens attrs common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 565x file description generic"
     ],
     "c": "docs"
   },
@@ -11054,7 +11054,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs form summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 444x file description control"
+      "code coverage report for core tokens attrs form summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description control"
     ],
     "c": "docs"
   },
@@ -11084,7 +11084,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs link summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 508x file description anchor"
+      "code coverage report for core tokens attrs link summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 496x file description anchor"
     ],
     "c": "docs"
   },
@@ -11099,7 +11099,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 407x file description element"
+      "code coverage report for core tokens attrs media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 398x file description element"
     ],
     "c": "docs"
   },
@@ -11114,7 +11114,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs microdata summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 146x file description html"
+      "code coverage report for core tokens attrs microdata summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 138x file description html"
     ],
     "c": "docs"
   },
@@ -11144,7 +11144,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs values summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 641x file description generic"
+      "code coverage report for core tokens attrs values summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 627x file description generic"
     ],
     "c": "docs"
   },
@@ -11194,7 +11194,7 @@
       "core",
       "tokens",
       "canvas",
-      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 14t19"
+      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 15t18"
     ],
     "c": "docs"
   },
@@ -11231,7 +11231,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes a11y summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 495x file description"
+      "code coverage report for core tokens classes a11y summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 445x file description"
     ],
     "c": "docs"
   },
@@ -11246,7 +11246,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes about summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 371x file description"
+      "code coverage report for core tokens classes about summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 362x file description"
     ],
     "c": "docs"
   },
@@ -11396,7 +11396,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes contact summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 254x file description"
+      "code coverage report for core tokens classes contact summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 246x file description"
     ],
     "c": "docs"
   },
@@ -11546,7 +11546,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 565x file description pages"
+      "code coverage report for core tokens classes legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 547x file description pages"
     ],
     "c": "docs"
   },
@@ -11591,7 +11591,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 378x file description render"
+      "code coverage report for core tokens classes media summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 369x file description render"
     ],
     "c": "docs"
   },
@@ -11621,7 +11621,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 567x file description"
+      "code coverage report for core tokens classes modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 526x file description"
     ],
     "c": "docs"
   },
@@ -11681,7 +11681,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes preferences summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 225x file description"
+      "code coverage report for core tokens classes preferences summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 207x file description"
     ],
     "c": "docs"
   },
@@ -11726,7 +11726,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes reader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 288x file description mode"
+      "code coverage report for core tokens classes reader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 280x file description mode"
     ],
     "c": "docs"
   },
@@ -11771,7 +11771,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes router summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 215x file description"
+      "code coverage report for core tokens classes router summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 207x file description"
     ],
     "c": "docs"
   },
@@ -11816,7 +11816,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
+      "code coverage report for core tokens classes skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 425x file description"
     ],
     "c": "docs"
   },
@@ -11846,7 +11846,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 225x file description global"
+      "code coverage report for core tokens classes state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 630x file description global"
     ],
     "c": "docs"
   },
@@ -12108,7 +12108,7 @@
       "core",
       "tokens",
       "css",
-      "code coverage report for core tokens css skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 365x file description field"
+      "code coverage report for core tokens css skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 128x file description field"
     ],
     "c": "docs"
   },
@@ -12138,7 +12138,7 @@
       "core",
       "tokens",
       "css",
-      "code coverage report for core tokens css theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 451x file description ink custom"
+      "code coverage report for core tokens css theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 352x file description ink custom"
     ],
     "c": "docs"
   },
@@ -12175,7 +12175,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data cms keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 118x file description"
+      "code coverage report for core tokens data cms keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 464x file description"
     ],
     "c": "docs"
   },
@@ -12190,7 +12190,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data component keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 515x file description"
+      "code coverage report for core tokens data component keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 475x file description"
     ],
     "c": "docs"
   },
@@ -12220,7 +12220,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data log summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 642x file description dev"
+      "code coverage report for core tokens data log summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 628x file description dev"
     ],
     "c": "docs"
   },
@@ -12265,7 +12265,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data notify summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 449x file description toast"
+      "code coverage report for core tokens data notify summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 441x file description toast"
     ],
     "c": "docs"
   },
@@ -12280,7 +12280,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data search themes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 499x file description"
+      "code coverage report for core tokens data search themes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 475x file description"
     ],
     "c": "docs"
   },
@@ -12295,7 +12295,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data storage summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 588x file description"
+      "code coverage report for core tokens data storage summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 567x file description"
     ],
     "c": "docs"
   },
@@ -12325,7 +12325,7 @@
       "core",
       "tokens",
       "data",
-      "code coverage report for core tokens data wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 nbsp 523x"
+      "code coverage report for core tokens data wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 nbsp 456x 7752x"
     ],
     "c": "docs"
   },
@@ -12362,7 +12362,7 @@
       "core",
       "tokens",
       "elements",
-      "code coverage report for core tokens elements components summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description"
+      "code coverage report for core tokens elements components summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 529x file description"
     ],
     "c": "docs"
   },
@@ -12377,7 +12377,7 @@
       "core",
       "tokens",
       "elements",
-      "code coverage report for core tokens elements html summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 nbsp 644x file"
+      "code coverage report for core tokens elements html summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 nbsp 630x file"
     ],
     "c": "docs"
   },
@@ -12407,7 +12407,7 @@
       "core",
       "tokens",
       "elements",
-      "code coverage report for core tokens elements views summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 404x file description route"
+      "code coverage report for core tokens elements views summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 396x file description route"
     ],
     "c": "docs"
   },
@@ -12429,7 +12429,7 @@
       "core",
       "tokens",
       "events",
-      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 446x file description custom"
+      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 295x file description custom"
     ],
     "c": "docs"
   },
@@ -12474,7 +12474,7 @@
       "core",
       "tokens",
       "events",
-      "code coverage report for core tokens events mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 430x file description"
+      "code coverage report for core tokens events mutations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 419x file description"
     ],
     "c": "docs"
   },
@@ -12496,7 +12496,7 @@
       "core",
       "tokens",
       "ids",
-      "code coverage report for core tokens ids app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 416x file description shell"
+      "code coverage report for core tokens ids app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 408x file description shell"
     ],
     "c": "docs"
   },
@@ -12556,7 +12556,7 @@
       "core",
       "tokens",
       "ids",
-      "code coverage report for core tokens ids docs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 19x file description portal"
+      "code coverage report for core tokens ids docs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 11x file description portal"
     ],
     "c": "docs"
   },
@@ -12586,7 +12586,7 @@
       "core",
       "tokens",
       "ids",
-      "code coverage report for core tokens ids sections summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 398x file description page"
+      "code coverage report for core tokens ids sections summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 390x file description page"
     ],
     "c": "docs"
   },
@@ -12651,7 +12651,7 @@
       "core",
       "tokens",
       "jsx",
-      "code coverage report for core tokens jsx props summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 451x file description prop"
+      "code coverage report for core tokens jsx props summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 439x file description prop"
     ],
     "c": "docs"
   },
@@ -12666,7 +12666,7 @@
       "core",
       "tokens",
       "jsx",
-      "code coverage report for core tokens jsx svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 451x file description vocabulary"
+      "code coverage report for core tokens jsx svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 439x file description vocabulary"
     ],
     "c": "docs"
   },
@@ -12703,7 +12703,7 @@
       "core",
       "tokens",
       "layout",
-      "code coverage report for core tokens layout css classes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 403x file description"
+      "code coverage report for core tokens layout css classes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 395x file description"
     ],
     "c": "docs"
   },
@@ -12763,7 +12763,7 @@
       "core",
       "tokens",
       "layout",
-      "code coverage report for core tokens layout space summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 400x file description"
+      "code coverage report for core tokens layout space summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 392x file description"
     ],
     "c": "docs"
   },
@@ -12777,7 +12777,7 @@
       "locales.ts",
       "core",
       "tokens",
-      "code coverage report for core tokens locales summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 578x file description supported"
+      "code coverage report for core tokens locales summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 563x file description supported"
     ],
     "c": "docs"
   },
@@ -12799,7 +12799,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media budget summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 445x file description spend"
+      "code coverage report for core tokens media budget summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description spend"
     ],
     "c": "docs"
   },
@@ -12814,7 +12814,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media cache summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 91x file description indexeddb"
+      "code coverage report for core tokens media cache summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 273x file description"
     ],
     "c": "docs"
   },
@@ -12904,7 +12904,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media suffixes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 483x file description asset"
+      "code coverage report for core tokens media suffixes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 474x file description asset"
     ],
     "c": "docs"
   },
@@ -12919,7 +12919,7 @@
       "core",
       "tokens",
       "media",
-      "code coverage report for core tokens media urls summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 620x file description external"
+      "code coverage report for core tokens media urls summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 604x file description external"
     ],
     "c": "docs"
   },
@@ -12941,7 +12941,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion animation summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description"
+      "code coverage report for core tokens motion animation summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 428x file description"
     ],
     "c": "docs"
   },
@@ -13046,7 +13046,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion gpu summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 509x file description detection"
+      "code coverage report for core tokens motion gpu summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 392x file description detection"
     ],
     "c": "docs"
   },
@@ -13106,7 +13106,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion notify summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 448x file description"
+      "code coverage report for core tokens motion notify summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 440x file description"
     ],
     "c": "docs"
   },
@@ -13151,7 +13151,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion prefetch summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 488x file description"
+      "code coverage report for core tokens motion prefetch summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 449x file description"
     ],
     "c": "docs"
   },
@@ -13166,7 +13166,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion print summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 279x file description"
+      "code coverage report for core tokens motion print summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 270x file description"
     ],
     "c": "docs"
   },
@@ -13196,7 +13196,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
+      "code coverage report for core tokens motion skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 424x file description"
     ],
     "c": "docs"
   },
@@ -13247,7 +13247,7 @@
       "core",
       "tokens",
       "playground",
-      "code coverage report for core tokens playground about summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 346x file description"
+      "code coverage report for core tokens playground about summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 338x file description"
     ],
     "c": "docs"
   },
@@ -13367,7 +13367,7 @@
       "core",
       "tokens",
       "playground",
-      "code coverage report for core tokens playground share summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 329x file description"
+      "code coverage report for core tokens playground share summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 321x file description"
     ],
     "c": "docs"
   },
@@ -13396,7 +13396,7 @@
       "primitives.ts",
       "core",
       "tokens",
-      "code coverage report for core tokens primitives summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description primitive"
+      "code coverage report for core tokens primitives summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description primitive"
     ],
     "c": "docs"
   },
@@ -13417,7 +13417,7 @@
       "routes.ts",
       "core",
       "tokens",
-      "code coverage report for core tokens routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description routing path"
+      "code coverage report for core tokens routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 427x file description routing path"
     ],
     "c": "docs"
   },
@@ -13432,7 +13432,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes aliases summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 442x file description"
+      "code coverage report for core tokens routes aliases summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 433x file description"
     ],
     "c": "docs"
   },
@@ -13462,7 +13462,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes names summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 573x file description route"
+      "code coverage report for core tokens routes names summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 532x file description route"
     ],
     "c": "docs"
   },
@@ -13477,7 +13477,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes paths summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 631x file description path"
+      "code coverage report for core tokens routes paths summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 614x file description path"
     ],
     "c": "docs"
   },
@@ -13492,7 +13492,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 436x file description route"
+      "code coverage report for core tokens routes search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 427x file description route"
     ],
     "c": "docs"
   },
@@ -13507,7 +13507,7 @@
       "core",
       "tokens",
       "routes",
-      "code coverage report for core tokens routes translation keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 573x file"
+      "code coverage report for core tokens routes translation keys summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 555x file"
     ],
     "c": "docs"
   },
@@ -13559,7 +13559,7 @@
       "core",
       "tokens",
       "selectors",
-      "code coverage report for core tokens selectors common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 434x file description"
+      "code coverage report for core tokens selectors common summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 426x file description"
     ],
     "c": "docs"
   },
@@ -13589,7 +13589,7 @@
       "core",
       "tokens",
       "selectors",
-      "code coverage report for core tokens selectors docs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 22x file description portal"
+      "code coverage report for core tokens selectors docs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 14x file description portal"
     ],
     "c": "docs"
   },
@@ -13694,7 +13694,7 @@
       "core",
       "tokens",
       "selectors",
-      "code coverage report for core tokens selectors skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 107x file description"
+      "code coverage report for core tokens selectors skeleton summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 424x file description"
     ],
     "c": "docs"
   },
@@ -14039,7 +14039,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings chars summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 659x file description"
+      "code coverage report for core tokens strings chars summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 646x file description"
     ],
     "c": "docs"
   },
@@ -14054,7 +14054,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings css summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 591x file description token"
+      "code coverage report for core tokens strings css summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 577x file description token"
     ],
     "c": "docs"
   },
@@ -14069,7 +14069,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 524x file description"
+      "code coverage report for core tokens strings debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 433x file description"
     ],
     "c": "docs"
   },
@@ -14099,7 +14099,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings dom summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 594x file description property"
+      "code coverage report for core tokens strings dom summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description property"
     ],
     "c": "docs"
   },
@@ -14129,7 +14129,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 583x file description"
+      "code coverage report for core tokens strings input summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 572x file description"
     ],
     "c": "docs"
   },
@@ -14144,7 +14144,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings langs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description locale"
+      "code coverage report for core tokens strings langs summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description locale"
     ],
     "c": "docs"
   },
@@ -14159,7 +14159,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings net summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 632x file description network"
+      "code coverage report for core tokens strings net summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 618x file description network"
     ],
     "c": "docs"
   },
@@ -14174,7 +14174,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings queries summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 602x file description"
+      "code coverage report for core tokens strings queries summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 589x file description"
     ],
     "c": "docs"
   },
@@ -14204,7 +14204,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 581x file description route"
+      "code coverage report for core tokens strings routes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 570x file description route"
     ],
     "c": "docs"
   },
@@ -14219,7 +14219,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 589x file description org"
+      "code coverage report for core tokens strings schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 578x file description org"
     ],
     "c": "docs"
   },
@@ -14234,7 +14234,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 613x file description"
+      "code coverage report for core tokens strings state summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 600x file description"
     ],
     "c": "docs"
   },
@@ -14249,7 +14249,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 587x file description"
+      "code coverage report for core tokens strings svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 576x file description"
     ],
     "c": "docs"
   },
@@ -14264,7 +14264,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings text summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 580x file description non"
+      "code coverage report for core tokens strings text summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 569x file description non"
     ],
     "c": "docs"
   },
@@ -14279,7 +14279,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings types summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 856x file description typeof"
+      "code coverage report for core tokens strings types summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 843x file description typeof"
     ],
     "c": "docs"
   },
@@ -14294,7 +14294,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings vendor summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 594x file description"
+      "code coverage report for core tokens strings vendor summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 583x file description"
     ],
     "c": "docs"
   },
@@ -14309,7 +14309,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 582x file description worker"
+      "code coverage report for core tokens strings wasm summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 571x file description worker"
     ],
     "c": "docs"
   },
@@ -14324,7 +14324,7 @@
       "core",
       "tokens",
       "strings",
-      "code coverage report for core tokens strings webgl summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 630x file description"
+      "code coverage report for core tokens strings webgl summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 616x file description"
     ],
     "c": "docs"
   },
@@ -14360,7 +14360,7 @@
       "core",
       "tokens",
       "theme",
-      "code coverage report for core tokens theme arrows summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 189x file description"
+      "code coverage report for core tokens theme arrows summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 181x file description"
     ],
     "c": "docs"
   },
@@ -14405,7 +14405,7 @@
       "core",
       "tokens",
       "theme",
-      "code coverage report for core tokens theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 565x file description value dark"
+      "code coverage report for core tokens theme summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 524x file description value dark"
     ],
     "c": "docs"
   },
@@ -14500,7 +14500,7 @@
       "core",
       "utils",
       "burn",
-      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 81530x 68617x 68175x 68125x file"
+      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 81697x 68721x 68304x 68264x file"
     ],
     "c": "docs"
   },
@@ -14657,7 +14657,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 430x 3215x 3208x 18x 3190x"
+      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 322x 2789x 2783x 16x 2767x"
     ],
     "c": "docs"
   },
@@ -14687,7 +14687,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 158x 1033x 21x 2055x 216x"
+      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 150x 1013x 21x 2033x 208x"
     ],
     "c": "docs"
   },
@@ -15841,7 +15841,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 132x 2558x 2561x 2553x"
+      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 124x 2248x 2251x 2243x"
     ],
     "c": "docs"
   },
@@ -15871,7 +15871,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 129x 13587x 2728x 2342x"
+      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 121x 12037x 2418x 2075x"
     ],
     "c": "docs"
   },
@@ -15952,7 +15952,7 @@
       "core",
       "utils",
       "dom",
-      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 21x 118x 2544x 12x file"
+      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 21x 118x 2234x 12x file"
     ],
     "c": "docs"
   },
@@ -16034,7 +16034,7 @@
       "core",
       "utils",
       "gpu",
-      "code coverage report for core utils gpu accel shaders summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 204x file description"
+      "code coverage report for core utils gpu accel shaders summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 186x file description"
     ],
     "c": "docs"
   },
@@ -16488,7 +16488,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion route warmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 14x 28x 24x 23x 18x 17x"
+      "code coverage report for core utils motion route warmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 14x 28x 24x 18x 17x 15x"
     ],
     "c": "docs"
   },
@@ -16533,7 +16533,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion skeleton shimmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 85x 323x 322x 230x"
+      "code coverage report for core utils motion skeleton shimmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 384x 18385x 18384x"
     ],
     "c": "docs"
   },
@@ -16548,7 +16548,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2499x 1166x file"
+      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 2457x 1126x file"
     ],
     "c": "docs"
   },
@@ -17181,7 +17181,7 @@
       "coverage-docs",
       "coverage",
       "loader.ts",
-      "code coverage report for loader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 205x 93x 92x file docs description boot"
+      "code coverage report for loader summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 204x 93x 92x file docs description boot"
     ],
     "c": "docs"
   },
@@ -19173,7 +19173,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 26x 22x 121x 148x"
+      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 29x 25x 121x 155x"
     ],
     "c": "docs"
   },
@@ -19233,7 +19233,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 15x 14x 10x 11x"
+      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 16x 15x 11x 14x"
     ],
     "c": "docs"
   },
@@ -19456,7 +19456,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck summary sorter background image url sort arrow sprite png all files 100 statements 306 branches 226 functions lines 276 press the next uncovered block previous filter file autoplay"
+      "code coverage report for components carousel mentions deck summary sorter background image url sort arrow sprite png all files 100 statements 305 branches 223 functions lines 275 press the next uncovered block previous filter file autoplay"
     ],
     "c": "docs"
   },
@@ -19471,7 +19471,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x"
+      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 543x"
     ],
     "c": "docs"
   },
@@ -19885,7 +19885,7 @@
       "cardstack.tsx",
       "components",
       "home",
-      "code coverage report for components home cardstack tsx summary sorter background image url sort arrow sprite png all files 100 statements 162 branches functions lines 152 press the next uncovered block previous filter 101 102 103 104 105"
+      "code coverage report for components home cardstack tsx summary sorter background image url sort arrow sprite png all files 100 statements 166 branches functions lines 157 press the next uncovered block previous filter 101 102 103 104 105"
     ],
     "c": "docs"
   },
@@ -20365,7 +20365,7 @@
       "index",
       "components",
       "home",
-      "code coverage report for components home summary sorter background image url sort arrow sprite png all files 100 statements 390 branches 204 functions 103 lines 365 press the next uncovered block previous filter file aboutsection tsx"
+      "code coverage report for components home summary sorter background image url sort arrow sprite png all files 100 statements 394 branches 210 functions 103 lines 370 press the next uncovered block previous filter file aboutsection tsx"
     ],
     "c": "docs"
   },
@@ -21835,7 +21835,7 @@
       "coverage-website",
       "coverage",
       "index",
-      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 9367 branches 6350 functions 1845 lines 8266 press the next uncovered block previous filter file components carousel 294 101 108"
+      "code coverage report for all files summary sorter background image url sort arrow sprite png 100 statements 9370 branches 6353 functions 1845 lines 8270 press the next uncovered block previous filter file components carousel 294 101 108"
     ],
     "c": "docs"
   },
@@ -21915,7 +21915,7 @@
       "index",
       "views",
       "animations",
-      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19"
+      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 15t18"
     ],
     "c": "docs"
   },
@@ -22055,7 +22055,7 @@
       "index",
       "views",
       "legal",
-      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19 083z"
+      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 15t18 605z"
     ],
     "c": "docs"
   },
@@ -22181,7 +22181,7 @@
       "modal-dom.tsx",
       "views",
       "project",
-      "code coverage report for views project modal dom tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 163x 43x 41x 23x 26x 120x"
+      "code coverage report for views project modal dom tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 162x 42x 40x 23x 26x 120x"
     ],
     "c": "docs"
   },
@@ -22244,7 +22244,7 @@
       "index",
       "views",
       "search",
-      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 14t19 083z"
+      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 15t18 605z"
     ],
     "c": "docs"
   },
@@ -27938,7 +27938,7 @@
       "core",
       "tokens",
       "strings",
-      "core tokens strings dom members dom_strings rel_alternate no_audio_label property markup string grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never"
+      "core tokens strings dom members dom_strings rel_alternate no_audio_label resize_observer_loop property markup string grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these"
     ],
     "c": "docs"
   },
@@ -42959,7 +42959,7 @@
       "core",
       "tokens",
       "strings",
-      "core tokens strings dom members dom_strings rel_alternate no_audio_label property markup string grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these consumers read and never"
+      "core tokens strings dom members dom_strings rel_alternate no_audio_label resize_observer_loop property markup string grouped subset source src surface shared primitives every builds direct frozen map sole declaration site for these"
     ],
     "c": "docs"
   },
@@ -60530,7 +60530,7 @@
       "patches",
       "carousel-media",
       "functions",
-      "parameters returns luiskr com readme core safari patches carousel media iscarouselhosted function boolean defined whether figure hosted inside the shadow root owned slide _element node own tree and host element safaripatchableel types"
+      "parameters returns luiskr com readme core safari patches carousel media iscarouselhosted function boolean defined whether figure hosted inside the shadow root owned slide element node own tree and host safaripatchableel types interfaces"
     ],
     "c": "docs"
   },
@@ -79011,7 +79011,7 @@
       "burn",
       "types",
       "interfaces",
-      "methods type parameters sel returns luiskr com readme core utils burn types burnhost defined minimal host contract the shadow root selector query method null queries for first match _extends_ element string"
+      "methods type parameters sel returns luiskr com readme core utils burn types burnhost defined minimal host contract the shadow root selector query method null queries for first match extends element string"
     ],
     "c": "docs"
   },
@@ -84282,7 +84282,7 @@
       "utils",
       "dom",
       "functions",
-      "parameters returns luiskr com readme core utils dom flushlayout function number defined 307 deliberate synchronous layout flush the one sanctioned forced reflow used transition restart pattern write classes styles force browser commits"
+      "parameters returns luiskr com readme core utils dom flushlayout function number defined 314 deliberate synchronous layout flush the one sanctioned forced reflow used transition restart pattern write classes styles force browser commits"
     ],
     "c": "docs"
   },
@@ -87251,7 +87251,7 @@
       "motion",
       "genie",
       "functions",
-      "parameters component done classes returns luiskr com readme core utils motion genie genieleave function void defined 114 plays the collapse back origin animation then runs caller can finish unmounting instant immediately under reduced when"
+      "parameters component done classes returns luiskr com readme core utils motion genie genieleave function void defined 115 plays the collapse back origin animation then runs caller can finish unmounting instant immediately under reduced when"
     ],
     "c": "docs"
   },
@@ -87714,7 +87714,7 @@
       "utils",
       "notify",
       "functions",
-      "returns luiskr com readme core utils notify initglobalerrorhandlers function boolean defined 207 wires window error unhandledrejection the generic toast uncaught failures surface gracefully instead only logging idempotent false outside"
+      "returns luiskr com readme core utils notify initglobalerrorhandlers function boolean defined 208 wires window error unhandledrejection the generic toast uncaught failures surface gracefully instead only logging idempotent false outside"
     ],
     "c": "docs"
   },
@@ -87731,7 +87731,7 @@
       "utils",
       "notify",
       "functions",
-      "parameters message opts returns luiskr com readme core utils notify function promise false native toast defined 152 surfaces the user notification when allowed page otherwise string body copy localized caller notifyopts interfaces which"
+      "parameters message opts returns luiskr com readme core utils notify function promise false native toast defined 153 surfaces the user notification when allowed page otherwise string body copy localized caller notifyopts interfaces which"
     ],
     "c": "docs"
   },
@@ -87748,7 +87748,7 @@
       "utils",
       "notify",
       "functions",
-      "parameters opts returns luiskr com readme core utils notify notifyerror function promise false native toast defined 195 generic failure shortcut the localized something went wrong string used global handlers where raw error detail belongs"
+      "parameters opts returns luiskr com readme core utils notify notifyerror function promise false native toast defined 196 generic failure shortcut the localized something went wrong string used global handlers where raw error detail belongs"
     ],
     "c": "docs"
   },
@@ -87765,7 +87765,7 @@
       "utils",
       "notify",
       "functions",
-      "parameters opts returns luiskr com readme core utils notify notifyloadfailed function promise false native toast defined 199 resource section load failure shortcut notifyopts interfaces"
+      "parameters opts returns luiskr com readme core utils notify notifyloadfailed function promise false native toast defined 200 resource section load failure shortcut notifyopts interfaces"
     ],
     "c": "docs"
   },
@@ -132976,7 +132976,7 @@
       "feed",
       "public",
       "meta",
-      "fonts googleapis com css2 family fira code wght 300 700 jost 100 900 oswald 200 poiret one display swap namespace atom url http www org 2005 purl elements media search yahoo mrss button background color rgba border none outline padding"
+      "fonts googleapis com css2 family fira code wght 300 700 jost 100 900 oswald 200 poiret one display swap www org 2005 atom purl elements search yahoo mrss 2000 svg width 256 height 3cfilter 3cfeturbulence type fractalnoise basefrequency"
     ],
     "c": "docs"
   },

@@ -9,6 +9,7 @@ import { TEST_TEXT } from '@tests/fixtures/test-constants.js'
 import { COMPONENT_TAGS } from '@core/tokens/elements/components.js'
 import { TOAST_CLASSES } from '@core/tokens/classes/toast.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
+import { DOM_STRINGS } from '@core/tokens/strings/dom.js'
 import { NOTIFY_UI_KEYS, SECTION_UI_KEYS } from '@core/tokens/data/ui-keys.js'
 import { WINDOW_EVENTS } from '@core/tokens/events/dom.js'
 import { STATE_STRINGS } from '@core/tokens/strings/state.js'
@@ -353,6 +354,26 @@ describe('notify service', () => {
     expect(entry.level).toBe(LOG_LEVELS.ERROR)
     expect(entry.parts).toHaveLength(2)
     expect(String(entry.parts[1])).toContain(TEST_TEXT.BODY)
+  })
+
+  test('initGlobalErrorHandlers keeps the ResizeObserver-loop notice off screen', async () => {
+    const { initGlobalErrorHandlers } = await loadNotify()
+
+    // The RO-loop window error is the browser's informational notice that
+    // observer callbacks overflowed a frame — it still lands in devlog for
+    // diagnostics but must never reach the user-facing toast.
+    const { getDevLog } = await import('@core/devlog.js')
+
+    initGlobalErrorHandlers()
+
+    const roError = new Event(WINDOW_EVENTS.ERROR)
+
+    roError.message = `${DOM_STRINGS.RESIZE_OBSERVER_LOOP} completed with undelivered notifications.`
+    window.dispatchEvent(roError)
+    await flush()
+
+    expect(document.querySelector(COMPONENT_TAGS.SITE_TOAST)).toBeNull()
+    expect(getDevLog().at(-1).level).toBe(LOG_LEVELS.ERROR)
   })
 
   test('initGlobalErrorHandlers is a no-op without a window', async () => {

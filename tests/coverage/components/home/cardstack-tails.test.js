@@ -401,7 +401,10 @@ describe('deck tails', () => {
 
     const front = el._cardEls[0]
 
-    front.getBoundingClientRect = () => ({ height: 500 })
+    // The fit reads the front's LAYOUT height (offsetHeight — transform-free
+    // so a mid-transition pose can't contaminate the measure), so the mock
+    // pins the border box rather than the transformed rect.
+    Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
 
     fitDeckToFront(el)
 
@@ -412,7 +415,7 @@ describe('deck tails', () => {
     expect(el._frontExtra).toBe(500 - el._cardH)
 
     // A shorter front re-fits DOWN — the signed delta shrinks pileH too.
-    front.getBoundingClientRect = () => ({ height: el._cardH - 40 })
+    Object.defineProperty(front, 'offsetHeight', { value: el._cardH - 40, configurable: true })
     fitDeckToFront(el)
     expect(el._frontExtra).toBe(-40)
   })
@@ -1531,7 +1534,7 @@ describe('deck/info/events tails', () => {
 
       front.querySelector(SEL.CARD_STACK_CARD_LINK)?.remove()
       front.querySelector(SEL.CARD_STACK_CARD_INFO)?.remove()
-      front.getBoundingClientRect = () => ({ height: 500 })
+      Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
       el._deckEl = null
       fitDeckToFront(el)
       expect(observed).toEqual([front])
@@ -1564,7 +1567,7 @@ describe('deck/info/events tails', () => {
 
       const front = el._cardEls[el.activeIdx]
 
-      front.getBoundingClientRect = () => ({ height: 500 })
+      Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
       fitDeckToFront(el)
       expect(observed.length).toBeGreaterThanOrEqual(3)
       expect(observed[0]).toBe(front)

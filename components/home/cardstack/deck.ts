@@ -19,7 +19,7 @@ import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
 import { ARIA_ATTRS } from '@core/tokens/attrs/aria.js'
 import { HTML_TAGS } from '@core/tokens/elements/html.js'
-import { viewportHeight, viewportWidth } from '@core/utils/dom.js'
+import { flushLayout, viewportHeight, viewportWidth } from '@core/utils/dom.js'
 import { writeInfo } from './info.js'
 import { stopAutoplay } from './autoplay.js'
 import type { CardStackItem, CardPose } from './types.js'
@@ -544,7 +544,7 @@ export function applyPoses(host: CardStack): void {
 
       el.style.zIndex = `${pose.z}`
 
-      void el.offsetWidth
+      void flushLayout(el)
 
       el.style.transition = ATTR_VALUES.EMPTY
     }
@@ -779,7 +779,13 @@ export function fitDeckToFront(host: CardStack): void {
     host._fitFront = front
   }
 
-  const rawH = front.getBoundingClientRect().height || host._cardH
+  // offsetHeight reads the layout border box — getBoundingClientRect
+  // would fold the running pose transform/scale into the measure, and a
+  // mid-transition read feeds back into pileH via _frontExtra: the whole
+  // pile visibly compresses and re-expands (mount flicker / nav shake).
+  // The layout height is transform-free, so the measure stays true while
+  // the pose animates.
+  const rawH = front.offsetHeight || host._cardH
 
   // Content-driven height — the front card NEVER caps at the stage
   // budget: its copy sizes the box outright (height:auto in
