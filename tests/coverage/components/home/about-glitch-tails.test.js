@@ -569,6 +569,62 @@ describe('about glitch tails', () => {
     }
   })
 
+  test('the ResizeObserver coalesces a second valid entry while a frame is pending', () => {
+    const origRO = globalThis.ResizeObserver
+    const prevRaf = globalThis.requestAnimationFrame
+    const instances = []
+    const frames = []
+
+    globalThis.ResizeObserver = class {
+      constructor(cb) {
+        this.cb = cb
+        instances.push(this)
+      }
+
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    }
+
+    globalThis.requestAnimationFrame = (cb) => (frames.push(cb), frames.length)
+
+    try {
+      mountSection()
+      decodeImg()
+      armGlitch(el, wrap())
+
+      const ro = instances[0]
+      const s = el._glitch
+      const good = [{ contentRect: { width: 120, height: 120 } }]
+
+      ro.cb(good)
+
+      const scheduled = frames.length
+
+      // The pending-frame guard keeps the size write out of the RO
+      // delivery turn — the second entry collapses into the queued tick.
+      ro.cb(good)
+
+      expect(frames.length).toBe(scheduled)
+
+      frames.forEach((cb) => cb(0))
+
+      expect(s.active).toBe(true)
+
+      // A frame queued before disarm lands on the in-callback active
+      // guard and skips the resize entirely — every armed observer is
+      // re-fired so the session's own deferred tick is guaranteed in
+      // the flush.
+      instances.forEach((i) => i.cb(good))
+      s.active = false
+      frames.forEach((cb) => cb(0))
+      s.active = true
+    } finally {
+      globalThis.requestAnimationFrame = prevRaf
+      globalThis.ResizeObserver = origRO
+    }
+  })
+
   test('split frames clear the canvas before compositing channels (no additive blowout)', async () => {
     mountSection()
     decodeImg()

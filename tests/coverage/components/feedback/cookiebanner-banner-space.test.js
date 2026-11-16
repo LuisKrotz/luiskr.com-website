@@ -152,4 +152,40 @@ describe('CookieBanner --cookie-banner-h clearance', () => {
 
     el.remove()
   })
+
+  test('the observer coalesces notifications and publishes on the deferred frame', async () => {
+    let roCb = null
+
+    globalThis.ResizeObserver = class {
+      constructor(cb) {
+        roCb = cb
+      }
+
+      observe() {}
+      disconnect() {}
+    }
+
+    const el = await mountBanner()
+    const frames = []
+    const prevRaf = globalThis.requestAnimationFrame
+
+    globalThis.requestAnimationFrame = (cb) => (frames.push(cb), frames.length)
+
+    roCb()
+
+    const scheduled = frames.length
+
+    // A second delivery while the publish frame is pending collapses
+    // into it — style writes stay out of the RO notification turn.
+    roCb()
+
+    expect(frames.length).toBe(scheduled)
+
+    frames.forEach((cb) => cb(0))
+    globalThis.requestAnimationFrame = prevRaf
+
+    expect(rootProp()).not.toBe('')
+
+    el.remove()
+  })
 })

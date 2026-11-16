@@ -385,6 +385,23 @@ describe('deck tails', () => {
     }
   })
 
+  test('onDestroy cancels a pending deferred deck resize', async () => {
+    const el = await mountItems([item(0)])
+    const cancels = []
+    const prevCaf = globalThis.cancelAnimationFrame
+
+    globalThis.cancelAnimationFrame = (id) => cancels.push(id)
+    el._deckRaf = 7
+    el.onDestroy()
+
+    try {
+      expect(cancels).toContain(7)
+      expect(el._deckRaf).toBe(0)
+    } finally {
+      globalThis.cancelAnimationFrame = prevCaf
+    }
+  })
+
   test('fitDeckToFront pins a fixed band on image-only tiers, grows with copy on copy tiers', async () => {
     const el = await mountItems([item(0), item(1)])
     const deck = deckEl(el)
@@ -702,6 +719,35 @@ describe('events tails', () => {
       resetViewportCache()
     }
   })
+
+  test('window resize coalesces onto one pending measure frame', async () => {
+    const el = await mountItems([item(0)])
+    const frames = []
+    const prevRaf = globalThis.requestAnimationFrame
+
+    // Non-stacked tier — the width guard passes and the coalesce arm is
+    // the _resizeRaf early-return instead.
+    el._tier = FAN_TIER
+    globalThis.requestAnimationFrame = (cb) => (frames.push(cb), frames.length)
+
+    try {
+      window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+
+      const scheduled = frames.length
+
+      expect(el._resizeRaf).toBeTruthy()
+
+      window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+
+      expect(frames.length).toBe(scheduled)
+
+      frames.forEach((cb) => cb(0))
+
+      expect(el._resizeRaf).toBe(0)
+    } finally {
+      globalThis.requestAnimationFrame = prevRaf
+    }
+  })
 })
 
 // ─── render tails — manifest-loaded ladder + item variants ───────────────────
@@ -763,6 +809,27 @@ describe('render tails — manifest + variants', () => {
     expect(subs.length).toBe(2)
     const idxItems = el.shadowRoot.querySelectorAll(`.${C.CARD_STACK_INDEX_ITEM}`)
     expect(idxItems.length).toBe(3)
+  })
+
+  test('phone viewport mounts the high layer pre-resolved to covers.src when no rungs are proven', async () => {
+    const wOrig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+
+    Object.defineProperty(window, 'innerWidth', { value: 390, configurable: true })
+    resetViewportCache()
+
+    try {
+      // img-9 has zero manifest entries — covers.rungs/mobileRungs stay
+      // empty, phoneRung is undefined and the high layer lands on the
+      // proven-original src operand (one fetch, no ladder).
+      const el = await mountItems([item(9)])
+      const high = el.shadowRoot.querySelector(SELS.HIGH)
+
+      expect(high).toBeTruthy()
+      expect(high.src).toContain('img-9')
+    } finally {
+      if (wOrig) Object.defineProperty(window, 'innerWidth', wOrig)
+      resetViewportCache()
+    }
   })
 
   test('indexOpen renders the open class + aria-visible panel', async () => {
@@ -1652,6 +1719,54 @@ describe('deck/info/events tails', () => {
     } finally {
       globalThis.ResizeObserver = realRO
       el._deckEl = deck
+    }
+  })
+
+  test('fitDeckToFront — RO callback coalesces onto one deferred fit frame', async () => {
+    const el = await mountItems([item(0), item(1)])
+    const deck = deckEl(el)
+    const cbs = []
+    const realRO = globalThis.ResizeObserver
+
+    globalThis.ResizeObserver = class {
+      constructor(cb) {
+        cbs.push(cb)
+      }
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    }
+
+    const prevRaf = globalThis.requestAnimationFrame
+    const frames = []
+
+    try {
+      el._tier = { ...STACK_TIER, STACKED: true, IN_CARD_INFO: true }
+      el._fitRO = null
+      el._fitFront = null
+
+      const front = el._cardEls[el.activeIdx]
+
+      Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
+      fitDeckToFront(el)
+
+      globalThis.requestAnimationFrame = (cb) => (frames.push(cb), frames.length)
+
+      cbs.forEach((cb) => cb())
+      cbs.forEach((cb) => cb())
+
+      // Both notifications collapsed into the single pending fit frame —
+      // the second delivery hit the _fitRaf early-return.
+      expect(frames.length).toBe(1)
+      expect(el._fitRaf).toBeTruthy()
+
+      frames.forEach((cb) => cb(0))
+
+      expect(el._fitRaf).toBe(0)
+      expect(deck.style.minHeight).not.toBe('')
+    } finally {
+      globalThis.requestAnimationFrame = prevRaf
+      globalThis.ResizeObserver = realRO
     }
   })
 
