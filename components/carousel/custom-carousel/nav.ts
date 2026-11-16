@@ -16,7 +16,7 @@ import type { CarouselLang } from './render.js'
 import type { CustomCarousel } from '../CustomCarousel.js'
 import { CAROUSEL_LAYOUT, CAROUSEL_TIMING } from '@core/tokens/motion/carousel.js'
 import { cancelSpringScroll, springScrollTo } from '@core/utils/motion/scroll-spring.js'
-import { isScrolling, onScrollStop } from '@core/utils/motion/scroll-state.js'
+import { isScrolling, noteScrollActivity, onScrollStop } from '@core/utils/motion/scroll-state.js'
 
 /**
  * Drives the track to `left` through the shared scroll spring — the
@@ -366,6 +366,12 @@ export function jumpToSlide(c: CustomCarousel, idx: number, smooth = false) {
  * @param c The CustomCarousel element.
  */
 export function carouselOnScroll(c: CustomCarousel) {
+  // Mark the gesture even while a spring is mid-flight (isNavigating
+  // short-circuits below): track scrolls never emit a window scroll
+  // event, so without this the parked media publishes/DOM churn fire
+  // mid-swipe instead of at settle.
+  noteScrollActivity()
+
   if (c.isNavigating) return
 
   if (c.scrollTimeout) clearTimeout(c.scrollTimeout)
