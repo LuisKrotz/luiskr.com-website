@@ -8,10 +8,11 @@
  * done-time lands on the identical rest state, and any mount failure
  * leaves the pure-CSS animation untouched.
  *
- * Deliberate upgrade over the CSS path: mobile degrades the DOM
- * animation to word-level (per-char spans are the scroll-jank source —
- * see draw-text/_mobile.scss); the GPU path has no per-char DOM cost,
- * so it runs the full per-char stagger on every viewport.
+ * Deliberate upgrade over the CSS path: the GPU path has no per-char
+ * DOM cost, so it runs the full per-char stagger on fine-pointer
+ * desktops. Touch-primary sessions never reach this module — the draw
+ * is desktop-only and their reveal is the _mobile.scss light fade
+ * (trigger.ts gates the call on store has_touch).
  *
  * Per-char record (12 f32s — mirrors rust/text-draw's CharRec):
  *   dest x,y,w,h (device px, canvas-local) · uv u0,v0,u1,v1 ·

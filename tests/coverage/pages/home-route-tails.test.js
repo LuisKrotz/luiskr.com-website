@@ -100,10 +100,14 @@ describe('Home route tails', () => {
 
     expect(awards).toBeTruthy()
 
-    const last = awards.itemListElement[awards.itemListElement.length - 1]
+    // Position-agnostic: new mention rows append at the end, so the
+    // AI-ready entry is found by its URL fragment, not assumed last.
+    const entry = awards.itemListElement.find((e) =>
+      String(e.url || '').includes(TEST_AWARDS.AI_READY_DOCS_LINK_FRAGMENT)
+    )
 
-    expect(last.url).toContain(TEST_AWARDS.AI_READY_DOCS_LINK_FRAGMENT)
-    expect(last.image).toContain(TEST_AWARDS.AI_READY_MEDIA_PATH)
+    expect(entry.url).toContain(TEST_AWARDS.AI_READY_DOCS_LINK_FRAGMENT)
+    expect(entry.image).toContain(TEST_AWARDS.AI_READY_MEDIA_PATH)
 
     _router.currentRoute = prevRoute
     store.state.lang.locale = prevLocale

@@ -14,6 +14,8 @@ import { LANG_MUTATIONS } from '@core/tokens/events/mutations.js'
 import { LOCALES } from '@core/tokens/locales.js'
 import { ROUTE_NAMES, ROUTE_PREFIXES } from '@core/tokens/routes/names.js'
 import { ROUTE_PATHS } from '@core/tokens/routes/paths.js'
+import { peekBodyNames } from '@core/locale/starfield-names.js'
+import { slugify } from '@core/utils/string.js'
 import store from '@core/store.js'
 import router from '@core/router/router.js'
 import { routeSlugs } from '@core/locale/ui-text.js'
@@ -45,6 +47,38 @@ export function localeUrl(newLang: string): string {
 
   if (routeName === ROUTE_NAMES.EARTH_PLAYGROUND) {
     return `${base}${ROUTE_PATHS.ROOT}${s.earthPlayground || ROUTE_PATHS.EARTH_PLAYGROUND_SEGMENT}`
+  }
+
+  // Star Field — the index swaps to the target locale's slug; a body
+  // deep-link segment is re-keyed through the names tables: current
+  // locale slug → catalog id → target locale slug. Tables only resolve
+  // synchronously once fetched, so an unresolved segment degrades to the
+  // locale-invariant catalog id, which every locale's deep-link parser
+  // accepts (and _syncUrl later rewrites to the pretty localized slug).
+  if (routeName === ROUTE_NAMES.STAR_FIELD) {
+    const starUrl = `${base}${ROUTE_PATHS.ROOT}${s.starField || ROUTE_PATHS.STAR_FIELD_SEGMENT}`
+
+    const body = route?.params?.body
+
+    if (!body) return starUrl
+
+    const id = peekBodyNames(route?.lang)?.bySlug.get(body) ?? body
+
+    const localized = peekBodyNames(newLang)?.byId.get(id)
+
+    return `${starUrl}${ROUTE_PATHS.ROOT}${localized ? slugify(localized) : id}`
+  }
+
+  if (routeName === ROUTE_NAMES.ANIMATIONS) {
+    return `${base}${ROUTE_PATHS.ROOT}${s.animations || ROUTE_PATHS.ANIMATIONS_SEGMENT}`
+  }
+
+  if (routeName === ROUTE_NAMES.SEARCH) {
+    return `${base}${ROUTE_PATHS.ROOT}${s.search || ROUTE_PATHS.SEARCH_SEGMENT}`
+  }
+
+  if (routeName === ROUTE_NAMES.SITEMAP) {
+    return `${base}${ROUTE_PATHS.ROOT}${s.sitemap || ROUTE_PATHS.SITEMAP_SEGMENT}`
   }
 
   const rawPath = window.location.pathname.replace(/^\/([a-z]{2,3})(\/|$)/, ROUTE_PATHS.ROOT)

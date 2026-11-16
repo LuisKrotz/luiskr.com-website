@@ -13,7 +13,8 @@ import { handleLang, handleSearch, handlePreferences } from '@website/components
 import { toggleNavMenu, openNavMenu } from '@website/components/nav/menu.js'
 import store from '@core/store.js'
 import { JOUST_CLASSES } from '@core/tokens/classes/joust.js'
-import { MODAL_MUTATIONS } from '@core/tokens/events/mutations.js'
+import { MODAL_MUTATIONS, UI_MUTATIONS } from '@core/tokens/events/mutations.js'
+import { COMMON_ATTRS } from '@core/tokens/attrs/common.js'
 import { MOUSE_EVENTS } from '@core/tokens/events/dom.js'
 import { ANIMATION_DURATIONS } from '@core/tokens/motion/animation.js'
 import { HTML_TAGS } from '@core/tokens/elements/html.js'
@@ -95,6 +96,7 @@ describe('nav joust wiring tails', () => {
     store.commit(MODAL_MUTATIONS.TOGGLE_LANG_DIALOG, false)
     store.commit(MODAL_MUTATIONS.TOGGLE_SEARCH_MODAL, false)
     store.commit(MODAL_MUTATIONS.TOGGLE_PREFERENCES_MODAL, false)
+    store.commit(UI_MUTATIONS.SET_INPUT_METHOD, COMMON_ATTRS.POINTER)
   })
 
   test('handleLang jousts the first hover-less tap and commits on the second', () => {
@@ -204,6 +206,25 @@ describe('nav joust wiring tails', () => {
 
     expect(host._menuOpen).toBe(true)
     expect(wrap.classList.contains(JOUST_CLASSES.JOUST_OPEN)).toBe(false)
+  })
+
+  test('toggleNavMenu opens on the first touch tap without jousting the label', () => {
+    stubMatchMedia(true)
+
+    store.commit(UI_MUTATIONS.SET_INPUT_METHOD, COMMON_ATTRS.TOUCH)
+
+    const { chip } = makeChip()
+    const host = menuHost()
+
+    chip.addEventListener(MOUSE_EVENTS.CLICK, (e) => toggleNavMenu(host, e))
+
+    pointerClick(chip)
+
+    // Touch-primary input skips the reveal gate entirely — the overlay
+    // opens on the first tap and no label pin is left behind.
+    expect(host._menuOpen).toBe(true)
+    expect(host._updateDom).toHaveBeenCalled()
+    expect(chip.classList.contains(JOUST_CLASSES.JOUST_OPEN)).toBe(false)
   })
 
   test('toggleNavMenu bypasses the gate while the menu is open', () => {

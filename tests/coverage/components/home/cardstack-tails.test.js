@@ -352,6 +352,14 @@ describe('deck tails', () => {
       // the skeleton fan and repaints only when the signature changed.
       rocb()
       expect(el._cardW).toBeGreaterThan(0)
+
+      // A second notification while the rAF hop is still pending
+      // early-returns — the guard keeps one measure per frame.
+      el._deckRaf = 7
+      rocb()
+      expect(el._deckRaf).toBe(7)
+      el._deckRaf = 0
+
       const saved = el._processedItems
       el._processedItems = []
       const updateSpy = jest.spyOn(el, '_updateDom').mockImplementation(() => {})
@@ -1578,6 +1586,39 @@ describe('autoplay tails', () => {
     el.processedItems = []
     armAutoplay(el)
     expect(el._autoOn).toBe(false)
+  })
+
+  test('onDestroy drains a pending autoplay timer and resets the arm', async () => {
+    const el = await mountItems([item(0), item(1)])
+    el._tier = FAN_TIER
+
+    armAutoplay(el)
+    expect(el._autoTimer).not.toBeNull()
+
+    // Destroy with the countdown still pending — the drain arm clears the
+    // timeout instead of letting it tick a detached deck.
+    el.onDestroy()
+    expect(el._autoTimer).toBe(null)
+    expect(el._autoArmed).toBe(false)
+  })
+
+  test('onDestroy cancels a live autoplay paint frame and drops the observer', async () => {
+    const el = await mountItems([item(0), item(1)])
+    el._tier = FAN_TIER
+
+    armAutoplay(el)
+
+    // Force both drain surfaces live — a running paint frame plus the
+    // pending tick — so onDestroy's cancel/clear branches all execute.
+    el._autoRaf = 4242
+    el._autoIO = { disconnect: jest.fn() }
+
+    el.onDestroy()
+
+    expect(el._autoRaf).toBe(0)
+    expect(el._autoIO).toBeNull()
+    expect(el._autoOn).toBe(false)
+    expect(el._autoArmed).toBe(false)
   })
 
   test('mounts without an autoplay observer when IntersectionObserver is absent', async () => {

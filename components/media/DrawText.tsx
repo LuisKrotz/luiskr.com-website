@@ -4,7 +4,9 @@
  * text into per-character spans and animates each in sequence (per-char
  * delay computed via WASM so the whole line lands in the target duration).
  * Supports trigger modes (on-visible, manual, hover) and replay via
- * trigger()/reset().
+ * trigger()/reset(). The per-character draw is desktop-only — touch-primary
+ * sessions (store has_touch / pointer:coarse) never mount char spans and
+ * reveal with a single light opacity fade instead (draw-text/_mobile.scss).
  *
  * Behavior lives in `./draw-text/*` modules (shared sheet, tokenizer +
  * renderer, trigger wiring, shadow-DOM update); this class is the
@@ -31,6 +33,7 @@ import type { DrawTimer, DrawToken } from './draw-text/types.js'
 import { DRAW_TIMINGS } from '@core/tokens/media/dimensions.js'
 import { applyAnimationDesc } from '@core/utils/a11y/animation-desc.js'
 import { ANIMATION_IDS } from '@core/tokens/data/animation-ids.js'
+import store from '@core/store.js'
 
 /**
  * Draws text.
@@ -231,10 +234,13 @@ export class DrawText extends HTMLElement {
    * element enters the viewport and after the animation has finished the
    * words are rendered as single nodes: same line breaking, a fraction of
    * the DOM — long project pages would otherwise mount thousands of char
-   * spans permanently.
+   * spans permanently. Touch-primary sessions (store has_touch — phones,
+   * tablets, hybrids after first touch) never mount them at all: the draw
+   * is a desktop affordance and the reveal degrades to a light fade
+   * (draw-text/_mobile.scss), so the O(chars) DOM cost is skipped too.
    */
   get _needsCharSpans() {
-    return this._isVisible && !this._hasAnimated
+    return this._isVisible && !this._hasAnimated && !store.getters.getTouch()
   }
 
   /** Re-renders the shadow DOM for current props. */

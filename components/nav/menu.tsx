@@ -116,7 +116,11 @@ export const toggleNavMenu = (host: NavMenuHost, e?: Event, chip?: Element | nul
     return
   }
 
-  if (!(chip ? joustChip(chip, true) : joustClick(e))) return
+  // Touch-primary taps open the overlay directly — the joust label
+  // reveal exists for hover-less pointers, but on touch a first tap
+  // that only pours the "Menu" label reads as a dead press. The gate
+  // still runs for non-touch activations (keyboard, hybrid pointers).
+  if (!store.getters.getTouch() && !(chip ? joustChip(chip, true) : joustClick(e))) return
 
   openNavMenu(host)
 }

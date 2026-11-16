@@ -10,6 +10,9 @@
  *                   of slack), clamped to MAX_MS for pathological texts
  * The rootMargin on the observer starts the animation just before the
  * element is visible — text appears to be mid-reveal as it scrolls in.
+ * Touch-primary sessions skip the char schedule entirely: no char spans
+ * mount (_needsCharSpans), the WebGPU overlay is bypassed, and the reveal
+ * is the _mobile.scss light fade with a fade-length done-timer.
  */
 
 import { COMMON_ATTRS } from '@core/tokens/attrs/common.js'
@@ -19,6 +22,7 @@ import { QUERY_STRINGS } from '@core/tokens/strings/queries.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
 import { stripHtml } from '@core/utils/string.js'
 import { onScrollStop } from '@core/utils/motion/scroll-state.js'
+import store from '@core/store.js'
 import { tryGpuDraw } from './gpu.js'
 import type { DrawText } from '../DrawText.js'
 import { DRAW_TIMINGS } from '@core/tokens/media/dimensions.js'
@@ -173,6 +177,12 @@ export function startAnimation(host: DrawText): void {
 
   const rootEl = host._rootEl
 
+  // Touch-primary sessions play the _mobile.scss light fade — its
+  // done-time is the fade length plus slack, not the per-char schedule
+  // (which would hold --visible for tens of seconds on long copy and
+  // delay --done-gated styles like the link-underline restore).
+  const isTouch = store.getters.getTouch()
+
   const chars = stripHtml(host.text).length
 
   const lastCharDelay = effectiveOffset + Math.max(0, chars - 1) * host.delay
@@ -181,7 +191,11 @@ export function startAnimation(host: DrawText): void {
   // fixed ceiling fired the timer mid-schedule on ordered pages (legal
   // docs schedule items seconds out), snapping every unanimated char
   // visible at once as a solid block of text.
-  const totalMs = lastCharDelay + DRAW_TIMINGS.DRAW_ANIM_EXTRA_MS
+  const charTotalMs = lastCharDelay + DRAW_TIMINGS.DRAW_ANIM_EXTRA_MS
+
+  const totalMs = isTouch
+    ? DRAW_TIMINGS.DRAW_FADE_MS + DRAW_TIMINGS.DRAW_FADE_SLACK_MS
+    : charTotalMs
 
   if (host._animTimer) clearTimeout(host._animTimer)
 
@@ -203,5 +217,11 @@ export function startAnimation(host: DrawText): void {
   // WebGPU reveal — when the artifact mounts, the instanced-draw canvas
   // takes over the stagger (the CSS spans keep animating invisibly so
   // done-time lands on the same state). No-ops without navigator.gpu.
-  tryGpuDraw(host, totalMs)
+  // Touch-primary sessions skip it: _needsCharSpans keeps them in words
+  // mode so there is no per-char stagger for the overlay to replace —
+  // the reveal is the light fade instead, and the wasm/canvas fetch is
+  // pure cost on the devices that can least afford it.
+  if (!isTouch) {
+    tryGpuDraw(host, totalMs)
+  }
 }

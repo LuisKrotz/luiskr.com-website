@@ -16,6 +16,8 @@ import { ARIA_ATTRS } from '@core/tokens/attrs/aria.js'
 import { A11Y_CLASSES } from '@core/tokens/classes/a11y.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
 import { CSS_STRINGS } from '@core/tokens/strings/css.js'
+import { DRAW_TEXT_SELECTORS } from '@core/tokens/selectors/draw-text.js'
+import store from '@core/store.js'
 
 /** ESM __dirname — needed to resolve the repo-relative sass path. */
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -304,6 +306,32 @@ describe('DrawText tails', () => {
     expect(() => el._renderContent()).not.toThrow()
 
     el.remove()
+  })
+
+  test('touch-primary input reveals in words mode — no char spans, no GPU overlay', () => {
+    const prevTouch = store.state.has_touch
+
+    store.state.has_touch = true
+
+    try {
+      const el = mount({ [COMMON_ATTRS.DELAY]: '0', [COMMON_ATTRS.OFFSET]: '0' })
+
+      el.trigger()
+
+      // The draw is desktop-only: mid-reveal the shadow holds word spans
+      // (the light-fade path in _mobile.scss), never per-char nodes, and
+      // the WebGPU overlay fetch is skipped entirely.
+      expect(el.shadowRoot.querySelectorAll(DRAW_TEXT_SELECTORS.DRAW_TEXT_CHAR)).toHaveLength(0)
+      expect(
+        el.shadowRoot.querySelectorAll(DRAW_TEXT_SELECTORS.DRAW_TEXT_WORD).length
+      ).toBeGreaterThan(0)
+      expect(el._gpuCanvas).toBeNull()
+      expect(el._gpuHandle).toBeNull()
+
+      el.remove()
+    } finally {
+      store.state.has_touch = prevTouch
+    }
   })
 
   test('module re-evaluation respects the registered element', async () => {
