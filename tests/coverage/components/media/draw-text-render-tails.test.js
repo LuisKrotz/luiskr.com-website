@@ -24,6 +24,7 @@ import {
   plainTokensToHtml,
   renderContent,
   renderWordHtml,
+  RENDER_MODES,
   tokenToHtml,
 } from '@website/components/media/draw-text/render.js'
 
@@ -42,6 +43,33 @@ describe('draw-text render tails', () => {
     const toks = parseTokens('<i></i> a <br> b')
 
     expect(toks.length).toBeGreaterThan(1)
+  })
+
+  test('non-phrasing tags unwrap to inner tokens; allowed-tag attrs are sanitized', () => {
+    // <script>/<div> are not in the phrasing allowlist — their inner text
+    // still tokenizes (and animates) while the element never reaches
+    // innerHTML. <em> survives but loses its onclick handler. WORDS mode
+    // keeps each word contiguous inside its span for the assertions.
+    const html = renderContent(
+      '<script>alert(1)</script><div><em onclick="x()" title="t">ok</em></div>',
+      10,
+      0,
+      RENDER_MODES.WORDS
+    )
+
+    expect(html).not.toContain('script')
+    expect(html).not.toContain('onclick')
+    expect(html).toContain('alert(1)')
+    expect(html).toContain('ok')
+    expect(html).toContain('title="t"')
+
+    // A disallowed tag nested inside an allowed one unwraps the same way —
+    // the iframe element and its src attr never reach the output.
+    const nested = renderContent('<b>a<iframe src="x">b</iframe>c</b>', 10, 0, RENDER_MODES.WORDS)
+
+    expect(nested).not.toContain('iframe')
+    expect(nested).not.toContain('src=')
+    expect(nested).toContain('>b</span>')
   })
 
   test('tokenToHtml unknown-token + malformed-tag arms', () => {

@@ -17,7 +17,7 @@ import { HTML_PHRASING_TAGS } from '@core/tokens/elements/html.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
 import { CSS_STRINGS } from '@core/tokens/strings/css.js'
 import { DOM_STRINGS } from '@core/tokens/strings/dom.js'
-import { escapeHtml, stripHtml } from '@core/utils/string.js'
+import { escapeHtml, sanitizeAttrString, stripHtml } from '@core/utils/string.js'
 import type { DrawChar, DrawToken } from './types.js'
 import { DRAW_TIMINGS } from '@core/tokens/media/dimensions.js'
 
@@ -46,13 +46,26 @@ export const RENDER_MODES = Object.freeze({
 } as const)
 
 /**
+ * Tag allowlist for tokenized markup — the lowercase value set of
+ * HTML_PHRASING_TAGS (text-level + structural content tags only; no
+ * scriptable or embedded-content elements). Built once at module load.
+ */
+const DRAW_ALLOWED_TAGS: ReadonlySet<string> = new Set(
+  Object.values(HTML_PHRASING_TAGS).map((tag) => tag.toLowerCase())
+)
+
+/**
  * Tokenizes the text into word/space/br/inline-tag chunks. Words split
  * at spaces and each character gets a global index `ci`. Spaces and
  * <br>s become layout-only tokens so line breaking stays identical to
  * unsplit text. The regex walks <br>, <tag>…</tag> (attrs preserved,
  * group 3 back-referenced for the closing tag), and bare text — so
  * inline markup inside CMS copy (e.g. an <em> or <a>) animates as one
- * continuous sequence.
+ * continuous sequence. Only phrasing/content tags from
+ * HTML_PHRASING_TAGS survive: any other paired tag is unwrapped to its
+ * inner tokens (text still animates, the element never reaches
+ * innerHTML), and surviving attrs pass through sanitizeAttrString so
+ * `on*=` handlers and scriptable URL schemes cannot ride along.
  */
 export function parseTokens(text: string): DrawToken[] {
   let ci = 0
@@ -106,7 +119,20 @@ export function parseTokens(text: string): DrawToken[] {
 
         const inner = match[5] || ATTR_VALUES.EMPTY
 
-        result.push({ type: CSS_STRINGS.TOKEN_TAG, tag, attrStr, inner, chunks: tokenize(inner) })
+        // Tag allowlist: non-phrasing elements (<script>, <iframe>, <svg>,
+        // <img onerror=…>, …) are unwrapped — their inner tokens still
+        // animate as text while the element itself never reaches innerHTML.
+        if (!DRAW_ALLOWED_TAGS.has(tag.toLowerCase())) {
+          result.push(...tokenize(inner))
+        } else {
+          result.push({
+            type: CSS_STRINGS.TOKEN_TAG,
+            tag,
+            attrStr: sanitizeAttrString(attrStr),
+            inner,
+            chunks: tokenize(inner),
+          })
+        }
       } else {
         // Bare text run — or a stray `<` that matched no tag alternative;
         // parseText indexes its chars so the renderer escapes it as `&lt;`.
