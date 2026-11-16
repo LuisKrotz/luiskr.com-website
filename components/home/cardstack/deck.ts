@@ -485,8 +485,6 @@ export function applyPoses(host: CardStack): void {
 
     const s = ringSigned(i - f, len)
 
-    const front = Math.abs(s) < CARD_STACK_LAYOUT.FRONT_EPS
-
     // EVERY stacked card rides the front card's live height: the pile's
     // sheets match the copy-sized (or stage-capped) front box, so only
     // the thin stair offsets peek out instead of a near-full second
