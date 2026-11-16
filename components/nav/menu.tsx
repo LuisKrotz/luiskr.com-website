@@ -20,7 +20,7 @@ import { ANIMATION_IDS } from '@core/tokens/data/animation-ids.js'
 import { NAV_DIMENSIONS } from '@core/tokens/media/dimensions.js'
 import { ANIMATION_DURATIONS } from '@core/tokens/motion/animation.js'
 import { MODAL_MUTATIONS } from '@core/tokens/events/mutations.js'
-import { joustChip, joustClick, joustCollapseAll } from '@core/utils/dom/joust.js'
+import { joustChip, joustClick, joustCollapseAll, joustDirectTap } from '@core/utils/dom/joust.js'
 import store from '@core/store.js'
 
 /** Host surface the menu helpers need (satisfied by AppNav). */
@@ -116,11 +116,16 @@ export const toggleNavMenu = (host: NavMenuHost, e?: Event, chip?: Element | nul
     return
   }
 
-  // Touch-primary taps open the overlay directly — the joust label
-  // reveal exists for hover-less pointers, but on touch a first tap
-  // that only pours the "Menu" label reads as a dead press. The gate
-  // still runs for non-touch activations (keyboard, hybrid pointers).
-  if (!store.getters.getTouch() && !(chip ? joustChip(chip, true) : joustClick(e))) return
+  // Direct-manipulation taps open the overlay directly — the joust
+  // label reveal exists for hover-less pointers, but on touch/pen a
+  // first tap that only pours the "Menu" label reads as a dead press.
+  // The device flag alone misses hybrid/stylus cases (has_touch flips
+  // with the last seen pointer type), so the gate also reads the
+  // activating pointerdown's own type; mouse clicks and keyboard
+  // activations still run the pour.
+  const directTap = store.getters.getTouch() || joustDirectTap()
+
+  if (!directTap && !(chip ? joustChip(chip, true) : joustClick(e))) return
 
   openNavMenu(host)
 }

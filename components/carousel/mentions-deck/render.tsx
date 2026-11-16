@@ -94,8 +94,13 @@ function renderCard(
           dangerouslySetInnerHTML={{ __html: item.description || ATTR_VALUES.EMPTY }}
         />
         {item.media ? (
+          // Eager, not lazy: these badges live inside a transformed deck,
+          // and on iOS — worst under Low Power Mode — lazy imgs in nested
+          // scroll/transform regions can stay deferred forever, leaving a
+          // carousel of empty cards. Award badges are tiny; the eager
+          // fetch is bounded by the deck's card count.
           <img
-            loading={MEDIA_ATTRS.LOADING_LAZY}
+            loading={MEDIA_ATTRS.LOADING_EAGER}
             decoding={MEDIA_ATTRS.DECODING_ASYNC}
             className={C.MENTIONS_DECK_CARD_IMG}
             src={encodeMediaUrl(storage + item.media.path)}

@@ -132,9 +132,18 @@ export function renderMediaFigure(c: MediaFigure) {
 
       {!c.isVideo ? (
         <Fragment>
+          {/* Carousel thumbs go eager: on iOS — worst under Low Power
+              Mode — lazy <img>s inside the transformed strip can stay
+              deferred forever (Safari never schedules their fetch
+              against the nested scroll region), leaving the whole
+              carousel blank. The slide wrapper carries
+              internal-extra-item, so inExtraItem scopes eagerness to
+              strips only — long media lists keep lazy loading. */}
           <img
             decoding={MEDIA_ATTRS.DECODING_ASYNC}
-            loading={isHeroItem ? MEDIA_ATTRS.LOADING_EAGER : MEDIA_ATTRS.LOADING_LAZY}
+            loading={
+              isHeroItem || inExtraItem ? MEDIA_ATTRS.LOADING_EAGER : MEDIA_ATTRS.LOADING_LAZY
+            }
             fetchpriority={
               isHeroItem ? MEDIA_ATTRS.FETCH_PRIORITY_HIGH : MEDIA_ATTRS.FETCH_PRIORITY_LOW
             }
@@ -170,7 +179,9 @@ export function renderMediaFigure(c: MediaFigure) {
           {posterSrc !== ATTR_VALUES.EMPTY && (
             <img
               decoding={MEDIA_ATTRS.DECODING_ASYNC}
-              loading={isHeroItem ? MEDIA_ATTRS.LOADING_EAGER : MEDIA_ATTRS.LOADING_LAZY}
+              loading={
+                isHeroItem || inExtraItem ? MEDIA_ATTRS.LOADING_EAGER : MEDIA_ATTRS.LOADING_LAZY
+              }
               fetchpriority={
                 isHeroItem ? MEDIA_ATTRS.FETCH_PRIORITY_HIGH : MEDIA_ATTRS.FETCH_PRIORITY_LOW
               }

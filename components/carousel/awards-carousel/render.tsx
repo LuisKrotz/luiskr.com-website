@@ -23,8 +23,9 @@ import type { CarouselSlide } from './types.js'
  * JSX for one slide — two shapes by variant: `awards` renders an outbound
  * link (target=_blank + rel=noopener — external sites get no opener
  * access, a tabnabbing fix per MDN) with an icon span or `<img>`; the
- * `selected` variant renders plain content text. `loading=lazy` +
- * `decoding=async` keep award images off the critical path.
+ * `selected` variant renders plain content text. `loading=eager` keeps
+ * award images immune to the iOS lazy-in-transformed-track stall;
+ * `decoding=async` keeps their decode off the paint path.
  * @param host The AwardsCarousel element.
  * @param item Slide data; null-safe (clones render undefined).
  * @returns Slide JSX or null.
@@ -44,8 +45,12 @@ export function renderItem(host: AwardsCarousel, item: CarouselSlide | undefined
         {!item.media ? (
           <span className={AWC_CLASSES.AWC_AWARD_MEDIA}>{item.icon || ATTR_VALUES.EMPTY}</span>
         ) : (
+          // Eager, not lazy: the slides ride a transformed track, and on
+          // iOS — worst under Low Power Mode — lazy imgs in transformed
+          // regions can stay deferred forever (blank award strip). These
+          // are small badge files, so the eager batch stays cheap.
           <img
-            loading={MEDIA_ATTRS.LOADING_LAZY}
+            loading={MEDIA_ATTRS.LOADING_EAGER}
             decoding={MEDIA_ATTRS.DECODING_ASYNC}
             className={AWC_CLASSES.AWC_AWARD_IMG}
             src={encodeMediaUrl(storage + item.media.path)}
