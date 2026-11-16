@@ -93,9 +93,13 @@ export class CardStack extends BaseComponent {
   _deckH = 0
   _stageH = 0 // the section's viewport allotment (vh minus header/foot chrome) — measure()'s height bound for card sizing; 0 until the section rect is measurable. Copy-carrying cards never cap to it — content sizes them and the page absorbs the overflow
   _resizeW = -1 // last viewport width the resize handler remeasured on — width-stable resizes (mobile chrome-bar collapse) skip the deck re-layout on stacked tiers
+  _resizeRaf = 0 // pending rAF id for the coalesced width-change re-measure — one layout pass per painted frame
   _autoStage = false // content-sized section (the ≥3840 rung): min-height computed to 0 — the fan's 1fr deck row has no allotment, so fitDeckToFront publishes the card band itself
   _deckRO: ResizeObserver | null = null // re-measures when the grid resizes the deck stage
+
+  _deckRaf = 0 // pending deferred _deckResize tick (RO callbacks hop through rAF)
   _fitRO: ResizeObserver | null = null // re-fits the deck when the front card's copy height changes
+  _fitRaf = 0 // pending rAF that runs the RO-deferred fit — coalesces bursts, breaks the write→notify loop
   _fitFront: Element | null = null // the card node _fitRO currently watches
   _frontExtra = 0 // px the stacked front card's live height differs from the ratio height (pileH input — signed: copy growth positive, short copy negative); the card never caps — copy sizes it and the page absorbs the overflow
   _loadedCovers = new Map<string, string>() // cover key → highest confirmed painted tier
@@ -238,9 +242,17 @@ export class CardStack extends BaseComponent {
 
     this._deckRO = null
 
+    if (this._deckRaf) cancelAnimationFrame(this._deckRaf)
+
+    this._deckRaf = 0
+
     this._fitRO?.disconnect()
 
     this._fitRO = null
+
+    if (this._fitRaf) cancelAnimationFrame(this._fitRaf)
+
+    this._fitRaf = 0
 
     this._fitFront = null
 
@@ -371,41 +383,59 @@ export class CardStack extends BaseComponent {
     }
 
     this._deckRO ??= new ResizeObserver(() => {
-      if (!deckItems(this).length) {
-        // Skeleton deck: onInit's measure ran before the deck had a
-        // measurable rect (viewport fallback), so the placeholder fan
-        // still holds that guess. Re-measure and repaint the shims at
-        // the true card box or the data-landed swap visibly reflows.
-        // The re-render is gated on a changed signature — the fresh
-        // deck node re-fires this observer once, and an unchanged
-        // measurement breaks the loop before it can oscillate.
-        const prev = { w: this._cardW, h: this._cardH, peek: this._peek, tier: this._tier }
+      if (this._deckRaf) return
 
-        measure(this)
-
-        if (
-          this._cardW !== prev.w ||
-          this._cardH !== prev.h ||
-          this._peek !== prev.peek ||
-          this._tier !== prev.tier
-        ) {
-          this._updateDom()
-        }
-
-        return
-      }
-
-      measure(this)
-
-      applyPoses(this)
-
-      // The fresh stage budget must re-fit the pile — the mount-time
-      // fit ran before the deck had a measurable rect (budget 0, no
-      // cap), so without this the band/band-cap never converge.
-      fitDeckToFront(this)
+      // Writing card/deck sizes inside the RO delivery turn feeds fresh
+      // notifications straight back into the same turn — WebKit flags the
+      // backlog as a loop error. The rAF hop keeps measure/fit out of the
+      // observer phase; the signature gate still ends real changes in one hop.
+      this._deckRaf = requestAnimationFrame(() => {
+        this._deckRaf = 0
+        this._deckResize()
+      })
     })
 
     this._deckRO.observe(deck)
+  }
+
+  /**
+   * Deferred deck-resize work — runs one rAF after the RO fires so size
+   * writes never land inside the observer delivery turn.
+   */
+
+  _deckResize(): void {
+    if (!deckItems(this).length) {
+      // Skeleton deck: onInit's measure ran before the deck had a
+      // measurable rect (viewport fallback), so the placeholder fan
+      // still holds that guess. Re-measure and repaint the shims at
+      // the true card box or the data-landed swap visibly reflows.
+      // The re-render is gated on a changed signature — the fresh
+      // deck node re-fires this observer once, and an unchanged
+      // measurement breaks the loop before it can oscillate.
+      const prev = { w: this._cardW, h: this._cardH, peek: this._peek, tier: this._tier }
+
+      measure(this)
+
+      if (
+        this._cardW !== prev.w ||
+        this._cardH !== prev.h ||
+        this._peek !== prev.peek ||
+        this._tier !== prev.tier
+      ) {
+        this._updateDom()
+      }
+
+      return
+    }
+
+    measure(this)
+
+    applyPoses(this)
+
+    // The fresh stage budget must re-fit the pile — the mount-time
+    // fit ran before the deck had a measurable rect (budget 0, no
+    // cap), so without this the band/band-cap never converge.
+    fitDeckToFront(this)
   }
 
   /** Deck measurement — see cardstack/deck.ts. */

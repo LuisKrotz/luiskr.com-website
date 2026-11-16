@@ -241,7 +241,16 @@ export function attachMesh(host: AboutSection): boolean {
   }
 
   if (typeof ResizeObserver !== TYPE_STRINGS.UNDEFINED) {
-    s.ro = new ResizeObserver(size)
+    let raf = 0
+
+    s.ro = new ResizeObserver(() => {
+      if (raf) return
+
+      raf = requestAnimationFrame(() => {
+        raf = 0
+        size()
+      })
+    })
     s.ro.observe(canvas)
   }
 

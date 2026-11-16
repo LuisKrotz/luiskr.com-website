@@ -125,7 +125,18 @@ export function attachTitleFit(host: AboutSection): void {
   syncTitleFit(host)
 
   if (title && typeof ResizeObserver !== TYPE_STRINGS.UNDEFINED) {
-    if (!s.ro) s.ro = new ResizeObserver(() => syncTitleFit(host))
+    if (!s.ro) {
+      let raf = 0
+
+      s.ro = new ResizeObserver(() => {
+        if (raf) return
+
+        raf = requestAnimationFrame(() => {
+          raf = 0
+          syncTitleFit(host)
+        })
+      })
+    }
 
     // Drop stale targets (dead h2 nodes from prior renders) and watch the
     // live one — a breakpoint step resizes its column box and re-syncs.

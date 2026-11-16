@@ -33168,7 +33168,7 @@
       "shared",
       "scripts",
       "build",
-      "shared scripts build submit indexnow mjs members repo_root url_list_candidates report_path json_batch_max param_concurrency request_timeout_ms retry_delay_ms sleep request loadurllist verifykeyfile submitjson submitparamone submitparam"
+      "shared scripts build submit indexnow mjs members repo_root url_list_candidates report_path json_batch_max param_concurrency param_batch_delay_ms json_batch_delay_ms request_timeout_ms retry_delay_ms sleep request loadurllist verifykeyfile"
     ],
     "c": "docs"
   },
@@ -50141,7 +50141,7 @@
       "website",
       "components",
       "home",
-      "website components home cardstack tsx members module scope _dragtick processeditems translations deckitems storage _observedeck measure applyposes updatechrome goto onprevclick onnextclick ondotclick oncardclick toggleindex closeindex"
+      "website components home cardstack tsx members module scope _dragtick processeditems translations deckitems storage _observedeck _deckresize measure applyposes updatechrome goto onprevclick onnextclick ondotclick oncardclick toggleindex"
     ],
     "c": "docs"
   },
@@ -105189,7 +105189,7 @@
       "CardStack",
       "info",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack info armoutgoingtitleburn function void defined 346 arms the outgoing front burn out before pose pass drops active goto calls ahead applyposes flip bottom anchors"
+      "parameters host returns luiskr com readme website components home cardstack info armoutgoingtitleburn function void defined 360 arms the outgoing front burn out before pose pass drops active goto calls ahead applyposes flip bottom anchors"
     ],
     "c": "docs"
   },
@@ -105208,7 +105208,7 @@
       "CardStack",
       "info",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack info burncardtitles function void defined 375 the card paper burn stacked tiers front title knits loop runs dir from prog deposit motes rebuild glyphs then"
+      "parameters host returns luiskr com readme website components home cardstack info burncardtitles function void defined 389 the card paper burn stacked tiers front title knits loop runs dir from prog deposit motes rebuild glyphs then"
     ],
     "c": "docs"
   },
@@ -105246,7 +105246,7 @@
       "CardStack",
       "info",
       "functions",
-      "parameters host held returns luiskr com readme website components home cardstack info holdburns function void defined 410 scroll visibility hold for every burn session the deck owns card title knits consumes and text column swap section"
+      "parameters host held returns luiskr com readme website components home cardstack info holdburns function void defined 424 scroll visibility hold for every burn session the deck owns card title knits consumes and text column swap section"
     ],
     "c": "docs"
   },
@@ -105284,7 +105284,7 @@
       "CardStack",
       "info",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack info writeinfo function void defined 467 publishes the front card copy into text column without render title burns out description writer types and check link"
+      "parameters host returns luiskr com readme website components home cardstack info writeinfo function void defined 481 publishes the front card copy into text column without render title burns out description writer types and check link"
     ],
     "c": "docs"
   },
@@ -105700,7 +105700,7 @@
       "CardStack",
       "render",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack render rendercardstack function element defined tsx 383 jsx template for the component shadow dom classes shared src globals namespaces type aliases"
+      "parameters host returns luiskr com readme website components home cardstack render rendercardstack function element defined tsx 384 jsx template for the component shadow dom classes shared src globals namespaces type aliases"
     ],
     "c": "docs"
   },

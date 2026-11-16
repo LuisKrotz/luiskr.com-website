@@ -533,10 +533,20 @@ export function applyPoses(host: CardStack): void {
     // wrap-around "rise + fade" the boundary nav relies on). A card
     // leaving the fan simply writes opacity 0 + --hidden, and its
     // opacity/visibility transition dissolves it in place.
+    // Stacked tiers write a FLAT pose — translateZ under a `perspective`
+    // deck pushes every card through WebKit's 3D compositing path, the
+    // layer-graph family that jetsam-kills iOS tabs under a pile of
+    // textured sheets. The tiny perspective shrink the depth term bought
+    // is dropped with the context; the pile still staggers on x/y/rotZ.
+    const poseTransform = (yPx: number): string =>
+      tier.STACKED
+        ? `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, 0) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+        : `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+
     if (pose.visible && wasVisible === false) {
       el.style.transition = ATTR_VALUES.NONE
 
-      el.style.transform = `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y + h * CARD_STACK_LAYOUT.ENTER_RISE}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+      el.style.transform = poseTransform(pose.y + h * CARD_STACK_LAYOUT.ENTER_RISE)
 
       el.style.opacity = CHAR_STRINGS.ZERO
 
@@ -557,7 +567,7 @@ export function applyPoses(host: CardStack): void {
     // centering keeps every card's top edge on the same line — the
     // pile never bleeds into the header when the front is capped, and
     // only the authored stair offsets peek past its edges.
-    el.style.transform = `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+    el.style.transform = poseTransform(pose.y)
 
     // Opacity writes the pose value for visible cards (1) and the hidden
     // floor (0) — the entering seed's 0→1 and the leaving card's 1→0
@@ -575,7 +585,11 @@ export function applyPoses(host: CardStack): void {
   }
 
   if (host._sizesDirty && host._deckEl) {
-    ;(host._deckEl as HTMLElement).style.perspective = `${tier.PERSPECTIVE * w}${COMMON_ATTRS.PX}`
+    // Stacked tiers get no camera — a `perspective` deck would re-enter
+    // the 3D compositing path the flattened poses just left.
+    ;(host._deckEl as HTMLElement).style.perspective = tier.STACKED
+      ? ATTR_VALUES.NONE
+      : `${tier.PERSPECTIVE * w}${COMMON_ATTRS.PX}`
   }
 
   host._sizesDirty = false
@@ -759,7 +773,21 @@ export function fitDeckToFront(host: CardStack): void {
     host._fitRO?.disconnect()
 
     if (typeof ResizeObserver !== TYPE_STRINGS.UNDEFINED) {
-      host._fitRO ??= new ResizeObserver(() => fitDeckToFront(host))
+      // RO notifications are pre-paint: writing sizes back synchronously
+      // resizes the observed card inside the same notification turn and
+      // WebKit reports "ResizeObserver loop completed with undelivered
+      // notifications" (console.error on iOS). Deferring the fit into a
+      // coalesced rAF breaks the write→notify cycle while keeping the
+      // write inside the same frame — no visible delay, no loop.
+      host._fitRO ??= new ResizeObserver(() => {
+        if (host._fitRaf) return
+
+        host._fitRaf = requestAnimationFrame(() => {
+          host._fitRaf = 0
+
+          fitDeckToFront(host)
+        })
+      })
 
       host._fitRO.observe(front)
 

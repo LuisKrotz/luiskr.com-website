@@ -1293,7 +1293,7 @@ describe('render tails — hint copy', () => {
 
 // ─── render tails — phone-class viewport ladder ──────────────────────────────
 describe('render tails — phone viewport', () => {
-  test('mobile rungs enter the cover ladder under a small viewport', async () => {
+  test('phone viewports mount the high layer pre-resolved at the ceiling rung', async () => {
     const orig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
     Object.defineProperty(window, 'innerWidth', { value: 390, configurable: true })
     resetViewportCache()
@@ -1302,6 +1302,16 @@ describe('render tails — phone viewport', () => {
       // so both `webp || jpg` arms of the ≤768 ladder write.
       const el = await mountItems([item(0), item(1)])
       expect(el._cardEls.length).toBe(2)
+
+      // The phone policy mounts ONE high layer already --loaded at the
+      // mobile-stem ceiling rung — no ladder stepper, so a blurred LQIP
+      // can never be the only cover the card paints.
+      const highs = el.shadowRoot.querySelectorAll(SELS.HIGH)
+      expect(highs.length).toBe(2)
+      highs.forEach((high) => {
+        expect(high.classList.contains(C.CARD_STACK_CARD_IMG_LOADED)).toBe(true)
+        expect(high.src).toContain(MEDIA.MOBILE_SUFFIX)
+      })
     } finally {
       if (orig) Object.defineProperty(window, 'innerWidth', orig)
       resetViewportCache()

@@ -1112,6 +1112,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -1180,6 +1181,7 @@ body::after {
   background: rgba(0, 0, 0, 0);
   width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
 }
 #app::before {
   content: '';
@@ -1287,6 +1289,7 @@ main {
 }
 #main {
   min-height: 100vh;
+  min-height: 100svh;
 }
 #home,
 #about,

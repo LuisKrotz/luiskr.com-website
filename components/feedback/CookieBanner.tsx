@@ -160,7 +160,16 @@ export class CookieBanner extends BaseComponent {
     this._resizeObserver?.disconnect()
 
     if (typeof ResizeObserver !== TYPE_STRINGS.UNDEFINED && !this._resizeObserver) {
-      this._resizeObserver = new ResizeObserver(publish)
+      let raf = 0
+
+      this._resizeObserver = new ResizeObserver(() => {
+        if (raf) return
+
+        raf = requestAnimationFrame(() => {
+          raf = 0
+          publish()
+        })
+      })
     }
 
     const banner = this.$(COOKIE_SELECTORS.COOKIES)

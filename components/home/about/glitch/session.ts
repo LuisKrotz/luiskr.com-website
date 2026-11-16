@@ -77,12 +77,18 @@ export function picWrap(host: AboutSection): HTMLElement | null {
 export function observeResize(s: GlitchSession, wrap: HTMLElement): ResizeObserver | null {
   if (typeof ResizeObserver !== TYPE_STRINGS.FUNCTION) return null
 
+  let raf = 0
+
   const ro = new ResizeObserver((entries) => {
     const box = entries[0]?.contentRect
 
-    if (!s.active || !box || box.width < 2 || box.height < 2) return
+    if (!s.active || !box || box.width < 2 || box.height < 2 || raf) return
 
-    sizeSession(s, box as DOMRect)
+    raf = requestAnimationFrame(() => {
+      raf = 0
+
+      if (s.active) sizeSession(s, box as DOMRect)
+    })
   })
 
   ro.observe(wrap)

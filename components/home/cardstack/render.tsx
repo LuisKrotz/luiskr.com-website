@@ -101,6 +101,19 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
 
   const mobileRungs = phoneVp ? covers.mobileRungs : []
 
+  // Phones never climb the ladder — the stepped rung swaps re-decoded
+  // mid-composite and read as the cover flickering/vanishing on Android.
+  // But the high layer must still mount or the card paints only the
+  // blurred LQIP thumb (the blur is permanent on that under-layer). The
+  // pick mirrors renderIndex: ceiling rung of the `-mobile` stem (full-
+  // stem rungs when no mobile tiers are proven), resolved once at
+  // render with --loaded already on — one fetch, no swap, no flicker.
+  const phoneRungs = covers.mobileRungs.length ? covers.mobileRungs : covers.rungs
+
+  const phoneRung = phoneVp
+    ? phoneRungs[ladderCeiling(phoneRungs.length, IMAGE_DIMENSIONS.SMALL_BOX_PX)]
+    : undefined
+
   return (
     <article key={item.link || i} className={C.CARD_STACK_CARD} data-index={i}>
       <a
@@ -155,13 +168,38 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
             />
           </picture>
 
-          {/* Phone viewports skip the hi-res ladder entirely — the
-              <source> above already serves the `-mobile` derivative, so
-              the third layer only spent a second decode and forced an
-              opacity swap that read as the cover flickering/vanishing
-              on Android (the decoded frame lands mid-composite). The
-              ladder therefore renders on desktop tiers only, where
-              mobileRungs is empty. */}
+          {/* Phone viewports mount the high layer pre-resolved to the
+              ceiling rung — no ladder stepping (each swap re-decoded
+              mid-composite and read as flicker on Android), --loaded
+              from the first paint so the blurred thumb is covered as
+              soon as the fetch decodes. Until the manifest resolves the
+              layer stays unmounted: pre-manifest covers.src is the
+              multi-MB original and would be an immediate heavy fetch. */}
+          {phoneVp && (mediaManifestReady() || mediaManifestFailed()) && (
+            <picture>
+              {!reached && phoneRung?.webp && (
+                <source srcset={phoneRung.webp} type={MEDIA_ATTRS.IMAGE_WEBP} />
+              )}
+
+              <img
+                draggable={ATTR_VALUES.FALSE}
+                decoding={decoding}
+                loading={loading}
+                fetchpriority={fetchpriority}
+                className={`${C.CARD_STACK_CARD_IMG} ${C.CARD_STACK_CARD_IMG_HIGH} ${C.CARD_STACK_CARD_IMG_LOADED}`}
+                src={reached || phoneRung?.jpg || covers.src}
+                alt={altText}
+                aria-hidden={ATTR_VALUES.TRUE}
+                width={GENERIC_DIMENSIONS.DEFAULT_WIDTH}
+                height={GENERIC_DIMENSIONS.DEFAULT_HEIGHT}
+                sizes={IMAGE_SIZES.CARD_STACK}
+              />
+            </picture>
+          )}
+
+          {/* Desktop tiers climb the ladder progressively — the stepped
+              climb upgrades the painted frame rung by rung without ever
+              blanking the box, and mobileRungs stays empty there. */}
           {covers.rungs.length > 0 && !phoneVp && (
             <picture>
               {!reached && covers.rungs[0].jpg !== src && covers.rungs[0].webp && (
@@ -239,11 +277,17 @@ function renderSkeleton(host: CardStack) {
       {offsets.map((s) => {
         const pose = tierPose(host._tier, s, offsets.length, host._cardW, host._cardH, host._peek)
 
+        // Same flat-pose rule as applyPoses — a stacked skeleton never
+        // enters the 3D compositing path (iOS jetsam family).
+        const xf = host._tier.STACKED
+          ? `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, 0) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+          : `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+
         return (
           <div
             key={s}
             className={`${C.CARD_STACK_CARD} ${SKELETON_CLASSES.SKELETON_SHIMMER}`}
-            style={`width: ${host._cardW}${COMMON_ATTRS.PX}; height: ${host._cardH}${COMMON_ATTRS.PX}; transform: translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale});`}
+            style={`width: ${host._cardW}${COMMON_ATTRS.PX}; height: ${host._cardH}${COMMON_ATTRS.PX}; transform: ${xf};`}
             aria-hidden={ATTR_VALUES.TRUE}
           />
         )

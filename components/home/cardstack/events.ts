@@ -224,9 +224,17 @@ export function bindEvents(host: CardStack): void {
 
     host._resizeW = vw
 
-    host.measure()
+    // Coalesce genuine width changes — one measure+pose per painted frame,
+    // not one per resize event (rotation emits a burst).
+    if (host._resizeRaf) return
 
-    host.applyPoses()
+    host._resizeRaf = requestAnimationFrame(() => {
+      host._resizeRaf = 0
+
+      host.measure()
+
+      host.applyPoses()
+    })
   })
 
   // A hidden tab freezes the countdown (banked like a user pause) and
