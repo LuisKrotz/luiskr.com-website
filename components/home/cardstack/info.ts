@@ -203,7 +203,14 @@ function burnTitle(host: CardStack, item: BurnItem | undefined, next: string): v
     return
   }
 
-  if (store.getters.getReducedMotion?.() || !infoEl) {
+  // Touch devices skip the canvas pipeline outright — the per-nav
+  // rasterize + deposit-mote pass costs a full composited layer the
+  // mobile GPU budget can't spare, so the title just swaps text.
+  if (
+    store.getters.getReducedMotion?.() ||
+    store.getters.getInputMethod?.() === COMMON_ATTRS.TOUCH ||
+    !infoEl
+  ) {
     titleEl.textContent = next
 
     return
@@ -286,7 +293,14 @@ function spinCardBurn(host: CardStack, cardEl: Element, want: number, cards: Ele
     return
   }
 
-  if (store.getters.getReducedMotion?.()) return
+  // Touch devices never arm in-card burns — the raster session costs a
+  // composited overlay per card the mobile GPU budget can't spare.
+  if (
+    store.getters.getReducedMotion?.() ||
+    store.getters.getInputMethod?.() === COMMON_ATTRS.TOUCH
+  ) {
+    return
+  }
 
   const titleEl = cardEl.querySelector(
     CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO_TITLE

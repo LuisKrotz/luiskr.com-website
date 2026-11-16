@@ -19,7 +19,7 @@ import {
   WINDOW_EVENTS,
 } from '@core/tokens/events/dom.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
-import { isPlainClick } from '@core/utils/dom.js'
+import { isPlainClick, viewportWidth } from '@core/utils/dom.js'
 import { holdAutoplay, toggleAutoplay } from './autoplay.js'
 import {
   cardIdxFromEvent,
@@ -212,6 +212,18 @@ export function bindEvents(host: CardStack): void {
   })
 
   host.addScopedListener(window, WINDOW_EVENTS.RESIZE, () => {
+    // Mobile chrome bars collapse/expand on every scroll and swipe —
+    // each bar step emits resize while the WIDTH stays fixed, and every
+    // remeasure re-lays the deck mid-gesture (the "page shakes" report).
+    // Stacked tiers never consume _stageH (copy-carrying cards size by
+    // content), so a height-only change is a no-op there; desktop tiers
+    // cap cards to the stage height and still re-run on any resize.
+    const vw = viewportWidth()
+
+    if (vw === host._resizeW && host._tier?.STACKED) return
+
+    host._resizeW = vw
+
     host.measure()
 
     host.applyPoses()

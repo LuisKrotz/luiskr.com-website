@@ -59,6 +59,7 @@ import {
   MOUSE_EVENTS,
   POINTER_EVENTS,
   PRINT_EVENTS,
+  WINDOW_EVENTS,
 } from '@core/tokens/events/dom.js'
 import { PRINT_CLASSES } from '@core/tokens/classes/print.js'
 import { preparePrint, restorePrint } from '@website/components/home/cardstack/print.js'
@@ -603,6 +604,95 @@ describe('events tails', () => {
     expect(icon).toBeTruthy()
     icon.dispatchEvent(new MouseEvent(MOUSE_EVENTS.CLICK, { bubbles: true }))
     expect(el.indexOpen).toBe(true)
+  })
+
+  test('modified clicks fall through all delegated anchors untouched', async () => {
+    const el = await mountItems([item(0), item(1)])
+    const spy = jest.spyOn(router, 'push').mockImplementation(() => {})
+
+    // Info column CTA — !isPlainClick early return keeps the real href.
+    const cta = el.shadowRoot.querySelector(SEL.CARD_STACK_INFO_CTA)
+    const ctaEvt = new MouseEvent(MOUSE_EVENTS.CLICK, {
+      bubbles: true,
+      composed: true,
+      metaKey: true,
+    })
+
+    cta.dispatchEvent(ctaEvt)
+
+    // Early return happens BEFORE preventDefault — the guard proves itself.
+    expect(ctaEvt.defaultPrevented).toBe(false)
+    expect(spy).not.toHaveBeenCalled()
+
+    // Index item — the panel picks only on plain clicks.
+    el.indexOpen = true
+
+    const item0 = el.shadowRoot.querySelectorAll(SEL.CARD_STACK_INDEX_ITEM)[0].querySelector('a')
+    const itemEvt = new MouseEvent(MOUSE_EVENTS.CLICK, {
+      bubbles: true,
+      composed: true,
+      ctrlKey: true,
+    })
+
+    item0.dispatchEvent(itemEvt)
+
+    expect(itemEvt.defaultPrevented).toBe(false)
+    expect(el.activeIdx).toBe(0)
+    expect(spy).not.toHaveBeenCalled()
+
+    // Live card link — the same guard, on the front anchor.
+    const cardA = el.shadowRoot.querySelectorAll(SEL.CARD_STACK_CARD)[0].querySelector('a')
+    const cardEvt = new MouseEvent(MOUSE_EVENTS.CLICK, {
+      bubbles: true,
+      composed: true,
+      shiftKey: true,
+    })
+
+    cardA.dispatchEvent(cardEvt)
+
+    expect(cardEvt.defaultPrevented).toBe(false)
+    expect(el.activeIdx).toBe(0)
+    expect(spy).not.toHaveBeenCalled()
+
+    spy.mockRestore()
+  })
+
+  test('same-width resizes skip the stacked-tier remeasure loop', async () => {
+    // Chrome-bar resizes change only the height — the stacked layout
+    // must short-circuit them instead of re-laying the deck mid-swipe.
+    const wOrig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+    const hOrig = Object.getOwnPropertyDescriptor(window, 'innerHeight')
+    Object.defineProperty(window, 'innerWidth', { value: 390, configurable: true })
+    Object.defineProperty(window, 'innerHeight', { value: 844, configurable: true })
+    resetViewportCache()
+
+    try {
+      const el = await mountItems([item(0), item(1)])
+
+      el.measure()
+      expect(el._tier.STACKED).toBe(true)
+
+      const measureSpy = jest.spyOn(el, 'measure')
+      const posesSpy = jest.spyOn(el, 'applyPoses')
+
+      window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+
+      // First event seeds _resizeW and remeasures.
+      expect(measureSpy).toHaveBeenCalledTimes(1)
+
+      window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+
+      // Same width on a stacked tier → the height-only change skips work.
+      expect(measureSpy).toHaveBeenCalledTimes(1)
+      expect(posesSpy).toHaveBeenCalledTimes(1)
+
+      measureSpy.mockRestore()
+      posesSpy.mockRestore()
+    } finally {
+      if (wOrig) Object.defineProperty(window, 'innerWidth', wOrig)
+      if (hOrig) Object.defineProperty(window, 'innerHeight', hOrig)
+      resetViewportCache()
+    }
   })
 })
 
@@ -1761,6 +1851,22 @@ describe('cardstack/print — fills, poser gate, restore channels', () => {
     window.dispatchEvent(new window.Event(CLIPBOARD_EVENTS.AFTER_PRINT))
     expect(el._printing).toBe(false)
     expect(el.shadowRoot.querySelector(`.${PRINT_CLASSES.FILL}`)).toBeNull()
+  })
+
+  test('bindEvents takes the absent arm when window.matchMedia is missing', async () => {
+    const origMM = window.matchMedia
+
+    window.matchMedia = undefined
+
+    try {
+      // The `if (window.matchMedia)` guard takes its absent arm — the deck
+      // still mounts and navigates with the query channel unbound.
+      const el = await mountItems([item(0)])
+
+      expect(el.shadowRoot.querySelector(SEL.CARD_STACK_DECK)).toBeTruthy()
+    } finally {
+      window.matchMedia = origMM
+    }
   })
 
   test('the matchMedia false edge restores engines that never fire afterprint', async () => {

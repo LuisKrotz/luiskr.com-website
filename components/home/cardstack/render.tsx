@@ -97,7 +97,9 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
   // viewports — a desktop card climbs the full ladder instead (its CSS
   // box may be ≤768px wide, but the mobile stem's top rung under-resolves
   // it on retina and reads as a blurry upscale).
-  const mobileRungs = viewportWidth() <= BREAKPOINTS[768] ? covers.mobileRungs : []
+  const phoneVp = viewportWidth() <= BREAKPOINTS[768]
+
+  const mobileRungs = phoneVp ? covers.mobileRungs : []
 
   return (
     <article key={item.link || i} className={C.CARD_STACK_CARD} data-index={i}>
@@ -153,16 +155,15 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
             />
           </picture>
 
-          {covers.rungs.length > 0 && (
+          {/* Phone viewports skip the hi-res ladder entirely — the
+              <source> above already serves the `-mobile` derivative, so
+              the third layer only spent a second decode and forced an
+              opacity swap that read as the cover flickering/vanishing
+              on Android (the decoded frame lands mid-composite). The
+              ladder therefore renders on desktop tiers only, where
+              mobileRungs is empty. */}
+          {covers.rungs.length > 0 && !phoneVp && (
             <picture>
-              {!reached && mobileRungs.length > 0 && (
-                <source
-                  media={MEDIA_QUERIES.MAX_WIDTH_768}
-                  srcset={mobileRungs[0].webp || mobileRungs[0].jpg}
-                  type={mobileRungs[0].webp ? MEDIA_ATTRS.IMAGE_WEBP : undefined}
-                />
-              )}
-
               {!reached && covers.rungs[0].jpg !== src && covers.rungs[0].webp && (
                 <source srcset={covers.rungs[0].webp} type={MEDIA_ATTRS.IMAGE_WEBP} />
               )}
