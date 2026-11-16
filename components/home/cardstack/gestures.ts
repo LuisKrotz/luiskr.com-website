@@ -9,6 +9,7 @@ import { CARD_STACK_CLASSES } from '@core/tokens/classes/card-stack.js'
 import { CARD_STACK_SELECTORS } from '@core/tokens/selectors/card-stack.js'
 import { CARD_STACK_LAYOUT } from '@core/tokens/motion/card-stack.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
+import { noteScrollActivity } from '@core/utils/motion/scroll-state.js'
 import { applyPoses } from './deck.js'
 import { stopAutoplay } from './autoplay.js'
 import { goTo } from './interactions.js'
@@ -146,6 +147,13 @@ export function onPointerMove(host: CardStack, e: Event): void {
   host._lastT = last.timeStamp
 
   host._dragX = dx
+
+  // A card drag is scroller-equivalent work that never reaches the
+  // window scroll listener — parked media writes (domSizedSrc layer
+  // swaps, high-res publishes) must not land mid-gesture or they burn
+  // the frame the pose pass needs. Marking activity makes every
+  // onScrollStop() callback wait for the drag to settle.
+  noteScrollActivity()
 
   if (host._rafId === null) {
     host._rafId = requestAnimationFrame(host._dragTick)

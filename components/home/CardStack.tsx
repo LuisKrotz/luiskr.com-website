@@ -99,7 +99,7 @@ export class CardStack extends BaseComponent {
 
   _deckRaf = 0 // pending deferred _deckResize tick (RO callbacks hop through rAF)
   _fitRO: ResizeObserver | null = null // re-fits the deck when the front card's copy height changes
-  _fitRaf = 0 // pending rAF that runs the RO-deferred fit — coalesces bursts, breaks the write→notify loop
+  _fitTimer = 0 // pending settle timer for the RO-deferred fit — debounces the typewriter growth burst, breaks the write→notify loop
   _fitFront: Element | null = null // the card node _fitRO currently watches
   _frontExtra = 0 // px the stacked front card's live height differs from the ratio height (pileH input — signed: copy growth positive, short copy negative); the card never caps — copy sizes it and the page absorbs the overflow
   _loadedCovers = new Map<string, string>() // cover key → highest confirmed painted tier
@@ -250,9 +250,9 @@ export class CardStack extends BaseComponent {
 
     this._fitRO = null
 
-    if (this._fitRaf) cancelAnimationFrame(this._fitRaf)
+    if (this._fitTimer) clearTimeout(this._fitTimer)
 
-    this._fitRaf = 0
+    this._fitTimer = 0
 
     this._fitFront = null
 

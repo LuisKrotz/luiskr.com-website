@@ -1763,7 +1763,7 @@ describe('deck/info/events tails', () => {
     }
   })
 
-  test('fitDeckToFront — RO callback coalesces onto one deferred fit frame', async () => {
+  test('fitDeckToFront — RO callback debounces the growth burst to one settle fit', async () => {
     const el = await mountItems([item(0), item(1)])
     const deck = deckEl(el)
     const cbs = []
@@ -1778,8 +1778,10 @@ describe('deck/info/events tails', () => {
       disconnect() {}
     }
 
-    const prevRaf = globalThis.requestAnimationFrame
-    const frames = []
+    const prevTimeout = globalThis.setTimeout
+    const prevClear = globalThis.clearTimeout
+    const timers = []
+    const cleared = []
 
     try {
       el._tier = { ...STACK_TIER, STACKED: true, IN_CARD_INFO: true }
@@ -1791,22 +1793,26 @@ describe('deck/info/events tails', () => {
       Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
       fitDeckToFront(el)
 
-      globalThis.requestAnimationFrame = (cb) => (frames.push(cb), frames.length)
+      globalThis.setTimeout = (cb) => (timers.push(cb), timers.length)
+      globalThis.clearTimeout = (id) => cleared.push(id)
 
       cbs.forEach((cb) => cb())
       cbs.forEach((cb) => cb())
 
-      // Both notifications collapsed into the single pending fit frame —
-      // the second delivery hit the _fitRaf early-return.
-      expect(frames.length).toBe(1)
-      expect(el._fitRaf).toBeTruthy()
+      // Every notification re-arms the settle timer — the second
+      // delivery cleared the first arm, so only the last timer's fit
+      // runs when the burst settles.
+      expect(timers.length).toBe(2)
+      expect(cleared.length).toBe(1)
+      expect(el._fitTimer).toBe(2)
 
-      frames.forEach((cb) => cb(0))
+      timers[timers.length - 1]()
 
-      expect(el._fitRaf).toBe(0)
+      expect(el._fitTimer).toBe(0)
       expect(deck.style.minHeight).not.toBe('')
     } finally {
-      globalThis.requestAnimationFrame = prevRaf
+      globalThis.setTimeout = prevTimeout
+      globalThis.clearTimeout = prevClear
       globalThis.ResizeObserver = realRO
     }
   })

@@ -115,7 +115,11 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
     : undefined
 
   return (
-    <article key={item.link || i} className={C.CARD_STACK_CARD} data-index={i}>
+    <article
+      key={item.link || i}
+      className={`${C.CARD_STACK_CARD}${i === host.activeIdx ? ` ${C.CARD_STACK_CARD_ACTIVE}` : ATTR_VALUES.EMPTY}`}
+      data-index={i}
+    >
       <a
         className={C.CARD_STACK_CARD_LINK}
         draggable={ATTR_VALUES.FALSE}

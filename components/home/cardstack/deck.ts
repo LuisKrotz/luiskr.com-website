@@ -37,6 +37,15 @@ const DEG = Math.PI / 180
 const _wasVisible = new WeakMap<Element, boolean>()
 
 /**
+ * The last stacked height/min-height pair applied to each card.
+ * applyPoses runs per gesture frame, and re-writing identical box
+ * values every frame is a per-frame layout invalidation — the
+ * mid-swipe relayout storm. The cache guards the writes so a drag
+ * only touches transforms/opacity; geometry changes land once.
+ */
+const _sizeWrite = new WeakMap<Element, string>()
+
+/**
  * Every pushed item fans in the deck — the full portfolio list in order
  * (the featured flag is decorative only; no filtering applies).
  * @param host The CardStack element.
@@ -505,6 +514,11 @@ export function applyPoses(host: CardStack): void {
       // on fan tiers, and on the stacked front card below) — the pile
       // keeps its uniform shape even if a card's own copy runs short.
       el.style.minHeight = tier.STACKED ? `${h}${COMMON_ATTRS.PX}` : ATTR_VALUES.EMPTY
+
+      // The base-size pass just overwrote the box — drop the cached
+      // stacked pair so the stacked block below re-applies its own
+      // value instead of trusting a stale hit.
+      _sizeWrite.delete(el)
     }
 
     if (tier.STACKED) {
@@ -520,11 +534,22 @@ export function applyPoses(host: CardStack): void {
       // absolute-positioned cover and a display:none info column
       // contribute no flow height, so auto would collapse the card to
       // a sliver: it keeps the ratio box.
-      const sizesToCopy = front && tier.IN_CARD_INFO
+      // sizesToCopy keys on the COMMITTED front (activeIdx), not the
+      // continuous drag pose: activeIdx never moves mid-gesture, so no
+      // card's box flips auto↔fixed during a swipe — the single flip
+      // lands at nav commit. Writes are value-guarded for the same
+      // reason: identical geometry must not invalidate layout per frame.
+      const sizesToCopy = i === host.activeIdx && tier.IN_CARD_INFO
 
-      el.style.height = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
+      const sizeKey = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
 
-      el.style.minHeight = sizesToCopy ? ATTR_VALUES.EMPTY : `${pileH}${COMMON_ATTRS.PX}`
+      if (_sizeWrite.get(el) !== sizeKey) {
+        _sizeWrite.set(el, sizeKey)
+
+        el.style.height = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
+
+        el.style.minHeight = sizesToCopy ? ATTR_VALUES.EMPTY : `${pileH}${COMMON_ATTRS.PX}`
+      }
     }
 
     // A card entering the fan seeds below its slot, transparent, with
@@ -543,7 +568,7 @@ export function applyPoses(host: CardStack): void {
         ? `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, 0) rotate(${pose.rotZ}deg) scale(${pose.scale})`
         : `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
 
-    if (pose.visible && wasVisible === false) {
+    if (pose.visible && wasVisible === false && !tier.STACKED) {
       el.style.transition = ATTR_VALUES.NONE
 
       el.style.transform = poseTransform(pose.y + h * CARD_STACK_LAYOUT.ENTER_RISE)
@@ -773,20 +798,24 @@ export function fitDeckToFront(host: CardStack): void {
     host._fitRO?.disconnect()
 
     if (typeof ResizeObserver !== TYPE_STRINGS.UNDEFINED) {
-      // RO notifications are pre-paint: writing sizes back synchronously
-      // resizes the observed card inside the same notification turn and
-      // WebKit reports "ResizeObserver loop completed with undelivered
-      // notifications" (console.error on iOS). Deferring the fit into a
-      // coalesced rAF breaks the write→notify cycle while keeping the
-      // write inside the same frame — no visible delay, no loop.
+      // RO notifications are pre-paint: writing sizes back inside the
+      // same notification turn resizes observed boxes and the browser
+      // reports "ResizeObserver loop completed with undelivered
+      // notifications". Worse, the description typewriter grows the
+      // watched info column EVERY FRAME, so a same-frame fit would
+      // write deck min-height + re-pose the pile per type tick — the
+      // production RO-loop errors and the mid-animation relayout
+      // storm. Debouncing to the settle point keeps the notification
+      // turn write-free (the loop detector stays quiet) and lands one
+      // fit per growth burst instead of one per frame.
       host._fitRO ??= new ResizeObserver(() => {
-        if (host._fitRaf) return
+        if (host._fitTimer) clearTimeout(host._fitTimer)
 
-        host._fitRaf = requestAnimationFrame(() => {
-          host._fitRaf = 0
+        host._fitTimer = setTimeout(() => {
+          host._fitTimer = 0
 
           fitDeckToFront(host)
-        })
+        }, CARD_STACK_LAYOUT.FIT_SETTLE_MS)
       })
 
       host._fitRO.observe(front)
