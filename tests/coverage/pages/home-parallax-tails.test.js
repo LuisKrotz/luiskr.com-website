@@ -144,6 +144,7 @@ describe('home parallax tails', () => {
       scrollY: window.scrollY,
       innerH: window.innerHeight,
       reducedMotion: store.state.reducedMotion,
+      hasTouch: store.state.has_touch,
     }
   })
 
@@ -163,6 +164,7 @@ describe('home parallax tails', () => {
     })
     Object.defineProperty(window, 'innerHeight', { value: origs.innerH, configurable: true })
     store.state.reducedMotion = origs.reducedMotion
+    store.state.has_touch = origs.hasTouch
     localStorage.removeItem(PREF_STORAGE_KEYS.REDUCED_MOTION)
     resetViewportCache()
   })
@@ -328,6 +330,42 @@ describe('home parallax tails', () => {
     motion.matches = false
     syncParallax(el)
     expect(s.armed).toBe(true)
+
+    unmount()
+  })
+
+  test('touch-primary input disarms — has_touch beats the ≥1280 width gate', async () => {
+    stubFrames()
+    const desk = makeMql(true)
+    const motion = makeMql(false)
+    stubRO()
+    stubMatchMedia({
+      [WIDTH_CLASS_GATES.desktop]: desk,
+      [MEDIA_QUERIES.PREFERS_REDUCED_MOTION]: motion,
+    })
+
+    const el = document.createElement(VIEW_TAGS.VIEW_HOME)
+    const unmount = mount(el)
+    await flush()
+
+    const s = el._parallax
+    const stack = el.$(`#${SECTIONS.HOME} > ${COMPONENT_TAGS.CARD_STACK}`)
+
+    expect(s.armed).toBe(true)
+
+    // Touch-primary input — a tablet landscape wide enough to satisfy the
+    // desktop width class, or a hybrid whose first touch flipped
+    // inputMethod via setInputMethod. The width gate alone can't tell.
+    store.state.has_touch = true
+    syncParallax(el)
+    expect(s.armed).toBe(false)
+    expect(stack.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).toBe('')
+
+    // Pointer-primary restores — the hybrid is back on mouse input.
+    store.state.has_touch = false
+    syncParallax(el)
+    expect(s.armed).toBe(true)
+    expect(stack.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).not.toBe('')
 
     unmount()
   })

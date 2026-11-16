@@ -1,7 +1,8 @@
 /**
  * @file routes/views/home/parallax.ts
  * @description Scroll-driven parallax for <view-home> — desktop-only
- * (≥1280, the `desktop` width class) layered drift: each section's INNER
+ * (≥1280, the `desktop` width class, AND non-touch primary input)
+ * layered drift: each section's INNER
  * content slides inside its painted frame — the card-stack deck recedes
  * while its foot controls rise, the about columns split against each
  * other, the contact copy drifts over the mentions deck, and the awards
@@ -22,9 +23,11 @@
  *   compositor-only motion.
  *
  *   gates: matchMedia(WIDTH_CLASS_GATES.desktop) AND no reduced-motion
- *   (explicit localStorage pref wins, else the live OS flag). Either
- *   gate dropping disarms the loop and removes every var so elements
- *   snap back to their natural position.
+ *   (explicit localStorage pref wins, else the live OS flag) AND no
+ *   touch-primary device (store has_touch — width alone can't tell an
+ *   iPad Pro landscape from a desktop). Any gate dropping disarms the
+ *   loop and removes every var so elements snap back to their natural
+ *   position.
  *
  * framePool is deliberately NOT used: it freezes every queued tick
  * while isScrolling() is true — designed to starve work during flings,
@@ -186,9 +189,16 @@ const reducedMotionActive = (s: ParallaxSession): boolean => {
   return store.getters.getReducedMotion() || s.motionMql?.matches === true
 }
 
-/** Both runtime gates: the ≥1280 media query matches AND motion is allowed. */
+/**
+ * All runtime gates: the ≥1280 media query matches, motion is allowed,
+ * AND the primary input isn't touch. Parallax is a desktop-exclusive
+ * affordance — the width class alone can't separate a 1366px tablet
+ * landscape from a laptop, so has_touch (ontouchstart + !pointer:fine)
+ * decides; it also flips live via setInputMethod when a hybrid device
+ * first touches the screen, and the resulting store push re-gates here.
+ */
 const gatesOpen = (s: ParallaxSession): boolean =>
-  s.mql?.matches === true && !reducedMotionActive(s)
+  s.mql?.matches === true && !reducedMotionActive(s) && !store.getters.getTouch()
 
 /**
  * Re-resolves one layer's elements, preserving the parked layer (and
