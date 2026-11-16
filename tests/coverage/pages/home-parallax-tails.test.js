@@ -218,34 +218,46 @@ describe('home parallax tails', () => {
     // Gate drops while a frame is pending — cancel + var cleanup.
     window.dispatchEvent(new Event(WINDOW_EVENTS.SCROLL))
     desk.matches = false
+
+    // Deferred RO-deferral rAFs share this stubbed pool — flush them first
+    // so the gate-drop cancel targets the parallax frame alone.
+    frames.pending.clear()
     desk.fire()
 
     expect(s.armed).toBe(false)
     expect(globalThis.cancelAnimationFrame).toHaveBeenCalled()
-    expect(stack.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).toBe('')
-    expect(about.style.getPropertyValue(PARALLAX_CSS_PROPS.ABOUT_MAIN_Y)).toBe('')
+
+    // The deferred deck refit inside frames.run() re-rendered the stage —
+    // assert the vars against the live nodes, not the stale references.
+    const stackLive = el.$(`#${SECTIONS.HOME} > ${COMPONENT_TAGS.CARD_STACK}`)
+    const aboutLive = el.$(`#${SECTION_IDS.ABOUT} > ${COMPONENT_TAGS.ABOUT_SECTION}`)
+
+    expect(stackLive.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).toBe('')
+    expect(aboutLive.style.getPropertyValue(PARALLAX_CSS_PROPS.ABOUT_MAIN_Y)).toBe('')
 
     // Re-arm — the RO rebinds to the live measure anchors and repaints.
     desk.matches = true
     desk.fire()
     expect(s.armed).toBe(true)
-    expect(stack.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).not.toBe('')
+    expect(stackLive.style.getPropertyValue(PARALLAX_CSS_PROPS.DECK_Y)).not.toBe('')
 
     // RO remeasure — armed: measure + one scheduled repaint; a second
-    // delivery sees raf already set.
-    const roBefore = frames.pending.size
+    // delivery sees raf already set. Foreign deferred RO writes share the
+    // frame pool, so assert on the session's own raf handle, not the count.
+    ro.cbs.forEach((cb) => cb())
 
+    const armedRaf = s.raf
+
+    expect(armedRaf).toBeTruthy()
     ro.cbs.forEach((cb) => cb())
-    ro.cbs.forEach((cb) => cb())
-    expect(frames.pending.size).toBe(roBefore + 1)
+    expect(s.raf).toBe(armedRaf)
 
     frames.run()
 
     // Window resize rides the same remeasure path.
-    const rsBefore = frames.pending.size
-
+    expect(s.raf).toBe(0)
     window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
-    expect(frames.pending.size).toBe(rsBefore + 1)
+    expect(s.raf).toBeTruthy()
 
     frames.run()
 

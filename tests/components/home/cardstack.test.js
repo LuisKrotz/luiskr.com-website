@@ -936,7 +936,12 @@ describe('cardstack/events — delegated bindings', () => {
 
     expect(el._dragActive).toBe(false)
     const spy = jest.spyOn(el, 'applyPoses')
+    const prevRaf = globalThis.requestAnimationFrame
+
+    globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
     window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+    globalThis.requestAnimationFrame = prevRaf
+
     expect(spy).toHaveBeenCalled()
     spy.mockRestore()
   })

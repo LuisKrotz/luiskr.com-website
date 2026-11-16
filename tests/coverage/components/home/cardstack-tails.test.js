@@ -338,6 +338,10 @@ describe('deck tails', () => {
       this.disconnect = disconnect
     }
 
+    const prevRaf = globalThis.requestAnimationFrame
+
+    globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
+
     try {
       globalThis.ResizeObserver = FakeRO
       el._deckRO = null
@@ -377,6 +381,7 @@ describe('deck tails', () => {
       expect(el._deckRO).toBeNull()
     } finally {
       globalThis.ResizeObserver = realRO
+      globalThis.requestAnimationFrame = prevRaf
     }
   })
 
@@ -674,13 +679,16 @@ describe('events tails', () => {
 
       const measureSpy = jest.spyOn(el, 'measure')
       const posesSpy = jest.spyOn(el, 'applyPoses')
+      const prevRaf = globalThis.requestAnimationFrame
 
+      globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
       window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
 
       // First event seeds _resizeW and remeasures.
       expect(measureSpy).toHaveBeenCalledTimes(1)
 
       window.dispatchEvent(new Event(WINDOW_EVENTS.RESIZE))
+      globalThis.requestAnimationFrame = prevRaf
 
       // Same width on a stacked tier → the height-only change skips work.
       expect(measureSpy).toHaveBeenCalledTimes(1)

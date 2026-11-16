@@ -166,7 +166,13 @@ describe('AboutSection titlefit tails', () => {
 
       // A column resize fires the observer — the new width republishes.
       w = 240
+
+      const prevRaf = globalThis.requestAnimationFrame
+
+      globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
       callbacks.forEach((cb) => cb([], null))
+      globalThis.requestAnimationFrame = prevRaf
+
       expect(pic.style.getPropertyValue(ABOUT_CSS_PROPS.ABOUT_PICTURE_W)).toBe('240px')
 
       unmount()

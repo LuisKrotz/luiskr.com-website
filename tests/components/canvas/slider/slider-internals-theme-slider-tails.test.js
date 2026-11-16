@@ -49,7 +49,9 @@ describe('theme-slider tails', () => {
     attachHybridGL(canvas)
 
     const slider = new ThemeSliderWebGL(canvas, THEME.SYSTEM)
+    const prevRaf = globalThis.requestAnimationFrame
 
+    globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
     callback([{ contentRect: { width: 30 } }])
     callback([{ contentRect: { width: slider.width } }])
     callback([{ contentRect: { width: 200 } }])
@@ -71,6 +73,7 @@ describe('theme-slider tails', () => {
 
     if (dprDesc) Object.defineProperty(window, 'devicePixelRatio', dprDesc)
 
+    globalThis.requestAnimationFrame = prevRaf
     delete globalThis.ResizeObserver
 
     slider.destroy()

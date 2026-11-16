@@ -176,7 +176,9 @@ describe('CloseButtonWebGL', () => {
     attachMockGL(canvas)
 
     const btn = new CloseButtonWebGL(canvas)
+    const prevRaf = globalThis.requestAnimationFrame
 
+    globalThis.requestAnimationFrame = (cb) => (cb(0), 0)
     observerCb([{ contentRect: { width: 90, height: 90 } }])
 
     expect(btn.width).toBe(90)
@@ -186,6 +188,7 @@ describe('CloseButtonWebGL', () => {
     expect(btn.width).toBe(90)
 
     btn.destroy()
+    globalThis.requestAnimationFrame = prevRaf
     globalThis.ResizeObserver = OrigRO
   })
 
