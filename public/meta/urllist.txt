@@ -1,7 +1,6 @@
 https://luiskr.com
 https://luiskr.com/about
 https://luiskr.com/animations
-https://luiskr.com/axioms-end
 https://luiskr.com/br
 https://luiskr.com/br/animacoes
 https://luiskr.com/br/contato
@@ -150,7 +149,6 @@ https://luiskr.com/br/experimento-campo-estelar/venus
 https://luiskr.com/br/experimento-campo-estelar/vesta
 https://luiskr.com/br/experimento-campo-estelar/virgo-supercluster
 https://luiskr.com/br/experimento-campo-estelar/wlm
-https://luiskr.com/br/fim-do-axioma
 https://luiskr.com/br/lgpd
 https://luiskr.com/br/licenca
 https://luiskr.com/br/mapa-do-site
@@ -842,7 +840,6 @@ https://luiskr.com/ca/experiment-camp-estelar/venus
 https://luiskr.com/ca/experiment-camp-estelar/vesta
 https://luiskr.com/ca/experiment-camp-estelar/virgo-supercluster
 https://luiskr.com/ca/experiment-camp-estelar/wlm
-https://luiskr.com/ca/fi-de-l-axioma
 https://luiskr.com/ca/llicencia
 https://luiskr.com/ca/mapa-del-lloc
 https://luiskr.com/ca/playground-de-la-terra
@@ -1533,7 +1530,6 @@ https://luiskr.com/cas/experimento-campo-estelar/venus
 https://luiskr.com/cas/experimento-campo-estelar/vesta
 https://luiskr.com/cas/experimento-campo-estelar/virgo-supercluster
 https://luiskr.com/cas/experimento-campo-estelar/wlm
-https://luiskr.com/cas/fin-del-axioma
 https://luiskr.com/cas/licencia
 https://luiskr.com/cas/mapa-del-sitio
 https://luiskr.com/cas/playground-de-la-tierra
@@ -2078,7 +2074,6 @@ https://luiskr.com/cas/terminos-de-uso
 https://luiskr.com/contact
 https://luiskr.com/de
 https://luiskr.com/de/animationen
-https://luiskr.com/de/axioms-ende
 https://luiskr.com/de/datenschutzrichtlinie
 https://luiskr.com/de/dsgvo
 https://luiskr.com/de/erde-playground
@@ -3072,8 +3067,6 @@ https://luiskr.com/docs/core/tokens/attrs/media.ts
 https://luiskr.com/docs/core/tokens/attrs/microdata.ts
 https://luiskr.com/docs/core/tokens/attrs/svg.ts
 https://luiskr.com/docs/core/tokens/attrs/values.ts
-https://luiskr.com/docs/core/tokens/axioms
-https://luiskr.com/docs/core/tokens/axioms/params.ts
 https://luiskr.com/docs/core/tokens/base.js
 https://luiskr.com/docs/core/tokens/base.ts
 https://luiskr.com/docs/core/tokens/canvas
@@ -3088,7 +3081,6 @@ https://luiskr.com/docs/core/tokens/classes/animations.ts
 https://luiskr.com/docs/core/tokens/classes/app.ts
 https://luiskr.com/docs/core/tokens/classes/awards-carousel.ts
 https://luiskr.com/docs/core/tokens/classes/awards.ts
-https://luiskr.com/docs/core/tokens/classes/axioms.ts
 https://luiskr.com/docs/core/tokens/classes/card-stack.ts
 https://luiskr.com/docs/core/tokens/classes/carousel.ts
 https://luiskr.com/docs/core/tokens/classes/cms.ts
@@ -3127,7 +3119,6 @@ https://luiskr.com/docs/core/tokens/classes/toast.ts
 https://luiskr.com/docs/core/tokens/css
 https://luiskr.com/docs/core/tokens/css.ts
 https://luiskr.com/docs/core/tokens/css/about.ts
-https://luiskr.com/docs/core/tokens/css/axioms.ts
 https://luiskr.com/docs/core/tokens/css/card-stack.ts
 https://luiskr.com/docs/core/tokens/css/carousel.ts
 https://luiskr.com/docs/core/tokens/css/cookies.ts
@@ -3635,6 +3626,9 @@ https://luiskr.com/docs/coverage-core/core/tokens/attrs/media.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/attrs/microdata.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/attrs/svg.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/attrs/values.ts.html
+https://luiskr.com/docs/coverage-core/core/tokens/axioms
+https://luiskr.com/docs/coverage-core/core/tokens/axioms/index.html
+https://luiskr.com/docs/coverage-core/core/tokens/axioms/params.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/base.js.html
 https://luiskr.com/docs/coverage-core/core/tokens/base.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/canvas
@@ -3649,6 +3643,7 @@ https://luiskr.com/docs/coverage-core/core/tokens/classes/animations.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/app.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/awards-carousel.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/awards.ts.html
+https://luiskr.com/docs/coverage-core/core/tokens/classes/axioms.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/card-stack.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/carousel.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/classes/cms.ts.html
@@ -3688,6 +3683,7 @@ https://luiskr.com/docs/coverage-core/core/tokens/classes/toast.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/css
 https://luiskr.com/docs/coverage-core/core/tokens/css/about.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/css/aurora.ts.html
+https://luiskr.com/docs/coverage-core/core/tokens/css/axioms.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/css/card-stack.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/css/carousel.ts.html
 https://luiskr.com/docs/coverage-core/core/tokens/css/contain.ts.html
@@ -12591,7 +12587,6 @@ https://luiskr.com/es/experimento-campo-estelar/venus
 https://luiskr.com/es/experimento-campo-estelar/vesta
 https://luiskr.com/es/experimento-campo-estelar/virgo-supercluster
 https://luiskr.com/es/experimento-campo-estelar/wlm
-https://luiskr.com/es/fin-del-axioma
 https://luiskr.com/es/licencia
 https://luiskr.com/es/mapa-del-sitio
 https://luiskr.com/es/playground-de-la-tierra
@@ -13282,7 +13277,6 @@ https://luiskr.com/fr/experience-champ-etoile/venus
 https://luiskr.com/fr/experience-champ-etoile/vesta
 https://luiskr.com/fr/experience-champ-etoile/virgo-supercluster
 https://luiskr.com/fr/experience-champ-etoile/wlm
-https://luiskr.com/fr/fin-de-l-axiome
 https://luiskr.com/fr/licence
 https://luiskr.com/fr/plan-du-site
 https://luiskr.com/fr/playground-de-la-terre
@@ -13828,7 +13822,6 @@ https://luiskr.com/ga/beartas-probhaideachta
 https://luiskr.com/ga/beochan
 https://luiskr.com/ga/ceadunas
 https://luiskr.com/ga/cuardach
-https://luiskr.com/ga/deireadh-an-aicsim
 https://luiskr.com/ga/faoi-mhe
 https://luiskr.com/ga/gdpr
 https://luiskr.com/ga/mapa-an-tsuimh
@@ -14664,7 +14657,6 @@ https://luiskr.com/gl/experimento-campo-estelar/venus
 https://luiskr.com/gl/experimento-campo-estelar/vesta
 https://luiskr.com/gl/experimento-campo-estelar/virgo-supercluster
 https://luiskr.com/gl/experimento-campo-estelar/wlm
-https://luiskr.com/gl/fin-do-axioma
 https://luiskr.com/gl/licenza
 https://luiskr.com/gl/mapa-do-sitio
 https://luiskr.com/gl/playground-da-terra
@@ -15207,7 +15199,6 @@ https://luiskr.com/gl/rgpd
 https://luiskr.com/gl/sobre-min
 https://luiskr.com/gl/termos-de-uso
 https://luiskr.com/gn
-https://luiskr.com/gn/axioma-paha
 https://luiskr.com/gn/che-rehegua
 https://luiskr.com/gn/jeguama
 https://luiskr.com/gn/jeheka
@@ -15899,7 +15890,6 @@ https://luiskr.com/gn/portfolio/vibra/vibra-a-empresa-mais-inovadora-do-segmento
 https://luiskr.com/gn/yvy-nembosarai
 https://luiskr.com/hrk
 https://luiskr.com/hrk/animatsione
-https://luiskr.com/hrk/axioms-ende
 https://luiskr.com/hrk/datenschutz
 https://luiskr.com/hrk/dateschutz-erklerung
 https://luiskr.com/hrk/erd-playground
@@ -16737,7 +16727,6 @@ https://luiskr.com/it/esperimento-campo-stellare/venus
 https://luiskr.com/it/esperimento-campo-stellare/vesta
 https://luiskr.com/it/esperimento-campo-stellare/virgo-supercluster
 https://luiskr.com/it/esperimento-campo-stellare/wlm
-https://luiskr.com/it/fine-dell-assioma
 https://luiskr.com/it/gdpr
 https://luiskr.com/it/informativa-sulla-privacy
 https://luiskr.com/it/licenza
@@ -17285,7 +17274,6 @@ https://luiskr.com/nl/aarde-playground
 https://luiskr.com/nl/animaties
 https://luiskr.com/nl/avg
 https://luiskr.com/nl/contact
-https://luiskr.com/nl/einde-van-het-axioma
 https://luiskr.com/nl/gebruiksvoorwaarden
 https://luiskr.com/nl/licentie
 https://luiskr.com/nl/over-mij
@@ -18655,7 +18643,6 @@ https://luiskr.com/riv/experimento-campo-estelar/venus
 https://luiskr.com/riv/experimento-campo-estelar/vesta
 https://luiskr.com/riv/experimento-campo-estelar/virgo-supercluster
 https://luiskr.com/riv/experimento-campo-estelar/wlm
-https://luiskr.com/riv/fim-do-axioma
 https://luiskr.com/riv/lgpd-gdpr
 https://luiskr.com/riv/licenca
 https://luiskr.com/riv/mapa-do-site
@@ -19201,7 +19188,6 @@ https://luiskr.com/ru
 https://luiskr.com/ru/animatsii
 https://luiskr.com/ru/gdpr
 https://luiskr.com/ru/karta-sajta
-https://luiskr.com/ru/konec-aksiomy
 https://luiskr.com/ru/kontakty
 https://luiskr.com/ru/litsenziya
 https://luiskr.com/ru/obo-mne
@@ -20187,7 +20173,6 @@ https://luiskr.com/tln/esperimento-canpo-stelare/venus
 https://luiskr.com/tln/esperimento-canpo-stelare/vesta
 https://luiskr.com/tln/esperimento-canpo-stelare/virgo-supercluster
 https://luiskr.com/tln/esperimento-canpo-stelare/wlm
-https://luiskr.com/tln/fine-del-assioma
 https://luiskr.com/tln/gdpr
 https://luiskr.com/tln/informativa-su-la-privacy
 https://luiskr.com/tln/lisensa

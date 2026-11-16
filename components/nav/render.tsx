@@ -144,7 +144,6 @@ export const renderAppNav = (nav: AppNav) => {
   const contactText = effectiveOnBottom ? scrollUpLabel : contactLabel
   const playgroundLabel = String(t?.earthPlayground || appText(CMS_KEYS.EARTH_PLAYGROUND))
   const starFieldLabel = String(t?.starField || appText(CMS_KEYS.STAR_FIELD))
-  const axiomsEndLabel = String(t?.axiomsEnd || appText(CMS_KEYS.AXIOMS_END))
   const prefLabel = String(t?.preferences || appText(NAV_UI_KEYS.PREFERENCES))
 
   const searchLabel = String(t?.search || appText(SECTION_UI_KEYS.SEARCH))
@@ -264,23 +263,6 @@ export const renderAppNav = (nav: AppNav) => {
         nav._closeMenu()
 
         router.push(localePath(CMS_KEYS.STAR_FIELD, nav.locale))
-      },
-    })
-  }
-
-  if (!nav.isAxiomsEndPage) {
-    items.push({
-      label: axiomsEndLabel,
-      cls: CHAR_STRINGS.EMPTY,
-      group: experimentsLabel,
-      href: localePath(CMS_KEYS.AXIOMS_END, nav.locale),
-      onClick: (e: Event) => {
-        if (!isPlainClick(e)) return
-
-        e.preventDefault()
-        nav._closeMenu()
-
-        router.push(localePath(CMS_KEYS.AXIOMS_END, nav.locale))
       },
     })
   }

@@ -571,10 +571,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/axioms-end</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/contact</loc>
     <priority>0.8</priority>
     <image:image>
@@ -2039,14 +2035,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/core/tokens/axioms</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/tokens/axioms/params.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/core/tokens/base.js</loc>
     <priority>0.7</priority>
   </url>
@@ -2100,10 +2088,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/core/tokens/classes/awards.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/tokens/classes/axioms.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -2256,10 +2240,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/core/tokens/css/about.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/tokens/css/axioms.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4291,6 +4271,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/tokens/axioms</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/tokens/axioms/index.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/tokens/axioms/params.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/coverage-core/core/tokens/base.js.html</loc>
     <priority>0.7</priority>
   </url>
@@ -4344,6 +4336,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-core/core/tokens/classes/awards.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/tokens/classes/axioms.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4500,6 +4496,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-core/core/tokens/css/aurora.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/tokens/css/axioms.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -41654,10 +41654,6 @@
   <url>
     <loc>https://luiskr.com/fr/experience-champ-etoile/wlm</loc>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/fr/fin-de-l-axiome</loc>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://luiskr.com/fr/licence</loc>

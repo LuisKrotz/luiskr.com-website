@@ -617,9 +617,6 @@ export const buildSitemapTree = (
         pageNode(String(appText(CMS_KEYS.STAR_FIELD) || CHAR_STRINGS.EMPTY), (loc) =>
           slugHref('starField', loc)
         ),
-        pageNode(String(appText(CMS_KEYS.AXIOMS_END) || CHAR_STRINGS.EMPTY), (loc) =>
-          slugHref('axiomsEnd', loc)
-        ),
       ]),
       group('docs', [
         {
