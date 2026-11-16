@@ -1138,9 +1138,20 @@ body::before {
   background: var(--bg-glow);
   animation: body-glow-drift 16s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
 }
+@media (max-width: 1023px), (pointer: coarse) {
+  body::before {
+    animation: none;
+    background: var(--bg-glow-3), var(--bg-glow-2), var(--bg-glow);
+  }
+}
 body::after {
   background: var(--bg-glow-2);
   animation: body-glow-drift-alt 21s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
+}
+@media (max-width: 1023px), (pointer: coarse) {
+  body::after {
+    content: none;
+  }
 }
 @keyframes body-glow-drift {
   0% {
@@ -1191,6 +1202,11 @@ body::after {
   pointer-events: none;
   background: var(--bg-glow-3);
   animation: app-glow-sweep 27s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
+}
+@media (max-width: 1023px), (pointer: coarse) {
+  #app::before {
+    content: none;
+  }
 }
 #app::after {
   content: '';
@@ -1451,6 +1467,30 @@ html.js .reader-content--painted:not(.reader-content--offscreen) {
   animation: skeleton-shimmer 1.8s linear infinite;
   will-change: transform;
   pointer-events: none;
+}
+@media (max-width: 1023px), (pointer: coarse) {
+  .skeleton--shimmer::before,
+  .skeleton--footer-note-2::before,
+  .skeleton--footer-note-1::before,
+  .skeleton--footer-link::before,
+  .skeleton--badge::before,
+  .skeleton--para-65::before,
+  .skeleton--para-98::before,
+  .skeleton--para-94::before,
+  .skeleton--para-full::before,
+  .skeleton--section-title::before,
+  .skeleton--title-md::before,
+  .skeleton--title-sm::before,
+  .skeleton--tag::before,
+  .skeleton--text-line::before,
+  .skeleton--media::before,
+  .skeleton--hero::before,
+  .skeleton--title::before,
+  .skeleton-cover::before,
+  .skeleton-placeholder::before {
+    animation: none;
+    will-change: auto;
+  }
 }
 .skeleton--title {
   width: 45%;

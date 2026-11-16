@@ -817,6 +817,7 @@ https://luiskr.com/docs/core/locale/fallback.ts
 https://luiskr.com/docs/core/locale/lang-slugs.ts
 https://luiskr.com/docs/core/locale/portfolio-word.ts
 https://luiskr.com/docs/core/locale/reader-content.ts
+https://luiskr.com/docs/core/locale/starfield-names.ts
 https://luiskr.com/docs/core/locale/string-inventory.json
 https://luiskr.com/docs/core/locale/ui-text.ts
 https://luiskr.com/docs/core/package.json
@@ -1057,7 +1058,6 @@ https://luiskr.com/docs/core/tokens/css/genie.ts
 https://luiskr.com/docs/core/tokens/css/menu.ts
 https://luiskr.com/docs/core/tokens/css/mosaic.ts
 https://luiskr.com/docs/core/tokens/css/nav.ts
-https://luiskr.com/docs/core/tokens/css/parallax.ts
 https://luiskr.com/docs/core/tokens/css/route-search.ts
 https://luiskr.com/docs/core/tokens/css/skeleton.ts
 https://luiskr.com/docs/core/tokens/css/starfield.ts
@@ -1132,7 +1132,6 @@ https://luiskr.com/docs/core/tokens/motion/marquee.ts
 https://luiskr.com/docs/core/tokens/motion/mentions-deck.ts
 https://luiskr.com/docs/core/tokens/motion/notify.ts
 https://luiskr.com/docs/core/tokens/motion/page-backdrop.ts
-https://luiskr.com/docs/core/tokens/motion/parallax.ts
 https://luiskr.com/docs/core/tokens/motion/prefetch.ts
 https://luiskr.com/docs/core/tokens/motion/print.ts
 https://luiskr.com/docs/core/tokens/motion/related.ts
@@ -1508,6 +1507,7 @@ https://luiskr.com/docs/coverage-core/core/locale/index.html
 https://luiskr.com/docs/coverage-core/core/locale/lang-slugs.ts.html
 https://luiskr.com/docs/coverage-core/core/locale/portfolio-word.ts.html
 https://luiskr.com/docs/coverage-core/core/locale/reader-content.ts.html
+https://luiskr.com/docs/coverage-core/core/locale/starfield-names.ts.html
 https://luiskr.com/docs/coverage-core/core/locale/ui-text.ts.html
 https://luiskr.com/docs/coverage-core/core/predictive-loader.ts.html
 https://luiskr.com/docs/coverage-core/core/router
@@ -2530,6 +2530,7 @@ https://luiskr.com/docs/docs/api/core/locale/fallback.md
 https://luiskr.com/docs/docs/api/core/locale/lang-slugs.md
 https://luiskr.com/docs/docs/api/core/locale/portfolio-word.md
 https://luiskr.com/docs/docs/api/core/locale/reader-content.md
+https://luiskr.com/docs/docs/api/core/locale/starfield-names.md
 https://luiskr.com/docs/docs/api/core/locale/ui-text.md
 https://luiskr.com/docs/docs/api/core/predictive-loader.md
 https://luiskr.com/docs/docs/api/core/public
@@ -2639,7 +2640,6 @@ https://luiskr.com/docs/docs/api/core/tokens/css/genie.md
 https://luiskr.com/docs/docs/api/core/tokens/css/menu.md
 https://luiskr.com/docs/docs/api/core/tokens/css/mosaic.md
 https://luiskr.com/docs/docs/api/core/tokens/css/nav.md
-https://luiskr.com/docs/docs/api/core/tokens/css/parallax.md
 https://luiskr.com/docs/docs/api/core/tokens/css/route-search.md
 https://luiskr.com/docs/docs/api/core/tokens/css/skeleton.md
 https://luiskr.com/docs/docs/api/core/tokens/css/starfield.md
@@ -2713,7 +2713,6 @@ https://luiskr.com/docs/docs/api/core/tokens/motion/marquee.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/mentions-deck.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/notify.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/page-backdrop.md
-https://luiskr.com/docs/docs/api/core/tokens/motion/parallax.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/prefetch.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/print.md
 https://luiskr.com/docs/docs/api/core/tokens/motion/related.md
@@ -3182,6 +3181,7 @@ https://luiskr.com/docs/docs/api/shared/scripts/verify/chunk-budget.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/console-scan.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/coverage-gaps.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/coverage-gate.md
+https://luiskr.com/docs/docs/api/shared/scripts/verify/mythos-scan.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/print-check.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/scope-gates.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/scroll-fps.md
@@ -3414,7 +3414,6 @@ https://luiskr.com/docs/docs/api/website/views/home
 https://luiskr.com/docs/docs/api/website/views/home/Home.md
 https://luiskr.com/docs/docs/api/website/views/home/children.md
 https://luiskr.com/docs/docs/api/website/views/home/data.md
-https://luiskr.com/docs/docs/api/website/views/home/parallax.md
 https://luiskr.com/docs/docs/api/website/views/home/render.md
 https://luiskr.com/docs/docs/api/website/views/home/scroll.md
 https://luiskr.com/docs/docs/api/website/views/home/types.md
@@ -3563,6 +3562,7 @@ https://luiskr.com/docs/docs/jsdocs/core/locale/fallback.md
 https://luiskr.com/docs/docs/jsdocs/core/locale/lang-slugs.md
 https://luiskr.com/docs/docs/jsdocs/core/locale/portfolio-word.md
 https://luiskr.com/docs/docs/jsdocs/core/locale/reader-content.md
+https://luiskr.com/docs/docs/jsdocs/core/locale/starfield-names.md
 https://luiskr.com/docs/docs/jsdocs/core/locale/ui-text.md
 https://luiskr.com/docs/docs/jsdocs/core/predictive-loader.md
 https://luiskr.com/docs/docs/jsdocs/core/public
@@ -3672,7 +3672,6 @@ https://luiskr.com/docs/docs/jsdocs/core/tokens/css/genie.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/menu.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/mosaic.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/nav.md
-https://luiskr.com/docs/docs/jsdocs/core/tokens/css/parallax.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/route-search.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/skeleton.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/css/starfield.md
@@ -3746,7 +3745,6 @@ https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/marquee.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/mentions-deck.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/notify.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/page-backdrop.md
-https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/parallax.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/prefetch.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/print.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/related.md
@@ -4215,6 +4213,7 @@ https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/chunk-budget.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/console-scan.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/coverage-gaps.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/coverage-gate.md
+https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/mythos-scan.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/print-check.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/scope-gates.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/scroll-fps.md
@@ -4447,7 +4446,6 @@ https://luiskr.com/docs/docs/jsdocs/website/views/home
 https://luiskr.com/docs/docs/jsdocs/website/views/home/Home.md
 https://luiskr.com/docs/docs/jsdocs/website/views/home/children.md
 https://luiskr.com/docs/docs/jsdocs/website/views/home/data.md
-https://luiskr.com/docs/docs/jsdocs/website/views/home/parallax.md
 https://luiskr.com/docs/docs/jsdocs/website/views/home/render.md
 https://luiskr.com/docs/docs/jsdocs/website/views/home/scroll.md
 https://luiskr.com/docs/docs/jsdocs/website/views/home/types.md
@@ -5010,6 +5008,14 @@ https://luiskr.com/docs/docs/typedoc/core/locale/reader-content/README.md
 https://luiskr.com/docs/docs/typedoc/core/locale/reader-content/functions
 https://luiskr.com/docs/docs/typedoc/core/locale/reader-content/functions/demoteReaderH1.md
 https://luiskr.com/docs/docs/typedoc/core/locale/reader-content/functions/updateReaderContent.md
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/README.md
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/dossierLocale.md
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/fetchBodyNames.md
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/peekBodyNames.md
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/interfaces
+https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/interfaces/SFBodyNames.md
 https://luiskr.com/docs/docs/typedoc/core/locale/ui-text
 https://luiskr.com/docs/docs/typedoc/core/locale/ui-text/README.md
 https://luiskr.com/docs/docs/typedoc/core/locale/ui-text/functions
@@ -5572,10 +5578,6 @@ https://luiskr.com/docs/docs/typedoc/core/tokens/css/nav
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/nav/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/nav/variables
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/nav/variables/NAV_SEARCH_CSS_PROPS.md
-https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax
-https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/README.md
-https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/variables
-https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/variables/PARALLAX_CSS_PROPS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/route-search
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/route-search/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/css/route-search/variables
@@ -5927,10 +5929,6 @@ https://luiskr.com/docs/docs/typedoc/core/tokens/motion/page-backdrop
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/page-backdrop/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/page-backdrop/variables
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/page-backdrop/variables/PAGE_BACKDROP.md
-https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax
-https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/README.md
-https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/variables
-https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/variables/PARALLAX.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/prefetch
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/prefetch/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/motion/prefetch/variables
@@ -7106,6 +7104,7 @@ https://luiskr.com/docs/docs/typedoc/core/utils/string/functions
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/escapeHtml.md
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/excerptHeading.md
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/mediaSlugSeq.md
+https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/sanitizeAttrString.md
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/slugify.md
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/splitDrawSentences.md
 https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/stripHtml.md
@@ -7786,14 +7785,11 @@ https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/applyDossierLocale.md
-https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/fetchBodyNames.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/fetchDossier.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/loadDossier.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/prefetchDossier.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/registryDist.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/syncDossier.md
-https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/interfaces
-https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/interfaces/SFBodyNames.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/i18n
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/i18n/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/i18n/functions
@@ -9406,16 +9402,6 @@ https://luiskr.com/docs/docs/typedoc/website/views/home/data/functions/isFeature
 https://luiskr.com/docs/docs/typedoc/website/views/home/data/functions/loadHomeData.md
 https://luiskr.com/docs/docs/typedoc/website/views/home/data/functions/onHomeStoreUpdate.md
 https://luiskr.com/docs/docs/typedoc/website/views/home/data/functions/processedItems.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/README.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/attachParallax.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/detachParallax.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/syncParallax.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxLayer.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxSession.md
-https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxWrite.md
 https://luiskr.com/docs/docs/typedoc/website/views/home/render
 https://luiskr.com/docs/docs/typedoc/website/views/home/render/README.md
 https://luiskr.com/docs/docs/typedoc/website/views/home/render/functions
@@ -9595,6 +9581,7 @@ https://luiskr.com/docs/reports/axe-report.json
 https://luiskr.com/docs/reports/chunk-budget.json
 https://luiskr.com/docs/reports/console-scan.json
 https://luiskr.com/docs/reports/gate-result.json
+https://luiskr.com/docs/reports/mythos-report.json
 https://luiskr.com/docs/reports/probe-grid.txt
 https://luiskr.com/docs/reports/probe2.txt
 https://luiskr.com/docs/reports/probe3.txt
@@ -9709,6 +9696,7 @@ https://luiskr.com/docs/shared/scripts/verify/chunk-budget.mjs
 https://luiskr.com/docs/shared/scripts/verify/console-scan.mjs
 https://luiskr.com/docs/shared/scripts/verify/coverage-gaps.mjs
 https://luiskr.com/docs/shared/scripts/verify/coverage-gate.mjs
+https://luiskr.com/docs/shared/scripts/verify/mythos-scan.mjs
 https://luiskr.com/docs/shared/scripts/verify/print-check.mjs
 https://luiskr.com/docs/shared/scripts/verify/scope-gates.mjs
 https://luiskr.com/docs/shared/scripts/verify/scroll-fps.mjs
@@ -10339,7 +10327,6 @@ https://luiskr.com/docs/website/views/home/Home.tsx
 https://luiskr.com/docs/website/views/home/children.ts
 https://luiskr.com/docs/website/views/home/data.ts
 https://luiskr.com/docs/website/views/home/home.scss
-https://luiskr.com/docs/website/views/home/parallax.ts
 https://luiskr.com/docs/website/views/home/render.tsx
 https://luiskr.com/docs/website/views/home/scroll.ts
 https://luiskr.com/docs/website/views/home/types.ts

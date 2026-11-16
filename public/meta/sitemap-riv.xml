@@ -321,6 +321,12 @@
       <image:license>https://luiskr.com/license</image:license>
       <image:caption>Applause award presented by Igor Almeida recognizing the DDS-SUPPORT pod (Dan, Juan and Luis) for a deep review of the migration documentation — identifying gaps, inconsistencies, and improvements that raised guidance quality and benefit MCP and AI-powered workflows.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>Nov. 13th 2026: Security, Ownership, and Excellence</image:title>
+      <image:license>https://luiskr.com/license</image:license>
+      <image:caption>Cheers award presented by Marcelo Bacchieri recognizing the DDS Website POD for closing 134 Mythos vulnerabilities within SLA — demonstrating technical excellence, execution discipline, teamwork, self-management, and a highly organized approach that required very little oversight.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://luiskr.com/about</loc>
@@ -564,6 +570,12 @@
       <image:title>Nov. 4th 2026: Making Our Documentation AI-Ready</image:title>
       <image:license>https://luiskr.com/license</image:license>
       <image:caption>Applause award presented by Igor Almeida recognizing the DDS-SUPPORT pod (Dan, Juan and Luis) for a deep review of the migration documentation — identifying gaps, inconsistencies, and improvements that raised guidance quality and benefit MCP and AI-powered workflows.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>Nov. 13th 2026: Security, Ownership, and Excellence</image:title>
+      <image:license>https://luiskr.com/license</image:license>
+      <image:caption>Cheers award presented by Marcelo Bacchieri recognizing the DDS Website POD for closing 134 Mythos vulnerabilities within SLA — demonstrating technical excellence, execution discipline, teamwork, self-management, and a highly organized approach that required very little oversight.</image:caption>
     </image:image>
   </url>
   <url>
@@ -812,6 +824,12 @@
       <image:title>Nov. 4th 2026: Making Our Documentation AI-Ready</image:title>
       <image:license>https://luiskr.com/license</image:license>
       <image:caption>Applause award presented by Igor Almeida recognizing the DDS-SUPPORT pod (Dan, Juan and Luis) for a deep review of the migration documentation — identifying gaps, inconsistencies, and improvements that raised guidance quality and benefit MCP and AI-powered workflows.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>Nov. 13th 2026: Security, Ownership, and Excellence</image:title>
+      <image:license>https://luiskr.com/license</image:license>
+      <image:caption>Cheers award presented by Marcelo Bacchieri recognizing the DDS Website POD for closing 134 Mythos vulnerabilities within SLA — demonstrating technical excellence, execution discipline, teamwork, self-management, and a highly organized approach that required very little oversight.</image:caption>
     </image:image>
   </url>
   <url>
@@ -1312,6 +1330,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/core/locale/reader-content.ts</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/core/locale/starfield-names.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -2275,10 +2297,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/core/tokens/css/parallax.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/core/tokens/css/route-search.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -2572,10 +2590,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/core/tokens/motion/page-backdrop.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/core/tokens/motion/parallax.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4076,6 +4090,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-core/core/locale/reader-content.ts.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/coverage-core/core/locale/starfield-names.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -8167,6 +8185,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/core/locale/starfield-names.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/core/locale/ui-text.md</loc>
     <priority>0.7</priority>
   </url>
@@ -8603,10 +8625,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/core/tokens/css/parallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/core/tokens/css/route-search.md</loc>
     <priority>0.7</priority>
   </url>
@@ -8896,10 +8914,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/core/tokens/motion/page-backdrop.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/core/tokens/motion/parallax.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -10775,6 +10789,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/mythos-scan.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/print-check.md</loc>
     <priority>0.7</priority>
   </url>
@@ -11703,10 +11721,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/website/views/home/parallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/website/views/home/render.md</loc>
     <priority>0.7</priority>
   </url>
@@ -12299,6 +12313,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/core/locale/starfield-names.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/locale/ui-text.md</loc>
     <priority>0.7</priority>
   </url>
@@ -12735,10 +12753,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/css/parallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/css/route-search.md</loc>
     <priority>0.7</priority>
   </url>
@@ -13028,10 +13042,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/page-backdrop.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/motion/parallax.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -14907,6 +14917,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/mythos-scan.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/print-check.md</loc>
     <priority>0.7</priority>
   </url>
@@ -15832,10 +15846,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/views/home/data.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/views/home/parallax.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -18087,6 +18097,38 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/README.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/dossierLocale.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/fetchBodyNames.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/functions/peekBodyNames.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/interfaces</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/locale/starfield-names/interfaces/SFBodyNames.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/locale/ui-text</loc>
     <priority>0.7</priority>
   </url>
@@ -20335,22 +20377,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/variables</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/css/parallax/variables/PARALLAX_CSS_PROPS.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/css/route-search</loc>
     <priority>0.7</priority>
   </url>
@@ -21752,22 +21778,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/page-backdrop/variables/PAGE_BACKDROP.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/variables</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/motion/parallax/variables/PARALLAX.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -26471,6 +26481,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/sanitizeAttrString.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/string/functions/slugify.md</loc>
     <priority>0.7</priority>
   </url>
@@ -29191,10 +29205,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/fetchBodyNames.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/fetchDossier.md</loc>
     <priority>0.7</priority>
   </url>
@@ -29212,14 +29222,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/functions/syncDossier.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/interfaces</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/star/dossier/interfaces/SFBodyNames.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -35671,46 +35673,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/attachParallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/detachParallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/functions/syncParallax.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxLayer.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxSession.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/parallax/interfaces/ParallaxWrite.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/website/views/home/render</loc>
     <priority>0.7</priority>
   </url>
@@ -36427,6 +36389,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/reports/mythos-report.json</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/reports/probe-grid.txt</loc>
     <priority>0.7</priority>
   </url>
@@ -36880,6 +36846,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/shared/scripts/verify/coverage-gate.mjs</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/shared/scripts/verify/mythos-scan.mjs</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -39400,10 +39370,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/website/views/home/home.scss</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/website/views/home/parallax.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -42012,7 +41978,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.8</priority>
     <video:video>
       <video:thumbnail_loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg</video:thumbnail_loc>
@@ -42694,7 +42660,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-ai-driven-workflows-and-tools</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-ai-mozjpg-uncompressed.jpg</image:loc>
@@ -42705,7 +42671,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-code-architecture-and-guidelines</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/homepage-code-mozjpg-uncompressed.jpg</image:loc>
@@ -42716,7 +42682,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-components-library-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-components-mozjpg-uncompressed.jpg</image:loc>
@@ -42727,7 +42693,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-area-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/area-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42738,7 +42704,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-bar-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/bar-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42749,7 +42715,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-bubble-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/bubble-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42760,7 +42726,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-donut-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/donut-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42771,7 +42737,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-gauge-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/gauge-mozjpg-uncompressed.jpg</image:loc>
@@ -42782,7 +42748,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-line-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/line-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42793,7 +42759,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-metric-card-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/metric-card-mozjpg-uncompressed.jpg</image:loc>
@@ -42804,7 +42770,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-pie-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/pie-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42815,7 +42781,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-stacked-area-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/stacked-area-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42826,7 +42792,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-data-visualization-utilization-chart-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/utilization-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -42837,7 +42803,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-design-token-types-reference</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-types-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -42848,7 +42814,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-design-tokens-architecture</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/homepage-tokens-mozjpg-uncompressed.jpg</image:loc>
@@ -42859,7 +42825,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-design-tokens-foundation-v1</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-tokens-1-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -42870,7 +42836,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-design-tokens-foundation-v2</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-tokens-2-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -42881,7 +42847,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-foundations-documentation-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-foundations-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -42892,7 +42858,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-foundations-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-foundations-mozjpg-uncompressed.jpg</image:loc>
@@ -42903,7 +42869,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-getting-started-principles</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-getting-started-principles09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -42914,7 +42880,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-patterns-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-patterns-mozjpg-uncompressed.jpg</image:loc>
@@ -42925,7 +42891,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-storybook-integration-and-component-guidelines</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-getting-started-storybooks-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -42936,7 +42902,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-typography-foundation-and-font-ramp-specs</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/partial-screenshoot-www.delldesignsystem.com-font-ramp-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -42947,7 +42913,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-accordion-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/accordion-mozjpg-uncompressed.jpg</image:loc>
@@ -42958,7 +42924,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-action-menu-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/action-menu-mozjpg-uncompressed.jpg</image:loc>
@@ -42969,7 +42935,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-blockquote-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/blockquote-mozjpg-uncompressed.jpg</image:loc>
@@ -42980,7 +42946,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-breadcrumb-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/breadcrumb-mozjpg-uncompressed.jpg</image:loc>
@@ -42991,7 +42957,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-button-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/button-mozjpg-uncompressed.jpg</image:loc>
@@ -43002,7 +42968,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-card-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/card-mozjpg-uncompressed.jpg</image:loc>
@@ -43013,7 +42979,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-carousel-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/carousel-mozjpg-uncompressed.jpg</image:loc>
@@ -43024,7 +42990,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-checkbox-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/checkbox-mozjpg-uncompressed.jpg</image:loc>
@@ -43035,7 +43001,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-date-picker-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/date-picker-mozjpg-uncompressed.jpg</image:loc>
@@ -43046,7 +43012,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-divider-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/divider-mozjpg-uncompressed.jpg</image:loc>
@@ -43057,7 +43023,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-drawer-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/drawer-mozjpg-uncompressed.jpg</image:loc>
@@ -43068,7 +43034,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-dropdown-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/dropdown-mozjpg-uncompressed.jpg</image:loc>
@@ -43079,7 +43045,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-file-input-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/file-input-mozjpg-uncompressed.jpg</image:loc>
@@ -43090,7 +43056,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-footnote-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/footnote-mozjpg-uncompressed.jpg</image:loc>
@@ -43101,7 +43067,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-horizontal-progress-tracker-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/horizontal-progress-tracker-mozjpg-uncompressed.jpg</image:loc>
@@ -43112,7 +43078,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-link-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/link-mozjpg-uncompressed.jpg</image:loc>
@@ -43123,7 +43089,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-list-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/list-mozjpg-uncompressed.jpg</image:loc>
@@ -43134,7 +43100,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-loading-indicator-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/loading-indicator-mozjpg-uncompressed.jpg</image:loc>
@@ -43145,7 +43111,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-message-bar-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/message-bar-mozjpg-uncompressed.jpg</image:loc>
@@ -43156,7 +43122,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-modal-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/modal-mozjpg-uncompressed.jpg</image:loc>
@@ -43167,7 +43133,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-notification-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/notification-mozjpg-uncompressed.jpg</image:loc>
@@ -43178,7 +43144,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-popover-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/popover-mozjpg-uncompressed.jpg</image:loc>
@@ -43189,7 +43155,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-progress-bar-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/progress-bar-mozjpg-uncompressed.jpg</image:loc>
@@ -43200,7 +43166,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-radio-button-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/radio-button-mozjpg-uncompressed.jpg</image:loc>
@@ -43211,7 +43177,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-search-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/search-mozjpg-uncompressed.jpg</image:loc>
@@ -43222,7 +43188,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-select-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/select-mozjpg-uncompressed.jpg</image:loc>
@@ -43233,7 +43199,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-side-navigation-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/side-navigation-mozjpg-uncompressed.jpg</image:loc>
@@ -43244,7 +43210,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-switch-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/switch-mozjpg-uncompressed.jpg</image:loc>
@@ -43255,7 +43221,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-table-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/table-mozjpg-uncompressed.jpg</image:loc>
@@ -43266,7 +43232,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-tabs-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tabs-mozjpg-uncompressed.jpg</image:loc>
@@ -43277,7 +43243,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-tabs-with-badges-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tabs-with-badges-mozjpg-uncompressed.jpg</image:loc>
@@ -43288,7 +43254,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-tag-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tag-mozjpg-uncompressed.jpg</image:loc>
@@ -43299,7 +43265,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-text-area-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/text-area-mozjpg-uncompressed.jpg</image:loc>
@@ -43310,7 +43276,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-text-input-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/text-input-mozjpg-uncompressed.jpg</image:loc>
@@ -43321,7 +43287,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-time-picker-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/time-picker-mozjpg-uncompressed.jpg</image:loc>
@@ -43332,7 +43298,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-tooltip-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tooltip-mozjpg-uncompressed.jpg</image:loc>
@@ -43343,7 +43309,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-vertical-progress-tracker-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/vertical-progress-tracker-mozjpg-uncompressed.jpg</image:loc>
@@ -43354,7 +43320,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-vertical-tabs-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/vertical-tabs-mozjpg-uncompressed.jpg</image:loc>
@@ -43365,7 +43331,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v2-view-more-less-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/view-more-less-mozjpg-uncompressed.jpg</image:loc>
@@ -43376,7 +43342,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-accordion-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/accordion-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43387,7 +43353,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-action-menu-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/actionmenu-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43398,7 +43364,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-badge-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/badge-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43409,7 +43375,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-blockquote-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/blockquote-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43420,7 +43386,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-breadcrumb-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/breadcrumb-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43431,7 +43397,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-button-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/button-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43442,7 +43408,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-card-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/card-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43453,7 +43419,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-carousel-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/carousel-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43464,7 +43430,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-checkbox-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/checkbox-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43475,7 +43441,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-data-visualization-template</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/data-visualizaton-template-mozjpg-uncompressed.jpg</image:loc>
@@ -43486,7 +43452,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-datepicker-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/datepicker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43497,7 +43463,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-divider-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/divider-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43508,7 +43474,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-drawer-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/drawer-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43519,7 +43485,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-dropdown-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/dropdown-page-mozjpg-uncompressed.jpg</image:loc>
@@ -43530,7 +43496,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-empty-state-table</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/Empty_State_Table_9a80e2458d-mozjpg-uncompressed.jpg</image:loc>
@@ -43541,7 +43507,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-fileinput-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/fileinput-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43552,7 +43518,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-footnote-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/footnote-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43563,7 +43529,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-form-patterns-message-bar</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/Form_Patterns_Message_bar_e43bb84eff-mozjpg-uncompressed.jpg</image:loc>
@@ -43574,7 +43540,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-interactive-legend-component</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/interactive-legend-isolate-selected--1--mozjpg-uncompressed.jpg</image:loc>
@@ -43585,7 +43551,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-list-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/list-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43596,7 +43562,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-loading-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/loading-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43607,7 +43573,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-menu-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/menu-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43618,7 +43584,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-messagebar-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/messagebar-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43629,7 +43595,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-modal-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/modal-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43640,7 +43606,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-notification-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/notification-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43651,7 +43617,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-overlay-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/overlay-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43662,7 +43628,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-pagination-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/pagination-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43673,7 +43639,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-popover-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/popover-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43684,7 +43650,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-progressbar-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/progressbar-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43695,7 +43661,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-progresstracker-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/progresstracker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43706,7 +43672,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-radiobutton-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/radiobutton-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43717,7 +43683,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-search-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/search-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43728,7 +43694,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-select-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/select-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43739,7 +43705,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-sidenavigation-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/sidenavigation-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43750,7 +43716,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-sign-in-pattern</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/sign-in-pattern-mozjpg-uncompressed.jpg</image:loc>
@@ -43761,7 +43727,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-switch-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/switch-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43772,7 +43738,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-table-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/table-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43783,7 +43749,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-tabs-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tabs-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43794,7 +43760,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-tag-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tag-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43805,7 +43771,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-textarea-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/textarea-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43816,7 +43782,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-textinput-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/textinput-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43827,7 +43793,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-timepicker-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/timepicker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43838,7 +43804,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-tooltip-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tooltip-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -43849,7 +43815,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/portfolio/dell-design-system/dell-design-system-v3-viewmoreless-overview</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/viewmoreless-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -62506,6 +62472,12 @@
       <image:license>https://luiskr.com/riv/licenca</image:license>
       <image:caption>Prêmio Applause entregue por Igor Almeida, reconhecendo o pod DDS-SUPPORT (Dan, Juan e Luis) pela revisão profunda da documentação de migração — identificando lacunas, inconsistências e melhorias que elevaram a qualidade da orientação e beneficiam os fluxos MCP e com IA.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>13 de nov. de 2026: Segurança, Ownership e Excelência</image:title>
+      <image:license>https://luiskr.com/riv/licenca</image:license>
+      <image:caption>Prêmio Cheers entregue por Marcelo Bacchieri, reconhecendo o pod DDS Website pelo fechamento de 134 vulnerabilidades Mythos dentro do SLA — demonstrando excelência técnica, disciplina de execução, trabalho em equipe, autogestão e uma abordagem altamente organizada que exigiu muito pouca supervisão.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://luiskr.com/riv/animacoes</loc>
@@ -62757,6 +62729,12 @@
       <image:title>4 de nov. de 2026: Deixando a Documentação Pronta para IA</image:title>
       <image:license>https://luiskr.com/riv/licenca</image:license>
       <image:caption>Prêmio Applause entregue por Igor Almeida, reconhecendo o pod DDS-SUPPORT (Dan, Juan e Luis) pela revisão profunda da documentação de migração — identificando lacunas, inconsistências e melhorias que elevaram a qualidade da orientação e beneficiam os fluxos MCP e com IA.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>13 de nov. de 2026: Segurança, Ownership e Excelência</image:title>
+      <image:license>https://luiskr.com/riv/licenca</image:license>
+      <image:caption>Prêmio Cheers entregue por Marcelo Bacchieri, reconhecendo o pod DDS Website pelo fechamento de 134 vulnerabilidades Mythos dentro do SLA — demonstrando excelência técnica, disciplina de execução, trabalho em equipe, autogestão e uma abordagem altamente organizada que exigiu muito pouca supervisão.</image:caption>
     </image:image>
   </url>
   <url>
@@ -66503,7 +66481,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.7</priority>
     <video:video>
       <video:thumbnail_loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/screenrecording-www.delldesignsystem.com-09-24-2026.mp4.jpg-thumb.jpg</video:thumbnail_loc>
@@ -67185,7 +67163,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-arquitetura-de-codigo-e-diretrizes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/homepage-code-mozjpg-uncompressed.jpg</image:loc>
@@ -67196,7 +67174,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-arquitetura-de-design-tokens</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/homepage-tokens-mozjpg-uncompressed.jpg</image:loc>
@@ -67207,7 +67185,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-fluxos-de-trabalho-e-ferramentas-orientados-por-ia</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-ai-mozjpg-uncompressed.jpg</image:loc>
@@ -67218,7 +67196,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-fundacao-de-design-tokens-v1</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-tokens-1-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -67229,7 +67207,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-fundacao-de-design-tokens-v2</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-tokens-2-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -67240,7 +67218,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-fundacao-de-tipografia-e-especificacoes-da-escala-de-fontes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/partial-screenshoot-www.delldesignsystem.com-font-ramp-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -67251,7 +67229,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-integracao-com-storybook-e-diretrizes-de-componentes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-getting-started-storybooks-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -67262,7 +67240,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-principios-para-comecar</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-getting-started-principles09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -67273,7 +67251,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-referencia-de-tipos-de-design-tokens</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/dds.dell.com-site-v3-getting-started-tokens-types-cover-mozjpg-uncompressed.jpg</image:loc>
@@ -67284,7 +67262,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-accordion-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/accordion-mozjpg-uncompressed.jpg</image:loc>
@@ -67295,7 +67273,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-action-menu-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/action-menu-mozjpg-uncompressed.jpg</image:loc>
@@ -67306,7 +67284,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-blockquote-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/blockquote-mozjpg-uncompressed.jpg</image:loc>
@@ -67317,7 +67295,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-breadcrumb-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/breadcrumb-mozjpg-uncompressed.jpg</image:loc>
@@ -67328,7 +67306,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-button-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/button-mozjpg-uncompressed.jpg</image:loc>
@@ -67339,7 +67317,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-card-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/card-mozjpg-uncompressed.jpg</image:loc>
@@ -67350,7 +67328,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-carousel-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/carousel-mozjpg-uncompressed.jpg</image:loc>
@@ -67361,7 +67339,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-checkbox-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/checkbox-mozjpg-uncompressed.jpg</image:loc>
@@ -67372,7 +67350,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-date-picker-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/date-picker-mozjpg-uncompressed.jpg</image:loc>
@@ -67383,7 +67361,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-divider-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/divider-mozjpg-uncompressed.jpg</image:loc>
@@ -67394,7 +67372,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-drawer-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/drawer-mozjpg-uncompressed.jpg</image:loc>
@@ -67405,7 +67383,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-dropdown-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/dropdown-mozjpg-uncompressed.jpg</image:loc>
@@ -67416,7 +67394,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-file-input-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/file-input-mozjpg-uncompressed.jpg</image:loc>
@@ -67427,7 +67405,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-footnote-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/footnote-mozjpg-uncompressed.jpg</image:loc>
@@ -67438,7 +67416,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-horizontal-progress-tracker-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/horizontal-progress-tracker-mozjpg-uncompressed.jpg</image:loc>
@@ -67449,7 +67427,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-link-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/link-mozjpg-uncompressed.jpg</image:loc>
@@ -67460,7 +67438,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-list-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/list-mozjpg-uncompressed.jpg</image:loc>
@@ -67471,7 +67449,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-loading-indicator-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/loading-indicator-mozjpg-uncompressed.jpg</image:loc>
@@ -67482,7 +67460,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-message-bar-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/message-bar-mozjpg-uncompressed.jpg</image:loc>
@@ -67493,7 +67471,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-modal-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/modal-mozjpg-uncompressed.jpg</image:loc>
@@ -67504,7 +67482,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-notification-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/notification-mozjpg-uncompressed.jpg</image:loc>
@@ -67515,7 +67493,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-popover-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/popover-mozjpg-uncompressed.jpg</image:loc>
@@ -67526,7 +67504,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-progress-bar-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/progress-bar-mozjpg-uncompressed.jpg</image:loc>
@@ -67537,7 +67515,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-radio-button-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/radio-button-mozjpg-uncompressed.jpg</image:loc>
@@ -67548,7 +67526,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-search-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/search-mozjpg-uncompressed.jpg</image:loc>
@@ -67559,7 +67537,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-select-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/select-mozjpg-uncompressed.jpg</image:loc>
@@ -67570,7 +67548,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-side-navigation-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/side-navigation-mozjpg-uncompressed.jpg</image:loc>
@@ -67581,7 +67559,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-switch-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/switch-mozjpg-uncompressed.jpg</image:loc>
@@ -67592,7 +67570,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-table-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/table-mozjpg-uncompressed.jpg</image:loc>
@@ -67603,7 +67581,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-tabs-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tabs-mozjpg-uncompressed.jpg</image:loc>
@@ -67614,7 +67592,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-tabs-with-badges-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tabs-with-badges-mozjpg-uncompressed.jpg</image:loc>
@@ -67625,7 +67603,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-tag-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tag-mozjpg-uncompressed.jpg</image:loc>
@@ -67636,7 +67614,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-text-area-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/text-area-mozjpg-uncompressed.jpg</image:loc>
@@ -67647,7 +67625,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-text-input-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/text-input-mozjpg-uncompressed.jpg</image:loc>
@@ -67658,7 +67636,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-time-picker-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/time-picker-mozjpg-uncompressed.jpg</image:loc>
@@ -67669,7 +67647,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-tooltip-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/tooltip-mozjpg-uncompressed.jpg</image:loc>
@@ -67680,7 +67658,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-vertical-progress-tracker-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/vertical-progress-tracker-mozjpg-uncompressed.jpg</image:loc>
@@ -67691,7 +67669,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-vertical-tabs-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/vertical-tabs-mozjpg-uncompressed.jpg</image:loc>
@@ -67702,7 +67680,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v2-view-more-less-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v2/view-more-less-mozjpg-uncompressed.jpg</image:loc>
@@ -67713,7 +67691,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-accordion-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/accordion-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67724,7 +67702,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-action-menu-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/actionmenu-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67735,7 +67713,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-badge-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/badge-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67746,7 +67724,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-blockquote-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/blockquote-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67757,7 +67735,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-breadcrumb-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/breadcrumb-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67768,7 +67746,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-button-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/button-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67779,7 +67757,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-card-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/card-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67790,7 +67768,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-carousel-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/carousel-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67801,7 +67779,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-checkbox-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/checkbox-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67812,7 +67790,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-componente-de-legenda-interativa</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/interactive-legend-isolate-selected--1--mozjpg-uncompressed.jpg</image:loc>
@@ -67823,7 +67801,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-datepicker-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/datepicker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67834,7 +67812,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-divider-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/divider-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67845,7 +67823,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-drawer-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/drawer-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67856,7 +67834,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-dropdown-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/dropdown-page-mozjpg-uncompressed.jpg</image:loc>
@@ -67867,7 +67845,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-fileinput-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/fileinput-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67878,7 +67856,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-footnote-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/footnote-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67889,7 +67867,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-list-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/list-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67900,7 +67878,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-loading-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/loading-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67911,7 +67889,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-menu-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/menu-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67922,7 +67900,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-message-bar-de-padroes-de-formulario</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/Form_Patterns_Message_bar_e43bb84eff-mozjpg-uncompressed.jpg</image:loc>
@@ -67933,7 +67911,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-messagebar-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/messagebar-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67944,7 +67922,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-modal-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/modal-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67955,7 +67933,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-notification-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/notification-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67966,7 +67944,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-overlay-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/overlay-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67977,7 +67955,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-padrao-de-autenticacao-sign-in</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/sign-in-pattern-mozjpg-uncompressed.jpg</image:loc>
@@ -67988,7 +67966,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-pagination-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/pagination-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -67999,7 +67977,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-popover-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/popover-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68010,7 +67988,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-progressbar-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/progressbar-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68021,7 +67999,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-progresstracker-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/progresstracker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68032,7 +68010,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-radiobutton-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/radiobutton-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68043,7 +68021,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-search-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/search-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68054,7 +68032,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-select-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/select-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68065,7 +68043,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-sidenavigation-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/sidenavigation-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68076,7 +68054,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-switch-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/switch-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68087,7 +68065,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-tabela-de-estado-vazio</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/Empty_State_Table_9a80e2458d-mozjpg-uncompressed.jpg</image:loc>
@@ -68098,7 +68076,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-table-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/table-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68109,7 +68087,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-tabs-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tabs-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68120,7 +68098,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-tag-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tag-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68131,7 +68109,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-template-de-visualizacao-de-dados</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/data-visualizaton-template-mozjpg-uncompressed.jpg</image:loc>
@@ -68142,7 +68120,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-textarea-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/textarea-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68153,7 +68131,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-textinput-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/textinput-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68164,7 +68142,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-timepicker-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/timepicker-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68175,7 +68153,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-tooltip-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/tooltip-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68186,7 +68164,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-v3-viewmoreless-visao-geral</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/v3/viewmoreless-overview-mozjpg-uncompressed.jpg</image:loc>
@@ -68197,7 +68175,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visao-geral-da-biblioteca-de-componentes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-components-mozjpg-uncompressed.jpg</image:loc>
@@ -68208,7 +68186,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visao-geral-da-documentacao-de-fundacoes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/highlights/screenshoot-www.delldesignsystem.com-foundations-09-24-2026-mozjpg-uncompressed.jpg</image:loc>
@@ -68219,7 +68197,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visao-geral-das-fundacoes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-foundations-mozjpg-uncompressed.jpg</image:loc>
@@ -68230,7 +68208,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visao-geral-de-padroes</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/covers/home-patterns-mozjpg-uncompressed.jpg</image:loc>
@@ -68241,7 +68219,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-area-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/area-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68252,7 +68230,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-bar-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/bar-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68263,7 +68241,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-bubble-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/bubble-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68274,7 +68252,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-donut-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/donut-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68285,7 +68263,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-gauge-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/gauge-mozjpg-uncompressed.jpg</image:loc>
@@ -68296,7 +68274,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-line-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/line-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68307,7 +68285,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-metric-card-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/metric-card-mozjpg-uncompressed.jpg</image:loc>
@@ -68318,7 +68296,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-pie-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/pie-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68329,7 +68307,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-stacked-area-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/stacked-area-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -68340,7 +68318,7 @@
   </url>
   <url>
     <loc>https://luiskr.com/riv/portfolio/dell-design-system/dell-design-system-visualizacao-de-dados-utilization-chart-componente</loc>
-    <lastmod>2026-11-08T15:06:55-03:00</lastmod>
+    <lastmod>2026-11-16T13:07:27-03:00</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/delldesignsystem/ddv-v2/utilization-chart-mozjpg-uncompressed.jpg</image:loc>
@@ -86928,6 +86906,12 @@
       <image:title>4 de nov. de 2026: Deixando a Documentação Pronta para IA</image:title>
       <image:license>https://luiskr.com/riv/licenca</image:license>
       <image:caption>Prêmio Applause entregue por Igor Almeida, reconhecendo o pod DDS-SUPPORT (Dan, Juan e Luis) pela revisão profunda da documentação de migração — identificando lacunas, inconsistências e melhorias que elevaram a qualidade da orientação e beneficiam os fluxos MCP e com IA.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://storage.googleapis.com/luiskr.com/public/_v3/awards/security-ownership-and-excellence-2026.png</image:loc>
+      <image:title>13 de nov. de 2026: Segurança, Ownership e Excelência</image:title>
+      <image:license>https://luiskr.com/riv/licenca</image:license>
+      <image:caption>Prêmio Cheers entregue por Marcelo Bacchieri, reconhecendo o pod DDS Website pelo fechamento de 134 vulnerabilidades Mythos dentro do SLA — demonstrando excelência técnica, disciplina de execução, trabalho em equipe, autogestão e uma abordagem altamente organizada que exigiu muito pouca supervisão.</image:caption>
     </image:image>
   </url>
   <url>
