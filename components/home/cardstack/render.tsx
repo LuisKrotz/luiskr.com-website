@@ -243,17 +243,18 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
 
           {item.description && (
             <p className={C.CARD_STACK_CARD_INFO_DESC}>
-              {/* Every card keeps its own writer — writeInfo() arms the
-                  front card's text on each nav so the description
-                  typewrites on stacked tiers exactly like the desktop
-                  info column; behind cards stay empty (their info is
-                  hidden, so no writer burns frames off-front). The
-                  viewport trigger holds the reveal until the card is
-                  actually on screen — the auto trigger would spend the
-                  stagger at mount while the section is still below the
-                  fold, leaving the desc pre-typed on first sight. */}
+              {/* Every card mounts with its OWN summary text — a card
+                  must never be a lonely image: copy is present from
+                  first paint, so the card's box is its final size at
+                  mount (no post-fill growth feeding _frontExtra and no
+                  mid-swipe relayout). writeInfo() replays only the
+                  front card's writer on each nav; behind cards keep
+                  this static text. The viewport trigger holds the
+                  reveal until the card is actually on screen — the
+                  auto trigger would spend the stagger at mount while
+                  the section is still below the fold. */}
               <draw-text
-                text={CHAR_STRINGS.EMPTY}
+                text={cardInfo(item).summary}
                 delay={CHAR_STRINGS.DELAY_15}
                 trigger={COMMON_ATTRS.TRIGGER_VIEWPORT}
               />

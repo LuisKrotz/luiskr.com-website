@@ -309,14 +309,16 @@ describe('CardStack — mount + data contract', () => {
     // stacked layouts show (fan tiers hide it via CSS).
     const cardTitle = cards[0].querySelector(`.${C.CARD_STACK_CARD_INFO_TITLE}`)
     expect(cardTitle.textContent).toBe('Project 0')
-    // Every card owns a <draw-text> writer; on copy-carrying stacked
-    // tiers writeInfo() arms only the front card's `text` so the
-    // description typewrites — behind cards stay disarmed (empty
-    // text). The happy-dom viewport lands on the image-only band, so
-    // the arming contract is exercised against the phone tier directly.
-    // The in-card writer carries the first-sentence SUMMARY (the card
-    // copy is clamped to four lines) while the text column below keeps
-    // the full body — same content at two lengths, both indexable.
+    // Every card owns a <draw-text> writer mounted with its OWN
+    // summary — no card is ever a lonely image. On copy-carrying
+    // stacked tiers writeInfo() replays only the front card's writer
+    // so the description re-reveals on each nav; behind cards keep
+    // their static text untouched. The happy-dom viewport lands on the
+    // image-only band, so the contract is exercised against the phone
+    // tier directly. The in-card writer carries the first-sentence
+    // SUMMARY (the card copy is clamped to four lines) while the text
+    // column below keeps the full body — same content at two lengths,
+    // both indexable.
     el._tier = STACK_TIER
     writeInfo(el)
     const frontWriter = cards[0].querySelector(
@@ -327,7 +329,7 @@ describe('CardStack — mount + data contract', () => {
       cards[1]
         .querySelector(`.${C.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`)
         .getAttribute(FORM_ATTRS.TEXT)
-    ).toBe(ATTR_VALUES.EMPTY)
+    ).toBe('Desc 1 line one')
     expect(cards[0].querySelector(`.${C.CARD_STACK_CARD_INFO_CTA}`)).not.toBeNull()
     // The text column — a plain-text title (the burn owns it) + the
     // Jost description writer + the project link.

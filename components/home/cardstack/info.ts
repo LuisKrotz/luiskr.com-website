@@ -497,13 +497,20 @@ export function writeInfo(host: CardStack): void {
   // and the image-only stacked bands hide the in-card copy entirely —
   // arming writers there would just park unused observers.
   if (host._tier?.STACKED && host._tier?.IN_CARD_INFO) {
-    for (const [i, cardEl] of host._cardEls.entries()) {
-      cardEl
-        .querySelector(
-          `${CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`
-        )
-        ?.setAttribute(FORM_ATTRS.TEXT, i === host.activeIdx ? info.summary : ATTR_VALUES.EMPTY)
-    }
+    // Only the FRONT card's writer replays — every other card keeps the
+    // own-summary copy it mounted with, so no card is ever a lonely
+    // image and no card's box changes size when the front moves (the
+    // static text was already in flow; this swap-through-empty only
+    // re-triggers the front's reveal — draw-text ignores an unchanged
+    // text, so the two-step is what restarts it). Fan tiers and the
+    // image-only stacked bands hide the in-card copy entirely — arming
+    // writers there would just park unused observers.
+    const writer = host._cardEls[host.activeIdx]?.querySelector(
+      `${CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`
+    )
+
+    writer?.setAttribute(FORM_ATTRS.TEXT, ATTR_VALUES.EMPTY)
+    writer?.setAttribute(FORM_ATTRS.TEXT, info.summary)
   }
 
   const cta = host.$(CARD_STACK_SELECTORS.CARD_STACK_INFO_CTA)
