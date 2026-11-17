@@ -10,6 +10,7 @@ import { LOCALES } from '@core/tokens/locales.js'
 import { DB_PATHS } from '@core/tokens/routes/paths.js'
 import store from '@core/store.js'
 import { fetchFirebaseDb } from '@core/utils/data/db.js'
+import type { DbSnapshot } from '@core/utils/data/db.js'
 import type { HomeItem, RelatedTranslations } from './types.js'
 import type { PortfolioRelated } from '../Related.js'
 import { devError } from '@core/devlog.js'
@@ -27,7 +28,10 @@ export function storedTranslations(): RelatedTranslations {
  * Fires two SWR reads in parallel: the home page node (for the
  * portfoliolist used as the image/description join table) and the
  * components/related node (title, path, socials, project pointers).
- * A store hit resolves instantly; a miss round-trips Firebase.
+ * A store hit resolves instantly; a miss round-trips Firebase. Each read
+ * passes its applier as onUpdate so a build-snapshot↔live divergence
+ * (CMS edits landing after the snapshot was cut) re-renders the strip
+ * instead of pinning the stale list until the next mount.
  */
 export function fetchData(host: PortfolioRelated): void {
   const lang = store.getters.getlang()
@@ -38,27 +42,34 @@ export function fetchData(host: PortfolioRelated): void {
 
   const relatedPath = `${lang.database}${locale}${DB_PATHS.COMPONENTS_RELATED}`
 
-  Promise.all([fetchFirebaseDb(dbpath), fetchFirebaseDb(relatedPath)])
-    .then(([homeSnap, relatedSnap]) => {
-      if (relatedSnap?.exists()) {
-        host.translations = relatedSnap.val() as RelatedTranslations
-      }
-
-      if (homeSnap?.exists()) {
-        const data = homeSnap.val() as { portfoliolist?: HomeItem[] | Record<string, HomeItem> }
-
-        if (data.portfoliolist) {
-          const list = Array.isArray(data.portfoliolist)
-            ? data.portfoliolist
-            : Object.values(data.portfoliolist)
-
-          host.homePortfolio = list
-
-          store.commit(DATA_MUTATIONS.SET_PORTFOLIO_LIST, list)
-        }
-      }
+  const applyRelated = (snap: DbSnapshot): void => {
+    if (snap?.exists()) {
+      host.translations = snap.val() as RelatedTranslations
 
       host._updateDom()
-    })
-    .catch(devError)
+    }
+  }
+
+  const applyHome = (snap: DbSnapshot): void => {
+    if (snap?.exists()) {
+      const data = snap.val() as { portfoliolist?: HomeItem[] | Record<string, HomeItem> }
+
+      if (data.portfoliolist) {
+        const list = Array.isArray(data.portfoliolist)
+          ? data.portfoliolist
+          : Object.values(data.portfoliolist)
+
+        host.homePortfolio = list
+
+        store.commit(DATA_MUTATIONS.SET_PORTFOLIO_LIST, list)
+
+        host._updateDom()
+      }
+    }
+  }
+
+  Promise.all([
+    fetchFirebaseDb(dbpath, applyHome).then(applyHome),
+    fetchFirebaseDb(relatedPath, applyRelated).then(applyRelated),
+  ]).catch(devError)
 }
