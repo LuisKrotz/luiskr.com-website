@@ -12,6 +12,9 @@ import {
   updateChrome,
   fitDeckToFront,
   fanPose,
+  ringSigned,
+  stackPose,
+  fitPeek,
 } from '@website/components/home/cardstack/deck.js'
 import {
   cardIdxFromEvent,
@@ -305,6 +308,66 @@ describe('deck tails', () => {
     expect(front.classList.contains(C.CARD_STACK_CARD_ACTIVE)).toBe(true)
     expect(front.style.visibility).toBe(ATTR_VALUES.VISIBLE)
     expect(front.style.transform).toContain('translate3d')
+  })
+
+  test('applyPoses runs the enter-seed arm when a beyond-peek card returns to the fan', async () => {
+    // The seed arm needs a card that was hidden on the previous pass —
+    // |s| beyond the deck's peek — so the deck must out-span the fan
+    // tier's peek window (PEEK 7–8): 20 items put ±10 on the ring. The
+    // happy-dom default viewport lands on a stacked band, so a fan
+    // geometry is pinned before mount — the arm is fan-tier only.
+    const wOrig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+    const hOrig = Object.getOwnPropertyDescriptor(window, 'innerHeight')
+    Object.defineProperty(window, 'innerWidth', { value: 1600, configurable: true })
+    Object.defineProperty(window, 'innerHeight', { value: 900, configurable: true })
+    resetViewportCache()
+
+    try {
+      const items = Array.from({ length: 20 }, (_, i) => item(i))
+      const el = await mountItems(items)
+
+      applyPoses(el) // baseline — beyond-peek cards record wasVisible=false
+
+      el.activeIdx = 10
+      applyPoses(el) // card 10 swings from hidden to front — the seed arm writes
+
+      const card = el._cardEls[10]
+
+      expect(card.style.visibility).toBe(ATTR_VALUES.VISIBLE)
+      expect(card.style.transform).toContain('translate3d')
+    } finally {
+      if (wOrig) Object.defineProperty(window, 'innerWidth', wOrig)
+      if (hOrig) Object.defineProperty(window, 'innerHeight', hOrig)
+      resetViewportCache()
+    }
+  })
+
+  test('deck edge tails: ringSigned empty ring, stackPose default peek, empty updateChrome, dealNavIndex delta', async () => {
+    // Degenerate ring — no wrap math to do.
+    expect(ringSigned(5, 0)).toBe(0)
+
+    // stackPose's own PEEK default (callers may omit the arg).
+    expect(stackPose(0, 4, 200, 300, STACK_TIER).visible).toBe(true)
+
+    // updateChrome on an empty deck returns before any DOM writes.
+    const empty = new CardStack()
+
+    expect(() => updateChrome(empty)).not.toThrow()
+
+    // dealNavIndex reaches its wrap-direction delta only on the second
+    // committed nav — the first pass records the baseline index. The
+    // backward-wrap arm needs a delta crossing half the ring backwards
+    // (5 → 0 on a 6-deck is −5, beyond −len/2).
+    const el = await mountItems([item(0), item(1), item(2), item(3), item(4), item(5)])
+
+    el.activeIdx = 5
+    updateChrome(el)
+    el.activeIdx = 0
+    updateChrome(el)
+
+    // fitPeek's shrink loop runs only when the authored peek projects
+    // past the deck room — a near-zero deck width forces iterations.
+    expect(fitPeek(10, 400, FAN_TIER)).toBe(CARD_STACK_LAYOUT.PEEK_MIN)
   })
 
   test('fitDeckToFront returns early when section or front measurements are absent', async () => {

@@ -46,6 +46,25 @@ const _wasVisible = new WeakMap<Element, boolean>()
 const _sizeWrite = new WeakMap<Element, string>()
 
 /**
+ * Applies a stacked card's box pair when it changed since the last pose
+ * pass — the value guard that keeps a per-frame applyPoses from
+ * invalidating layout with identical geometry. `sizesToCopy` (the
+ * committed front on a copy-carrying tier) frees the box to its copy;
+ * every other card locks to the shared live pile height.
+ */
+const writeStackSize = (el: HTMLElement, sizesToCopy: boolean, pileH: number): void => {
+  const sizeKey = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
+
+  if (_sizeWrite.get(el) === sizeKey) return
+
+  _sizeWrite.set(el, sizeKey)
+
+  el.style.height = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
+
+  el.style.minHeight = sizesToCopy ? ATTR_VALUES.EMPTY : `${pileH}${COMMON_ATTRS.PX}`
+}
+
+/**
  * Every pushed item fans in the deck — the full portfolio list in order
  * (the featured flag is decorative only; no filtering applies).
  * @param host The CardStack element.
@@ -537,17 +556,7 @@ export function applyPoses(host: CardStack): void {
       // card's box flips auto↔fixed during a swipe — the single flip
       // lands at nav commit. Writes are value-guarded for the same
       // reason: identical geometry must not invalidate layout per frame.
-      const sizesToCopy = i === host.activeIdx && tier.IN_CARD_INFO
-
-      const sizeKey = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
-
-      if (_sizeWrite.get(el) !== sizeKey) {
-        _sizeWrite.set(el, sizeKey)
-
-        el.style.height = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
-
-        el.style.minHeight = sizesToCopy ? ATTR_VALUES.EMPTY : `${pileH}${COMMON_ATTRS.PX}`
-      }
+      writeStackSize(el, i === host.activeIdx && tier.IN_CARD_INFO, pileH)
     }
 
     // A card entering the fan seeds below its slot, transparent, with
