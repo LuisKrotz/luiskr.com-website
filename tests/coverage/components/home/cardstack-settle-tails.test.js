@@ -224,6 +224,66 @@ describe('CardStack mount settle gate', () => {
     expect(deckEl(el).classList.contains(C.CARD_STACK_DECK_PENDING)).toBe(false)
   })
 
+  test('_maybeReveal clears a still-pending settle timer when the RO path wins', () => {
+    const el = new CardStack()
+    cleanups.push(mount(el))
+
+    // Both halves in and the reveal already armed — the next gate call
+    // settles outright. _settleTimer left pending exercises the
+    // RO-path-won cleanup: the pending fallback id must be cleared so a
+    // late fire can't pose an already-revealed deck.
+    const pending = setTimeout(() => {}, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+
+    el._settled = false
+    el._firstPoseLanded = true
+    el._fontsReady = true
+    el._revealArmed = true
+    el._settleTimer = pending
+
+    el._maybeReveal()
+
+    expect(el._settled).toBe(true)
+    expect(el._settleTimer).toBeNull()
+  })
+
+  test('_deckResize + _maybeReveal arm tolerate a missing deck element', () => {
+    const el = new CardStack()
+    cleanups.push(mount(el))
+
+    // _deckEl unset (pre-render or between swaps) — the fit paths read
+    // the band through ?. and gate the moved-band flag on fitDeck
+    // being present, so neither arm may throw or misflag.
+    el._deckEl = null
+    el._settled = false
+    el._firstPoseLanded = true
+    el._fontsReady = true
+
+    el._maybeReveal()
+
+    expect(el._revealArmed).toBe(true)
+    expect(el._fitMovedDeck).toBe(false)
+
+    // A quiesce timer still pending through a second arm attempt — the
+    // guard keeps the existing id instead of re-arming.
+    const pending = setTimeout(() => {}, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+
+    el._revealArmed = false
+    el._revealTimer = pending
+
+    el._maybeReveal()
+
+    expect(el._revealTimer).toBe(pending)
+
+    clearTimeout(pending)
+
+    // Deck element still missing through the RO delivery path — items
+    // land first so the fit section runs with fitDeck null.
+    el.processedItems = [item(0)]
+    el._deckEl = null
+
+    expect(() => el._deckResize()).not.toThrow()
+  })
+
   test('onDestroy clears a live quiesce timer on an armed-but-unlifted reveal', () => {
     jest.useFakeTimers()
 

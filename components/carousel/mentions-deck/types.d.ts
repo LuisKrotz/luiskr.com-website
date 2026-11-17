@@ -3,7 +3,6 @@
  * mention row, the per-card pose record written to the DOM, and the
  * translations subset the component reads.
  */
-/* istanbul ignore file */
 
 /**
  * A mention_items row as pushed by the store — `link` is the outbound
