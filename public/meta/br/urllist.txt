@@ -3178,6 +3178,7 @@ https://luiskr.com/docs/docs/api/shared/scripts/setup.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify
 https://luiskr.com/docs/docs/api/shared/scripts/verify/a11y-checker.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/chunk-budget.md
+https://luiskr.com/docs/docs/api/shared/scripts/verify/clarity-insights.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/console-scan.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/coverage-gaps.md
 https://luiskr.com/docs/docs/api/shared/scripts/verify/coverage-gate.md
@@ -4210,6 +4211,7 @@ https://luiskr.com/docs/docs/jsdocs/shared/scripts/setup.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/a11y-checker.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/chunk-budget.md
+https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/clarity-insights.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/console-scan.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/coverage-gaps.md
 https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/coverage-gate.md
@@ -5709,6 +5711,7 @@ https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/POINTER_EV
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/PRINT_EVENTS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/SW_EVENTS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/SW_STRINGS.md
+https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/SW_TIMING.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/TOUCH_EVENTS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/WINDOW_EVENTS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/events/mutations
@@ -6769,6 +6772,8 @@ https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustChip.md
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustClick.md
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustCollapseAll.md
+https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustDirectTap.md
+https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustRecordPointer.md
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/orphan-seps
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/orphan-seps/README.md
 https://luiskr.com/docs/docs/typedoc/core/utils/dom/orphan-seps/functions
@@ -6990,6 +6995,7 @@ https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/README.md
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions/isScrolling.md
+https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions/noteScrollActivity.md
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions/onScrollStop.md
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer
 https://luiskr.com/docs/docs/typedoc/core/utils/motion/skeleton-shimmer/README.md
@@ -9579,6 +9585,7 @@ https://luiskr.com/docs/reports/a11y-baseline.json
 https://luiskr.com/docs/reports/a11y-checker.json
 https://luiskr.com/docs/reports/axe-report.json
 https://luiskr.com/docs/reports/chunk-budget.json
+https://luiskr.com/docs/reports/clarity-insights.json
 https://luiskr.com/docs/reports/console-scan.json
 https://luiskr.com/docs/reports/gate-result.json
 https://luiskr.com/docs/reports/mythos-report.json
@@ -9693,6 +9700,7 @@ https://luiskr.com/docs/shared/scripts/setup.mjs
 https://luiskr.com/docs/shared/scripts/verify
 https://luiskr.com/docs/shared/scripts/verify/a11y-checker.mjs
 https://luiskr.com/docs/shared/scripts/verify/chunk-budget.mjs
+https://luiskr.com/docs/shared/scripts/verify/clarity-insights.mjs
 https://luiskr.com/docs/shared/scripts/verify/console-scan.mjs
 https://luiskr.com/docs/shared/scripts/verify/coverage-gaps.mjs
 https://luiskr.com/docs/shared/scripts/verify/coverage-gate.mjs

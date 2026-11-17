@@ -35544,6 +35544,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/clarity-insights.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/api/shared/scripts/verify/console-scan.md</loc>
     <priority>0.7</priority>
   </url>
@@ -39669,6 +39673,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/chunk-budget.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/jsdocs/shared/scripts/verify/clarity-insights.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -45668,6 +45676,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/SW_TIMING.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/events/dom/variables/TOUCH_EVENTS.md</loc>
     <priority>0.7</priority>
   </url>
@@ -49908,6 +49920,14 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustDirectTap.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/dom/joust/functions/joustRecordPointer.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/dom/orphan-seps</loc>
     <priority>0.7</priority>
   </url>
@@ -50789,6 +50809,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions/isScrolling.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/motion/scroll-state/functions/noteScrollActivity.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -61148,6 +61172,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://luiskr.com/docs/reports/clarity-insights.json</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://luiskr.com/docs/reports/console-scan.json</loc>
     <priority>0.7</priority>
   </url>
@@ -61601,6 +61629,10 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/shared/scripts/verify/chunk-budget.mjs</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/shared/scripts/verify/clarity-insights.mjs</loc>
     <priority>0.7</priority>
   </url>
   <url>
