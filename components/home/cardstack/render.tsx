@@ -496,7 +496,11 @@ export function renderCardStack(host: CardStack) {
       </header>
 
       {items.length ? (
-        <div className={C.CARD_STACK_DECK} aria-label={t.featured} role={ARIA_ATTRS.ROLE_GROUP}>
+        <div
+          className={`${C.CARD_STACK_DECK}${host._settled ? ATTR_VALUES.EMPTY : ` ${C.CARD_STACK_DECK_PENDING}`}`}
+          aria-label={t.featured}
+          role={ARIA_ATTRS.ROLE_GROUP}
+        >
           {items.map((item, i) => renderCard(host, item, i))}
         </div>
       ) : (

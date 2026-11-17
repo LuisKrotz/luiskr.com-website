@@ -29,6 +29,7 @@ import { ATTR_VALUES } from '@core/tokens/attrs/values.js'
 import { COMMON_ATTRS } from '@core/tokens/attrs/common.js'
 import { DATA_ATTRS } from '@core/tokens/attrs/data.js'
 import { PRINT_CLASSES } from '@core/tokens/classes/print.js'
+import { CARD_STACK_CLASSES } from '@core/tokens/classes/card-stack.js'
 import { HTML_TAGS } from '@core/tokens/elements/html.js'
 import { CARD_STACK_SELECTORS } from '@core/tokens/selectors/card-stack.js'
 import { LOCALES } from '@core/tokens/locales.js'
@@ -117,6 +118,11 @@ export function warmPrintCopy(host: CardStack): void {
  */
 export function preparePrint(host: CardStack): void {
   host._printing = true
+
+  // A print landing inside the mount settle window would snapshot the
+  // deck still hidden behind --pending — the flattened paper layout
+  // always shows every card, so the gate comes off unconditionally.
+  host._deckEl?.classList.remove(CARD_STACK_CLASSES.CARD_STACK_DECK_PENDING)
 
   const items = host.deckItems
 

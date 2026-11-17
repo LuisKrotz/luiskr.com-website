@@ -21,6 +21,7 @@
  */
 
 import { COMPONENT_TAGS } from '@core/tokens/elements/components.js'
+import { CARD_STACK_CLASSES } from '@core/tokens/classes/card-stack.js'
 import { CARD_STACK_SELECTORS } from '@core/tokens/selectors/card-stack.js'
 import { STATE_CLASSES } from '@core/tokens/classes/state.js'
 import { MEDIA } from '@core/tokens/media/suffixes.js'
@@ -115,6 +116,8 @@ export class CardStack extends BaseComponent {
   _burnHeld = false // burn sessions frozen by the section's off-screen hold — spin() leaves them disarmed until holdBurns releases (the in-card title draw-in waits for scroll-in)
   _autoArmed = false // one-shot mount arm — the countdown starts once items exist
   _printing = false // print job in flight — gates applyPoses/fitDeckToFront so the live posers can't rewrite the inline geometry print.ts stripped for the snapshot
+  _settled = false // the deck's first measured pose pass landed and the --pending gate lifted — re-rendered decks skip it (fresh nodes still get the per-element first-pose suppression)
+  _settleTimer: ReturnType<typeof setTimeout> | null = null // RO-less reveal fallback — fires SETTLE_FALLBACK_MS after the first items-bearing pose pass when no ResizeObserver delivery can arrive
 
   constructor() {
     super(cardStackStyles)
@@ -256,6 +259,16 @@ export class CardStack extends BaseComponent {
 
     this._fitFront = null
 
+    if (this._settleTimer) {
+      clearTimeout(this._settleTimer)
+
+      this._settleTimer = null
+    }
+
+    // A re-mount re-pends the deck — the fresh content's first pose
+    // pass must settle before it shows, same as the original mount.
+    this._settled = false
+
     // A re-mount must re-observe even if the same deck node survives.
     this._deckEl = null
 
@@ -339,6 +352,19 @@ export class CardStack extends BaseComponent {
       applyPoses(this)
 
       updateChrome(this)
+
+      // Reveal fallback — the deck's --pending gate normally lifts in
+      // _deckResize (the ResizeObserver's guaranteed initial delivery
+      // re-measures the styled rect and re-poses first). Engines with
+      // no RO get no delivery, so a timer covers them; _settleDeck is
+      // idempotent and the RO path wins the race when it exists.
+      if (!this._settled && !this._settleTimer) {
+        this._settleTimer = setTimeout(() => {
+          this._settleTimer = null
+
+          this._settleDeck()
+        }, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+      }
 
       // One-shot autoplay arm — the countdown starts once real items
       // exist. Reduced-motion users keep the deck manual (the play
@@ -436,6 +462,30 @@ export class CardStack extends BaseComponent {
     // fit ran before the deck had a measurable rect (budget 0, no
     // cap), so without this the band/band-cap never converge.
     fitDeckToFront(this)
+
+    // The first measured pass with real items has landed — lift the
+    // --pending gate. Everything before this frame (unstyled-tier
+    // rect guesses, none→pose transition flights, fit re-poses) stays
+    // invisible; the reveal is the settled pile.
+    this._settleDeck()
+  }
+
+  /** Reveal the deck after its first measured pose pass — idempotent
+   *  flip: _deckResize (RO delivery) and the RO-less _settleTimer race
+   *  to the same class removal, so whichever lands second no-ops. */
+  _settleDeck(): void {
+    if (this._settled) return
+
+    this._settled = true
+
+    // The RO path won the race — the pending fallback never needs to fire.
+    if (this._settleTimer) {
+      clearTimeout(this._settleTimer)
+
+      this._settleTimer = null
+    }
+
+    this._deckEl?.classList.remove(CARD_STACK_CLASSES.CARD_STACK_DECK_PENDING)
   }
 
   /** Deck measurement — see cardstack/deck.ts. */

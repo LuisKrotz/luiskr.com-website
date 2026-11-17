@@ -499,6 +499,12 @@ export function applyPoses(host: CardStack): void {
 
   const cards = host._cardEls
 
+  // Fresh-node batch — elements that have never been posed collect
+  // here so a single post-loop flush commits all their baselines at
+  // once. Allocated lazily: mount/re-render passes only, never per
+  // gesture frame (zero-allocation frame-loop rule).
+  let fresh: HTMLElement[] | null = null
+
   for (let i = 0; i < cards.length; i++) {
     const el = cards[i] as HTMLElement
 
@@ -521,6 +527,20 @@ export function applyPoses(host: CardStack): void {
     _wasVisible.set(el, pose.visible)
 
     el.classList.toggle(CARD_STACK_CLASSES.CARD_STACK_CARD_HIDDEN, !pose.visible)
+
+    // First pose per element — a never-posed node has no "before" to
+    // animate from. Mount and re-render insert cards whose only resolved
+    // style is transform:none (measure()'s forced rect read resolves
+    // them before this write), so without suppression the stylesheet's
+    // 0.52s transform transition flies every card in from the deck
+    // centre on load — the mount flicker. The write lands instantly;
+    // the post-loop flush commits it as the baseline before the CSS
+    // transition returns.
+    if (wasVisible === undefined) {
+      el.style.transition = ATTR_VALUES.NONE
+
+      ;(fresh ??= []).push(el)
+    }
 
     if (host._sizesDirty) {
       el.style.width = `${w}${COMMON_ATTRS.PX}`
@@ -622,6 +642,17 @@ export function applyPoses(host: CardStack): void {
     ;(host._deckEl as HTMLElement).style.perspective = tier.STACKED
       ? ATTR_VALUES.NONE
       : `${tier.PERSPECTIVE * w}${COMMON_ATTRS.PX}`
+  }
+
+  if (fresh) {
+    // One style resolution commits every fresh card's pose as its
+    // transition baseline — per-card flushes inside the loop resolve
+    // globally anyway, so a single read covers the batch (one reflow,
+    // not N). Restoring the stylesheet transition after the commit
+    // keeps later pose writes animating normally.
+    void flushLayout(fresh[0] as HTMLElement)
+
+    for (const el of fresh) el.style.transition = ATTR_VALUES.EMPTY
   }
 
   host._sizesDirty = false
