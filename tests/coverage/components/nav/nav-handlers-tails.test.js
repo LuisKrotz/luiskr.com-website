@@ -11,6 +11,8 @@ import {
   handleAbout,
   handleAction,
   handleSearch,
+  handlePreferences,
+  handleLang,
 } from '@website/components/nav/handlers.js'
 import { ANIMATION_DURATIONS } from '@core/tokens/motion/animation.js'
 import router from '@core/router/router.js'
@@ -97,5 +99,20 @@ describe('nav handlers non-plain click tails', () => {
     globalThis.window = prevWindow
 
     expect(host._closeMenu).toHaveBeenCalled()
+  })
+
+  test('handlePreferences/handleLang take the no-window dispatch guard arm', () => {
+    const prevWindow = globalThis.window
+
+    delete globalThis.window
+
+    try {
+      const host = { _captureOrigin: jest.fn(), locale: 'en' }
+
+      expect(() => handlePreferences(host)).not.toThrow()
+      expect(() => handleLang(host)).not.toThrow()
+    } finally {
+      globalThis.window = prevWindow
+    }
   })
 })
