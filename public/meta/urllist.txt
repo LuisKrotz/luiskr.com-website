@@ -3240,7 +3240,6 @@ https://luiskr.com/docs/core/tokens/selectors/mosaic.ts
 https://luiskr.com/docs/core/tokens/selectors/nav.ts
 https://luiskr.com/docs/core/tokens/selectors/skeleton.ts
 https://luiskr.com/docs/core/tokens/starfield
-https://luiskr.com/docs/core/tokens/starfield.ts
 https://luiskr.com/docs/core/tokens/starfield/badge.ts
 https://luiskr.com/docs/core/tokens/starfield/kinds.ts
 https://luiskr.com/docs/core/tokens/starfield/music.ts
@@ -4281,7 +4280,6 @@ https://luiskr.com/docs/coverage-website/components/home/about/mesh.ts.html
 https://luiskr.com/docs/coverage-website/components/home/about/print.ts.html
 https://luiskr.com/docs/coverage-website/components/home/about/titlefit.ts.html
 https://luiskr.com/docs/coverage-website/components/home/awards
-https://luiskr.com/docs/coverage-website/components/home/awards/carousel.ts.html
 https://luiskr.com/docs/coverage-website/components/home/awards/data.ts.html
 https://luiskr.com/docs/coverage-website/components/home/awards/index.html
 https://luiskr.com/docs/coverage-website/components/home/awards/render.tsx.html
@@ -4290,7 +4288,6 @@ https://luiskr.com/docs/coverage-website/components/home/cardstack/autoplay.ts.h
 https://luiskr.com/docs/coverage-website/components/home/cardstack/deck.ts.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/events.ts.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/gestures.ts.html
-https://luiskr.com/docs/coverage-website/components/home/cardstack/hover.ts.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/index.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/info.ts.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/interactions.ts.html
@@ -4300,18 +4297,6 @@ https://luiskr.com/docs/coverage-website/components/home/cardstack/timer.ts.html
 https://luiskr.com/docs/coverage-website/components/home/cardstack/types.ts.html
 https://luiskr.com/docs/coverage-website/components/home/index.html
 https://luiskr.com/docs/coverage-website/components/home/mosaic
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/front.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/index.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/loop.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/mount.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/paper-fx.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/paper.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/particles.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/tuning.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/types.ts.html
-https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/wasm.ts.html
 https://luiskr.com/docs/coverage-website/components/home/mosaic/events.ts.html
 https://luiskr.com/docs/coverage-website/components/home/mosaic/index.html
 https://luiskr.com/docs/coverage-website/components/home/mosaic/interactions.ts.html
@@ -4363,7 +4348,6 @@ https://luiskr.com/docs/coverage-website/components/media/figure/load.ts.html
 https://luiskr.com/docs/coverage-website/components/media/figure/modal.ts.html
 https://luiskr.com/docs/coverage-website/components/media/figure/mount.ts.html
 https://luiskr.com/docs/coverage-website/components/media/figure/render.tsx.html
-https://luiskr.com/docs/coverage-website/components/media/figure/shared-observer.ts.html
 https://luiskr.com/docs/coverage-website/components/media/figure/video.ts.html
 https://luiskr.com/docs/coverage-website/components/media/index.html
 https://luiskr.com/docs/coverage-website/components/media/modal-trigger.ts.html
@@ -4377,8 +4361,6 @@ https://luiskr.com/docs/coverage-website/components/media/mosaic/types.ts.html
 https://luiskr.com/docs/coverage-website/components/nav
 https://luiskr.com/docs/coverage-website/components/nav/AppNav.tsx.html
 https://luiskr.com/docs/coverage-website/components/nav/brush.tsx.html
-https://luiskr.com/docs/coverage-website/components/nav/flag.tsx.html
-https://luiskr.com/docs/coverage-website/components/nav/gear.tsx.html
 https://luiskr.com/docs/coverage-website/components/nav/globe.tsx.html
 https://luiskr.com/docs/coverage-website/components/nav/grid.tsx.html
 https://luiskr.com/docs/coverage-website/components/nav/handlers.ts.html
@@ -4420,7 +4402,6 @@ https://luiskr.com/docs/coverage-website/views/home/Home.tsx.html
 https://luiskr.com/docs/coverage-website/views/home/children.ts.html
 https://luiskr.com/docs/coverage-website/views/home/data.ts.html
 https://luiskr.com/docs/coverage-website/views/home/index.html
-https://luiskr.com/docs/coverage-website/views/home/parallax.ts.html
 https://luiskr.com/docs/coverage-website/views/home/render.tsx.html
 https://luiskr.com/docs/coverage-website/views/home/scroll.ts.html
 https://luiskr.com/docs/coverage-website/views/legal
@@ -4821,7 +4802,6 @@ https://luiskr.com/docs/docs/api/core/tokens/selectors/mosaic.md
 https://luiskr.com/docs/docs/api/core/tokens/selectors/nav.md
 https://luiskr.com/docs/docs/api/core/tokens/selectors/skeleton.md
 https://luiskr.com/docs/docs/api/core/tokens/starfield
-https://luiskr.com/docs/docs/api/core/tokens/starfield.md
 https://luiskr.com/docs/docs/api/core/tokens/starfield/badge.md
 https://luiskr.com/docs/docs/api/core/tokens/starfield/kinds.md
 https://luiskr.com/docs/docs/api/core/tokens/starfield/music.md
@@ -5080,7 +5060,6 @@ https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/mask.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/plumes.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/primitives.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural
-https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural/cluster.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural/corona.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural/gas.md
@@ -5122,7 +5101,6 @@ https://luiskr.com/docs/docs/api/experiments/star-field/engine/scale.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/scene.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/screenshot.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral
-https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral/fill.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral/galaxy.md
 https://luiskr.com/docs/docs/api/experiments/star-field/engine/star-cloud.md
@@ -5302,7 +5280,6 @@ https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/inter
 https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/observer.md
 https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/print.md
 https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/render.md
-https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/types.md
 https://luiskr.com/docs/docs/api/website/components/dialogs
 https://luiskr.com/docs/docs/api/website/components/dialogs/LangDialog.md
 https://luiskr.com/docs/docs/api/website/components/dialogs/PreferencesModal.md
@@ -5352,7 +5329,6 @@ https://luiskr.com/docs/docs/api/website/components/home/cardstack/interactions.
 https://luiskr.com/docs/docs/api/website/components/home/cardstack/print.md
 https://luiskr.com/docs/docs/api/website/components/home/cardstack/render.md
 https://luiskr.com/docs/docs/api/website/components/home/cardstack/timer.md
-https://luiskr.com/docs/docs/api/website/components/home/cardstack/types.md
 https://luiskr.com/docs/docs/api/website/components/home/mosaic
 https://luiskr.com/docs/docs/api/website/components/home/mosaic/events.md
 https://luiskr.com/docs/docs/api/website/components/home/mosaic/interactions.md
@@ -5376,7 +5352,6 @@ https://luiskr.com/docs/docs/api/website/components/media/anim-demo/elements.md
 https://luiskr.com/docs/docs/api/website/components/media/anim-demo/mounts.md
 https://luiskr.com/docs/docs/api/website/components/media/anim-demo/registry.md
 https://luiskr.com/docs/docs/api/website/components/media/anim-demo/stages.md
-https://luiskr.com/docs/docs/api/website/components/media/anim-demo/types.md
 https://luiskr.com/docs/docs/api/website/components/media/anim-demo/widgets.md
 https://luiskr.com/docs/docs/api/website/components/media/draw-text
 https://luiskr.com/docs/docs/api/website/components/media/draw-text/dom.md
@@ -5407,7 +5382,6 @@ https://luiskr.com/docs/docs/api/website/components/media/mosaic/events.md
 https://luiskr.com/docs/docs/api/website/components/media/mosaic/layout.md
 https://luiskr.com/docs/docs/api/website/components/media/mosaic/pack.md
 https://luiskr.com/docs/docs/api/website/components/media/mosaic/render.md
-https://luiskr.com/docs/docs/api/website/components/media/mosaic/types.md
 https://luiskr.com/docs/docs/api/website/components/nav
 https://luiskr.com/docs/docs/api/website/components/nav/AppNav.md
 https://luiskr.com/docs/docs/api/website/components/nav/brush.md
@@ -5854,7 +5828,6 @@ https://luiskr.com/docs/docs/jsdocs/core/tokens/selectors/mosaic.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/selectors/nav.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/selectors/skeleton.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield
-https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield/badge.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield/kinds.md
 https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield/music.md
@@ -6113,7 +6086,6 @@ https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/mask.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/plumes.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/primitives.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural
-https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural/cluster.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural/corona.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural/gas.md
@@ -6155,7 +6127,6 @@ https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/scale.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/scene.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/screenshot.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral
-https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral/fill.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral/galaxy.md
 https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/star-cloud.md
@@ -6335,7 +6306,6 @@ https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/in
 https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/observer.md
 https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/print.md
 https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/render.md
-https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/types.md
 https://luiskr.com/docs/docs/jsdocs/website/components/dialogs
 https://luiskr.com/docs/docs/jsdocs/website/components/dialogs/LangDialog.md
 https://luiskr.com/docs/docs/jsdocs/website/components/dialogs/PreferencesModal.md
@@ -6385,7 +6355,6 @@ https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/interactio
 https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/print.md
 https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/render.md
 https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/timer.md
-https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/types.md
 https://luiskr.com/docs/docs/jsdocs/website/components/home/mosaic
 https://luiskr.com/docs/docs/jsdocs/website/components/home/mosaic/events.md
 https://luiskr.com/docs/docs/jsdocs/website/components/home/mosaic/interactions.md
@@ -6409,7 +6378,6 @@ https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/elements.
 https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/mounts.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/registry.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/stages.md
-https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/types.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/widgets.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/draw-text
 https://luiskr.com/docs/docs/jsdocs/website/components/media/draw-text/dom.md
@@ -6440,7 +6408,6 @@ https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/events.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/layout.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/pack.md
 https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/render.md
-https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/types.md
 https://luiskr.com/docs/docs/jsdocs/website/components/nav
 https://luiskr.com/docs/docs/jsdocs/website/components/nav/AppNav.md
 https://luiskr.com/docs/docs/jsdocs/website/components/nav/brush.md
@@ -8173,7 +8140,6 @@ https://luiskr.com/docs/docs/typedoc/core/tokens/selectors/skeleton/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/selectors/skeleton/variables
 https://luiskr.com/docs/docs/typedoc/core/tokens/selectors/skeleton/variables/SKELETON_SELECTORS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield
-https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/badge
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/badge/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/badge/variables
@@ -8237,6 +8203,8 @@ https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/spiral
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/spiral/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/spiral/variables
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/spiral/variables/SF_SPIRAL.md
+https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/variables
+https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/variables/SF_PARAMS.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/weather
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/weather/README.md
 https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/weather/variables
@@ -8485,6 +8453,9 @@ https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/interfaces/BurnItem.m
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/interfaces/BurnParticle.md
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/interfaces/BurnSession.md
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/interfaces/LetterBurn.md
+https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables
+https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables/BURN_DIR.md
+https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables/BURN_PARTICLE.md
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/wasm
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/wasm/README.md
 https://luiskr.com/docs/docs/typedoc/core/utils/burn/wasm/functions
@@ -9583,7 +9554,6 @@ https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/primit
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/primitives/variables/SF_USER_DETAIL_R.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/primitives/variables/SF_USER_PROXY.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural
-https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/cluster
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/cluster/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/cluster/functions
@@ -9810,7 +9780,6 @@ https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/screenshot/RE
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/screenshot/functions
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/screenshot/functions/takeStarScreenshot.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral
-https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral/fill
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral/fill/README.md
 https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral/fill/functions
@@ -11847,7 +11816,6 @@ https://luiskr.com/docs/starfield/engine/bodies/mask.ts
 https://luiskr.com/docs/starfield/engine/bodies/plumes.ts
 https://luiskr.com/docs/starfield/engine/bodies/primitives.ts
 https://luiskr.com/docs/starfield/engine/bodies/procedural
-https://luiskr.com/docs/starfield/engine/bodies/procedural.ts
 https://luiskr.com/docs/starfield/engine/bodies/procedural/cluster.ts
 https://luiskr.com/docs/starfield/engine/bodies/procedural/corona.ts
 https://luiskr.com/docs/starfield/engine/bodies/procedural/gas.ts
@@ -11889,7 +11857,6 @@ https://luiskr.com/docs/starfield/engine/scale.ts
 https://luiskr.com/docs/starfield/engine/scene.ts
 https://luiskr.com/docs/starfield/engine/screenshot.ts
 https://luiskr.com/docs/starfield/engine/spiral
-https://luiskr.com/docs/starfield/engine/spiral.ts
 https://luiskr.com/docs/starfield/engine/spiral/fill.ts
 https://luiskr.com/docs/starfield/engine/spiral/galaxy.ts
 https://luiskr.com/docs/starfield/engine/star-cloud.ts
@@ -11954,7 +11921,7 @@ https://luiskr.com/docs/website/components/carousel/mentions-deck/interactions.t
 https://luiskr.com/docs/website/components/carousel/mentions-deck/observer.ts
 https://luiskr.com/docs/website/components/carousel/mentions-deck/print.ts
 https://luiskr.com/docs/website/components/carousel/mentions-deck/render.tsx
-https://luiskr.com/docs/website/components/carousel/mentions-deck/types.ts
+https://luiskr.com/docs/website/components/carousel/mentions-deck/types.d.ts
 https://luiskr.com/docs/website/components/dialogs
 https://luiskr.com/docs/website/components/dialogs/LangDialog.tsx
 https://luiskr.com/docs/website/components/dialogs/PreferencesModal.tsx
@@ -12004,7 +11971,7 @@ https://luiskr.com/docs/website/components/home/cardstack/interactions.ts
 https://luiskr.com/docs/website/components/home/cardstack/print.ts
 https://luiskr.com/docs/website/components/home/cardstack/render.tsx
 https://luiskr.com/docs/website/components/home/cardstack/timer.ts
-https://luiskr.com/docs/website/components/home/cardstack/types.ts
+https://luiskr.com/docs/website/components/home/cardstack/types.d.ts
 https://luiskr.com/docs/website/components/home/mosaic
 https://luiskr.com/docs/website/components/home/mosaic/events.ts
 https://luiskr.com/docs/website/components/home/mosaic/interactions.ts
@@ -12028,7 +11995,7 @@ https://luiskr.com/docs/website/components/media/anim-demo/elements.ts
 https://luiskr.com/docs/website/components/media/anim-demo/mounts.ts
 https://luiskr.com/docs/website/components/media/anim-demo/registry.ts
 https://luiskr.com/docs/website/components/media/anim-demo/stages.tsx
-https://luiskr.com/docs/website/components/media/anim-demo/types.ts
+https://luiskr.com/docs/website/components/media/anim-demo/types.d.ts
 https://luiskr.com/docs/website/components/media/anim-demo/widgets.ts
 https://luiskr.com/docs/website/components/media/draw-text
 https://luiskr.com/docs/website/components/media/draw-text/dom.ts
@@ -12059,7 +12026,7 @@ https://luiskr.com/docs/website/components/media/mosaic/events.ts
 https://luiskr.com/docs/website/components/media/mosaic/layout.ts
 https://luiskr.com/docs/website/components/media/mosaic/pack.ts
 https://luiskr.com/docs/website/components/media/mosaic/render.tsx
-https://luiskr.com/docs/website/components/media/mosaic/types.ts
+https://luiskr.com/docs/website/components/media/mosaic/types.d.ts
 https://luiskr.com/docs/website/components/nav
 https://luiskr.com/docs/website/components/nav/AppNav.tsx
 https://luiskr.com/docs/website/components/nav/brush.tsx

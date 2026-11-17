@@ -2745,10 +2745,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/core/tokens/starfield.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/core/tokens/starfield/badge.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -6909,10 +6905,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/awards/carousel.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/coverage-website/components/home/awards/data.ts.html</loc>
     <priority>0.7</priority>
   </url>
@@ -6942,10 +6934,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-website/components/home/cardstack/gestures.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/cardstack/hover.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -6982,54 +6970,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/front.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/index.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/loop.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/mount.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/paper-fx.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/paper.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/particles.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/tuning.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/types.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/home/mosaic/burn/wasm.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -7237,10 +7177,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/media/figure/shared-observer.ts.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/coverage-website/components/media/figure/video.ts.html</loc>
     <priority>0.7</priority>
   </url>
@@ -7290,14 +7226,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-website/components/nav/brush.tsx.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/nav/flag.tsx.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/components/nav/gear.tsx.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -7462,10 +7390,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/coverage-website/views/home/index.html</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/coverage-website/views/home/parallax.ts.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -9069,10 +8993,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/core/tokens/starfield.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/core/tokens/starfield/badge.md</loc>
     <priority>0.7</priority>
   </url>
@@ -10105,10 +10025,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/experiments/star-field/engine/bodies/procedural/cluster.md</loc>
     <priority>0.7</priority>
   </url>
@@ -10270,10 +10186,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/experiments/star-field/engine/spiral.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -10993,10 +10905,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/website/components/carousel/mentions-deck/types.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/website/components/dialogs</loc>
     <priority>0.7</priority>
   </url>
@@ -11193,10 +11101,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/api/website/components/home/cardstack/types.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/api/website/components/home/mosaic</loc>
     <priority>0.7</priority>
   </url>
@@ -11286,10 +11190,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/website/components/media/anim-demo/stages.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/website/components/media/anim-demo/types.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -11410,10 +11310,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/api/website/components/media/mosaic/render.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/api/website/components/media/mosaic/types.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -13201,10 +13097,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/core/tokens/starfield/badge.md</loc>
     <priority>0.7</priority>
   </url>
@@ -14237,10 +14129,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/bodies/procedural/cluster.md</loc>
     <priority>0.7</priority>
   </url>
@@ -14402,10 +14290,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/experiments/star-field/engine/spiral.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -15125,10 +15009,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/components/carousel/mentions-deck/types.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/components/dialogs</loc>
     <priority>0.7</priority>
   </url>
@@ -15325,10 +15205,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/components/home/cardstack/types.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/components/home/mosaic</loc>
     <priority>0.7</priority>
   </url>
@@ -15418,10 +15294,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/stages.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/components/media/anim-demo/types.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -15542,10 +15414,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/render.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/jsdocs/website/components/media/mosaic/types.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -22477,10 +22345,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/badge</loc>
     <priority>0.7</priority>
   </url>
@@ -22730,6 +22594,14 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/spiral/variables/SF_SPIRAL.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/variables</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/tokens/starfield/params/variables/SF_PARAMS.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -23722,6 +23594,18 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/interfaces/LetterBurn.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables/BURN_DIR.md</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luiskr.com/docs/docs/typedoc/core/utils/burn/types/variables/BURN_PARTICLE.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -28117,10 +28001,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/README.md</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/bodies/procedural/cluster</loc>
     <priority>0.7</priority>
   </url>
@@ -29022,10 +28902,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/docs/typedoc/experiments/star-field/engine/spiral/README.md</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37173,10 +37049,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/starfield/engine/bodies/procedural.ts</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://luiskr.com/docs/starfield/engine/bodies/procedural/cluster.ts</loc>
     <priority>0.7</priority>
   </url>
@@ -37338,10 +37210,6 @@
   </url>
   <url>
     <loc>https://luiskr.com/docs/starfield/engine/spiral</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://luiskr.com/docs/starfield/engine/spiral.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37601,7 +37469,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/website/components/carousel/mentions-deck/types.ts</loc>
+    <loc>https://luiskr.com/docs/website/components/carousel/mentions-deck/types.d.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37801,7 +37669,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/website/components/home/cardstack/types.ts</loc>
+    <loc>https://luiskr.com/docs/website/components/home/cardstack/types.d.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -37897,7 +37765,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/website/components/media/anim-demo/types.ts</loc>
+    <loc>https://luiskr.com/docs/website/components/media/anim-demo/types.d.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -38021,7 +37889,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://luiskr.com/docs/website/components/media/mosaic/types.ts</loc>
+    <loc>https://luiskr.com/docs/website/components/media/mosaic/types.d.ts</loc>
     <priority>0.7</priority>
   </url>
   <url>
