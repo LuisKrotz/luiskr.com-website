@@ -3,6 +3,7 @@
  * item, the per-card pose record written to the DOM, and the translations
  * subset the component reads.
  */
+/* istanbul ignore file */
 
 /**
  * A portfoliolist entry as pushed by the view — `link` joins to project

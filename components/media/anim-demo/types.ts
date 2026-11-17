@@ -4,6 +4,7 @@
  * stage's live animation and returns the teardown the host runs on
  * destroy.
  */
+/* istanbul ignore file */
 
 import type { AnimDemo } from '../AnimDemo.js'
 

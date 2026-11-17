@@ -127,6 +127,13 @@ export class CardStack extends BaseComponent {
   _printing = false // print job in flight — gates applyPoses/fitDeckToFront so the live posers can't rewrite the inline geometry print.ts stripped for the snapshot
   _settled = SETTLED_DOCS.has(this.ownerDocument) // the deck's first measured pose pass landed and the --pending gate lifted — re-rendered decks skip it (fresh nodes still get the per-element first-pose suppression); remounts in an already-settled document start revealed
   _settleTimer: ReturnType<typeof setTimeout> | null = null // RO-less reveal fallback — fires SETTLE_FALLBACK_MS after the first items-bearing pose pass when no ResizeObserver delivery can arrive
+  _firstPoseLanded = false // a measured pose pass completed (RO delivery or the fallback timer) — the reveal's measurement half
+  _fontsArmed = false // the document.fonts.ready wait is armed — set once so repeated onUpdated passes don't pile up .then callbacks
+  _fontsReady = false // webfonts resolved — the reveal's metric half: the front card's copy height, the header/foot chrome, and every line-wrap input is font-dependent, so revealing before fonts.ready settles lets the font swap re-pose the pile in view (the load flicker); engines without the Font Loading API treat it as resolved
+  _revealArmed = false // the final hidden measure/pose/fit ran — the reveal waits for the deck box to go quiet before lifting
+  _fitMovedDeck = false // the last fitDeckToFront's min-height write resized the deck — its rAF-hopped _deckResize is still in flight, so lifting now would let that re-pose paint post-reveal
+  _revealForced = false // the quiesce timer fired — the armed reveal lifts on the next delivery regardless of band stability (bounded wait; a late RO hop re-poses after, same as today)
+  _revealTimer: ReturnType<typeof setTimeout> | null = null // quiesce fallback for the armed reveal — fires when no RO delivery comes (bound min-height, RO-less engines)
 
   constructor() {
     super(cardStackStyles)
@@ -274,6 +281,12 @@ export class CardStack extends BaseComponent {
       this._settleTimer = null
     }
 
+    if (this._revealTimer) {
+      clearTimeout(this._revealTimer)
+
+      this._revealTimer = null
+    }
+
     // A re-mount re-pends only while the document is unproven — once a
     // settle landed here, a remounted deck poses synchronously at first
     // paint, so the gate stays lifted and the deck never flashes out.
@@ -363,17 +376,42 @@ export class CardStack extends BaseComponent {
 
       updateChrome(this)
 
-      // Reveal fallback — the deck's --pending gate normally lifts in
-      // _deckResize (the ResizeObserver's guaranteed initial delivery
-      // re-measures the styled rect and re-poses first). Engines with
-      // no RO get no delivery, so a timer covers them; _settleDeck is
-      // idempotent and the RO path wins the race when it exists.
-      if (!this._settled && !this._settleTimer) {
-        this._settleTimer = setTimeout(() => {
-          this._settleTimer = null
+      if (!this._settled) {
+        // Reveal fallback — the deck's --pending gate normally lifts in
+        // _deckResize (the ResizeObserver's guaranteed initial delivery
+        // re-measures the styled rect and re-poses first). Engines with
+        // no RO get no delivery, so a timer covers them; _settleDeck is
+        // idempotent and the RO path wins the race when it exists.
+        if (!this._settleTimer) {
+          this._settleTimer = setTimeout(() => {
+            this._settleTimer = null
 
-          this._settleDeck()
-        }, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+            this._settleDeck()
+          }, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+        }
+
+        // The reveal's second half — every measured input (front card
+        // copy height, section chrome, line wraps) is font-metric
+        // dependent. Revealing before fonts.ready lands lets the font
+        // swap re-anchor _frontExtra and re-pose the pile IN VIEW —
+        // the residual load flicker and the dev/prod pose drift. The
+        // gate holds until fonts resolve, then _maybeReveal re-measures
+        // once with final metrics while still hidden.
+        if (!this._fontsArmed) {
+          this._fontsArmed = true
+
+          const fontSet = this.ownerDocument.fonts
+
+          if (!fontSet) {
+            this._fontsReady = true
+          } else {
+            fontSet.ready.then(() => {
+              this._fontsReady = true
+
+              this._maybeReveal()
+            })
+          }
+        }
       }
 
       // One-shot autoplay arm — the countdown starts once real items
@@ -471,7 +509,15 @@ export class CardStack extends BaseComponent {
     // The fresh stage budget must re-fit the pile — the mount-time
     // fit ran before the deck had a measurable rect (budget 0, no
     // cap), so without this the band/band-cap never converge.
+    const fitDeck = this._deckEl as HTMLElement | null
+    const prevMin = fitDeck?.style.minHeight ?? null
+
     fitDeckToFront(this)
+
+    // Whether the fit's band write resized the deck — a moved band means
+    // this delivery's own RO notification re-poses a frame later, so an
+    // armed reveal must hold until a pass lands with the band quiet.
+    this._fitMovedDeck = fitDeck !== null && fitDeck.style.minHeight !== prevMin
 
     // The first measured pass with real items has landed — lift the
     // --pending gate. Everything before this frame (unstyled-tier
@@ -480,22 +526,86 @@ export class CardStack extends BaseComponent {
     this._settleDeck()
   }
 
-  /** Reveal the deck after its first measured pose pass — idempotent
-   *  flip: _deckResize (RO delivery) and the RO-less _settleTimer race
-   *  to the same class removal, so whichever lands second no-ops. */
+  /** A measured pose pass landed — marks the reveal's measurement half
+   *  and defers to _maybeReveal. _deckResize (RO delivery) and the
+   *  RO-less _settleTimer race here; whichever lands first wins. */
   _settleDeck(): void {
-    if (this._settled) return
+    this._firstPoseLanded = true
+
+    this._maybeReveal()
+  }
+
+  /** Lift the --pending gate — two stages behind the halves. ARM runs
+   *  once both are in (a measured pose pass AND document.fonts.ready, or
+   *  the Font Loading API absent): a final hidden measure/pose/fit folds
+   *  font-final metrics into the first visible geometry. But the fit's
+   *  min-height write can resize the deck box itself — the deck RO's
+   *  rAF-hopped _deckResize lands a frame LATER, so lifting in the same
+   *  task lets that self-triggered re-pose paint post-reveal (the
+   *  residual sub-pixel drift). Instead the arm parks the reveal and the
+   *  next delivery decides: the RO hop re-poses on the final box while
+   *  still hidden, then lifts when the band stops moving; the quiesce
+   *  timer force-lifts when no delivery ever comes. Idempotent: late
+   *  RO/timer/promise edges all converge here. */
+  _maybeReveal(): void {
+    if (this._settled || !this._firstPoseLanded || !this._fontsReady) return
+
+    if (!this.isConnected) return
+
+    if (!this._revealArmed) {
+      // Final hidden measurement — font-final metrics folded into poses
+      // and the fit anchor before anything paints.
+      const fitDeck = this._deckEl as HTMLElement | null
+      const prevMin = fitDeck?.style.minHeight ?? null
+
+      measure(this)
+
+      applyPoses(this)
+
+      fitDeckToFront(this)
+
+      this._revealArmed = true
+      this._fitMovedDeck = fitDeck !== null && fitDeck.style.minHeight !== prevMin
+
+      // The document is proven — the completed hidden pass used styled,
+      // font-final metrics, so later mounts/remounts skip the gate even
+      // if this element unmounts before the deferred lift.
+      SETTLED_DOCS.add(this.ownerDocument)
+
+      if (this._revealTimer === null) {
+        this._revealTimer = setTimeout(() => {
+          this._revealTimer = null
+          this._revealForced = true
+
+          this._maybeReveal()
+        }, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
+      }
+
+      return
+    }
+
+    // Armed — a delivery landed since the final pass. Hold while the
+    // fit's band write is still moving the deck (its RO hop would
+    // re-pose in view); force through on the quiesce timer.
+    if (this._fitMovedDeck && !this._revealForced) {
+      this._fitMovedDeck = false
+
+      return
+    }
 
     this._settled = true
-
-    // The document is proven — later mounts/remounts skip the gate.
-    SETTLED_DOCS.add(this.ownerDocument)
 
     // The RO path won the race — the pending fallback never needs to fire.
     if (this._settleTimer) {
       clearTimeout(this._settleTimer)
 
       this._settleTimer = null
+    }
+
+    if (this._revealTimer) {
+      clearTimeout(this._revealTimer)
+
+      this._revealTimer = null
     }
 
     this._deckEl?.classList.remove(CARD_STACK_CLASSES.CARD_STACK_DECK_PENDING)

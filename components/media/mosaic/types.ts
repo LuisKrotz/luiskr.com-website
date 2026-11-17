@@ -5,6 +5,7 @@
  * the packer emits, and the structural contract of the nested
  * <custom-carousel> used as the ≤640px fallback.
  */
+/* istanbul ignore file */
 
 /**
  * A media row inside the mosaic — `src` is the extensionless CDN stem,
