@@ -46,7 +46,11 @@ describe('expanded mount — real-element tails', () => {
 
     // Double-rAF deferred mounts → loadFullRes → attempt(0) sees the null
     // localUrl, retries attempt(1), which returns on the candidates bound.
-    await flush(240)
+    // Bounded wait — under saturated parallel runs the deferred mount chain
+    // can exceed any fixed flush; polling keeps the test deterministic.
+    const deadline = Date.now() + 2000
+
+    while (!spy.mock.calls.length && Date.now() < deadline) await flush(50)
 
     expect(spy).toHaveBeenCalledWith(TEST_URLS.IMG)
 
