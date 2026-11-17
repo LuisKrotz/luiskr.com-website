@@ -56,9 +56,9 @@ describe('CardStack mount settle gate', () => {
 
     el.processedItems = [item(0), item(1)]
 
-    // Synchronous — the fallback hasn't fired yet, so the RO-path
-    // settle is what flips here.
-    expect(el._settled).toBe(false)
+    // The document is already proven by the first test — simulate an
+    // unsettled element so the RO-path flip is what gets exercised.
+    el._settled = false
 
     el._deckResize()
 
@@ -71,6 +71,9 @@ describe('CardStack mount settle gate', () => {
 
     const el = new CardStack()
 
+    // Proven-document mounts start settled — back the flag off so the
+    // body's timer-clear + class-remove arms run.
+    el._settled = false
     el._settleTimer = setTimeout(() => {}, CARD_STACK_LAYOUT.SETTLE_FALLBACK_MS)
 
     el._settleDeck()
@@ -85,26 +88,34 @@ describe('CardStack mount settle gate', () => {
     jest.useRealTimers()
   })
 
-  test('onDestroy clears a pending settle timer and resets the gate for re-mount', async () => {
+  test('onDestroy clears a pending settle timer and the document-stayed gate skips re-mount pending', async () => {
+    // Earlier tests in this file already settled the shared document —
+    // a fresh element starts settled (the proven-document contract that
+    // keeps view re-render remounts from flashing the deck).
     const el = new CardStack()
+
+    expect(el._settled).toBe(true)
+
     const unmount = mount(el)
 
     el.processedItems = [item(0)]
 
-    expect(el._settleTimer).not.toBeNull()
+    // Proven document: no pending class, no fallback timer armed.
+    expect(deckEl(el).classList.contains(C.CARD_STACK_DECK_PENDING)).toBe(false)
+    expect(el._settleTimer).toBeNull()
 
     unmount()
 
     expect(el._settleTimer).toBeNull()
-    expect(el._settled).toBe(false)
+    expect(el._settled).toBe(true)
 
-    // Re-mount re-pends — the fallback settles the fresh deck again.
+    // Re-mount stays revealed — the fresh nodes land posed via the
+    // per-element first-pose suppression, never through the gate.
     cleanups.push(mount(el))
 
     el.processedItems = [item(0)]
 
-    expect(el._settled).toBe(false)
-
-    await waitFor(() => el._settled === true)
+    expect(el._settled).toBe(true)
+    expect(deckEl(el).classList.contains(C.CARD_STACK_DECK_PENDING)).toBe(false)
   })
 })

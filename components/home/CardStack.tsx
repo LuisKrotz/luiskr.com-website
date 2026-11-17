@@ -61,6 +61,15 @@ import type { CardStackItem, CardStackTranslations } from './cardstack/types.js'
 import '@website/components/media/DrawText.js'
 import cardStackStyles from '@core/sass/components/home/card-stack.scss?tiers'
 
+/** Documents whose first deck settle already completed — the --pending
+ *  gate exists to hide the first mount's unproven measurements (a pose
+ *  pass reading rects before the tier sheet resolves). Once any deck in
+ *  the document has settled, stylesheets are proven live, so remounts
+ *  (view re-renders swap the element) start settled and pose their fresh
+ *  nodes synchronously — no second hidden window, no deck flash. Keyed
+ *  per-document so each test file's fresh document stays unproven. */
+const SETTLED_DOCS = new WeakSet<Document>()
+
 /**
  * The CardStack — stacked featured-project deck.
  */
@@ -116,7 +125,7 @@ export class CardStack extends BaseComponent {
   _burnHeld = false // burn sessions frozen by the section's off-screen hold — spin() leaves them disarmed until holdBurns releases (the in-card title draw-in waits for scroll-in)
   _autoArmed = false // one-shot mount arm — the countdown starts once items exist
   _printing = false // print job in flight — gates applyPoses/fitDeckToFront so the live posers can't rewrite the inline geometry print.ts stripped for the snapshot
-  _settled = false // the deck's first measured pose pass landed and the --pending gate lifted — re-rendered decks skip it (fresh nodes still get the per-element first-pose suppression)
+  _settled = SETTLED_DOCS.has(this.ownerDocument) // the deck's first measured pose pass landed and the --pending gate lifted — re-rendered decks skip it (fresh nodes still get the per-element first-pose suppression); remounts in an already-settled document start revealed
   _settleTimer: ReturnType<typeof setTimeout> | null = null // RO-less reveal fallback — fires SETTLE_FALLBACK_MS after the first items-bearing pose pass when no ResizeObserver delivery can arrive
 
   constructor() {
@@ -265,9 +274,10 @@ export class CardStack extends BaseComponent {
       this._settleTimer = null
     }
 
-    // A re-mount re-pends the deck — the fresh content's first pose
-    // pass must settle before it shows, same as the original mount.
-    this._settled = false
+    // A re-mount re-pends only while the document is unproven — once a
+    // settle landed here, a remounted deck poses synchronously at first
+    // paint, so the gate stays lifted and the deck never flashes out.
+    this._settled = SETTLED_DOCS.has(this.ownerDocument)
 
     // A re-mount must re-observe even if the same deck node survives.
     this._deckEl = null
@@ -477,6 +487,9 @@ export class CardStack extends BaseComponent {
     if (this._settled) return
 
     this._settled = true
+
+    // The document is proven — later mounts/remounts skip the gate.
+    SETTLED_DOCS.add(this.ownerDocument)
 
     // The RO path won the race — the pending fallback never needs to fire.
     if (this._settleTimer) {
