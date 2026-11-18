@@ -2019,7 +2019,7 @@
       "sass",
       "base",
       "structure",
-      "structure _document scss document base html body resets the glow drift app sweep backdrop keyframes mount element root modal scroll lock imported _structure manifest not compiled standalone page styles then dark mode overrides above only"
+      "structure _document scss document base html body resets the static field backdrop layers app mount element root modal scroll lock imported _structure manifest not compiled standalone page styles then dark mode overrides above only light"
     ],
     "c": "docs"
   },
@@ -5653,7 +5653,7 @@
       "page-backdrop",
       "tokens",
       "motion",
-      "file tokens motion page backdrop description tuning for the webgl grained lobe field rendered behind every route buffer caps drift periods key shade gains and dark theme gain live here shader template loop read one declaration zero"
+      "file tokens motion page backdrop description tuning for the webgl grained lobe field rendered behind every route buffer caps key shade gains and dark theme gain live here shader template draw read one declaration zero hardcoding rule"
     ],
     "c": "docs"
   },
@@ -7189,7 +7189,7 @@
       "canvas",
       "loaders",
       "page-backdrop",
-      "file page backdrop loop render for the start palette sample size document marker pooled raf viewport resize buffer sync and per frame draw hot path allocation free dirty flags gate resolution uploads steady one uniform1f drawarrays begins"
+      "file page backdrop loop static render plumbing for the start palette sample size document marker one draw viewport resize buffer sync and demand frame field never animates parallax runs only when input actually changed mount theme flip"
     ],
     "c": "docs"
   },
@@ -8874,7 +8874,7 @@
       "modal.ts",
       "src",
       "app",
-      "code coverage report for src app modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 559x 557x 558x file description state"
+      "code coverage report for src app modal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 574x 572x 573x file description state"
     ],
     "c": "docs"
   },
@@ -9246,7 +9246,7 @@
       "coverage",
       "index",
       "cms",
-      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 17t13 642z"
+      "code coverage report for cms summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file main tokens generated istanbul 2026 17t14 077z"
     ],
     "c": "docs"
   },
@@ -9961,7 +9961,7 @@
       "index",
       "cms",
       "tokens",
-      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 17t13 642z"
+      "code coverage report for cms tokens summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file base generated istanbul 2026 17t14 077z"
     ],
     "c": "docs"
   },
@@ -10225,7 +10225,7 @@
       "index",
       "core",
       "debug",
-      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 17t13 096z"
+      "code coverage report for core debug summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file params generated istanbul 2026 17t14 534z"
     ],
     "c": "docs"
   },
@@ -10252,7 +10252,7 @@
       "coverage",
       "devlog.ts",
       "core",
-      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 638x 1464x 944x 97x file description zero"
+      "code coverage report for core devlog summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 638x 1463x 943x 97x file description zero"
     ],
     "c": "docs"
   },
@@ -10402,7 +10402,7 @@
       "cyrillic-font.ts",
       "core",
       "locale",
-      "code coverage report for core locale cyrillic font summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 23x 718x file description"
+      "code coverage report for core locale cyrillic font summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 23x 733x file description"
     ],
     "c": "docs"
   },
@@ -10611,7 +10611,7 @@
       "index",
       "core",
       "safari",
-      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 17t13 096z"
+      "code coverage report for core safari summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file patch generated istanbul 2026 17t14 534z"
     ],
     "c": "docs"
   },
@@ -10813,7 +10813,7 @@
       "coverage",
       "store.ts",
       "core",
-      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 493x 4374x"
+      "code coverage report for core store summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 103 104 105 106 107 108 nbsp 493x 4389x"
     ],
     "c": "docs"
   },
@@ -10827,7 +10827,7 @@
       "getters.ts",
       "core",
       "store",
-      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x 336x 1106x 2686x 1741x 2348x"
+      "code coverage report for core store getters summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x 336x 1106x 2686x 1766x 2274x"
     ],
     "c": "docs"
   },
@@ -10907,7 +10907,7 @@
       "core",
       "store",
       "mutations",
-      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x 64x 1029x 55x 31x 41x"
+      "code coverage report for core store mutations lang summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 493x 64x 1044x 55x 31x 41x"
     ],
     "c": "docs"
   },
@@ -11115,7 +11115,7 @@
       "core",
       "tokens",
       "attrs",
-      "code coverage report for core tokens attrs svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 170x file description geometry"
+      "code coverage report for core tokens attrs svg summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 171x file description geometry"
     ],
     "c": "docs"
   },
@@ -11181,7 +11181,7 @@
       "base.js",
       "core",
       "tokens",
-      "code coverage report for core tokens base summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 597x file description node esm"
+      "code coverage report for core tokens base summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 767x file description node esm"
     ],
     "c": "docs"
   },
@@ -11217,7 +11217,7 @@
       "core",
       "tokens",
       "canvas",
-      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 17t13"
+      "code coverage report for core tokens canvas summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file paint generated istanbul 2026 17t14"
     ],
     "c": "docs"
   },
@@ -11404,7 +11404,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes carousel summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 171x file description"
+      "code coverage report for core tokens classes carousel summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 172x file description"
     ],
     "c": "docs"
   },
@@ -11614,7 +11614,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes media mosaic summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 152x file description"
+      "code coverage report for core tokens classes media mosaic summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 153x file description"
     ],
     "c": "docs"
   },
@@ -11719,7 +11719,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes preferences summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 210x file description"
+      "code coverage report for core tokens classes preferences summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 211x file description"
     ],
     "c": "docs"
   },
@@ -11779,7 +11779,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes related summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 158x file description"
+      "code coverage report for core tokens classes related summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 159x file description"
     ],
     "c": "docs"
   },
@@ -11809,7 +11809,7 @@
       "core",
       "tokens",
       "classes",
-      "code coverage report for core tokens classes router summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 208x file description"
+      "code coverage report for core tokens classes router summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 209x file description"
     ],
     "c": "docs"
   },
@@ -12101,7 +12101,7 @@
       "core",
       "tokens",
       "css",
-      "code coverage report for core tokens css mosaic summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 152x file description related"
+      "code coverage report for core tokens css mosaic summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 153x file description related"
     ],
     "c": "docs"
   },
@@ -12482,7 +12482,7 @@
       "core",
       "tokens",
       "events",
-      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 298x file description custom"
+      "code coverage report for core tokens events app summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 299x file description custom"
     ],
     "c": "docs"
   },
@@ -13129,7 +13129,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion marquee summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 27x file description"
+      "code coverage report for core tokens motion marquee summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 28x file description"
     ],
     "c": "docs"
   },
@@ -13234,7 +13234,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion related summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 33x file description"
+      "code coverage report for core tokens motion related summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 34x file description"
     ],
     "c": "docs"
   },
@@ -13264,7 +13264,7 @@
       "core",
       "tokens",
       "motion",
-      "code coverage report for core tokens motion slider summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 165x spring knob tunables"
+      "code coverage report for core tokens motion slider summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 166x spring knob tunables"
     ],
     "c": "docs"
   },
@@ -13597,7 +13597,7 @@
       "core",
       "tokens",
       "selectors",
-      "code coverage report for core tokens selectors carousel summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 171x file description"
+      "code coverage report for core tokens selectors carousel summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 172x file description"
     ],
     "c": "docs"
   },
@@ -13850,7 +13850,7 @@
       "core",
       "tokens",
       "starfield",
-      "code coverage report for core tokens starfield params summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 120x star field parameter"
+      "code coverage report for core tokens starfield params summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 165x star field parameter"
     ],
     "c": "docs"
   },
@@ -14413,7 +14413,7 @@
       "core",
       "tokens",
       "theme",
-      "code coverage report for core tokens theme arrows summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 183x file description"
+      "code coverage report for core tokens theme arrows summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 184x file description"
     ],
     "c": "docs"
   },
@@ -14553,7 +14553,7 @@
       "core",
       "utils",
       "burn",
-      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 85820x 72201x 71751x 71708x file"
+      "code coverage report for core utils burn front summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 86668x 72918x 72471x 72421x file"
     ],
     "c": "docs"
   },
@@ -14710,7 +14710,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 326x 2814x 2808x 16x 2792x"
+      "code coverage report for core utils canvas css color summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 326x 2795x 2789x 16x 2773x"
     ],
     "c": "docs"
   },
@@ -14740,7 +14740,7 @@
       "core",
       "utils",
       "canvas",
-      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 153x 933x 21x 1899x 208x"
+      "code coverage report for core utils canvas lifecycle summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 154x 933x 21x 1899x 208x"
     ],
     "c": "docs"
   },
@@ -15894,7 +15894,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 125x 2240x 2243x 2235x"
+      "code coverage report for core utils data footer links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 125x 2239x 2242x 2234x"
     ],
     "c": "docs"
   },
@@ -15924,7 +15924,7 @@
       "core",
       "utils",
       "data",
-      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 122x 11997x 2410x 2076x"
+      "code coverage report for core utils data legal links summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 122x 11992x 2409x 2086x"
     ],
     "c": "docs"
   },
@@ -16005,7 +16005,7 @@
       "core",
       "utils",
       "dom",
-      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 24x 2227x file description"
+      "code coverage report for core utils dom orphan seps summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 24x 2226x file description"
     ],
     "c": "docs"
   },
@@ -16541,7 +16541,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion route warmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 14x 28x 24x 23x 18x 17x"
+      "code coverage report for core utils motion route warmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 14x 29x 25x 24x 19x 18x"
     ],
     "c": "docs"
   },
@@ -16586,7 +16586,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion skeleton shimmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 389x 18397x 18396x"
+      "code coverage report for core utils motion skeleton shimmer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 389x 18396x 18395x"
     ],
     "c": "docs"
   },
@@ -16601,7 +16601,7 @@
       "core",
       "utils",
       "motion",
-      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 165x 2334x 1000x file"
+      "code coverage report for core utils motion spring summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 166x 2374x 1039x file"
     ],
     "c": "docs"
   },
@@ -17599,7 +17599,7 @@
       "earth-playground",
       "earth",
       "scene",
-      "code coverage report for earth playground scene post nodes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 49x file description"
+      "code coverage report for earth playground scene post nodes summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 48x file description"
     ],
     "c": "docs"
   },
@@ -17695,7 +17695,7 @@
       "earth-playground",
       "earth",
       "setup",
-      "code coverage report for earth playground setup renderer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 64x 63x 62x file"
+      "code coverage report for earth playground setup renderer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 63x 62x 61x file"
     ],
     "c": "docs"
   },
@@ -17856,7 +17856,7 @@
       "schema.ts",
       "earth-playground",
       "space",
-      "code coverage report for earth playground space schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 nbsp 12x 70x 264x 56x"
+      "code coverage report for earth playground space schema summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 102 nbsp 12x 69x 264x 56x"
     ],
     "c": "docs"
   },
@@ -19226,7 +19226,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 28x 24x 121x 150x"
+      "code coverage report for components carousel awards autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 28x 24x 121x 160x"
     ],
     "c": "docs"
   },
@@ -19286,7 +19286,7 @@
       "components",
       "carousel",
       "awards-carousel",
-      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 16x 15x 11x 13x"
+      "code coverage report for components carousel awards observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 17x 16x 12x 13x"
     ],
     "c": "docs"
   },
@@ -19449,7 +19449,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 589x"
+      "code coverage report for components carousel mentions deck autoplay summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter 101 nbsp 564x"
     ],
     "c": "docs"
   },
@@ -19524,7 +19524,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 522x"
+      "code coverage report for components carousel mentions deck interactions summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 509x"
     ],
     "c": "docs"
   },
@@ -19539,7 +19539,7 @@
       "components",
       "carousel",
       "mentions-deck",
-      "code coverage report for components carousel mentions deck observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 728x 726x"
+      "code coverage report for components carousel mentions deck observer summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 703x 701x"
     ],
     "c": "docs"
   },
@@ -21148,7 +21148,7 @@
       "modal-trigger.ts",
       "components",
       "media",
-      "code coverage report for components media modal trigger summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 78x 23x 21x 20x 10x"
+      "code coverage report for components media modal trigger summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 79x 23x 21x 20x 10x"
     ],
     "c": "docs"
   },
@@ -21200,7 +21200,7 @@
       "components",
       "media",
       "mosaic",
-      "code coverage report for components media mosaic layout summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 26x 12x 14x 28x 13x 16x"
+      "code coverage report for components media mosaic layout summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 27x 12x 14x 28x 13x 16x"
     ],
     "c": "docs"
   },
@@ -21230,7 +21230,7 @@
       "components",
       "media",
       "mosaic",
-      "code coverage report for components media mosaic render tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 26x 14x 20x 18x"
+      "code coverage report for components media mosaic render tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 27x 14x 20x 18x"
     ],
     "c": "docs"
   },
@@ -21308,7 +21308,7 @@
       "grid.tsx",
       "components",
       "nav",
-      "code coverage report for components nav grid tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 35x 1224x 2448x 817x 612x 33x"
+      "code coverage report for components nav grid tsx summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 35x 1244x 2488x 827x 622x 33x"
     ],
     "c": "docs"
   },
@@ -21336,7 +21336,7 @@
       "icon-aura.ts",
       "components",
       "nav",
-      "code coverage report for components nav icon aura summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 32x 849x 848x 840x 184x file"
+      "code coverage report for components nav icon aura summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 32x 859x 858x 850x 184x file"
     ],
     "c": "docs"
   },
@@ -21463,7 +21463,7 @@
       "components",
       "portfolio",
       "related",
-      "code coverage report for components portfolio related data summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 192x 113x 122x 121x"
+      "code coverage report for components portfolio related data summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter nbsp 215x 122x 134x 133x"
     ],
     "c": "docs"
   },
@@ -21713,7 +21713,7 @@
       "index",
       "views",
       "animations",
-      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t13"
+      "code coverage report for views animations summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t14"
     ],
     "c": "docs"
   },
@@ -21839,7 +21839,7 @@
       "index",
       "views",
       "legal",
-      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t13 469z"
+      "code coverage report for views legal summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t14 914z"
     ],
     "c": "docs"
   },
@@ -22028,7 +22028,7 @@
       "index",
       "views",
       "search",
-      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t13 469z"
+      "code coverage report for views search summary sorter background image url sort arrow sprite png all files 100 statements branches functions lines press the next uncovered block previous filter file tsx generated istanbul 2026 17t14 914z"
     ],
     "c": "docs"
   },
@@ -26747,7 +26747,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion page backdrop members dpr_max max_dim period_1 period_key key_gain_dark shade_gain_dark grain_lsb grain_lum_lsb dark_gain light_gain tuning for the webgl grained source src surface shared primitives every builds direct"
+      "core tokens motion page backdrop members dpr_max max_dim key_gain_dark shade_gain_dark grain_lsb grain_lum_lsb dark_gain light_gain tuning for the webgl grained source src surface shared primitives every builds direct backing store"
     ],
     "c": "docs"
   },
@@ -27008,7 +27008,7 @@
       "api",
       "core",
       "tokens",
-      "core tokens primitives members media_queries hover_none min_width_1025 forced_colors prefers_contrast keys home slash key_p primitive string typeof results punctuation source src surface shared every builds direct frozen media query map"
+      "core tokens primitives members media_queries gpu_budget hover_none min_width_1025 forced_colors prefers_contrast keys home slash key_p primitive string typeof results punctuation source src surface shared every builds direct frozen media"
     ],
     "c": "docs"
   },
@@ -28442,7 +28442,7 @@
       "utils",
       "canvas",
       "loaders",
-      "core utils canvas loaders page backdrop webgl members pagebackdropwebgl container _frametick width _elapsed _base _colors _key _shade _gain _palettedirty _rootobserver _onresize constructor _initgl _triggerfallback _releasegl _sampletheme"
+      "core utils canvas loaders page backdrop webgl members pagebackdropwebgl container width _base _colors _key _shade _gain _palettedirty _rootobserver _onresize constructor _initgl _triggerfallback _releasegl _sampletheme _onrootclass start"
     ],
     "c": "docs"
   },
@@ -28496,7 +28496,7 @@
       "canvas",
       "loaders",
       "page-backdrop",
-      "core utils canvas loaders page backdrop shaders members page_backdrop_vs page_backdrop_color_slots omega page_backdrop_fs glsl sources for pagebackdropwebgl the grained lobe source src surface shared primitives every builds direct"
+      "core utils canvas loaders page backdrop shaders members page_backdrop_vs page_backdrop_color_slots page_backdrop_fs glsl sources for pagebackdropwebgl the grained lobe source src surface shared primitives every builds direct fullscreen"
     ],
     "c": "docs"
   },
@@ -35060,7 +35060,7 @@
       "components",
       "home",
       "cardstack",
-      "website components home cardstack deck members deg _wasvisible _sizewrite writestacksize deckitems ringsigned picktier fanpose stackpose tierpose projectededge fitpeek measure padnum applyposes updatechrome _chromeidx dealnavindex"
+      "website components home cardstack deck members deg _wasvisible _posesig _measuresig deckitems ringsigned picktier fanpose stackpose tierpose projectededge fitpeek measure padnum applyposes updatechrome _chromeidx dealnavindex"
     ],
     "c": "docs"
   },
@@ -41651,7 +41651,7 @@
       "core",
       "tokens",
       "motion",
-      "core tokens motion page backdrop members dpr_max max_dim period_1 period_key key_gain_dark shade_gain_dark grain_lsb grain_lum_lsb dark_gain light_gain tuning for the webgl grained source src surface shared primitives every builds direct"
+      "core tokens motion page backdrop members dpr_max max_dim key_gain_dark shade_gain_dark grain_lsb grain_lum_lsb dark_gain light_gain tuning for the webgl grained source src surface shared primitives every builds direct backing store"
     ],
     "c": "docs"
   },
@@ -41912,7 +41912,7 @@
       "jsdocs",
       "core",
       "tokens",
-      "core tokens primitives members media_queries hover_none min_width_1025 forced_colors prefers_contrast keys home slash key_p primitive string typeof results punctuation source src surface shared every builds direct frozen media query map"
+      "core tokens primitives members media_queries gpu_budget hover_none min_width_1025 forced_colors prefers_contrast keys home slash key_p primitive string typeof results punctuation source src surface shared every builds direct frozen media"
     ],
     "c": "docs"
   },
@@ -43346,7 +43346,7 @@
       "utils",
       "canvas",
       "loaders",
-      "core utils canvas loaders page backdrop webgl members pagebackdropwebgl container _frametick width _elapsed _base _colors _key _shade _gain _palettedirty _rootobserver _onresize constructor _initgl _triggerfallback _releasegl _sampletheme"
+      "core utils canvas loaders page backdrop webgl members pagebackdropwebgl container width _base _colors _key _shade _gain _palettedirty _rootobserver _onresize constructor _initgl _triggerfallback _releasegl _sampletheme _onrootclass start"
     ],
     "c": "docs"
   },
@@ -43400,7 +43400,7 @@
       "canvas",
       "loaders",
       "page-backdrop",
-      "core utils canvas loaders page backdrop shaders members page_backdrop_vs page_backdrop_color_slots omega page_backdrop_fs glsl sources for pagebackdropwebgl the grained lobe source src surface shared primitives every builds direct"
+      "core utils canvas loaders page backdrop shaders members page_backdrop_vs page_backdrop_color_slots page_backdrop_fs glsl sources for pagebackdropwebgl the grained lobe source src surface shared primitives every builds direct fullscreen"
     ],
     "c": "docs"
   },
@@ -49976,7 +49976,7 @@
       "components",
       "home",
       "cardstack",
-      "website components home cardstack deck members deg _wasvisible _sizewrite writestacksize deckitems ringsigned picktier fanpose stackpose tierpose projectededge fitpeek measure padnum applyposes updatechrome _chromeidx dealnavindex"
+      "website components home cardstack deck members deg _wasvisible _posesig _measuresig deckitems ringsigned picktier fanpose stackpose tierpose projectededge fitpeek measure padnum applyposes updatechrome _chromeidx dealnavindex"
     ],
     "c": "docs"
   },
@@ -71993,7 +71993,7 @@
       "motion",
       "page-backdrop",
       "variables",
-      "luiskr com readme core tokens motion page backdrop _backdrop const page_backdrop readonly dpr_max max_dim 4096 period_1 period_2 period_3 period_key key_gain_dark key_gain_light shade_gain_dark shade_gain_light grain_lsb grain_lum_lsb"
+      "luiskr com readme core tokens motion page backdrop _backdrop const page_backdrop readonly dpr_max max_dim 4096 key_gain_dark key_gain_light shade_gain_dark shade_gain_light grain_lsb grain_lum_lsb dark_gain light_gain defined frozen tuning"
     ],
     "c": "docs"
   },
@@ -73320,7 +73320,7 @@
       "tokens",
       "primitives",
       "variables",
-      "luiskr com readme core tokens primitives media _queries const media_queries readonly pointer_fine pointer fine pointer_coarse coarse hover_none hover none max_width_768 max width 768px min_width_1025 min 1025px prefers_color_dark prefers"
+      "luiskr com readme core tokens primitives media _queries const media_queries readonly pointer_fine pointer fine pointer_coarse coarse gpu_budget max width 1023px hover_none hover none max_width_768 768px min_width_1025 min 1025px"
     ],
     "c": "docs"
   },
@@ -80193,7 +80193,7 @@
       "loaders",
       "page-backdrop-webgl",
       "classes",
-      "constructors constructor parameters container returns properties canvas program quadbuffer animid utime ures ubase ucol ugain ukey ushade width height isactive usewebgl _lastframe _elapsed _base _colors _key _shade _gain _darkatstart"
+      "constructors constructor parameters container returns properties canvas program quadbuffer ures ubase ucol ugain ukey ushade width height isactive usewebgl _base _colors _key _shade _gain _darkatstart _palettedirty _resdirty _oncontextlost"
     ],
     "c": "docs"
   },
@@ -80270,7 +80270,7 @@
       "page-backdrop",
       "init",
       "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders page backdrop init triggerfallback function void defined 112 switches the css lobe path used context loss failure unparseable palette cancels pending frame releases every"
+      "parameters host returns luiskr com readme core utils canvas loaders page backdrop init triggerfallback function void defined 108 switches the css lobe path used context loss failure unparseable palette releases every resource and clears"
     ],
     "c": "docs"
   },
@@ -80327,27 +80327,7 @@
       "page-backdrop",
       "loop",
       "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop handleresize function void defined syncs the backing store with viewport fixed and fullscreen its box layout read needed dpr capped dither only needs"
-    ],
-    "c": "docs"
-  },
-  {
-    "p": "/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/loop.md",
-    "t": "Loop",
-    "d": "Documentation — Loop",
-    "k": [
-      "docs",
-      "docs",
-      "loop",
-      "typedoc",
-      "core",
-      "utils",
-      "canvas",
-      "loaders",
-      "page-backdrop",
-      "loop",
-      "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop function void defined 105 pooled raf callback arms itself and draws one frame bails when the was stopped context gone path fell back pagebackdropwebgl"
+      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop handleresize function void defined syncs the backing store with viewport then redraws static frame resized buffer never presents stretched stale pose"
     ],
     "c": "docs"
   },
@@ -80367,7 +80347,7 @@
       "page-backdrop",
       "loop",
       "functions",
-      "parameters host statictime returns luiskr com readme core utils canvas loaders page backdrop loop renderframe function void defined 121 draws the lobe field renders one settled pose reduced motion otherwise clock advances clamped frame"
+      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop renderframe function void defined draws the lobe field once static pose clock animation theme flip resamples palette before upload dirty flags gate"
     ],
     "c": "docs"
   },
@@ -80407,7 +80387,7 @@
       "page-backdrop",
       "loop",
       "functions",
-      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop stop function void defined stops the pooled and clears document marker css glow layers paint again while idle hidden pagebackdropwebgl webgl classes"
+      "parameters host returns luiskr com readme core utils canvas loaders page backdrop loop stop function void defined stops rendering and clears the document marker css glow layers paint again while idle hidden pagebackdropwebgl webgl classes"
     ],
     "c": "docs"
   },
@@ -80484,7 +80464,7 @@
       "page-backdrop",
       "shaders",
       "variables",
-      "luiskr com readme core utils canvas loaders page backdrop shaders _backdrop _fs const page_backdrop_fs string defined lobe field fragment shader coordinates across the with down css convention because every centre radius below was authored"
+      "luiskr com readme core utils canvas loaders page backdrop shaders _backdrop _fs const page_backdrop_fs string defined lobe field fragment shader static pose every sits its authored centre time uniform drift pulse coordinates across the"
     ],
     "c": "docs"
   },
@@ -104307,7 +104287,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack deck applyposes function void defined 480 writes every card pose for the current virtual front derived from activeidx _dragx _step live drag slides whole coverflow"
+      "parameters host returns luiskr com readme website components home cardstack deck applyposes function void defined 501 writes every card pose for the current virtual front derived from activeidx _dragx _step live drag slides whole coverflow"
     ],
     "c": "docs"
   },
@@ -104345,7 +104325,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters len tier peek returns luiskr com readme website components home cardstack deck fanpose function cardpose defined 135 the coverflow pose for signed offset see cardstacktier full model with near term min carries big front"
+      "parameters len tier peek returns luiskr com readme website components home cardstack deck fanpose function cardpose defined 124 the coverflow pose for signed offset see cardstacktier full model with near term min carries big front"
     ],
     "c": "docs"
   },
@@ -104364,7 +104344,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack deck fitdecktofront function void defined 779 fits the stacked min height front card rendered applyposes lets auto grow past ratio its copy never truncates and"
+      "parameters host returns luiskr com readme website components home cardstack deck fitdecktofront function void defined 820 fits the stacked min height front card rendered applyposes lets auto grow past ratio its copy never truncates and"
     ],
     "c": "docs"
   },
@@ -104383,7 +104363,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters deckw tier returns luiskr com readme website components home cardstack deck fitpeek function number defined 307 visible cards per side the deepest offset peek whose projected outer edge stays inside half width edge_room never"
+      "parameters deckw tier returns luiskr com readme website components home cardstack deck fitpeek function number defined 299 visible cards per side the deepest offset peek whose projected outer edge stays inside half width edge_room never"
     ],
     "c": "docs"
   },
@@ -104402,7 +104382,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack deck measure function void defined 333 measures the region and publishes card box tier width card_share capped its height card_h_ratio stays inside height_share"
+      "parameters host returns luiskr com readme website components home cardstack deck measure function void defined 325 measures the region and publishes card box tier width card_share capped its height card_h_ratio stays inside height_share"
     ],
     "c": "docs"
   },
@@ -104421,7 +104401,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters returns luiskr com readme website components home cardstack deck padnum function string defined 466 zero padded counter index number shared the and rows"
+      "parameters returns luiskr com readme website components home cardstack deck padnum function string defined 485 zero padded counter index number shared the and rows"
     ],
     "c": "docs"
   },
@@ -104440,7 +104420,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters returns luiskr com readme website components home cardstack deck picktier function cardstacktier defined 102 the coverflow tier for viewport first widest whose min_vw width meets portrait tablet also requires taller than wide"
+      "parameters returns luiskr com readme website components home cardstack deck picktier function cardstacktier defined the coverflow tier for viewport first widest whose min_vw width meets portrait tablet also requires taller than wide"
     ],
     "c": "docs"
   },
@@ -104459,7 +104439,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters tier returns luiskr com readme website components home cardstack deck projectededge function number defined 281 screen space from the centre outer edge card offset right side after perspective divide sits its plus half width"
+      "parameters tier returns luiskr com readme website components home cardstack deck projectededge function number defined 273 screen space from the centre outer edge card offset right side after perspective divide sits its plus half width"
     ],
     "c": "docs"
   },
@@ -104497,7 +104477,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters len tier peek returns luiskr com readme website components home cardstack deck stackpose function cardpose defined 198 the stacked layout pose for signed offset entire card pile phone portrait tiers modelled dealt deal slot next"
+      "parameters len tier peek returns luiskr com readme website components home cardstack deck stackpose function cardpose defined 187 the stacked layout pose for signed offset entire card pile phone portrait tiers modelled dealt deal slot next"
     ],
     "c": "docs"
   },
@@ -104516,7 +104496,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters tier len peek returns luiskr com readme website components home cardstack deck tierpose function cardpose defined 256 pose dispatcher the stacked tiers down right cascade fan left coverflow single routing site for applyposes and"
+      "parameters tier len peek returns luiskr com readme website components home cardstack deck tierpose function cardpose defined 248 pose dispatcher the stacked tiers down right cascade fan left coverflow single routing site for applyposes and"
     ],
     "c": "docs"
   },
@@ -104535,7 +104515,7 @@
       "CardStack",
       "deck",
       "functions",
-      "parameters host returns luiskr com readme website components home cardstack deck updatechrome function void defined 668 refreshes the non pose chrome after nav project counter projectlabel oflabel both localized dot active flags each card"
+      "parameters host returns luiskr com readme website components home cardstack deck updatechrome function void defined 709 refreshes the non pose chrome after nav project counter projectlabel oflabel both localized dot active flags each card"
     ],
     "c": "docs"
   },
@@ -108889,7 +108869,7 @@
       "anim-demo",
       "dom",
       "functions",
-      "parameters _ctx returns luiskr com readme website components media anim demo dom mountglowdemo function void defined 211 body glow the staged surface drifts entirely css before wash mirrors document level mounted for completeness registry"
+      "parameters _ctx returns luiskr com readme website components media anim demo dom mountglowdemo function void defined 211 body glow the staged surface static css wash before mirrors document level mounted for completeness registry covers"
     ],
     "c": "docs"
   },
@@ -126285,7 +126265,7 @@
       "reports",
       "reports",
       "snyk-report",
-      "generatedat scanner totals critical high moderate low info total failseverities exceptions package advisory severity justification review vulnerabilities"
+      "generatedat scanner totals critical high moderate low info total failseverities exceptions package advisory severity justification review vulnerabilities packagename advisoryid title from range fixedin isupgradable ispatchable exploit url"
     ],
     "c": "docs"
   },

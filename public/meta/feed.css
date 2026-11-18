@@ -1130,60 +1130,24 @@ body::before,
 body::after {
   content: '';
   position: fixed;
-  inset: -25%;
+  inset: 0;
   z-index: -1;
   pointer-events: none;
 }
 body::before {
   background: var(--bg-glow);
-  animation: body-glow-drift 16s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
 }
 @media (max-width: 1023px), (pointer: coarse) {
   body::before {
-    animation: none;
-    background: var(--bg-glow-3), var(--bg-glow-2), var(--bg-glow);
+    content: none;
   }
 }
 body::after {
   background: var(--bg-glow-2);
-  animation: body-glow-drift-alt 21s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
 }
 @media (max-width: 1023px), (pointer: coarse) {
   body::after {
     content: none;
-  }
-}
-@keyframes body-glow-drift {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(-9%, 6%, 0);
-  }
-  100% {
-    transform: translate3d(7%, -6%, 0);
-  }
-}
-@keyframes body-glow-drift-alt {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(7%, -6.5%, 0);
-  }
-  100% {
-    transform: translate3d(-7.5%, 6%, 0);
-  }
-}
-@keyframes app-glow-sweep {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(-6%, 4.5%, 0);
-  }
-  100% {
-    transform: translate3d(6%, -4.5%, 0);
   }
 }
 #app {
@@ -1197,11 +1161,10 @@ body::after {
 #app::before {
   content: '';
   position: fixed;
-  inset: -25%;
+  inset: 0;
   z-index: -1;
   pointer-events: none;
   background: var(--bg-glow-3);
-  animation: app-glow-sweep 27s cubic-bezier(0.37, 0, 0.3, 1) infinite alternate;
 }
 @media (max-width: 1023px), (pointer: coarse) {
   #app::before {
@@ -1215,6 +1178,11 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background: var(--bg-grain, none);
+}
+@media (max-width: 1023px), (pointer: coarse) {
+  #app::after {
+    content: none;
+  }
 }
 #page-backdrop {
   position: fixed;

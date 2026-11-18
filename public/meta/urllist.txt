@@ -8563,7 +8563,6 @@ https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loo
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/README.md
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/handleResize.md
-https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/loop.md
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/renderFrame.md
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/start.md
 https://luiskr.com/docs/docs/typedoc/core/utils/canvas/loaders/page-backdrop/loop/functions/stop.md
