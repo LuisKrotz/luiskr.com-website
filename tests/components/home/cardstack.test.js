@@ -429,7 +429,6 @@ describe('cardstack/deck — DOM writes', () => {
     // happy-dom's landscape viewport picks the stacked 768 tier — pin
     // the fan tier so the assertions check the coverflow's dim ladder.
     el._tier = FAN_TIER
-    el._sizesDirty = true
     applyPoses(el)
     const cards = el._cardEls
     expect(cards.length).toBe(ITEMS.length)
@@ -442,8 +441,7 @@ describe('cardstack/deck — DOM writes', () => {
     expect(cards[1].style.transform).toContain('scale(1)')
     expect(front.style.width).toMatch(/px$/)
     expect(front.classList.contains(C.CARD_STACK_CARD_ACTIVE)).toBe(true)
-    expect(el._sizesDirty).toBe(false)
-    // A dirty pass also writes the deck's perspective camera.
+    // The tier swap moved the camera — the perspective rewrites to px.
     expect(el._deckEl.style.perspective).toMatch(/px$/)
     const back = cards[2]
     expect(back.classList.contains(C.CARD_STACK_CARD_ACTIVE)).toBe(false)

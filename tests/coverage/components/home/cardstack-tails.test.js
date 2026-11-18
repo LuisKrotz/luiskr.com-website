@@ -182,13 +182,11 @@ describe('deck tails', () => {
     resetViewportCache()
   })
 
-  test('applyPoses: dirty=false arm, missing deckEl arm, far-card hide', async () => {
+  test('applyPoses: missing deckEl arm, far-card hide', async () => {
     const items = Array.from({ length: 12 }, (_, i) => item(i))
     const el = await mountItems(items)
-    el._sizesDirty = false
     applyPoses(el)
     el._deckEl = null
-    el._sizesDirty = true
     applyPoses(el)
     const far = el._cardEls[6] // |s| = 6 → beyond the fan's peek window
     const hidden = el._cardEls.find((c) => c.style.visibility === ATTR_VALUES.HIDDEN)
@@ -310,6 +308,25 @@ describe('deck tails', () => {
     expect(front.style.transform).toContain('translate3d')
   })
 
+  test('applyPoses skips the transform write when only the z-ladder moved', async () => {
+    const items = Array.from({ length: 8 }, (_, i) => item(i))
+    const el = await mountItems(items)
+    applyPoses(el)
+
+    const front = el._cardEls[0]
+    const poseBefore = front.style.transform
+
+    // In-place push (no re-render) grows len → the z-index term (len − a)
+    // shifts for every card while the front card's s = 0 pose — and so
+    // its transform — stays put: the signature flips, the value guard
+    // sees the transform already equal to the new pose.
+    el.processedItems.push(item(items.length))
+
+    applyPoses(el)
+
+    expect(front.style.transform).toBe(poseBefore)
+  })
+
   test('applyPoses runs the enter-seed arm when a beyond-peek card returns to the fan', async () => {
     // The seed arm needs a card that was hidden on the previous pass —
     // |s| beyond the deck's peek — so the deck must out-span the fan
@@ -426,12 +443,26 @@ describe('deck tails', () => {
       const saved = el._processedItems
       el._processedItems = []
       const updateSpy = jest.spyOn(el, '_updateDom').mockImplementation(() => {})
-      el._cardW = -1
-      expect(() => rocb()).not.toThrow()
-      expect(updateSpy).toHaveBeenCalled()
-      updateSpy.mockClear()
-      expect(() => rocb()).not.toThrow()
-      expect(updateSpy).not.toHaveBeenCalled()
+
+      // A real measurement change (a narrower viewport) — the measure
+      // signature sees the delta, republishes, and the skeleton fan
+      // repaints. Re-delivering the same measurement afterwards is a
+      // signature match: _updateDom stays silent.
+      const wOrig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+      Object.defineProperty(window, 'innerWidth', { value: 320, configurable: true })
+      resetViewportCache()
+
+      try {
+        expect(() => rocb()).not.toThrow()
+        expect(updateSpy).toHaveBeenCalled()
+        updateSpy.mockClear()
+        expect(() => rocb()).not.toThrow()
+        expect(updateSpy).not.toHaveBeenCalled()
+      } finally {
+        if (wOrig) Object.defineProperty(window, 'innerWidth', wOrig)
+        resetViewportCache()
+      }
+
       updateSpy.mockRestore()
       el._processedItems = saved
 

@@ -85,7 +85,6 @@ export class CardStack extends BaseComponent {
   _cardH: number = CARD_STACK_LAYOUT.CARD_W_FALLBACK * this._tier.CARD_H_RATIO
   _step: number = CARD_STACK_LAYOUT.CARD_W_FALLBACK * this._tier.FIRST_STEP // drag px per card
   _peek: number = this._tier.PEEK // visible cards per side — fitted to the deck width
-  _sizesDirty = true // card width/height + perspective writes pending after a measure()
   _dragX = 0 // live drag offset px — the fan's virtual front is activeIdx - _dragX/_step
   _dragStartX = 0 // pointer-down clientX
   _dragStartY = 0 // pointer-down clientY

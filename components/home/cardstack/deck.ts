@@ -37,32 +37,21 @@ const DEG = Math.PI / 180
 const _wasVisible = new WeakMap<Element, boolean>()
 
 /**
- * The last stacked height/min-height pair applied to each card.
- * applyPoses runs per gesture frame, and re-writing identical box
- * values every frame is a per-frame layout invalidation — the
- * mid-swipe relayout storm. The cache guards the writes so a drag
- * only touches transforms/opacity; geometry changes land once.
+ * Last pose signature (transform|opacity|z|visibility|active) applied
+ * to each card element. applyPoses runs per gesture frame and once per
+ * observer re-delivery; a pass whose pose values match the last write
+ * skips every DOM write so the converged deck costs compares only —
+ * the write→notify churn browsers report as ResizeObserver loops.
  */
-const _sizeWrite = new WeakMap<Element, string>()
+const _poseSig = new WeakMap<Element, string>()
 
 /**
- * Applies a stacked card's box pair when it changed since the last pose
- * pass — the value guard that keeps a per-frame applyPoses from
- * invalidating layout with identical geometry. `sizesToCopy` (the
- * committed front on a copy-carrying tier) frees the box to its copy;
- * every other card locks to the shared live pile height.
+ * Last measure signature per host — a ResizeObserver hop whose inputs
+ * (tier, card box, stage budget, deck rect) are unchanged skips the
+ * field publishes entirely, so an unchanged delivery is a compare and
+ * a return instead of a host write burst downstream code can observe.
  */
-const writeStackSize = (el: HTMLElement, sizesToCopy: boolean, pileH: number): void => {
-  const sizeKey = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
-
-  if (_sizeWrite.get(el) === sizeKey) return
-
-  _sizeWrite.set(el, sizeKey)
-
-  el.style.height = sizesToCopy ? ATTR_VALUES.AUTO : `${pileH}${COMMON_ATTRS.PX}`
-
-  el.style.minHeight = sizesToCopy ? ATTR_VALUES.EMPTY : `${pileH}${COMMON_ATTRS.PX}`
-}
+const _measureSig = new WeakMap<CardStack, string>()
 
 /**
  * Every pushed item fans in the deck — the full portfolio list in order
@@ -209,13 +198,16 @@ export function stackPose(
     // Returned-to-bottom cards — parked under the pile's up-left bottom
     // edge. |s|-scaled: the front card slides there (not teleports) as
     // a drag crosses s = 0; only the freshest parked card stays lit.
+    // Opacity scrubs down with the same |s| — the outgoing card fades
+    // as the swipe carries it under, and a cancelled gesture slides a
+    // back to 0, undoing the dim with the motion (never a snap-back).
     return {
       x: 0 - tier.PARK_X * a * w,
       y: 0 - tier.PARK_Y * a * h,
       depth: 0 - tier.PARK_D * a * w,
       rot: 0,
       rotZ: 0 - tier.PARK_RZ * a,
-      opacity: 1,
+      opacity: 1 - a * CARD_STACK_LAYOUT.PARK_DIM_STEP,
       scale: 1,
       z: Math.round(a * CARD_STACK_LAYOUT.Z_STRIDE),
       visible: a <= 1,
@@ -345,6 +337,13 @@ export function measure(host: CardStack): void {
 
   let deckH = rect?.height || 0
 
+  // Carried-over outputs for the unmeasurable branch — the signature
+  // compares against the values the last pass published, so a hidden
+  // deck holds its previous stage budget instead of collapsing to 0.
+  let stageH = host._stageH
+
+  let autoStage = host._autoStage
+
   if (deck && rect?.height) {
     const section = host.$(CARD_STACK_SELECTORS.CARD_STACK)
 
@@ -391,19 +390,23 @@ export function measure(host: CardStack): void {
       // apart from deckH (which clamps to it): the band's cap must read
       // the budget itself, not the deck's own current height, or a
       // band measured mid-overflow locks the cap to the wrong figure.
-      host._stageH = Math.max(0, vh - chromeH)
+      stageH = Math.max(0, vh - chromeH)
 
       // Whether the section is content-sized (the ≥3840 rung drops the
       // 100dvh floor → min-height computes to 0/auto, both parse falsy):
       // the deck row then has no 1fr allotment and fitDeckToFront must
       // publish the fan's band itself instead of riding the row's.
-      host._autoStage = !(parseFloat(style.minHeight) > 0)
+      autoStage = !(parseFloat(style.minHeight) > 0)
 
-      deckH = Math.min(deckH, host._stageH)
+      deckH = Math.min(deckH, stageH)
     }
   }
 
   const byWidth = deckW * tier.CARD_SHARE
+
+  const heightRoom = stageH || deckH
+
+  const byHeight = heightRoom ? (heightRoom * tier.HEIGHT_SHARE) / tier.CARD_H_RATIO : byWidth
 
   // The card's height-derived width input differs per layout contract:
   // the fan tiers' 1fr deck row IS the allotment, so the measured deck
@@ -418,10 +421,8 @@ export function measure(host: CardStack): void {
   // section the deck row IS the published card band, so measuring it
   // would feed the last card size back as a shrink-only ratchet. With
   // min-height:100dvh the 1fr row resolves to the same number anyway —
-  // this only decouples the cap from the layout mode.
-  const heightRoom = host._stageH || deckH
-
-  const byHeight = heightRoom ? (heightRoom * tier.HEIGHT_SHARE) / tier.CARD_H_RATIO : byWidth
+  // this only decouples the cap from the layout mode — read off the
+  // `heightRoom` local computed above.
 
   // Copy-carrying stacked tiers size by width alone — the front card
   // auto-grows to its copy (height:auto in applyPoses) and the deck row
@@ -431,19 +432,13 @@ export function measure(host: CardStack): void {
   // keep the height cap — no copy ever grows those cards, so the pile
   // must fit the bounded side-by-side stage and never push its bottom
   // edge past the section's clip boundary.
-  host._cardW = Math.min(
+  const cardW = Math.min(
     Math.max(
       tier.STACKED && tier.IN_CARD_INFO ? byWidth : Math.min(byWidth, byHeight),
       CARD_STACK_LAYOUT.CARD_W_MIN
     ),
     CARD_STACK_LAYOUT.CARD_W_MAX
   )
-
-  host._cardH = host._cardW * tier.CARD_H_RATIO
-
-  host._step = host._cardW * tier.FIRST_STEP
-
-  host._tier = tier
 
   // Autoplay is fan-tier only — a resize into a stacked layout kills a
   // running countdown (stopAutoplay no-ops when nothing is armed).
@@ -452,13 +447,37 @@ export function measure(host: CardStack): void {
   // The fan's peek is width-fitted to the deck edges; the stacked pile's
   // depth window is the tier's authored count (the cascade's own offsets
   // — not a horizontal fit — decide what peeks out).
-  host._peek = tier.STACKED ? tier.PEEK : fitPeek(deckW, host._cardW, tier)
+  const peek = tier.STACKED ? tier.PEEK : fitPeek(deckW, cardW, tier)
+
+  // Signature gate — every independent output (tier camera, card width,
+  // stage budget, deck rect, content-stage flag) joins into one key;
+  // an unchanged key means the delivery that triggered this measure
+  // observed no real resize, so the publishes below are skipped: an
+  // RO notification whose only cause was our own min-height write or
+  // a sub-pixel jitter ends here instead of reposing the whole pile.
+  const sig = `${CARD_STACK_TIERS.indexOf(tier)}|${cardW}|${deckW}|${deckH}|${stageH}|${autoStage}`
+
+  if (_measureSig.get(host) === sig) return
+
+  _measureSig.set(host, sig)
+
+  host._cardW = cardW
+
+  host._cardH = cardW * tier.CARD_H_RATIO
+
+  host._step = cardW * tier.FIRST_STEP
+
+  host._tier = tier
+
+  host._peek = peek
 
   host._deckW = deckW
 
   host._deckH = deckH
 
-  host._sizesDirty = true
+  host._stageH = stageH
+
+  host._autoStage = autoStage
 }
 
 /** Zero-padded counter/index number — "01", "08" — shared by the deck
@@ -471,10 +490,12 @@ export function padNum(n: number): string {
  * Writes every card's pose for the current virtual front `f` — derived
  * from `activeIdx - _dragX/_step`, so a live drag slides the whole
  * coverflow continuously and `activeIdx` alone reproduces the rest pose.
- * Card width/height and the deck perspective (the tier's camera
- * distance) write once per measure() (_sizesDirty); the --active class
- * rides the same pass. Runs inside the gesture rAF — reads are cached
- * fields, writes are transform/opacity/zIndex/visibility only.
+ * Every DOM write is value-guarded: card box properties and the deck
+ * perspective (the tier's camera distance) compare against the current
+ * inline value before touching it, and a card whose whole pose
+ * signature matched the last pass is skipped outright — re-delivered
+ * observer passes cost compares, not relayouts. Runs inside the
+ * gesture rAF — reads are cached fields and inline-style values.
  * @param host The CardStack element.
  */
 export function applyPoses(host: CardStack): void {
@@ -526,8 +547,6 @@ export function applyPoses(host: CardStack): void {
 
     _wasVisible.set(el, pose.visible)
 
-    el.classList.toggle(CARD_STACK_CLASSES.CARD_STACK_CARD_HIDDEN, !pose.visible)
-
     // First pose per element — a never-posed node has no "before" to
     // animate from. Mount and re-render insert cards whose only resolved
     // style is transform:none (measure()'s forced rect read resolves
@@ -542,74 +561,40 @@ export function applyPoses(host: CardStack): void {
       ;(fresh ??= []).push(el)
     }
 
-    if (host._sizesDirty) {
-      el.style.width = `${w}${COMMON_ATTRS.PX}`
+    // Card box — the FINAL layout value for this tier/role pair, each
+    // property guarded against its current inline value so a pass that
+    // re-derives identical geometry never invalidates layout. On
+    // copy-carrying stacked tiers the COMMITTED front (activeIdx, not
+    // the continuous drag pose) frees its box to its own copy —
+    // height:auto, floor cleared — so descriptions never truncate and
+    // the page absorbs any overflow; every other card locks to the
+    // shared pile height (pileH — the front's live box) so a copy-grown
+    // front can't leave a taller image-only sheet peeking below it.
+    // The image-only stacked front keeps the ratio box: its absolute
+    // cover and display:none info column contribute no flow height, so
+    // auto would collapse it to a sliver.
+    const wantW = `${w}${COMMON_ATTRS.PX}`
 
-      el.style.height = `${h}${COMMON_ATTRS.PX}`
+    let wantH: string
 
-      // Stacked "entire card" heights carry a min-height floor (cleared
-      // on fan tiers, and on the stacked front card below) — the pile
-      // keeps its uniform shape even if a card's own copy runs short.
-      el.style.minHeight = tier.STACKED ? `${h}${COMMON_ATTRS.PX}` : ATTR_VALUES.EMPTY
+    let wantMin: string
 
-      // The base-size pass just overwrote the box — drop the cached
-      // stacked pair so the stacked block below re-applies its own
-      // value instead of trusting a stale hit.
-      _sizeWrite.delete(el)
+    if (!tier.STACKED) {
+      wantH = `${h}${COMMON_ATTRS.PX}`
+      wantMin = ATTR_VALUES.EMPTY
+    } else if (i === host.activeIdx && tier.IN_CARD_INFO) {
+      wantH = ATTR_VALUES.AUTO
+      wantMin = ATTR_VALUES.EMPTY
+    } else {
+      wantH = `${pileH}${COMMON_ATTRS.PX}`
+      wantMin = `${pileH}${COMMON_ATTRS.PX}`
     }
 
-    if (tier.STACKED) {
-      // The pile behind rides the front card's live height (pileH) so
-      // a copy-grown front can't leave a taller image-only sheet
-      // peeking out below it. On COPY-CARRYING tiers the FRONT card
-      // drops BOTH the fixed height and the min-height floor so its
-      // own copy sizes the box — descriptions never truncate, never
-      // scroll, and short copy leaves no dead space; the page itself
-      // absorbs any overflow past the fold. Its rendered delta
-      // re-enters pose space as the SIGNED _frontExtra that sizes
-      // pileH above. The image-only pile's front is pure media — an
-      // absolute-positioned cover and a display:none info column
-      // contribute no flow height, so auto would collapse the card to
-      // a sliver: it keeps the ratio box.
-      // sizesToCopy keys on the COMMITTED front (activeIdx), not the
-      // continuous drag pose: activeIdx never moves mid-gesture, so no
-      // card's box flips auto↔fixed during a swipe — the single flip
-      // lands at nav commit. Writes are value-guarded for the same
-      // reason: identical geometry must not invalidate layout per frame.
-      writeStackSize(el, i === host.activeIdx && tier.IN_CARD_INFO, pileH)
-    }
+    if (el.style.width !== wantW) el.style.width = wantW
 
-    // A card entering the fan seeds below its slot, transparent, with
-    // transitions off for that one write — restoring them lets the base
-    // transition carry it up into place while it fades in (the deck's
-    // wrap-around "rise + fade" the boundary nav relies on). A card
-    // leaving the fan simply writes opacity 0 + --hidden, and its
-    // opacity/visibility transition dissolves it in place.
-    // Stacked tiers write a FLAT pose — translateZ under a `perspective`
-    // deck pushes every card through WebKit's 3D compositing path, the
-    // layer-graph family that jetsam-kills iOS tabs under a pile of
-    // textured sheets. The tiny perspective shrink the depth term bought
-    // is dropped with the context; the pile still staggers on x/y/rotZ.
-    const poseTransform = (yPx: number): string =>
-      tier.STACKED
-        ? `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, 0) rotate(${pose.rotZ}deg) scale(${pose.scale})`
-        : `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${yPx}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+    if (el.style.height !== wantH) el.style.height = wantH
 
-    if (pose.visible && wasVisible === false && !tier.STACKED) {
-      el.style.transition = ATTR_VALUES.NONE
-
-      el.style.transform = poseTransform(pose.y + h * CARD_STACK_LAYOUT.ENTER_RISE)
-
-      el.style.opacity = CHAR_STRINGS.ZERO
-
-      el.style.visibility = ATTR_VALUES.VISIBLE
-
-      el.style.zIndex = `${pose.z}`
-
-      void flushLayout(el)
-
-      el.style.transition = ATTR_VALUES.EMPTY
-    }
+    if (el.style.minHeight !== wantMin) el.style.minHeight = wantMin
 
     // Centre-anchored: the card's own centre sits on the deck centre —
     // the perspective origin — so translate3d + the fan's rotateY (and
@@ -618,30 +603,88 @@ export function applyPoses(host: CardStack): void {
     // shares the front card's LIVE height (pileH above), so plain
     // centering keeps every card's top edge on the same line — the
     // pile never bleeds into the header when the front is capped, and
-    // only the authored stair offsets peek past its edges.
-    el.style.transform = poseTransform(pose.y)
+    // only the authored stair offsets peek past its edges. Stacked
+    // tiers write a FLAT pose — translateZ under a `perspective` deck
+    // pushes every card through WebKit's 3D compositing path, the
+    // layer-graph family that jetsam-kills iOS tabs under a pile of
+    // textured sheets; the pile still staggers on x/y/rotZ.
+    const wantT = tier.STACKED
+      ? `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, 0) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+      : `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
 
-    // Opacity writes the pose value for visible cards (1) and the hidden
-    // floor (0) — the entering seed's 0→1 and the leaving card's 1→0
-    // dissolve both ride the stylesheet's opacity transition.
-    el.style.opacity = pose.visible ? `${pose.opacity}` : CHAR_STRINGS.ZERO
+    // Opacity writes the pose value for visible cards and the hidden
+    // floor — the entering seed's 0→1 and the leaving card's 1→0
+    // dissolve both ride the stylesheet's opacity transition; the
+    // stacked parked branch scrubs its dim with the drag fraction.
+    const wantO = pose.visible ? `${pose.opacity}` : CHAR_STRINGS.ZERO
 
-    el.style.zIndex = `${pose.z}`
+    const wantZ = `${pose.z}`
 
-    el.style.visibility = pose.visible ? ATTR_VALUES.VISIBLE : ATTR_VALUES.HIDDEN
+    const wantV = pose.visible ? ATTR_VALUES.VISIBLE : ATTR_VALUES.HIDDEN
 
-    el.classList.toggle(
-      CARD_STACK_CLASSES.CARD_STACK_CARD_ACTIVE,
-      pose.visible && Math.abs(s) < CARD_STACK_LAYOUT.FRONT_EPS
-    )
+    const wantA = pose.visible && Math.abs(s) < CARD_STACK_LAYOUT.FRONT_EPS
+
+    // Signature gate — an applyPoses re-delivery whose every output
+    // matches the last write skips the whole card's DOM surface: the
+    // compare is one string read + a WeakMap hit against ~N writes.
+    // The `!el.style.transform` probe self-heals stripped nodes (the
+    // print snapshot clears inline styles — a cache hit alone would
+    // leave them bare since poses re-derive to the same signature).
+    const sig = `${wantT}|${wantO}|${wantZ}|${wantV}|${wantA}`
+
+    if (_poseSig.get(el) === sig && el.style.transform) continue
+
+    _poseSig.set(el, sig)
+
+    // A card entering the fan seeds below its slot, transparent, with
+    // transitions off for that one write — restoring them lets the base
+    // transition carry it up into place while it fades in (the deck's
+    // wrap-around "rise + fade" the boundary nav relies on). A card
+    // leaving the fan simply writes opacity 0 + --hidden, and its
+    // opacity/visibility transition dissolves it in place.
+    if (pose.visible && wasVisible === false && !tier.STACKED) {
+      el.style.transition = ATTR_VALUES.NONE
+
+      el.style.transform = `translate(-50%, -50%) translate3d(${pose.x}${COMMON_ATTRS.PX}, ${pose.y + h * CARD_STACK_LAYOUT.ENTER_RISE}${COMMON_ATTRS.PX}, ${pose.depth}${COMMON_ATTRS.PX}) rotateY(${pose.rot}deg) rotate(${pose.rotZ}deg) scale(${pose.scale})`
+
+      el.style.opacity = CHAR_STRINGS.ZERO
+
+      el.style.visibility = ATTR_VALUES.VISIBLE
+
+      el.style.zIndex = wantZ
+
+      void flushLayout(el)
+
+      el.style.transition = ATTR_VALUES.EMPTY
+    }
+
+    if (el.style.transform !== wantT) el.style.transform = wantT
+
+    if (el.style.opacity !== wantO) el.style.opacity = wantO
+
+    if (el.style.zIndex !== wantZ) el.style.zIndex = wantZ
+
+    if (el.style.visibility !== wantV) el.style.visibility = wantV
+
+    if (el.classList.contains(CARD_STACK_CLASSES.CARD_STACK_CARD_HIDDEN) === pose.visible) {
+      el.classList.toggle(CARD_STACK_CLASSES.CARD_STACK_CARD_HIDDEN, !pose.visible)
+    }
+
+    if (el.classList.contains(CARD_STACK_CLASSES.CARD_STACK_CARD_ACTIVE) !== wantA) {
+      el.classList.toggle(CARD_STACK_CLASSES.CARD_STACK_CARD_ACTIVE, wantA)
+    }
   }
 
-  if (host._sizesDirty && host._deckEl) {
+  if (host._deckEl) {
     // Stacked tiers get no camera — a `perspective` deck would re-enter
-    // the 3D compositing path the flattened poses just left.
-    ;(host._deckEl as HTMLElement).style.perspective = tier.STACKED
-      ? ATTR_VALUES.NONE
-      : `${tier.PERSPECTIVE * w}${COMMON_ATTRS.PX}`
+    // the 3D compositing path the flattened poses just left. The write
+    // is value-guarded like the cards': a converged camera doesn't
+    // re-invalidate the deck's compositing state per pass.
+    const wantP = tier.STACKED ? ATTR_VALUES.NONE : `${tier.PERSPECTIVE * w}${COMMON_ATTRS.PX}`
+
+    if ((host._deckEl as HTMLElement).style.perspective !== wantP) {
+      ;(host._deckEl as HTMLElement).style.perspective = wantP
+    }
   }
 
   if (fresh) {
@@ -654,8 +697,6 @@ export function applyPoses(host: CardStack): void {
 
     for (const el of fresh) el.style.transition = ATTR_VALUES.EMPTY
   }
-
-  host._sizesDirty = false
 }
 
 /**
@@ -793,13 +834,16 @@ export function fitDeckToFront(host: CardStack): void {
       // section (the ≥3840 rung) would collapse the row to ~0. There the
       // band is authored: the scaled front card's extent plus its
       // negative FAN_LIFT clearance (cards park -40px above centre).
-      if (host._autoStage && host._cardH) {
-        deck.style.minHeight = `${
-          host._cardH * CARD_STACK_LAYOUT.FRONT_SCALE - CARD_STACK_LAYOUT.FAN_LIFT * 2
-        }${COMMON_ATTRS.PX}`
-      } else {
-        deck.style.minHeight = ATTR_VALUES.EMPTY
-      }
+      // Value-guarded: an unchanged band never re-invalidates the deck —
+      // a same-value write still feeds the observer that called us.
+      const band =
+        host._autoStage && host._cardH
+          ? `${
+              host._cardH * CARD_STACK_LAYOUT.FRONT_SCALE - CARD_STACK_LAYOUT.FAN_LIFT * 2
+            }${COMMON_ATTRS.PX}`
+          : ATTR_VALUES.EMPTY
+
+      if (deck.style.minHeight !== band) deck.style.minHeight = band
     }
 
     return
@@ -826,7 +870,9 @@ export function fitDeckToFront(host: CardStack): void {
     host._frontExtra = 0
 
     if (deck) {
-      deck.style.minHeight = `${host._cardH + host._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD}${COMMON_ATTRS.PX}`
+      const band = `${host._cardH + host._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD}${COMMON_ATTRS.PX}`
+
+      if (deck.style.minHeight !== band) deck.style.minHeight = band
     }
 
     return
@@ -899,9 +945,12 @@ export function fitDeckToFront(host: CardStack): void {
   const anchor = realH - host._cardH
 
   if (deck) {
-    const band = host._cardH + grow + host._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD
+    const band = `${host._cardH + grow + host._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD}${COMMON_ATTRS.PX}`
 
-    deck.style.minHeight = `${band}${COMMON_ATTRS.PX}`
+    // Value-guarded — the RO-loop fix: this write resizes the observed
+    // deck, so re-landing an identical band re-fires _deckRO for
+    // nothing. Only a real delta may touch the DOM.
+    if (deck.style.minHeight !== band) deck.style.minHeight = band
   }
 
   if (anchor !== host._frontExtra) {
