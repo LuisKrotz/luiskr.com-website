@@ -130,8 +130,12 @@ function applyHomeSnapshot(view: ViewHome, homeSnap: DbSnapshot): void {
 
   emitHomeJsonLd(view)
 
-  view._updateDom()
-
+  // No view._updateDom() here — the template's output is data-independent
+  // (only the has_touch class varies), so a re-render would just
+  // replaceChildren the whole subtree: every child custom element
+  // remounts, the deck rebuilds skeleton→data, and the reveal replays —
+  // the load flicker. Children receive this snapshot through
+  // _passDataToChildren's setters instead.
   view._passDataToChildren()
 }
 
@@ -208,8 +212,8 @@ export function loadHomeData(view: ViewHome): void {
         view.profilePicture = picSnap.val() as string
       }
 
-      view._updateDom()
-
+      // Same contract as applyHomeSnapshot — the about/contact data lands
+      // through the child setters; the view's own DOM never re-renders.
       view._passDataToChildren()
     })
     .catch(devError)

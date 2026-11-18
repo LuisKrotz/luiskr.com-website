@@ -367,6 +367,26 @@ describe('CardStack — mount + data contract', () => {
     expect(el._t.featured).toBeTruthy()
   })
 
+  test('content-identical setter re-pushes skip the rebuild', () => {
+    el.translations = { viewAll: 'SEE ALL' }
+
+    const domSpy = jest.spyOn(el, '_updateDom').mockImplementation(() => {})
+
+    // Same content in fresh objects — the view's per-resolution fan-out
+    // must not rebuild the deck (the load flicker).
+    el.processedItems = [...ITEMS]
+    el.translations = { viewAll: 'SEE ALL' }
+
+    expect(domSpy).not.toHaveBeenCalled()
+
+    el.processedItems = [item(0)]
+    el.translations = { viewAll: 'ALLE' }
+
+    expect(domSpy).toHaveBeenCalledTimes(2)
+
+    domSpy.mockRestore()
+  })
+
   test('storage getter proxies the store', () => {
     expect(el.storage).toBe(store.getters.getStorage())
   })

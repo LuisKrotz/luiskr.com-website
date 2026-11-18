@@ -75,7 +75,9 @@ const SETTLED_DOCS = new WeakSet<Document>()
  */
 export class CardStack extends BaseComponent {
   _processedItems: CardStackItem[] = [] // portfolio items pushed by the view (featured flag rides on each)
+  _itemsSig: string | null = null // JSON signature of the last applied items push — identical re-pushes skip the rebuild
   _translations: CardStackTranslations | null = null // pages/HOME locale node
+  _translationsSig: string | null = null // JSON signature of the last applied translations push
   _printCopy = new Map<string, string[]>() // warmed projects/<slug> feature paragraphs — print prefers them over the card blurb
   activeIdx = 0 // deck index of the front card
   indexOpen = false // whether the all-projects index overlay is revealed
@@ -160,7 +162,17 @@ export class CardStack extends BaseComponent {
   /** Setter/getter — portfolio items pushed by the view. */
 
   set processedItems(val: CardStackItem[]) {
-    this._processedItems = Array.isArray(val) ? val : []
+    const next = Array.isArray(val) ? val : []
+    const sig = JSON.stringify(next)
+
+    // The view fans the same snapshot to every child on each SWR
+    // resolution — a content-identical re-push must not rebuild the
+    // deck: _updateDom replaceChildren's every card, re-mounting each
+    // <img>/<draw-text> and replaying the reveal (the load flicker).
+    if (sig === this._itemsSig) return
+
+    this._itemsSig = sig
+    this._processedItems = next
 
     const len = deckItems(this).length
 
@@ -180,6 +192,14 @@ export class CardStack extends BaseComponent {
   /** Setter/getter — locale strings for the section labels. */
 
   set translations(val: CardStackTranslations | null) {
+    const sig = JSON.stringify(val)
+
+    // Same dedup contract as processedItems — the labels node is pushed
+    // on every data resolution, and only a real content change may
+    // rebuild the chrome/copy column.
+    if (sig === this._translationsSig) return
+
+    this._translationsSig = sig
     this._translations = val
 
     if (this._isMounted) {
