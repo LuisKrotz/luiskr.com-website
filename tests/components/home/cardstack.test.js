@@ -309,27 +309,20 @@ describe('CardStack — mount + data contract', () => {
     // stacked layouts show (fan tiers hide it via CSS).
     const cardTitle = cards[0].querySelector(`.${C.CARD_STACK_CARD_INFO_TITLE}`)
     expect(cardTitle.textContent).toBe('Project 0')
-    // Every card owns a <draw-text> writer mounted with its OWN
-    // summary — no card is ever a lonely image. On copy-carrying
-    // stacked tiers writeInfo() replays only the front card's writer
-    // so the description re-reveals on each nav; behind cards keep
-    // their static text untouched. The happy-dom viewport lands on the
-    // image-only band, so the contract is exercised against the phone
-    // tier directly. The in-card writer carries the first-sentence
-    // SUMMARY (the card copy is clamped to four lines) while the text
-    // column below keeps the full body — same content at two lengths,
-    // both indexable.
+    // Every card mounts its own summary as PLAIN text — <draw-text> is
+    // a desktop-only writer (it lives in the text column below), so the
+    // in-card copy is present verbatim from first paint and a swipe can
+    // never clear/retype it. The card carries the first-sentence
+    // SUMMARY (stripped of CMS markup) while the text column keeps the
+    // full body — same content at two lengths, both indexable.
     el._tier = STACK_TIER
     writeInfo(el)
-    const frontWriter = cards[0].querySelector(
-      `.${C.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`
+    const frontDesc = cards[0].querySelector(`.${C.CARD_STACK_CARD_INFO_DESC}`)
+    expect(frontDesc.textContent).toBe('Desc 0 line one')
+    expect(frontDesc.querySelector(COMPONENT_TAGS.DRAW_TEXT)).toBeNull()
+    expect(cards[1].querySelector(`.${C.CARD_STACK_CARD_INFO_DESC}`).textContent).toBe(
+      'Desc 1 line one'
     )
-    expect(frontWriter.getAttribute(FORM_ATTRS.TEXT)).toBe('Desc 0 line one')
-    expect(
-      cards[1]
-        .querySelector(`.${C.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`)
-        .getAttribute(FORM_ATTRS.TEXT)
-    ).toBe('Desc 1 line one')
     expect(cards[0].querySelector(`.${C.CARD_STACK_CARD_INFO_CTA}`)).not.toBeNull()
     // The text column — a plain-text title (the burn owns it) + the
     // Jost description writer + the project link.

@@ -4,14 +4,15 @@
  * Two paper-only problems the shared adapter can't solve from outside
  * the component:
  *
- *   1. Descriptions — every card's body text lives inside a <draw-text>
- *      writer whose `text` attribute stays empty until that card's own
- *      viewport reveal arms it (behind cards never arm, so paper would
- *      print titles only). The item data is component state, so the
- *      fill happens here on `printprepare`: a `hidden`-contract
- *      `.print-fill` span seats inside each card's desc slot and the
- *      shadow-local print sheet reveals it — the same contract
- *      `.print-caption`/`.print-qr-link` already use.
+ *   1. Descriptions — the on-screen card carries only its one-sentence
+ *      summary, but paper should carry the project's full feature copy.
+ *      The item data is component state (idle-warmed into
+ *      `host._printCopy`), so the fill happens here on `printprepare`:
+ *      a `hidden`-contract `.print-fill` span seats inside each card's
+ *      desc slot and the shadow-local print sheet reveals it — the same
+ *      contract `.print-caption`/`.print-qr-link` already use. The
+ *      summary itself is plain static text, always mounted, so paper
+ *      never loses the blurb even when the feature copy hasn't warmed.
  *   2. Pose re-writes — applyPoses/fitDeckToFront write card geometry
  *      inline from rAF and ResizeObserver loops. print.ts strips `style`
  *      on beforeprint, but the print-layout reflow fires those observers

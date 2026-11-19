@@ -249,7 +249,7 @@ describe('CloseButtonWebGL', () => {
     btnC.destroy()
   })
 
-  test('click on the bound target records the shockwave and runs the action', () => {
+  test('click on the bound target records the shockwave and arms the pour-fire action', async () => {
     const parent = document.createElement(HTML_TAGS.BUTTON)
     const canvas = makeCanvas()
 
@@ -261,8 +261,20 @@ describe('CloseButtonWebGL', () => {
 
     parent.dispatchEvent(new window.Event(MOUSE_EVENTS.CLICK))
 
-    expect(clicks).toHaveLength(1)
+    // The pour IS the close signature — the action releases only once
+    // the liquid fill reads (~0.7s of frames), never synchronously on
+    // the tap (touch has no hover to warm it).
+    expect(clicks).toHaveLength(0)
     expect(btn.clickTime).toBeGreaterThan(-1)
+    expect(btn._fireOnFill).toBe(true)
+
+    // Pump frames directly — wall-clock rAF under coverage
+    // instrumentation can't be trusted to land 43+ ticks in a fixed
+    // window; animate() is one deterministic frame per call.
+    for (let i = 0; i < 80 && clicks.length === 0; i += 1) btn.animate()
+
+    expect(clicks).toHaveLength(1)
+    expect(btn._fireOnFill).toBe(false)
 
     btn.destroy()
     parent.remove()

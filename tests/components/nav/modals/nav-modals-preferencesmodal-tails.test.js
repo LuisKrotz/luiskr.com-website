@@ -247,6 +247,35 @@ describe('PreferencesModal tails', () => {
     expect(modalEl.isOpen).toBe(true)
   })
 
+  test('the ✕ click closes instantly only when no WebGL widget owns it', () => {
+    // $ → null keeps _mountWebGLControls from binding a real widget to
+    // the button; the stub then stands in for the mounted one so the
+    // JSX guard's truthy arm is the only click path under test.
+    const $spy = jest.spyOn(modalEl, '$').mockReturnValue(null)
+
+    openModal()
+
+    $spy.mockRestore()
+    modalEl._closeBtn = { canvas: document.createElement(HTML_TAGS.CANVAS), destroy: jest.fn() }
+
+    const close = jest.spyOn(modalEl, 'close')
+
+    modalEl.shadowRoot.querySelector(_S.PREF_CLOSE_BTN).click()
+
+    // The widget's pour-fire releases the action once the liquid fill
+    // reads — an instant close here would hide the pour entirely.
+    expect(close).not.toHaveBeenCalled()
+    expect(store.getters.getPreferencesOpen()).toBe(true)
+
+    // No widget mounted → the JSX handler closes directly.
+    modalEl._closeBtn = null
+    modalEl.shadowRoot.querySelector(_S.PREF_CLOSE_BTN).click()
+
+    expect(close).toHaveBeenCalledTimes(1)
+
+    close.mockRestore()
+  })
+
   test('customElements re-evaluation skips re-registration', async () => {
     expect(customElements.get(COMPONENT_TAGS.PREFERENCES_MODAL)).toBeTruthy()
     jest.resetModules()

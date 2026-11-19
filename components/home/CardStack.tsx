@@ -87,7 +87,7 @@ export class CardStack extends BaseComponent {
   _cardH: number = CARD_STACK_LAYOUT.CARD_W_FALLBACK * this._tier.CARD_H_RATIO
   _step: number = CARD_STACK_LAYOUT.CARD_W_FALLBACK * this._tier.FIRST_STEP // drag px per card
   _peek: number = this._tier.PEEK // visible cards per side — fitted to the deck width
-  _dragX = 0 // live drag offset px — the fan's virtual front is activeIdx - _dragX/_step
+  _dragX = 0 // live drag offset px (±cardW cap) — the pressed card tracks it 1:1 while the incoming neighbour walks |dragX|/cardW toward front
   _dragStartX = 0 // pointer-down clientX
   _dragStartY = 0 // pointer-down clientY
   _lastPX = 0 // last coalesced sample clientX (velocity window)
@@ -112,7 +112,7 @@ export class CardStack extends BaseComponent {
   _fitRO: ResizeObserver | null = null // re-fits the deck when the front card's copy height changes
   _fitTimer = 0 // pending settle timer for the RO-deferred fit — debounces the typewriter growth burst, breaks the write→notify loop
   _fitFront: Element | null = null // the card node _fitRO currently watches
-  _frontExtra = 0 // px the stacked front card's live height differs from the ratio height (pileH input — signed: copy growth positive, short copy negative); the card never caps — copy sizes it and the page absorbs the overflow
+  _frontExtra = 0 // px the tallest stacked card's natural height exceeds the ratio height (pileH input — ≥0: the biggest description sizes EVERY card's box, never truncates, and the page absorbs the overflow)
   _loadedCovers = new Map<string, string>() // cover key → highest confirmed painted tier
   _unsubManifest: (() => void) | null = null // media-manifest arrival — re-renders with proven rungs
   _autoOn = false // autoplay armed — the 10s border-light countdown is live (running or paused)
@@ -168,7 +168,7 @@ export class CardStack extends BaseComponent {
     // The view fans the same snapshot to every child on each SWR
     // resolution — a content-identical re-push must not rebuild the
     // deck: _updateDom replaceChildren's every card, re-mounting each
-    // <img>/<draw-text> and replaying the reveal (the load flicker).
+    // <img> and replaying its load/reveal (the load flicker).
     if (sig === this._itemsSig) return
 
     this._itemsSig = sig

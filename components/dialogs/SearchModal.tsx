@@ -195,7 +195,13 @@ export class SearchModal extends BaseComponent {
             className={C.SEARCH_MODAL_CLOSE_BTN}
             type={FORM_ATTRS.TYPE_BUTTON}
             aria-label={closeLabel}
-            onClick={() => this.close()}
+            // The WebGL close widget owns this button's click once
+            // mounted — its pour-fire defers the close until the liquid
+            // fill reads. Firing close() here too would kill the modal
+            // instantly and the pour would play on a detached canvas.
+            onClick={() => {
+              if (!this._closeBtn) this.close()
+            }}
           >
             <canvas className={C.SEARCH_MODAL_CLOSE_CANVAS} aria-hidden={ATTR_VALUES.TRUE} />
           </button>

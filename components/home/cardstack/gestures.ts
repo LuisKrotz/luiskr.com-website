@@ -1,8 +1,9 @@
 /**
  * @file cardstack/gestures.ts — pointer-swipe tracking for <card-stack>:
  * a slop-gated horizontal drag that slides the fan continuously (one rAF
- * write per frame), vertical-scroll yielding, flick velocity, and the
- * threshold settle that turns a release into a nav or a snap-back.
+ * write per frame), a one-card clamp on the live offset, vertical-scroll
+ * yielding, flick velocity, and the threshold settle that turns a
+ * release into a single-card nav or a snap-back.
  */
 
 import { CARD_STACK_CLASSES } from '@core/tokens/classes/card-stack.js'
@@ -10,7 +11,7 @@ import { CARD_STACK_SELECTORS } from '@core/tokens/selectors/card-stack.js'
 import { CARD_STACK_LAYOUT } from '@core/tokens/motion/card-stack.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
 import { noteScrollActivity } from '@core/utils/motion/scroll-state.js'
-import { applyPoses } from './deck.js'
+import { applyPoses, fitDeckToFront } from './deck.js'
 import { stopAutoplay } from './autoplay.js'
 import { goTo } from './interactions.js'
 import type { CardStack } from '../CardStack.js'
@@ -146,7 +147,12 @@ export function onPointerMove(host: CardStack, e: Event): void {
 
   host._lastT = last.timeStamp
 
-  host._dragX = dx
+  // The offset is raw finger px, capped at one card width — applyPoses
+  // tracks the pressed card by exactly this amount, so the card under
+  // the finger can never run ahead of or behind the pointer (the old
+  // _step-scaled f dealt through multiple cards mid-hold on the stacked
+  // tier). Capping at cardW bounds the off-screen fly distance.
+  host._dragX = Math.max(-Math.max(host._cardW, 1), Math.min(Math.max(host._cardW, 1), dx))
 
   // A card drag is scroller-equivalent work that never reaches the
   // window scroll listener — parked media writes (domSizedSrc layer
@@ -198,27 +204,32 @@ export function onPointerEnd(host: CardStack, e: Event): void {
 
   host._suppressClick = Math.abs(dx) > CARD_STACK_LAYOUT.DRAG_SLOP
 
-  const p = -dx / host._step
+  // Commit travel is a fraction of the card's own width — the same
+  // distance that walks the incoming card fully into the front pose,
+  // so the swap the finger previewed is the one that lands.
+  const p = Math.min(Math.abs(dx) / Math.max(host._cardW, 1), 1)
 
-  const dir = p >= 0 ? 1 : -1
+  const dir = dx <= 0 ? 1 : -1
 
   const flick =
     dir > 0 ? host._velX < -CARD_STACK_LAYOUT.FLICK_VEL : host._velX > CARD_STACK_LAYOUT.FLICK_VEL
 
   host._velX = 0
 
-  if (Math.abs(p) > CARD_STACK_LAYOUT.DRAG_THRESHOLD || (dx !== 0 && flick)) {
-    // Nearest-card wins — a multi-step swipe lands the card the user
-    // actually centered, not just one slot over. Sub-half-step drags
-    // still commit a single step (the threshold's original feel).
-    const steps = Math.max(1, Math.round(Math.abs(p)))
-
-    goTo(host, host.activeIdx + dir * steps)
+  if (p > CARD_STACK_LAYOUT.DRAG_THRESHOLD || (dx !== 0 && flick)) {
+    // One card per swipe — a commit is always exactly ±1 in the drag
+    // direction and can never leapfrog past the card the finger held.
+    goTo(host, host.activeIdx + dir)
 
     return
   }
 
   host._dragX = 0
+
+  // A copy/font re-anchor skipped mid-gesture (fitDeckToFront's
+  // _dragActive guard) lands now — before the snap-back pose pass, so
+  // the re-anchored pile height is part of the settle.
+  fitDeckToFront(host)
 
   applyPoses(host)
 }

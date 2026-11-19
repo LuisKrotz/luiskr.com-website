@@ -204,6 +204,28 @@ describe('LangDialog tails', () => {
     expect(langEl.isOpen).toBe(false)
   })
 
+  test('follower glide skips on hoverless devices; missing matchMedia still glides', async () => {
+    langEl.open = true
+    await new Promise((r) => setTimeout(r, 60))
+    const follower = langEl.shadowRoot.querySelector(`.${LANG_CLASSES.LANG_GLASS_FOLLOWER}`)
+    const btn = langEl.shadowRoot.querySelector(`[${DATA_ATTRS.DATA_LANG}]`)
+    const origMM = window.matchMedia
+
+    // (hover: none) → a tap's synthesized pointerover must not float the
+    // follower off the active tile.
+    window.matchMedia = () => ({ matches: true })
+    follower.style.transform = ''
+    btn.dispatchEvent(new Event(POINTER_EVENTS.POINTEROVER, { bubbles: true }))
+    expect(follower.style.transform).toBe('')
+
+    // No matchMedia at all → hover-capable fallback → glide proceeds.
+    window.matchMedia = undefined
+    btn.dispatchEvent(new Event(POINTER_EVENTS.POINTEROVER, { bubbles: true }))
+    expect(follower.style.transform).toContain('translate3d')
+
+    window.matchMedia = origMM
+  })
+
   test('selectLang applies locale and _applyLang maps each known route', () => {
     langEl.open = true
     const current = store.getters.getLang()
@@ -287,6 +309,46 @@ describe('LangDialog tails', () => {
     expect(close).not.toHaveBeenCalled()
 
     langEl._closing = false
+    close.mockRestore()
+  })
+
+  test('close() early-returns on a closed dialog — the !isOpen arm', () => {
+    const done = jest.fn()
+
+    langEl.close(done)
+
+    // The guard fires before _closing arms or genieLeave schedules —
+    // a closed dialog has nothing to collapse.
+    expect(langEl._closing).toBe(false)
+    expect(done).not.toHaveBeenCalled()
+  })
+
+  test('the ✕ click closes instantly only when no WebGL widget owns it', () => {
+    // $ → null keeps _mountWebGLControls from binding a real widget to
+    // the button; the stub then stands in for the mounted one so the
+    // JSX guard's truthy arm is the only click path under test.
+    const $spy = jest.spyOn(langEl, '$').mockReturnValue(null)
+
+    langEl.open = true
+
+    $spy.mockRestore()
+    langEl._closeBtn = { canvas: document.createElement(HTML_TAGS.CANVAS), destroy: jest.fn() }
+
+    const close = jest.spyOn(langEl, 'close')
+
+    langEl.shadowRoot.querySelector(_S.PREF_CLOSE_BTN).click()
+
+    // The widget's pour-fire releases the action once the liquid fill
+    // reads — an instant close here would hide the pour entirely.
+    expect(close).not.toHaveBeenCalled()
+    expect(langEl.isOpen).toBe(true)
+
+    // No widget mounted → the JSX handler closes directly.
+    langEl._closeBtn = null
+    langEl.shadowRoot.querySelector(_S.PREF_CLOSE_BTN).click()
+
+    expect(close).toHaveBeenCalledTimes(1)
+
     close.mockRestore()
   })
 

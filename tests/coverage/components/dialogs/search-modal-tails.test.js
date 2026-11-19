@@ -7,6 +7,7 @@
 import { describe, test, expect, beforeEach, afterEach, jest } from '@jest/globals'
 import { SEARCH_MODAL_CLASSES } from '@core/tokens/classes/search-modal.js'
 import { COMPONENT_TAGS } from '@core/tokens/elements/components.js'
+import { HTML_TAGS } from '@core/tokens/elements/html.js'
 import { COMMON_ATTRS } from '@core/tokens/attrs/common.js'
 import { MODAL_MUTATIONS } from '@core/tokens/events/mutations.js'
 import { KEYBOARD_EVENTS } from '@core/tokens/events/dom.js'
@@ -179,6 +180,35 @@ describe('SearchModal element', () => {
     expect(el._closeBtn.canvas).toBe(neoCanvas)
 
     spy.mockRestore()
+  })
+
+  test('the ✕ click closes instantly only when no WebGL widget owns it', () => {
+    // $ → null keeps _mountCloseButton from binding a real widget to
+    // the button; the stub then stands in for the mounted one so the
+    // JSX guard's truthy arm is the only click path under test.
+    const $spy = jest.spyOn(el, '$').mockReturnValue(null)
+
+    el.open = true
+
+    $spy.mockRestore()
+    el._closeBtn = { canvas: document.createElement(HTML_TAGS.CANVAS), destroy: jest.fn() }
+
+    const close = jest.spyOn(el, 'close')
+
+    el.shadowRoot.querySelector(S.CLOSE).click()
+
+    // The widget's pour-fire releases the action once the liquid fill
+    // reads — an instant close here would hide the pour entirely.
+    expect(close).not.toHaveBeenCalled()
+    expect(el.isOpen).toBe(true)
+
+    // No widget mounted → the JSX handler closes directly.
+    el._closeBtn = null
+    el.shadowRoot.querySelector(S.CLOSE).click()
+
+    expect(close).toHaveBeenCalledTimes(1)
+
+    close.mockRestore()
   })
 
   test('missing route-search child and missing focusInput arm tolerated', () => {

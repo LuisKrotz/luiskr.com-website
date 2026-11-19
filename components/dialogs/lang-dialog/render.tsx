@@ -115,7 +115,12 @@ export function renderLangDialog(host: LangDialog) {
             className={PREF_CLASSES.PREF_CLOSE_BTN}
             aria-label={closeLabel}
             type={FORM_ATTRS.BUTTON}
-            onClick={() => host.close()}
+            // The WebGL close widget owns this button's click once
+            // mounted — its pour-fire defers the close until the liquid
+            // fill reads; an instant close here would hide the pour.
+            onClick={() => {
+              if (!host._closeBtn) host.close()
+            }}
           >
             <canvas className={PREF_CLASSES.PREF_CLOSE_CANVAS} aria-hidden={ATTR_VALUES.TRUE} />
           </button>

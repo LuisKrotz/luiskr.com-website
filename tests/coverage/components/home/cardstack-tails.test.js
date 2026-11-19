@@ -62,6 +62,7 @@ import {
   MOUSE_EVENTS,
   POINTER_EVENTS,
   PRINT_EVENTS,
+  TOUCH_EVENTS,
   WINDOW_EVENTS,
 } from '@core/tokens/events/dom.js'
 import { PRINT_CLASSES } from '@core/tokens/classes/print.js'
@@ -296,6 +297,45 @@ describe('deck tails', () => {
     }
   })
 
+  test('applyPoses sweeps the previous card in from the parked edge on a right drag', async () => {
+    const wOrig = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+    const hOrig = Object.getOwnPropertyDescriptor(window, 'innerHeight')
+    Object.defineProperty(window, 'innerWidth', { value: 390, configurable: true })
+    Object.defineProperty(window, 'innerHeight', { value: 844, configurable: true })
+    resetViewportCache()
+    try {
+      const el = await mountItems([item(0), item(1), item(2)])
+      measure(el)
+      expect(el._tier.STACKED).toBe(true)
+
+      el.activeIdx = 1
+
+      // Parked baseline — card 0 sits at its s=-1 stair pose.
+      applyPoses(el)
+      const parkedCard = el._cardEls[0]
+      const parkedX = /translate3d\((-?[\d.]+)px/.exec(parkedCard.style.transform)?.[1]
+      const parkedO = Number(parkedCard.style.opacity)
+
+      // Rightward 30% pull — dragDir=-1 makes card 0 the incoming
+      // neighbour: s=-0.7 parked-pose interpolation PLUS the extra
+      // (1-progress)·w leftward sweep and the progress opacity scrub.
+      el._dragActive = true
+      el._dragX = el._cardW * 0.3
+      applyPoses(el)
+
+      const dragX = /translate3d\((-?[\d.]+)px/.exec(el._cardEls[0].style.transform)?.[1]
+      const dragO = Number(el._cardEls[0].style.opacity)
+
+      expect(Number(dragX)).toBeLessThan(Number(parkedX))
+      expect(dragO).toBeLessThan(parkedO)
+      expect(dragO).toBeGreaterThan(0)
+    } finally {
+      if (wOrig) Object.defineProperty(window, 'innerWidth', wOrig)
+      if (hOrig) Object.defineProperty(window, 'innerHeight', hOrig)
+      resetViewportCache()
+    }
+  })
+
   test('applyPoses seeds the rise entrance for a card re-entering the fan', async () => {
     const items = Array.from({ length: 12 }, (_, i) => item(i))
     const el = await mountItems(items)
@@ -385,6 +425,18 @@ describe('deck tails', () => {
     // fitPeek's shrink loop runs only when the authored peek projects
     // past the deck room — a near-zero deck width forces iterations.
     expect(fitPeek(10, 400, FAN_TIER)).toBe(CARD_STACK_LAYOUT.PEEK_MIN)
+  })
+
+  test('fitDeckToFront defers while a drag owns the pile', async () => {
+    const el = await mountItems([item(0), item(1)])
+    el._tier = { ...STACK_TIER, STACKED: true, IN_CARD_INFO: true }
+    el._dragActive = true
+    el._frontExtra = 0
+    fitDeckToFront(el)
+    // A mid-gesture re-anchor would rewrite every card's border-box
+    // under the finger — the guard leaves the pile untouched until
+    // the pointer releases and onPointerEnd's settle runs the fit.
+    expect(el._frontExtra).toBe(0)
   })
 
   test('fitDeckToFront returns early when section or front measurements are absent', async () => {
@@ -519,30 +571,34 @@ describe('deck tails', () => {
       )
     }
 
-    // Copy tier — the front card's live height drives the band outright:
-    // a copy card taller than the ratio box grows the deck (the page
-    // absorbs the overflow; nothing scrolls inside the card).
+    // Copy tier — the TALLEST card's natural height drives the band
+    // outright (the max-over-cards measure — never truncate, always
+    // fit): a copy card taller than the ratio box grows the deck (the
+    // page absorbs the overflow; nothing scrolls inside the card).
     el._tier = { ...el._tier, STACKED: true, IN_CARD_INFO: true }
 
     const front = el._cardEls[0]
 
-    // The fit reads the front's LAYOUT height (offsetHeight — transform-free
-    // so a mid-transition pose can't contaminate the measure), so the mock
+    const tall = el._cardH + 120
+
+    // The fit reads LAYOUT heights (offsetHeight — transform-free so a
+    // mid-transition pose can't contaminate the measure), so the mock
     // pins the border box rather than the transformed rect.
-    Object.defineProperty(front, 'offsetHeight', { value: 500, configurable: true })
+    Object.defineProperty(front, 'offsetHeight', { value: tall, configurable: true })
 
     fitDeckToFront(el)
 
-    const expected =
-      el._cardH + Math.max(0, 500 - el._cardH) + el._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD
+    const expected = el._cardH + (tall - el._cardH) + el._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD
 
     expect(deck.style.minHeight).toBe(`${expected}${COMMON_ATTRS.PX}`)
-    expect(el._frontExtra).toBe(500 - el._cardH)
+    expect(el._frontExtra).toBe(tall - el._cardH)
 
-    // A shorter front re-fits DOWN — the signed delta shrinks pileH too.
+    // A max measure below the ratio box floors at zero — the pile never
+    // shrinks below its own card geometry, so the anchor can't go
+    // signed-negative.
     Object.defineProperty(front, 'offsetHeight', { value: el._cardH - 40, configurable: true })
     fitDeckToFront(el)
-    expect(el._frontExtra).toBe(-40)
+    expect(el._frontExtra).toBe(0)
   })
 })
 
@@ -603,16 +659,36 @@ describe('gestures tails', () => {
     expect(el.activeIdx).toBe(1)
   })
 
-  test('multi-step drag lands the card dragged to centre', async () => {
+  test('drag caps at one card width — a far hold can never leapfrog', async () => {
     const el = await mountItems([item(0), item(1), item(2), item(3), item(4)])
     const deck = deckEl(el)
-    el._pointerId = 3
-    el._dragActive = true
-    el._step = 100
+    el._cardW = 300
+    onPointerDown(el, evt({ pointerId: 3, clientX: 0, clientY: 0, timeStamp: 0 }, deck))
+    onPointerMove(el, evt({ pointerId: 3, clientX: -40, clientY: 0, timeStamp: 10 }, deck))
+    expect(el._dragActive).toBe(true)
+    // 640px of travel on a 300px card — the live offset pins at ±cardW so
+    // the pressed card can never fly further than its own width, and the
+    // release still commits only the one card the gesture previewed.
+    onPointerMove(el, evt({ pointerId: 3, clientX: -640, clientY: 0, timeStamp: 20 }, deck))
+    expect(el._dragX).toBe(-300)
     el._velX = 0
-    el._dragX = -260 // p = 2.6 → nearest-card settle advances 3 slots
-    onPointerEnd(el, evt({ pointerId: 3, clientX: -260, timeStamp: 30 }, deck))
-    expect(el.activeIdx).toBe(3)
+    onPointerEnd(el, evt({ pointerId: 3, clientX: -640, timeStamp: 30 }, deck))
+    expect(el.activeIdx).toBe(1) // single-card commit, never multi-step
+  })
+
+  test('drag below the commit fraction snaps back to the held card', async () => {
+    const el = await mountItems([item(0), item(1), item(2)])
+    const deck = deckEl(el)
+    el._cardW = 300
+    onPointerDown(el, evt({ pointerId: 4, clientX: 0, clientY: 0, timeStamp: 0 }, deck))
+    // 60px on a 300px card = 0.2 < DRAG_THRESHOLD (0.22) — no nav.
+    onPointerMove(el, evt({ pointerId: 4, clientX: -60, clientY: 0, timeStamp: 10 }, deck))
+    expect(el._dragActive).toBe(true)
+    expect(el._dragX).toBe(-60)
+    el._velX = 0
+    onPointerEnd(el, evt({ pointerId: 4, clientX: -60, timeStamp: 30 }, deck))
+    expect(el.activeIdx).toBe(0)
+    expect(el._dragX).toBe(0)
   })
 
   test('target-without-closest arms the gesture with no capture', async () => {
@@ -627,6 +703,42 @@ describe('gestures tails', () => {
     onPointerDown(el, { target: {} }) // pointerId-less → id 0 arm
     expect(el._pointerId).toBe(0)
     onPointerEnd(el, { target: null })
+  })
+
+  test('the deck never scrolls: every cancelable deck touchmove prevented', async () => {
+    const el = await mountItems([item(0), item(1)])
+    const card = deckEl(el).querySelector(SEL.CARD_STACK_CARD)
+
+    // Interacting with the deck must never scroll the page — cancelable
+    // or not, drag committed or not.
+    el._dragActive = false
+    const free = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: true })
+    card.dispatchEvent(free)
+    expect(free.defaultPrevented).toBe(true)
+
+    // Non-cancelable touchmove (UA already scrolling) — the guard skips
+    // the preventDefault that would spam "[Intervention] Ignored
+    // attempt to cancel a touchmove" on real Android.
+    const nc = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: false })
+    card.dispatchEvent(nc)
+    expect(nc.defaultPrevented).toBe(false)
+
+    // Off-deck touchmove — the deckOnly arm leaves page scroll alone.
+    const off = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: true })
+    el.shadowRoot.dispatchEvent(off)
+    expect(off.defaultPrevented).toBe(false)
+
+    // Long-press context menu is suppressed while a pointer gesture is
+    // live, and untouched when none is (desktop right-click stays).
+    el._pointerId = 7
+    const menu = new Event(MOUSE_EVENTS.CONTEXTMENU, { bubbles: true, cancelable: true })
+    card.dispatchEvent(menu)
+    expect(menu.defaultPrevented).toBe(true)
+
+    el._pointerId = null
+    const menu2 = new Event(MOUSE_EVENTS.CONTEXTMENU, { bubbles: true, cancelable: true })
+    card.dispatchEvent(menu2)
+    expect(menu2.defaultPrevented).toBe(false)
   })
 })
 

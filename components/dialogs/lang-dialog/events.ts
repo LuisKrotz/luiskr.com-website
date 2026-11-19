@@ -4,7 +4,8 @@
  * option buttons (tracks hover/focus, falls back to the active locale).
  */
 
-import { KEYS } from '@core/tokens/primitives.js'
+import { KEYS, MEDIA_QUERIES } from '@core/tokens/primitives.js'
+import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
 import { DATA_ATTRS } from '@core/tokens/attrs/data.js'
 import { LANG_CLASSES } from '@core/tokens/classes/lang.js'
 import { PREF_CLASSES } from '@core/tokens/classes/preferences.js'
@@ -65,6 +66,19 @@ const BOUND_HOSTS = new WeakSet<LangDialog>()
  */
 function bindDelegatedFollower(host: LangDialog): void {
   const glide = (e: Event) => {
+    // Touch-primary devices have no real hover — a tap's synthesized
+    // pointerover/focus would glide the follower onto whichever tile
+    // the finger landed on (and sticky :hover keeps it painted there),
+    // floating the glass ring over a non-active option. Hover-capable
+    // pointers preview; touch keeps the follower on the active locale.
+    // A missing matchMedia (bare test shims, SSR) counts as
+    // hover-capable — same contract as joust's hoverless gate.
+    if (
+      typeof window.matchMedia === TYPE_STRINGS.FUNCTION &&
+      window.matchMedia(MEDIA_QUERIES.HOVER_NONE).matches === true
+    )
+      return
+
     const btn = (e.target as Element | null)?.closest?.(OPTION_SEL)
 
     const follower = host.$(`.${LANG_CLASSES.LANG_GLASS_FOLLOWER}`)

@@ -188,7 +188,17 @@ export function mountMediaExpanded(el: MediaExpanded): void {
   )
 
   closeBtns.forEach((btn) => {
-    el.addScopedListener(btn, MOUSE_EVENTS.CLICK, () => el.startClose())
+    el.addScopedListener(btn, MOUSE_EVENTS.CLICK, () => {
+      // The header ✕ is the liquid-fill widget's own button — once it
+      // mounts it owns the click (its pour-fire defers the close until
+      // the fill reads, which is the animation's whole point). This
+      // listener is the fallback while the deferred mount is still
+      // pending — instant-close it and the pour plays on a detached
+      // canvas, invisible.
+      if (btn.classList.contains(PREF_CLASSES.PREF_CLOSE_BTN) && el._closeBtn) return
+
+      el.startClose()
+    })
   })
 
   // Initial focus lands on the header ✕ — AT/keyboard users reach the

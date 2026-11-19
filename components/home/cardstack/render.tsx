@@ -27,6 +27,7 @@ import { ladderCeiling } from '@core/utils/media/policy.js'
 import { IMAGE_DIMENSIONS } from '@core/tokens/media/dimensions.js'
 import { coverLadderStep, encodeMediaUrl } from '@core/utils/media.js'
 import { svgPlaceholder, viewportWidth } from '@core/utils/dom.js'
+import { toMetaDescription } from '@core/utils/string.js'
 import { FALLBACK_APP } from '@core/locale/fallback.js'
 import { appText } from '@core/locale/ui-text.js'
 import { NAV_UI_KEYS } from '@core/tokens/data/ui-keys.js'
@@ -243,21 +244,14 @@ function renderCard(host: CardStack, item: CardStackItem, i: number) {
 
           {item.description && (
             <p className={C.CARD_STACK_CARD_INFO_DESC}>
-              {/* Every card mounts with its OWN summary text — a card
-                  must never be a lonely image: copy is present from
-                  first paint, so the card's box is its final size at
-                  mount (no post-fill growth feeding _frontExtra and no
-                  mid-swipe relayout). writeInfo() replays only the
-                  front card's writer on each nav; behind cards keep
-                  this static text. The viewport trigger holds the
-                  reveal until the card is actually on screen — the
-                  auto trigger would spend the stagger at mount while
-                  the section is still below the fold. */}
-              <draw-text
-                text={cardInfo(item).summary}
-                delay={CHAR_STRINGS.DELAY_15}
-                trigger={COMMON_ATTRS.TRIGGER_VIEWPORT}
-              />
+              {/* Plain text — <draw-text> is a desktop-only writer (it
+                  lives in the .card-stack-info column); the in-card
+                  summary must be present verbatim from first paint, so
+                  a swipe can never clear/retype it and the card's box
+                  is its final size at mount. CMS copy may carry inline
+                  markup — the meta-description pass strips tags and
+                  decodes entities without truncating. */}
+              {toMetaDescription(cardInfo(item).summary, Number.MAX_SAFE_INTEGER)}
             </p>
           )}
 

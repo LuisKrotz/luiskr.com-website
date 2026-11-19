@@ -76,7 +76,8 @@ const SUMMARY_CUT = /[.!?](?=\s|<)|<br\s*\/?>|\n/
  * DOM), so search engines index the long-form copy as the canonical
  * description while the card copy reads as its summary — same content
  * at two lengths, both valid. A description with no sentence break
- * passes through whole (the ≤4-line CSS clamp bounds the visual box).
+ * passes through whole — the uniform pile height sizes every card to
+ * the tallest summary, so nothing truncates.
  * @param body The full CMS description (may carry `<br>` markup).
  * @returns The leading-sentence summary, or the input unchanged when
  *   no cut point exists.
@@ -487,31 +488,10 @@ export function writeInfo(host: CardStack): void {
 
   setSlotText(host, CARD_STACK_SELECTORS.CARD_STACK_INFO_DESC, info.body)
 
-  // Stacked tiers that show in-card copy carry the description inside
-  // the ACTIVE card — each card keeps its own <draw-text> writer,
-  // re-armed on the front change the same way the column slot replays.
-  // Behind cards stay blank so no off-front writer burns frames (their
-  // info column is hidden anyway); clearing the previous front is what
-  // re-arms it on a re-visit — draw-text ignores an unchanged `text`,
-  // so the swap-through-empty is what replays the typewriter. Fan tiers
-  // and the image-only stacked bands hide the in-card copy entirely —
-  // arming writers there would just park unused observers.
-  if (host._tier?.STACKED && host._tier?.IN_CARD_INFO) {
-    // Only the FRONT card's writer replays — every other card keeps the
-    // own-summary copy it mounted with, so no card is ever a lonely
-    // image and no card's box changes size when the front moves (the
-    // static text was already in flow; this swap-through-empty only
-    // re-triggers the front's reveal — draw-text ignores an unchanged
-    // text, so the two-step is what restarts it). Fan tiers and the
-    // image-only stacked bands hide the in-card copy entirely — arming
-    // writers there would just park unused observers.
-    const writer = host._cardEls[host.activeIdx]?.querySelector(
-      `${CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO_DESC} ${COMPONENT_TAGS.DRAW_TEXT}`
-    )
-
-    writer?.setAttribute(FORM_ATTRS.TEXT, ATTR_VALUES.EMPTY)
-    writer?.setAttribute(FORM_ATTRS.TEXT, info.summary)
-  }
+  // The in-card summary is plain static text (draw-text is a
+  // desktop-only writer living in the column above) — nothing here
+  // touches it, so a swipe can never clear/retype the copy and every
+  // card's measured box stays constant.
 
   const cta = host.$(CARD_STACK_SELECTORS.CARD_STACK_INFO_CTA)
 

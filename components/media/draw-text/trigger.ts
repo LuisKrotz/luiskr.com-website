@@ -10,16 +10,20 @@
  *                   of slack), clamped to MAX_MS for pathological texts
  * The rootMargin on the observer starts the animation just before the
  * element is visible — text appears to be mid-reveal as it scrolls in.
- * Touch-primary sessions skip the char schedule entirely: no char spans
- * mount (_needsCharSpans), the WebGPU overlay is bypassed, and the reveal
- * is the _mobile.scss light fade with a fade-length done-timer.
+ * Phone sessions skip the reveal entirely: no observer, no char
+ * spans, no fade — the final words render at mount (viewport-
+ * detection reveals are a desktop affordance; on mobile the text is
+ * simply always visible). Tablets keep the observer + light fade —
+ * "mobile" here means phones only.
  */
 
 import { COMMON_ATTRS } from '@core/tokens/attrs/common.js'
 import { DRAW_TEXT_CLASSES } from '@core/tokens/classes/draw-text.js'
 import { STATE_CLASSES } from '@core/tokens/classes/state.js'
+import { BREAKPOINTS } from '@core/tokens/layout/breakpoints.js'
 import { QUERY_STRINGS } from '@core/tokens/strings/queries.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
+import { viewportWidth } from '@core/utils/dom.js'
 import { stripHtml } from '@core/utils/string.js'
 import { onScrollStop } from '@core/utils/motion/scroll-state.js'
 import store from '@core/store.js'
@@ -102,7 +106,13 @@ export function setupTrigger(host: DrawText): void {
 
   if (!text) return
 
-  if (isReducedMotion()) {
+  // Reduced-motion AND phone sessions land on the final state
+  // directly — on mobile the copy is always visible: no viewport
+  // observer to wait on, no fade to play, no char spans to mount.
+  // Tablets keep the viewport reveal (a coarse-pointer gate alone
+  // would swallow the iPad's designed light fade — "mobile not
+  // tablet").
+  if (isReducedMotion() || (store.getters.getTouch() && viewportWidth() < BREAKPOINTS[768])) {
     host._hasAnimated = true
 
     host._isVisible = true

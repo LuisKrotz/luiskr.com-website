@@ -510,8 +510,6 @@ export function applyPoses(host: CardStack): void {
 
   if (!len) return
 
-  const f = host.activeIdx - host._dragX / host._step
-
   const w = host._cardW
 
   const h = host._cardH
@@ -519,6 +517,30 @@ export function applyPoses(host: CardStack): void {
   const tier = host._tier
 
   const cards = host._cardEls
+
+  // Live drag — the f fraction freezes on the committed front: the
+  // pressed card tracks the finger in px below, and only the incoming
+  // neighbour walks its slot→front pose (progress of a card-width
+  // pull). The old continuous f moved the WHOLE stack through pose
+  // space at _step per step — on the 0.4·w stacked tier one hold
+  // dealt through 2–3 cards under the finger (the "changes 1, 2, 3
+  // slides" report) and a cancel slammed them all back.
+  const dragging = host._dragActive
+
+  const f = dragging ? host.activeIdx : host.activeIdx - host._dragX / host._step
+
+  const progress = dragging ? Math.min(Math.abs(host._dragX) / Math.max(w, 1), 1) : 0
+
+  const dragDir = host._dragX < 0 ? 1 : -1
+
+  const incoming = len > 1 ? (host.activeIdx + dragDir + len) % len : -1
+
+  // The uniform stacked box — the tallest card's natural height folded
+  // over the ratio box. EVERY stacked card gets it: the pile's sheets
+  // are identical, so only the thin stair offsets peek out instead of a
+  // near-full second image spilling below the front card's bottom edge
+  // — and no card's border-box can ever move mid-gesture or per nav.
+  const pileH = h + host._frontExtra
 
   // Fresh-node batch — elements that have never been posed collect
   // here so a single post-loop flush commits all their baselines at
@@ -529,19 +551,33 @@ export function applyPoses(host: CardStack): void {
   for (let i = 0; i < cards.length; i++) {
     const el = cards[i] as HTMLElement
 
-    const s = ringSigned(i - f, len)
+    // The incoming neighbour is the only stack card that moves during a
+    // drag — its slot→front pose rides the travel fraction so the card
+    // visibly enters accompanying the swipe instead of teleporting in
+    // on release; every other card holds its integer slot.
+    let s = ringSigned(i - f, len)
 
-    // EVERY stacked card rides the front card's live height: the pile's
-    // sheets match the copy-sized (or stage-capped) front box, so only
-    // the thin stair offsets peek out instead of a near-full second
-    // image spilling below the front card's bottom edge — and on the
-    // image-only band the front's own inline min-height can't defeat
-    // the stage cap the way a CSS max-height would. The pose's height
-    // argument follows the same live box so the stacked tiers' y
-    // offsets keep their scale.
-    const pileH = h + host._frontExtra
+    if (dragging && i === incoming) s = dragDir * (1 - progress)
 
     const pose = tierPose(tier, s, len, w, pileH, host._peek)
+
+    // The pressed card rides the finger 1:1 in px — not pose space —
+    // so the card under the touch can never run ahead of or lag behind
+    // the pointer, and the stack's single-card boundary holds no matter
+    // how far the drag travels.
+    if (dragging && i === host.activeIdx) pose.x += host._dragX
+
+    // A right-swipe on the stacked tiers un-stacks the parked card:
+    // give it an extra card-width of travel so it sweeps in from off
+    // the parked edge instead of fading in place under the departing
+    // card, and let it materialize as it travels — the parked-dim scrub
+    // alone starts at 0.45 and reads as a pop when the card enters the
+    // visible band. Mirrored tiers sweep from their own parked side.
+    if (dragging && i === incoming && tier.STACKED && dragDir < 0) {
+      pose.x -= Math.sign(tier.PARK_X) * (1 - progress) * w
+
+      pose.opacity *= progress
+    }
 
     const wasVisible = _wasVisible.get(el)
 
@@ -561,34 +597,18 @@ export function applyPoses(host: CardStack): void {
       ;(fresh ??= []).push(el)
     }
 
-    // Card box — the FINAL layout value for this tier/role pair, each
-    // property guarded against its current inline value so a pass that
-    // re-derives identical geometry never invalidates layout. On
-    // copy-carrying stacked tiers the COMMITTED front (activeIdx, not
-    // the continuous drag pose) frees its box to its own copy —
-    // height:auto, floor cleared — so descriptions never truncate and
-    // the page absorbs any overflow; every other card locks to the
-    // shared pile height (pileH — the front's live box) so a copy-grown
-    // front can't leave a taller image-only sheet peeking below it.
-    // The image-only stacked front keeps the ratio box: its absolute
-    // cover and display:none info column contribute no flow height, so
-    // auto would collapse it to a sliver.
+    // Card box — the FINAL layout value for this tier, each property
+    // guarded against its current inline value so a pass that
+    // re-derives identical geometry never invalidates layout. Every
+    // stacked card gets the SAME box: pileH is the tallest card's
+    // natural height (fitDeckToFront's max-over-cards measure — never
+    // truncate, always fit), so nothing resizes under the finger, on
+    // nav, or when a class flips — the border-box is invariant.
     const wantW = `${w}${COMMON_ATTRS.PX}`
 
-    let wantH: string
+    const wantH = `${tier.STACKED ? pileH : h}${COMMON_ATTRS.PX}`
 
-    let wantMin: string
-
-    if (!tier.STACKED) {
-      wantH = `${h}${COMMON_ATTRS.PX}`
-      wantMin = ATTR_VALUES.EMPTY
-    } else if (i === host.activeIdx && tier.IN_CARD_INFO) {
-      wantH = ATTR_VALUES.AUTO
-      wantMin = ATTR_VALUES.EMPTY
-    } else {
-      wantH = `${pileH}${COMMON_ATTRS.PX}`
-      wantMin = `${pileH}${COMMON_ATTRS.PX}`
-    }
+    const wantMin = tier.STACKED ? `${pileH}${COMMON_ATTRS.PX}` : ATTR_VALUES.EMPTY
 
     if (el.style.width !== wantW) el.style.width = wantW
 
@@ -622,7 +642,12 @@ export function applyPoses(host: CardStack): void {
 
     const wantV = pose.visible ? ATTR_VALUES.VISIBLE : ATTR_VALUES.HIDDEN
 
-    const wantA = pose.visible && Math.abs(s) < CARD_STACK_LAYOUT.FRONT_EPS
+    // While a drag is live the held card keeps --active outright — the
+    // incoming neighbour's s dips inside FRONT_EPS past half-travel and
+    // two active cards would double-render the info column.
+    const wantA = dragging
+      ? i === host.activeIdx
+      : pose.visible && Math.abs(s) < CARD_STACK_LAYOUT.FRONT_EPS
 
     // Signature gate — an applyPoses re-delivery whose every output
     // matches the last write skips the whole card's DOM surface: the
@@ -805,23 +830,24 @@ function dealNavIndex(host: CardStack, navIndex: HTMLElement): void {
 }
 
 /**
- * Re-fits the stacked deck's min-height to the FRONT card's rendered
- * height — applyPoses lets the front card auto-grow past the ratio
- * height so its copy never truncates and never scrolls (the page
- * itself absorbs the overflow); the measured delta parks as
- * _frontExtra (pileH's input — the behind sheets match the front's
- * live height) and the deck row stretches to the taller card so it
- * never collides with the foot. The front card's ResizeObserver
- * re-runs the fit when fonts/locale change the copy after mount.
- * Fan tiers just clear the artifact. One layout read per nav/mount —
- * same class as measure(), never per-frame.
+ * Re-fits the stacked deck's height to the TALLEST card's natural box —
+ * never truncate, always fit: applyPoses gives every stacked card the
+ * same pileH (ratio height + _frontExtra), and the measured max delta
+ * parks as _frontExtra so a copy-heavy description sizes the WHOLE
+ * pile, not just the card carrying it. Card border-boxes are then
+ * invariant under gestures, navs, and class flips — the page absorbs
+ * the overflow. The front card's ResizeObserver re-runs the fit when
+ * fonts/locale/typewriter change the copy after mount. Fan tiers just
+ * clear the artifact. One layout read per nav/mount — same class as
+ * measure(), never per-frame.
  * @param host The CardStack element.
  */
 export function fitDeckToFront(host: CardStack): void {
-  // Print pass — the front card's copy reflow fires this observer under
-  // the flattened sheet; its min-height write would re-pose the deck
-  // mid-snapshot just like an applyPoses call.
-  if (host._printing) return
+  // Print pass — the flattened sheet's copy reflow fires this observer;
+  // its min-height write would re-pose the deck mid-snapshot just like
+  // an applyPoses call. A live drag owns the pile too — a mid-gesture
+  // re-anchor would rewrite every card's border-box under the finger.
+  if (host._printing || host._dragActive) return
 
   const deck = host._deckEl as HTMLElement | null
 
@@ -904,10 +930,10 @@ export function fitDeckToFront(host: CardStack): void {
 
       host._fitRO.observe(front)
 
-      // The link's box (auto-height) and the info column's content
-      // box change when <draw-text> writes the description, so both
-      // are watched alongside the card itself: late copy injection
-      // re-runs the fit and re-anchors _frontExtra.
+      // The in-card summary is plain text — nothing inside the pile
+      // types or grows — but a late font swap can still re-wrap the
+      // copy, so the card, link, info column, and desc stay watched:
+      // one settled re-fit absorbs the font-load delta.
       const linkEl = front.querySelector(CARD_STACK_SELECTORS.CARD_STACK_CARD_LINK)
 
       if (linkEl) host._fitRO.observe(linkEl)
@@ -915,34 +941,50 @@ export function fitDeckToFront(host: CardStack): void {
       const infoEl = front.querySelector(CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO)
 
       if (infoEl) host._fitRO.observe(infoEl)
+
+      const descEl = front.querySelector(CARD_STACK_SELECTORS.CARD_STACK_CARD_INFO_DESC)
+
+      if (descEl) host._fitRO.observe(descEl)
     }
 
     host._fitFront = front
   }
 
-  // offsetHeight reads the layout border box — getBoundingClientRect
-  // would fold the running pose transform/scale into the measure, and a
-  // mid-transition read feeds back into pileH via _frontExtra: the whole
-  // pile visibly compresses and re-expands (mount flicker / nav shake).
-  // The layout height is transform-free, so the measure stays true while
-  // the pose animates.
-  const rawH = front.offsetHeight || host._cardH
+  // Uniform pile height — never truncate, always fit: the biggest
+  // description in the deck sets EVERY card's box, so all stacked
+  // cards are identical and a border-box can never change under the
+  // finger or between navs. Measure all cards' natural heights in one
+  // batch: every height:auto + min-height:0 write lands first (style
+  // mutations don't reflow until a read), then the offsetHeight loop
+  // forces a single layout — one reflow for the whole pile. The floor
+  // MUST clear too: a live pileH min-height feeds the card's own
+  // padding+border back into the measure (+2px every pass = the
+  // infinite-growth ratchet), and the link's min-height:inherit
+  // compounds it. offsetHeight is the layout border box, so the
+  // running pose transform can't contaminate the read the way
+  // getBoundingClientRect would.
+  for (const el of host._cardEls) {
+    const st = (el as HTMLElement).style
 
-  // Content-driven height — the front card NEVER caps at the stage
-  // budget: its copy sizes the box outright (height:auto in
-  // applyPoses) and the deck band grows to match, so a copy-heavy
-  // card simply pushes the pile + controls past the fold and the
-  // PAGE scrolls. _stageH stays as measure()'s width bound for the
-  // image-only band — it no longer clamps any card's height.
-  const realH = rawH
+    st.height = ATTR_VALUES.AUTO
+    st.minHeight = ATTR_VALUES.EMPTY
+  }
 
-  // Deck growth only ever expands (a shorter front card never squeezes
-  // the pile's own band) — but the signed delta rides _frontExtra so
-  // pileH follows the front's live box BOTH ways: a copy-grown or
-  // short-copy front shrinks the behind sheets with it.
-  const grow = Math.max(0, realH - host._cardH)
+  let realH = host._cardH
 
-  const anchor = realH - host._cardH
+  for (const el of host._cardEls) {
+    realH = Math.max(realH, (el as HTMLElement).offsetHeight)
+  }
+
+  // Content-driven height — the pile NEVER caps at the stage budget:
+  // the tallest copy sizes every card's box outright and the deck band
+  // grows to match, so a copy-heavy card simply pushes the pile +
+  // controls past the fold and the PAGE scrolls. _stageH stays as
+  // measure()'s width bound for the image-only band — it no longer
+  // clamps any card's height.
+  const grow = realH - host._cardH
+
+  const anchor = grow
 
   if (deck) {
     const band = `${host._cardH + grow + host._cardH * CARD_STACK_LAYOUT.STACKED_DECK_PAD}${COMMON_ATTRS.PX}`
@@ -953,11 +995,11 @@ export function fitDeckToFront(host: CardStack): void {
     if (deck.style.minHeight !== band) deck.style.minHeight = band
   }
 
-  if (anchor !== host._frontExtra) {
-    host._frontExtra = anchor
+  host._frontExtra = anchor
 
-    // pileH (and every stacked card's height write) rides the delta —
-    // a growth change rewrites every card's box + pose in one pass.
-    applyPoses(host)
-  }
+  // pileH (and every stacked card's height write) rides the delta —
+  // and the measure's height:auto toggles must be restored on EVERY
+  // pass, not just when the anchor moved. applyPoses is value-guarded,
+  // so an identical pose re-derivation costs compares, not relayouts.
+  applyPoses(host)
 }

@@ -16,6 +16,7 @@ import {
   MOUSE_EVENTS,
   POINTER_EVENTS,
   PRINT_EVENTS,
+  TOUCH_EVENTS,
   WINDOW_EVENTS,
 } from '@core/tokens/events/dom.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
@@ -209,6 +210,30 @@ export function bindEvents(host: CardStack): void {
   // pointercancel mid-swipe and kill the gesture; prevent it entirely.
   host.addScopedListener(host.shadowRoot, DRAG_EVENTS.DRAGSTART, (e) => {
     e.preventDefault()
+  })
+
+  // Interacting with the deck must never scroll the page. touch-action:
+  // none already denies the UA's pan/zoom claim on modern engines; this
+  // is the belt for engines that still try to take the stream (older
+  // WebKit, embedders). The cancelable guard is load-bearing: once the
+  // UA commits a touch to scrolling its touchmoves are non-cancelable,
+  // and calling preventDefault on one spams "[Intervention] Ignored
+  // attempt to cancel a touchmove" per event (147+ on a single swipe).
+  host.addScopedListener(
+    host.shadowRoot,
+    TOUCH_EVENTS.TOUCHMOVE,
+    (e) => {
+      if (e.cancelable && deckOnly(e)) e.preventDefault()
+    },
+    { passive: false }
+  )
+
+  // A long-press on a card's link pops the context menu and swallows
+  // the pointer stream (pointercancel) — a hold-then-drag dies on the
+  // spot. Suppress the menu while a primary-pointer gesture is live;
+  // right-click never arms _pointerId, so desktop menus are untouched.
+  host.addScopedListener(host.shadowRoot, MOUSE_EVENTS.CONTEXTMENU, (e) => {
+    if (host._pointerId !== null) e.preventDefault()
   })
 
   host.addScopedListener(window, WINDOW_EVENTS.RESIZE, () => {
