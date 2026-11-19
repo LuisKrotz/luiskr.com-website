@@ -5,8 +5,11 @@
  * driver owns the session lifecycle (measure → overlay canvas →
  * backend pick → eased clock → settle/teardown); the draw work lives
  * in the backends: `genie-gpu.ts` (WebGPU/Rust widget when the opt-in
- * layer mounts) and `genie-canvas.ts` (the universal 2D strip-warp —
- * the default on every browser and on mobile).
+ * layer mounts) and `genie-canvas.ts` (the universal 2D strip-warp).
+ * Phones and tablets (vw < 1024) skip the warp entirely — the
+ * fullscreen overlay's measure+bake+paint sequence never lands inside
+ * their frame budget, so startGenie declines and the caller's CSS
+ * fade-in/out fallback owns the transition there.
  *
  * Sequencing: rects are measured before the veil so the warp's source
  * and destination are exact; the modal content keeps its layout under
@@ -28,6 +31,7 @@ import { HTML_TAGS } from '@core/tokens/elements/html.js'
 import { CHAR_STRINGS } from '@core/tokens/strings/chars.js'
 import { WEBGL_STRINGS } from '@core/tokens/strings/webgl.js'
 import { TYPE_STRINGS } from '@core/tokens/strings/types.js'
+import { BREAKPOINTS } from '@core/tokens/layout/breakpoints.js'
 import { GENIE_TIMING } from '@core/tokens/motion/genie.js'
 import { mediaSlugSeq, slugify } from '@core/utils/index.js'
 
@@ -390,10 +394,15 @@ const tick = (el: MediaExpanded, s: GenieSession): void => {
  * @returns False when the transition cannot start — caller falls back.
  */
 const startGenie = (el: MediaExpanded, opening: boolean, done: () => void): boolean => {
+  // Phones + tablets take the caller's CSS fade — the fullscreen
+  // overlay's measure → sheet-bake → per-frame warp pipeline can't
+  // hold the frame budget on their GPUs, and the funnel read as
+  // dropped frames rather than a liquid transition.
   if (
     !el.shadowRoot ||
     store.getters.getReducedMotion() ||
-    typeof document === TYPE_STRINGS.UNDEFINED
+    typeof document === TYPE_STRINGS.UNDEFINED ||
+    window.innerWidth < BREAKPOINTS[1024]
   ) {
     return false
   }

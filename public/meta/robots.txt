@@ -5,6 +5,7 @@ Disallow: /langs/
 Disallow: /docs-content/
 Disallow: /deploy-info/
 Disallow: /meta/
+Disallow: /docs/coverage
 
 Sitemap: https://luiskr.com/sitemap.xml
 Sitemap: https://luiskr.com/sitemap-news.xml

@@ -110985,7 +110985,7 @@
       "expanded",
       "genie",
       "functions",
-      "parameters returns luiskr com readme website components media expanded genie cancelgenie function void defined 677 cancels live session the overlay drops and content unveils immediately done does not run caller keeps control mediaexpanded"
+      "parameters returns luiskr com readme website components media expanded genie cancelgenie function void defined 686 cancels live session the overlay drops and content unveils immediately done does not run caller keeps control mediaexpanded"
     ],
     "c": "docs"
   },
@@ -111004,7 +111004,7 @@
       "expanded",
       "genie",
       "functions",
-      "parameters done returns luiskr com readme website components media expanded genie startgenieclose function boolean defined 669 close transition collapses the from modal box back into origin figure mediaexpanded classes element void settle"
+      "parameters done returns luiskr com readme website components media expanded genie startgenieclose function boolean defined 678 close transition collapses the from modal box back into origin figure mediaexpanded classes element void settle"
     ],
     "c": "docs"
   },
@@ -111023,7 +111023,7 @@
       "expanded",
       "genie",
       "functions",
-      "parameters done returns luiskr com readme website components media expanded genie startgenieopen function boolean defined 659 open transition warps the from clicked figure rect into modal box mediaexpanded classes element void settle"
+      "parameters done returns luiskr com readme website components media expanded genie startgenieopen function boolean defined 668 open transition warps the from clicked figure rect into modal box mediaexpanded classes element void settle"
     ],
     "c": "docs"
   },
@@ -111121,7 +111121,7 @@
       "expanded",
       "genie",
       "variables",
-      "luiskr com readme website components media expanded genie _dpr _cap const genie_dpr_cap defined 121 overlay device pixel cap fullscreen transition canvas raw devicepixelratio triples fill cost dpr phones keeps the warp crisp without"
+      "luiskr com readme website components media expanded genie _dpr _cap const genie_dpr_cap defined 125 overlay device pixel cap fullscreen transition canvas raw devicepixelratio triples fill cost dpr phones keeps the warp crisp without"
     ],
     "c": "docs"
   },

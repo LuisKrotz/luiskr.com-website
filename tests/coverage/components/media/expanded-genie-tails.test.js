@@ -339,6 +339,30 @@ describe('expanded genie tails', () => {
     }
   })
 
+  // Phones + tablets skip the warp — the overlay pipeline can't hold
+  // their frame budget, so startGenie declines and the CSS fade
+  // fallback owns the transition below 1024.
+  test('returns false on viewports under 1024 (mobile + tablet)', () => {
+    const desc = Object.getOwnPropertyDescriptor(window, 'innerWidth')
+
+    try {
+      Object.defineProperty(window, 'innerWidth', { value: 800, configurable: true })
+
+      expect(startGenieOpen(fakeEl(), () => {})).toBe(false)
+      expect(startGenieClose(fakeEl(), () => {})).toBe(false)
+
+      Object.defineProperty(window, 'innerWidth', { value: 1024, configurable: true })
+
+      const el = fakeEl()
+
+      expect(startGenieOpen(el, () => {})).toBe(true)
+
+      cancelGenie(el)
+    } finally {
+      if (desc) Object.defineProperty(window, 'innerWidth', desc)
+    }
+  })
+
   // ── open lifecycle (2D backend) ───────────────────────────────────────
 
   test('open veils the content, mounts the overlay canvas, settles, unveils + done', () => {
