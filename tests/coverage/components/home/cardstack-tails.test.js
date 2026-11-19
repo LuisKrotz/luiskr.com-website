@@ -705,20 +705,28 @@ describe('gestures tails', () => {
     onPointerEnd(el, { target: null })
   })
 
-  test('the deck never scrolls: every cancelable deck touchmove prevented', async () => {
+  test('deck touchmove scroll lock engages only during a committed horizontal drag', async () => {
     const el = await mountItems([item(0), item(1)])
     const card = deckEl(el).querySelector(SEL.CARD_STACK_CARD)
 
-    // Interacting with the deck must never scroll the page — cancelable
-    // or not, drag committed or not.
+    // Vertical swipe over the deck must scroll the page — a cancelable
+    // touchmove with no committed drag is left alone.
     el._dragActive = false
     const free = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: true })
     card.dispatchEvent(free)
-    expect(free.defaultPrevented).toBe(true)
+    expect(free.defaultPrevented).toBe(false)
+
+    // Once the horizontal drag commits the deck owns the stream — the
+    // belt cancels the same event for engines without touch-action.
+    el._dragActive = true
+    const held = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: true })
+    card.dispatchEvent(held)
+    expect(held.defaultPrevented).toBe(true)
 
     // Non-cancelable touchmove (UA already scrolling) — the guard skips
     // the preventDefault that would spam "[Intervention] Ignored
     // attempt to cancel a touchmove" on real Android.
+    el._dragActive = true
     const nc = new Event(TOUCH_EVENTS.TOUCHMOVE, { bubbles: true, cancelable: false })
     card.dispatchEvent(nc)
     expect(nc.defaultPrevented).toBe(false)

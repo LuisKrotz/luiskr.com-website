@@ -212,18 +212,20 @@ export function bindEvents(host: CardStack): void {
     e.preventDefault()
   })
 
-  // Interacting with the deck must never scroll the page. touch-action:
-  // none already denies the UA's pan/zoom claim on modern engines; this
-  // is the belt for engines that still try to take the stream (older
-  // WebKit, embedders). The cancelable guard is load-bearing: once the
-  // UA commits a touch to scrolling its touchmoves are non-cancelable,
-  // and calling preventDefault on one spams "[Intervention] Ignored
-  // attempt to cancel a touchmove" per event (147+ on a single swipe).
+  // Scroll lock during a COMMITTED horizontal drag only. touch-action:
+  // pan-y lets the UA take vertical streams natively; engines without
+  // touch-action support get the same contract here — preventDefault
+  // fires solely while _dragActive (the pointer code's horizontal
+  // commit), so vertical swipes and pre-commit touchmoves scroll the
+  // page as users expect. The cancelable guard is load-bearing: once
+  // the UA commits a touch to scrolling its touchmoves are
+  // non-cancelable, and calling preventDefault on one spams
+  // "[Intervention] Ignored attempt to cancel a touchmove" per event.
   host.addScopedListener(
     host.shadowRoot,
     TOUCH_EVENTS.TOUCHMOVE,
     (e) => {
-      if (e.cancelable && deckOnly(e)) e.preventDefault()
+      if (e.cancelable && host._dragActive && deckOnly(e)) e.preventDefault()
     },
     { passive: false }
   )
